@@ -194,7 +194,7 @@ if __name__ == '__main__':
     criterion = nn.CrossEntropyLoss()
     # AdamW optimizer
     optimizer1 = torch.optim.AdamW(model.parameters(),  lr=args.lr)
-    scheduler = ReduceLROnPlateau(optimizer1, 'min', factor=0.5, patience=3, verbose=True,min_lr=5e-5)
+    scheduler = ReduceLROnPlateau(optimizer1, 'min', factor=0.5, patience=3, min_lr=5e-5)
 
     if args.model_path:
         model.load_state_dict(torch.load(args.model_path, map_location=device))
