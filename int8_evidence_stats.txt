@@ -1,0 +1,8 @@
+paired deltas (pp): [np.float64(-0.0182), np.float64(-0.0523), np.float64(-0.0045)]
+mean -0.0250 pp, sd 0.0246, se 0.0142, n=3
+90% CI: [-0.0664, +0.0164] pp
+difference test p = 0.2202
+TOST equivalence, margin +/-0.5 pp, p = 0.00045
+predictions changed: 1539 / 132000
+worse 430, better 397
+McNemar p: [np.float64(0.7217), np.float64(0.1563), np.float64(0.9437)]
