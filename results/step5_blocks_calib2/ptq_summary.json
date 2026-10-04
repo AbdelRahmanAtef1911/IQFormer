@@ -1,0 +1,424 @@
+{
+ "args": {
+  "repo": null,
+  "data": null,
+  "runs": [
+   "runs/iqformer_s1",
+   "runs/iqformer_s2",
+   "runs/iqformer_s3"
+  ],
+  "preset": "blocks",
+  "specs": [],
+  "calib": 1024,
+  "calib_seed": 2,
+  "calib_method": "minmax",
+  "pct": 99.99,
+  "no_fold": false,
+  "no_bare": false,
+  "act_scheme": "affine",
+  "out": "results/step5_blocks_calib2",
+  "device": "cuda"
+ },
+ "summary": [
+  {
+   "spec": "CONV=W8A8",
+   "n": 3,
+   "acc_mean": 63.77348484848485,
+   "acc_std": 0.28536381495741636,
+   "delta_mean_pp": -0.012878787878789488,
+   "delta_std_pp": 0.024301537776287217,
+   "p_tost": 0.0004142878042329478,
+   "equivalent": true
+  },
+  {
+   "spec": "CONV=W6A6",
+   "n": 3,
+   "acc_mean": 63.50833333333333,
+   "acc_std": 0.47625613232930375,
+   "delta_mean_pp": -0.278030303030304,
+   "delta_std_pp": 0.19179089278814015,
+   "p_tost": 0.09143987241605835,
+   "equivalent": false
+  },
+  {
+   "spec": "CONV=W4A4",
+   "n": 3,
+   "acc_mean": 39.10530303030303,
+   "acc_std": 4.489863085152597,
+   "delta_mean_pp": -24.68106060606061,
+   "delta_std_pp": 4.793486419334227,
+   "p_tost": 0.9935765440863213,
+   "equivalent": false
+  },
+  {
+   "spec": "CONV=W8A32",
+   "n": 3,
+   "acc_mean": 63.77424242424242,
+   "acc_std": 0.3108101694483412,
+   "delta_mean_pp": -0.01212121212121516,
+   "delta_std_pp": 0.015963111746743856,
+   "p_tost": 0.00017833130667139214,
+   "equivalent": true
+  },
+  {
+   "spec": "CONV=W6A32",
+   "n": 3,
+   "acc_mean": 63.7810606060606,
+   "acc_std": 0.3130291662979179,
+   "delta_mean_pp": -0.005303030303031401,
+   "delta_std_pp": 0.025034411578570313,
+   "p_tost": 0.00042627450922292677,
+   "equivalent": true
+  },
+  {
+   "spec": "CONV=W4A32",
+   "n": 3,
+   "acc_mean": 63.489393939393935,
+   "acc_std": 0.3660878539427478,
+   "delta_mean_pp": -0.29696969696969927,
+   "delta_std_pp": 0.12138009194988576,
+   "p_tost": 0.050674445566759804,
+   "equivalent": false
+  },
+  {
+   "spec": "CONV=W3A32",
+   "n": 3,
+   "acc_mean": 61.26060606060606,
+   "acc_std": 2.323181254928401,
+   "delta_mean_pp": -2.5257575757575776,
+   "delta_std_pp": 2.0188897884633077,
+   "p_tost": 0.8878237238861169,
+   "equivalent": false
+  },
+  {
+   "spec": "CONV=W32A8",
+   "n": 3,
+   "acc_mean": 63.80530303030304,
+   "acc_std": 0.2820777152941452,
+   "delta_mean_pp": 0.018939393939395217,
+   "delta_std_pp": 0.030940269479795814,
+   "p_tost": 0.0006880186598676407,
+   "equivalent": true
+  },
+  {
+   "spec": "CONV=W32A6",
+   "n": 3,
+   "acc_mean": 63.55984848484848,
+   "acc_std": 0.45981790622707536,
+   "delta_mean_pp": -0.22651515151515347,
+   "delta_std_pp": 0.1615129484186481,
+   "p_tost": 0.04962597006585423,
+   "equivalent": true
+  },
+  {
+   "spec": "CONV=W32A4",
+   "n": 3,
+   "acc_mean": 41.90151515151515,
+   "acc_std": 5.964340197749485,
+   "delta_mean_pp": -21.884848484848487,
+   "delta_std_pp": 6.266970486378172,
+   "p_tost": 0.9862730236623439,
+   "equivalent": false
+  },
+  {
+   "spec": "ATTN=W8A8",
+   "n": 3,
+   "acc_mean": 63.77954545454545,
+   "acc_std": 0.3097169462216412,
+   "delta_mean_pp": -0.006818181818183759,
+   "delta_std_pp": 0.00819443471696355,
+   "p_tost": 4.600581098518302e-05,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W6A6",
+   "n": 3,
+   "acc_mean": 63.75151515151515,
+   "acc_std": 0.3076279997430309,
+   "delta_mean_pp": -0.03484848484848572,
+   "delta_std_pp": 0.026536787709299285,
+   "p_tost": 0.0005415649235806906,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W4A4",
+   "n": 3,
+   "acc_mean": 62.025,
+   "acc_std": 0.8666186546353519,
+   "delta_mean_pp": -1.7613636363636367,
+   "delta_std_pp": 0.5965162290920877,
+   "p_tost": 0.9664353054395555,
+   "equivalent": false
+  },
+  {
+   "spec": "ATTN=W8A32",
+   "n": 3,
+   "acc_mean": 63.77878787878788,
+   "acc_std": 0.3156910082219308,
+   "delta_mean_pp": -0.007575757575758087,
+   "delta_std_pp": 0.009462118179390551,
+   "p_tost": 6.15271029216524e-05,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W6A32",
+   "n": 3,
+   "acc_mean": 63.775757575757574,
+   "acc_std": 0.3032309941491369,
+   "delta_mean_pp": -0.010606060606062803,
+   "delta_std_pp": 0.0034716482537587774,
+   "p_tost": 8.386718792731803e-06,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W4A32",
+   "n": 3,
+   "acc_mean": 63.749242424242425,
+   "acc_std": 0.32506621491187493,
+   "delta_mean_pp": -0.03712121212121241,
+   "delta_std_pp": 0.08388590900757291,
+   "p_tost": 0.005385562031444485,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W3A32",
+   "n": 3,
+   "acc_mean": 63.591666666666654,
+   "acc_std": 0.2775737313013253,
+   "delta_mean_pp": -0.19469696969697248,
+   "delta_std_pp": 0.13115690979214983,
+   "p_tost": 0.028183257056433122,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W32A8",
+   "n": 3,
+   "acc_mean": 63.77727272727274,
+   "acc_std": 0.3015712982594401,
+   "delta_mean_pp": -0.009090909090906743,
+   "delta_std_pp": 0.0060130711615158745,
+   "p_tost": 2.5003839891087042e-05,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W32A6",
+   "n": 3,
+   "acc_mean": 63.760606060606065,
+   "acc_std": 0.2814177262347176,
+   "delta_mean_pp": -0.025757575757578977,
+   "delta_std_pp": 0.026633933077651276,
+   "p_tost": 0.0005248489321516967,
+   "equivalent": true
+  },
+  {
+   "spec": "ATTN=W32A4",
+   "n": 3,
+   "acc_mean": 62.26439393939393,
+   "acc_std": 0.7385990666574263,
+   "delta_mean_pp": -1.5219696969696976,
+   "delta_std_pp": 0.4562770049368673,
+   "p_tost": 0.9697602612126236,
+   "equivalent": false
+  },
+  {
+   "spec": "LSTM=W8A8",
+   "n": 3,
+   "acc_mean": 63.78636363636364,
+   "acc_std": 0.31235740548341356,
+   "delta_mean_pp": 0.0,
+   "delta_std_pp": 0.01202614232301916,
+   "p_tost": 9.639085202686083e-05,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W6A6",
+   "n": 3,
+   "acc_mean": 63.75681818181819,
+   "acc_std": 0.32128358267403984,
+   "delta_mean_pp": -0.02954545454545432,
+   "delta_std_pp": 0.0159090909090831,
+   "p_tost": 0.00019048286151193981,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W4A4",
+   "n": 3,
+   "acc_mean": 63.05227272727273,
+   "acc_std": 0.5662831914268357,
+   "delta_mean_pp": -0.7340909090909084,
+   "delta_std_pp": 0.3112806790615547,
+   "p_tost": 0.8387351618035761,
+   "equivalent": false
+  },
+  {
+   "spec": "LSTM=W8A32",
+   "n": 3,
+   "acc_mean": 63.78636363636364,
+   "acc_std": 0.3200513259458101,
+   "delta_mean_pp": 0.0,
+   "delta_std_pp": 0.01638886943392556,
+   "p_tost": 0.00017896722719823216,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W6A32",
+   "n": 3,
+   "acc_mean": 63.77272727272728,
+   "acc_std": 0.33472419879088516,
+   "delta_mean_pp": -0.013636363636363816,
+   "delta_std_pp": 0.030744884678335724,
+   "p_tost": 0.0006646693213491593,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W4A32",
+   "n": 3,
+   "acc_mean": 63.69772727272726,
+   "acc_std": 0.3107326054119752,
+   "delta_mean_pp": -0.08863636363636666,
+   "delta_std_pp": 0.08734490386625161,
+   "p_tost": 0.0073487681656916265,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W3A32",
+   "n": 3,
+   "acc_mean": 63.323484848484846,
+   "acc_std": 0.5306140862622712,
+   "delta_mean_pp": -0.4628787878787917,
+   "delta_std_pp": 0.27536914867877893,
+   "p_tost": 0.41855159411441956,
+   "equivalent": false
+  },
+  {
+   "spec": "LSTM=W32A8",
+   "n": 3,
+   "acc_mean": 63.782575757575756,
+   "acc_std": 0.3104360214536595,
+   "delta_mean_pp": -0.0037878787878790434,
+   "delta_std_pp": 0.01705807613514889,
+   "p_tost": 0.00019684191795012515,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W32A6",
+   "n": 3,
+   "acc_mean": 63.77196969696969,
+   "acc_std": 0.2950375845693908,
+   "delta_mean_pp": -0.014393939393941846,
+   "delta_std_pp": 0.027114439648748514,
+   "p_tost": 0.000518806569026317,
+   "equivalent": true
+  },
+  {
+   "spec": "LSTM=W32A4",
+   "n": 3,
+   "acc_mean": 63.125,
+   "acc_std": 0.6860023130818986,
+   "delta_mean_pp": -0.6613636363636396,
+   "delta_std_pp": 0.3987519268587274,
+   "p_tost": 0.7220355133704326,
+   "equivalent": false
+  },
+  {
+   "spec": "HEAD=W8A8",
+   "n": 3,
+   "acc_mean": 63.78030303030303,
+   "acc_std": 0.30339277563670114,
+   "delta_mean_pp": -0.00606060606060943,
+   "delta_std_pp": 0.012517205789288515,
+   "p_tost": 0.00010699827631889021,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W6A6",
+   "n": 3,
+   "acc_mean": 63.78560606060607,
+   "acc_std": 0.3333582979632252,
+   "delta_mean_pp": -0.0007575757575780292,
+   "delta_std_pp": 0.028416665656831337,
+   "p_tost": 0.0005390998258308416,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W4A4",
+   "n": 3,
+   "acc_mean": 63.17803030303031,
+   "acc_std": 0.3201589008025287,
+   "delta_mean_pp": -0.608333333333333,
+   "delta_std_pp": 0.15684013899860386,
+   "p_tost": 0.8229282948864858,
+   "equivalent": false
+  },
+  {
+   "spec": "HEAD=W8A32",
+   "n": 3,
+   "acc_mean": 63.7780303030303,
+   "acc_std": 0.2964087156643066,
+   "delta_mean_pp": -0.008333333333336116,
+   "delta_std_pp": 0.012517205789290869,
+   "p_tost": 0.00010798943965513893,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W6A32",
+   "n": 3,
+   "acc_mean": 63.79621212121213,
+   "acc_std": 0.2873390075053496,
+   "delta_mean_pp": 0.009848484848484773,
+   "delta_std_pp": 0.019060220644565244,
+   "p_tost": 0.0002518347694104097,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W4A32",
+   "n": 3,
+   "acc_mean": 63.76439393939394,
+   "acc_std": 0.26474427601071876,
+   "delta_mean_pp": -0.021969696969699932,
+   "delta_std_pp": 0.049602413742041045,
+   "p_tost": 0.0017848969481116712,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W3A32",
+   "n": 3,
+   "acc_mean": 63.716666666666676,
+   "acc_std": 0.26291371700528005,
+   "delta_mean_pp": -0.06969696969697144,
+   "delta_std_pp": 0.08138564117540464,
+   "p_tost": 0.0058574866035151765,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W32A8",
+   "n": 3,
+   "acc_mean": 63.76666666666667,
+   "acc_std": 0.31107595646192765,
+   "delta_mean_pp": -0.019696969696969546,
+   "delta_std_pp": 0.011662730544190966,
+   "p_tost": 9.824050115392962e-05,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W32A6",
+   "n": 3,
+   "acc_mean": 63.78030303030303,
+   "acc_std": 0.3344874990972651,
+   "delta_mean_pp": -0.006060606060605729,
+   "delta_std_pp": 0.03702058097839345,
+   "p_tost": 0.0009336200198907394,
+   "equivalent": true
+  },
+  {
+   "spec": "HEAD=W32A4",
+   "n": 3,
+   "acc_mean": 63.15984848484849,
+   "acc_std": 0.30007173155286654,
+   "delta_mean_pp": -0.6265151515151501,
+   "delta_std_pp": 0.12533701125838842,
+   "p_tost": 0.8887422998295713,
+   "equivalent": false
+  }
+ ]
+}

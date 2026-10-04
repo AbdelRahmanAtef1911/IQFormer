@@ -1,0 +1,47 @@
+{
+ "args": {
+  "repo": null,
+  "data": null,
+  "runs": [
+   "runs/iqformer_s1",
+   "runs/iqformer_s2",
+   "runs/iqformer_s3"
+  ],
+  "preset": "custom",
+  "specs": [
+   "all=W8A8",
+   "all=W4A4,LSTM=W32A32"
+  ],
+  "calib": 1024,
+  "calib_seed": 0,
+  "calib_method": "percentile",
+  "pct": 99.999,
+  "no_fold": true,
+  "no_bare": true,
+  "act_scheme": "symmetric",
+  "out": "results/step3c_calib0",
+  "device": "cuda"
+ },
+ "summary": [
+  {
+   "spec": "all=W8A8",
+   "n": 3,
+   "acc_mean": 63.8189393939394,
+   "acc_std": 0.2886482937167061,
+   "delta_mean_pp": 0.032575757575759035,
+   "delta_std_pp": 0.022765120001998266,
+   "p_tost": 0.0003948675710803058,
+   "equivalent": true
+  },
+  {
+   "spec": "all=W4A4,LSTM=W32A32",
+   "n": 3,
+   "acc_mean": 32.29924242424242,
+   "acc_std": 3.1158521755074218,
+   "delta_mean_pp": -31.487121212121213,
+   "delta_std_pp": 3.4049082927582206,
+   "p_tost": 0.997999747000037,
+   "equivalent": false
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+checkpoint: save_models/model_2016.10a_60_256_0.001_IQFormer/weight.pt
+device: cuda
+
+[PASS] V1 split sizes: train/val/test = (132000, 44000, 44000)
+[PASS] V1 split balance: 220 (class, SNR) cells, each 200 test frames
+[PASS] V1 test-set fingerprint: sha256[:16] = a4c98d6561ca0559 (same split => same fingerprint on any machine)
+[PASS] V2 GPU STFT = released scipy STFT (real part, I channel): relative max error 2.19e-07 on 4000 frames
+[PASS] V2 GPU STFT = cplxwide input (I+jQ, nfft 64, bins 16:48, log1p): max abs error 2.79e-09
+[PASS] V3 GPU default (TF32): same predictions as the released forward: same prediction on 100.00 % of 4000 frames; max |logit diff| 2.7e-03 = TF32 rounding level
+[PASS] V3 amcq model = released IQFormer forward (true FP32): max |logit diff| 9.06e-06, same prediction on 100.00 % of 4000 frames
+[PASS] V3 batch size 1: released forward crashes (RuntimeError); amcq gives the same logits as in a batch (diff 3.8e-06)
+[PASS] V3 parameter count: 355,049
+[PASS] V4 BatchNorm folding is exact: 10 BatchNorms folded; max |logit diff| 8.58e-06
+[PASS] V4 quantization wrappers at full precision change nothing: max |logit diff| 8.27e-05 (BN folded + unrolled LSTM, no rounding)
+[PASS] V4 unrolled LSTM = nn.LSTM (on real fusion outputs): max |diff| 1.87e-05
+[PASS] V5 W8: weights on the integer grid: at most 144 distinct values per output channel (limit 255); max rounding error 0.500 step (limit 0.5)
+[PASS] V5 A8: activations on the integer grid: 558 quantizer calls (the LSTM state is quantized at every time step), at most 256 distinct values (limit 256)
+[PASS] V5 W4: weights on the integer grid: at most 15 distinct values per output channel (limit 15); max rounding error 0.500 step (limit 0.5)
+[PASS] V5 A4: activations on the integer grid: 558 quantizer calls (the LSTM state is quantized at every time step), at most 16 distinct values (limit 16)
+[PASS] V5 control: 2 bits destroys the model: W2A2 accuracy 9.65 % vs FP32 62.42 % on the same 4000 random test frames (chance 9.09 %)
+[PASS] V6 evaluation is deterministic: same predictions on a second pass
