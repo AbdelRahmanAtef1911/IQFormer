@@ -123,6 +123,15 @@ LSTM), plus the literature rule alone (first and last layer at 8 bits). 3 calibr
 `results/model_cost_specs.csv` (share of MACs still at 4-bit activations for each spec), from
 `amcq/cost.py`, which needs no data. Output: `results/step5b_a8path_calib_summary.csv`.
 
+### 5c. Step 5b with clipped activation scales (after step 6) (about as long as step 4)
+
+```bash
+bash amcq/run.sh step5c
+```
+
+Same path as 5b, but activation scales are set at the 99.9th percentile instead of min-max (the fix
+step 6 found). Output: `results/step5c_a8path_p999_calib_summary.csv`.
+
 ### 6. Why 4 bits collapse (error analysis) (about 1 h)
 
 ```bash

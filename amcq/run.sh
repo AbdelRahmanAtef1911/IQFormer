@@ -93,6 +93,16 @@ step5b() {  # RQ3: which activations must stay at 8 bits? 4-bit weights everywhe
   echo ">>> paste results/step5b_a8path_calib_summary.csv and results/model_cost_specs.csv"
 }
 
+step5c() {  # Step 5b again with the fix Step 6 found: activation scales clipped at the 99.9th percentile
+  local CALIBS=${CALIBS:-"0 1 2"}
+  for c in $CALIBS; do
+    python amcq/ptq.py --runs $BASE --preset a8path --calib-method percentile --pct 99.9 --calib-seed $c \
+           --out results/step5c_a8path_p999_calib$c
+  done
+  python amcq/calib_summary.py 'results/step5c_a8path_p999_calib*'
+  echo ">>> paste results/step5c_a8path_p999_calib_summary.csv"
+}
+
 step6() {   # error analysis of the 4-bit collapse: ranges per layer / channel / fusion branch, clipping,
             # one scale per fusion branch, one scale per channel. Every model x 3 calibration sets.
   python amcq/act_stats.py --runs $BASE --calib-seeds ${CALIBS:-0 1 2} --out results/step6
