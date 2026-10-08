@@ -1,0 +1,160 @@
+nohup: ignoring input
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] mcldnn  params 406,199  device cuda
+ep   0  train 1.8894/0.2748  val 1.5099/0.3968  lr 1.00e-03  13.5s  *
+ep   1  train 1.4591/0.4190  val 1.3774/0.4515  lr 1.00e-03  11.9s  *
+ep   2  train 1.3199/0.4781  val 1.2496/0.5021  lr 1.00e-03  12.1s  *
+ep   3  train 1.2563/0.4984  val 1.2435/0.5085  lr 1.00e-03  12.3s  *
+ep   4  train 1.2352/0.5056  val 1.2336/0.5003  lr 1.00e-03  12.3s
+ep   5  train 1.2235/0.5104  val 1.2123/0.5148  lr 1.00e-03  12.5s  *
+ep   6  train 1.2131/0.5130  val 1.2089/0.5152  lr 1.00e-03  12.5s  *
+ep   7  train 1.2005/0.5187  val 1.2106/0.5187  lr 1.00e-03  12.5s  *
+ep   8  train 1.1927/0.5222  val 1.1993/0.5181  lr 1.00e-03  12.6s
+ep   9  train 1.1849/0.5278  val 1.1994/0.5249  lr 1.00e-03  12.6s  *
+ep  10  train 1.1798/0.5308  val 1.2024/0.5333  lr 1.00e-03  12.9s  *
+ep  11  train 1.1730/0.5377  val 1.1919/0.5377  lr 1.00e-03  12.3s  *
+ep  12  train 1.1645/0.5417  val 1.1750/0.5423  lr 1.00e-03  12.5s  *
+ep  13  train 1.1571/0.5474  val 1.1883/0.5394  lr 1.00e-03  12.6s
+ep  14  train 1.1502/0.5505  val 1.1761/0.5464  lr 1.00e-03  12.6s  *
+ep  15  train 1.1417/0.5549  val 1.1862/0.5280  lr 1.00e-03  12.6s
+ep  16  train 1.1332/0.5570  val 1.1808/0.5428  lr 5.00e-04  12.6s
+ep  17  train 1.1029/0.5694  val 1.1737/0.5448  lr 5.00e-04  12.5s
+ep  18  train 1.0945/0.5737  val 1.1750/0.5519  lr 5.00e-04  12.6s  *
+ep  19  train 1.0868/0.5764  val 1.1898/0.5489  lr 5.00e-04  12.6s
+ep  20  train 1.0808/0.5779  val 1.1898/0.5439  lr 5.00e-04  12.6s
+ep  21  train 1.0734/0.5802  val 1.2015/0.5513  lr 2.50e-04  12.6s
+ep  22  train 1.0529/0.5905  val 1.2237/0.5462  lr 2.50e-04  12.6s
+ep  23  train 1.0452/0.5932  val 1.2176/0.5516  lr 2.50e-04  12.5s
+ep  24  train 1.0402/0.5941  val 1.2322/0.5505  lr 2.50e-04  12.4s
+ep  25  train 1.0357/0.5947  val 1.2387/0.5444  lr 1.25e-04  12.6s
+ep  26  train 1.0218/0.6007  val 1.2586/0.5505  lr 1.25e-04  12.6s
+ep  27  train 1.0178/0.6026  val 1.2653/0.5500  lr 1.25e-04  12.6s
+ep  28  train 1.0137/0.6039  val 1.2843/0.5498  lr 1.25e-04  12.6s
+ep  29  train 1.0108/0.6061  val 1.3024/0.5494  lr 6.25e-05  12.5s
+ep  30  train 1.0031/0.6091  val 1.3156/0.5500  lr 6.25e-05  12.6s
+ep  31  train 1.0009/0.6100  val 1.3190/0.5490  lr 6.25e-05  12.6s
+ep  32  train 0.9982/0.6103  val 1.3281/0.5500  lr 6.25e-05  12.7s
+ep  33  train 0.9955/0.6119  val 1.3377/0.5487  lr 5.00e-05  12.5s
+ep  34  train 0.9927/0.6130  val 1.3593/0.5475  lr 5.00e-05  12.4s
+ep  35  train 0.9909/0.6135  val 1.3585/0.5471  lr 5.00e-05  12.5s
+ep  36  train 0.9891/0.6140  val 1.3771/0.5469  lr 5.00e-05  12.4s
+ep  37  train 0.9870/0.6151  val 1.3940/0.5478  lr 5.00e-05  12.5s
+ep  38  train 0.9855/0.6151  val 1.3849/0.5483  lr 5.00e-05  12.5s
+early stop at epoch 38
+[test] overall 55.30%  peak 81.73%  macro-F1 0.5524  (-20..0 dB 34.63%, 0..18 dB 80.00%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] mcldnn  params 406,199  device cuda
+ep   0  train 1.7604/0.3189  val 1.4422/0.4358  lr 1.00e-03  13.4s  *
+ep   1  train 1.3971/0.4573  val 1.2693/0.5014  lr 1.00e-03  12.6s  *
+ep   2  train 1.2650/0.5052  val 1.2204/0.5262  lr 1.00e-03  12.6s  *
+ep   3  train 1.2363/0.5182  val 1.2116/0.5326  lr 1.00e-03  12.5s  *
+ep   4  train 1.2097/0.5313  val 1.2028/0.5297  lr 1.00e-03  12.6s
+ep   5  train 1.1856/0.5417  val 1.2020/0.5373  lr 1.00e-03  114.5s  *
+ep   6  train 1.1676/0.5490  val 1.1741/0.5498  lr 1.00e-03  -89.3s  *
+ep   7  train 1.1562/0.5540  val 1.1705/0.5518  lr 1.00e-03  12.6s  *
+ep   8  train 1.1448/0.5595  val 1.1648/0.5570  lr 1.00e-03  12.6s  *
+ep   9  train 1.1341/0.5637  val 1.1595/0.5577  lr 1.00e-03  12.6s  *
+ep  10  train 1.1302/0.5643  val 1.1594/0.5594  lr 1.00e-03  12.8s  *
+ep  11  train 1.1222/0.5668  val 1.1568/0.5570  lr 1.00e-03  12.3s
+ep  12  train 1.1133/0.5690  val 1.1638/0.5559  lr 1.00e-03  12.6s
+ep  13  train 1.1075/0.5733  val 1.1658/0.5451  lr 1.00e-03  12.5s
+ep  14  train 1.0985/0.5757  val 1.1718/0.5588  lr 1.00e-03  12.6s
+ep  15  train 1.0944/0.5755  val 1.1673/0.5578  lr 5.00e-04  12.6s
+ep  16  train 1.0597/0.5887  val 1.1691/0.5638  lr 5.00e-04  12.6s  *
+ep  17  train 1.0503/0.5918  val 1.1810/0.5597  lr 5.00e-04  12.6s
+ep  18  train 1.0416/0.5955  val 1.1914/0.5608  lr 5.00e-04  12.5s
+ep  19  train 1.0348/0.5978  val 1.2100/0.5582  lr 2.50e-04  12.5s
+ep  20  train 1.0078/0.6070  val 1.2254/0.5513  lr 2.50e-04  12.6s
+ep  21  train 0.9989/0.6110  val 1.2568/0.5568  lr 2.50e-04  114.5s
+ep  22  train 0.9909/0.6127  val 1.2581/0.5560  lr 2.50e-04  -89.3s
+ep  23  train 0.9811/0.6163  val 1.2808/0.5581  lr 1.25e-04  12.6s
+ep  24  train 0.9635/0.6226  val 1.3123/0.5560  lr 1.25e-04  12.6s
+ep  25  train 0.9564/0.6242  val 1.3279/0.5557  lr 1.25e-04  12.6s
+ep  26  train 0.9500/0.6264  val 1.3517/0.5560  lr 1.25e-04  12.6s
+ep  27  train 0.9435/0.6286  val 1.3568/0.5543  lr 6.25e-05  12.6s
+ep  28  train 0.9331/0.6338  val 1.3902/0.5524  lr 6.25e-05  12.6s
+ep  29  train 0.9286/0.6342  val 1.4025/0.5526  lr 6.25e-05  12.5s
+ep  30  train 0.9247/0.6357  val 1.4315/0.5511  lr 6.25e-05  12.6s
+ep  31  train 0.9203/0.6377  val 1.4367/0.5503  lr 5.00e-05  12.5s
+ep  32  train 0.9156/0.6388  val 1.4463/0.5504  lr 5.00e-05  12.5s
+ep  33  train 0.9140/0.6389  val 1.4648/0.5501  lr 5.00e-05  12.6s
+ep  34  train 0.9101/0.6417  val 1.4834/0.5508  lr 5.00e-05  12.6s
+ep  35  train 0.9064/0.6418  val 1.4782/0.5506  lr 5.00e-05  12.6s
+ep  36  train 0.9041/0.6427  val 1.4860/0.5503  lr 5.00e-05  12.6s
+early stop at epoch 36
+[test] overall 56.33%  peak 83.50%  macro-F1 0.5639  (-20..0 dB 34.81%, 0..18 dB 82.22%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] mcldnn  params 406,199  device cuda
+ep   0  train 1.9171/0.2573  val 1.5310/0.3939  lr 1.00e-03  13.2s  *
+ep   1  train 1.4676/0.4178  val 1.3696/0.4680  lr 1.00e-03  12.5s  *
+ep   2  train 1.2999/0.4935  val 1.2461/0.5056  lr 1.00e-03  12.5s  *
+ep   3  train 1.2464/0.5182  val 1.2084/0.5382  lr 1.00e-03  12.5s  *
+ep   4  train 1.2120/0.5356  val 1.1890/0.5486  lr 1.00e-03  12.5s  *
+ep   5  train 1.1899/0.5423  val 1.1749/0.5513  lr 1.00e-03  114.4s  *
+ep   6  train 1.1771/0.5493  val 1.1678/0.5551  lr 1.00e-03  -89.4s  *
+ep   7  train 1.1608/0.5551  val 1.1505/0.5599  lr 1.00e-03  114.4s  *
+ep   8  train 1.1501/0.5578  val 1.1947/0.5465  lr 1.00e-03  -89.5s
+ep   9  train 1.1394/0.5632  val 1.1501/0.5640  lr 1.00e-03  12.6s  *
+ep  10  train 1.1297/0.5671  val 1.1394/0.5612  lr 1.00e-03  12.5s
+ep  11  train 1.1272/0.5666  val 1.1576/0.5606  lr 1.00e-03  12.6s
+ep  12  train 1.1168/0.5706  val 1.1526/0.5550  lr 1.00e-03  12.6s
+ep  13  train 1.1172/0.5715  val 1.1501/0.5537  lr 1.00e-03  12.7s
+ep  14  train 1.1082/0.5743  val 1.1505/0.5655  lr 5.00e-04  12.7s  *
+ep  15  train 1.0769/0.5848  val 1.1511/0.5698  lr 5.00e-04  12.5s  *
+ep  16  train 1.0692/0.5878  val 1.1582/0.5671  lr 5.00e-04  12.5s
+ep  17  train 1.0639/0.5907  val 1.1502/0.5695  lr 5.00e-04  12.5s
+ep  18  train 1.0574/0.5937  val 1.1599/0.5680  lr 2.50e-04  12.5s
+ep  19  train 1.0373/0.6021  val 1.1799/0.5672  lr 2.50e-04  12.5s
+ep  20  train 1.0305/0.6041  val 1.1640/0.5733  lr 2.50e-04  12.6s  *
+ep  21  train 1.0260/0.6058  val 1.1894/0.5699  lr 2.50e-04  12.5s
+ep  22  train 1.0205/0.6079  val 1.2024/0.5687  lr 1.25e-04  12.6s
+ep  23  train 1.0071/0.6132  val 1.2124/0.5695  lr 1.25e-04  12.5s
+ep  24  train 1.0026/0.6162  val 1.2332/0.5663  lr 1.25e-04  12.5s
+ep  25  train 0.9994/0.6161  val 1.2321/0.5706  lr 1.25e-04  12.5s
+ep  26  train 0.9957/0.6178  val 1.2379/0.5690  lr 6.25e-05  12.5s
+ep  27  train 0.9873/0.6211  val 1.2446/0.5707  lr 6.25e-05  12.6s
+ep  28  train 0.9838/0.6228  val 1.2558/0.5706  lr 6.25e-05  12.5s
+ep  29  train 0.9818/0.6233  val 1.2672/0.5697  lr 6.25e-05  12.5s
+ep  30  train 0.9798/0.6246  val 1.2658/0.5692  lr 5.00e-05  12.6s
+ep  31  train 0.9761/0.6263  val 1.2788/0.5688  lr 5.00e-05  12.5s
+ep  32  train 0.9734/0.6272  val 1.2904/0.5692  lr 5.00e-05  12.5s
+ep  33  train 0.9726/0.6281  val 1.2960/0.5685  lr 5.00e-05  12.5s
+ep  34  train 0.9704/0.6287  val 1.3191/0.5670  lr 5.00e-05  12.5s
+ep  35  train 0.9685/0.6295  val 1.3139/0.5673  lr 5.00e-05  12.6s
+ep  36  train 0.9657/0.6302  val 1.3282/0.5673  lr 5.00e-05  12.5s
+ep  37  train 0.9642/0.6316  val 1.3346/0.5678  lr 5.00e-05  12.4s
+ep  38  train 0.9621/0.6330  val 1.3380/0.5661  lr 5.00e-05  12.5s
+ep  39  train 0.9594/0.6339  val 1.3560/0.5660  lr 5.00e-05  12.4s
+ep  40  train 0.9580/0.6347  val 1.3576/0.5656  lr 5.00e-05  12.5s
+early stop at epoch 40
+[test] overall 57.04%  peak 85.14%  macro-F1 0.5883  (-20..0 dB 35.27%, 0..18 dB 83.24%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/mcldnn_norm_s1: FP32 55.30%
+  all=W8A8                                    55.31%  delta   +0.01 pp  flips   580 (worse 138, better 143, McNemar p=0.811)  0.425 MB
+  all=W6A6                                    54.89%  delta   -0.40 pp  flips  2486 (worse 703, better 525, McNemar p=4.21e-07)  0.324 MB
+  all=W4A8                                    54.82%  delta   -0.48 pp  flips  3319 (worse 936, better 727, McNemar p=3.27e-07)  0.223 MB
+  all=W4A4                                    43.14%  delta  -12.15 pp  flips 21172 (worse 7431, better 2083, McNemar p=0)  0.223 MB
+
+runs/mcldnn_norm_s2: FP32 56.33%
+  all=W8A8                                    56.33%  delta   +0.00 pp  flips   605 (worse 136, better 136, McNemar p=1)  0.425 MB
+  all=W6A6                                    56.06%  delta   -0.27 pp  flips  2460 (worse 605, better 486, McNemar p=0.000349)  0.324 MB
+  all=W4A8                                    55.35%  delta   -0.98 pp  flips  3493 (worse 1177, better 747, McNemar p=9.13e-23)  0.223 MB
+  all=W4A4                                    46.53%  delta   -9.80 pp  flips 17354 (worse 6601, better 2290, McNemar p=0)  0.223 MB
+
+runs/mcldnn_norm_s3: FP32 57.04%
+  all=W8A8                                    56.97%  delta   -0.06 pp  flips   476 (worse 133, better 106, McNemar p=0.0924)  0.425 MB
+  all=W6A6                                    56.72%  delta   -0.32 pp  flips  2126 (worse 588, better 447, McNemar p=1.31e-05)  0.324 MB
+  all=W4A8                                    56.52%  delta   -0.52 pp  flips  2474 (worse 806, better 578, McNemar p=9.64e-10)  0.223 MB
+  all=W4A4                                    43.43%  delta  -13.60 pp  flips 21789 (worse 8483, better 2498, McNemar p=0)  0.223 MB
+
+wrote results/step7b_ptq_mcldnn_norm/ptq_runs.csv and ptq_summary.csv
+>>> paste: grep "\[test\]" of the log, and cat results/step7b_ptq_*/ptq_summary.csv

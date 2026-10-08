@@ -104,7 +104,22 @@ class CNN1D(nn.Module):
         return self.classifier(self.features(x))
 
 
-def build_model(name, num_classes=11, stft='real', iq='iq', act='gelu'):
+class InputNorm(nn.Module):
+    """Per-frame power normalization in front of a model: every frame is scaled to unit RMS over its
+    I and Q samples (what a receiver's automatic gain control does). Used for comparison models that,
+    unlike IQFormer, have no input normalization layer of their own (--input-norm in train.py)."""
+    def __init__(self, net):
+        super().__init__()
+        self.net = net
+
+    def forward(self, x):
+        rms = x.pow(2).mean(dim=(1, 2), keepdim=True).sqrt().clamp_min(1e-8)
+        return self.net(x / rms)
+
+
+def build_model(name, num_classes=11, stft='real', iq='iq', act='gelu', input_norm=False):
+    if input_norm:
+        return InputNorm(build_model(name, num_classes, stft, iq, act))
     name = name.lower()
     if name == 'iqformer':
         return IQFormerNet(num_classes, stft=stft, iq=iq, act=act)

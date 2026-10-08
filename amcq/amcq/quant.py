@@ -411,7 +411,10 @@ def act_quantizers(model):
 
 
 @torch.no_grad()
-def calibrate(model, x_cal, method='minmax', pct=99.99, batch=256):
+def calibrate(model, x_cal, method='minmax', pct=99.99, batch=256, auto_bits=4):
+    """method: 'minmax', 'percentile' (clip at the pct-th percentile), or 'auto' = percentile for activation
+    quantizers of auto_bits bits or fewer and min-max for wider ones (Steps 5c/6: clipping rescues 4-bit
+    activations but costs ~0.35 pp at 8 bits, where every value already has enough levels)."""
     model.eval()
     aqs = act_quantizers(model)
     for a in aqs:
@@ -420,7 +423,8 @@ def calibrate(model, x_cal, method='minmax', pct=99.99, batch=256):
     for i in range(0, len(x_cal), batch):
         model(x_cal[i:i + batch])
     for a in aqs:
-        a.calibrate(method)
+        m = method if method != 'auto' else ('percentile' if a.bits <= auto_bits else 'minmax')
+        a.calibrate(m)
         a.mode = 'quant'
     return len(aqs)
 

@@ -1,0 +1,800 @@
+nohup: ignoring input
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  CONV=W8A8                                   63.42%  delta   -0.01 pp  flips   502 (worse 149, better 143, McNemar p=0.77)  0.658 MB
+  CONV=W6A6                                   62.97%  delta   -0.47 pp  flips  2855 (worse 977, better 772, McNemar p=1.04e-06)  0.593 MB
+  CONV=W4A4                                   46.82%  delta  -16.62 pp  flips 24069 (worse 10339, better 3027, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.42%  delta   -0.01 pp  flips   132 (worse 39, better 33, McNemar p=0.556)  0.658 MB
+  CONV=W6A32                                  63.43%  delta   -0.01 pp  flips   531 (worse 136, better 133, McNemar p=0.903)  0.593 MB
+  CONV=W4A32                                  63.07%  delta   -0.37 pp  flips  3014 (worse 856, better 694, McNemar p=4.26e-05)  0.529 MB
+  CONV=W3A32                                  58.69%  delta   -4.75 pp  flips  6354 (worse 3043, better 953, McNemar p=1.12e-251)  0.497 MB
+  CONV=W32A8                                  63.41%  delta   -0.03 pp  flips   473 (worse 147, better 134, McNemar p=0.474)  1.416 MB
+  CONV=W32A6                                  63.13%  delta   -0.31 pp  flips  2670 (worse 849, better 714, McNemar p=0.000696)  1.416 MB
+  CONV=W32A4                                  47.99%  delta  -15.45 pp  flips 23268 (worse 9647, better 2850, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.43%  delta   -0.01 pp  flips   147 (worse 45, better 42, McNemar p=0.83)  1.272 MB
+  ATTN=W6A6                                   63.43%  delta   -0.00 pp  flips   663 (worse 191, better 189, McNemar p=0.959)  1.260 MB
+  ATTN=W4A4                                   61.28%  delta   -2.16 pp  flips  6774 (worse 2159, better 1208, McNemar p=4.83e-61)  1.247 MB
+  ATTN=W8A32                                  63.42%  delta   -0.02 pp  flips    52 (worse 19, better 11, McNemar p=0.2)  1.272 MB
+  ATTN=W6A32                                  63.43%  delta   -0.01 pp  flips   176 (worse 54, better 51, McNemar p=0.845)  1.260 MB
+  ATTN=W4A32                                  63.38%  delta   -0.06 pp  flips   920 (worse 240, better 212, McNemar p=0.204)  1.247 MB
+  ATTN=W3A32                                  63.33%  delta   -0.11 pp  flips  1828 (worse 529, better 482, McNemar p=0.148)  1.241 MB
+  ATTN=W32A8                                  63.44%  delta   -0.00 pp  flips   132 (worse 39, better 38, McNemar p=1)  1.416 MB
+  ATTN=W32A6                                  63.49%  delta   +0.05 pp  flips   646 (worse 171, better 192, McNemar p=0.294)  1.416 MB
+  ATTN=W32A4                                  61.70%  delta   -1.74 pp  flips  6103 (worse 1935, better 1168, McNemar p=1.87e-43)  1.416 MB
+  LSTM=W8A8                                   63.40%  delta   -0.04 pp  flips   178 (worse 67, better 50, McNemar p=0.139)  1.298 MB
+  LSTM=W6A6                                   63.46%  delta   +0.02 pp  flips   634 (worse 190, better 198, McNemar p=0.722)  1.287 MB
+  LSTM=W4A4                                   62.64%  delta   -0.80 pp  flips  3013 (worse 1054, better 703, McNemar p=5.41e-17)  1.277 MB
+  LSTM=W8A32                                  63.42%  delta   -0.01 pp  flips    67 (worse 18, better 12, McNemar p=0.362)  1.298 MB
+  LSTM=W6A32                                  63.40%  delta   -0.04 pp  flips   263 (worse 91, better 72, McNemar p=0.158)  1.287 MB
+  LSTM=W4A32                                  63.38%  delta   -0.06 pp  flips  1106 (worse 319, better 292, McNemar p=0.293)  1.277 MB
+  LSTM=W3A32                                  62.72%  delta   -0.71 pp  flips  4421 (worse 1162, better 848, McNemar p=2.65e-12)  1.272 MB
+  LSTM=W32A8                                  63.45%  delta   +0.01 pp  flips   152 (worse 49, better 52, McNemar p=0.842)  1.416 MB
+  LSTM=W32A6                                  63.50%  delta   +0.06 pp  flips   561 (worse 159, better 184, McNemar p=0.195)  1.416 MB
+  LSTM=W32A4                                  62.71%  delta   -0.73 pp  flips  3113 (worse 1067, better 746, McNemar p=4.89e-14)  1.416 MB
+  HEAD=W8A8                                   63.45%  delta   +0.01 pp  flips   296 (worse 87, better 92, McNemar p=0.765)  1.414 MB
+  HEAD=W6A6                                   63.43%  delta   -0.01 pp  flips  1001 (worse 270, better 265, McNemar p=0.863)  1.414 MB
+  HEAD=W4A4                                   62.72%  delta   -0.72 pp  flips  4811 (worse 1168, better 851, McNemar p=1.83e-12)  1.414 MB
+  HEAD=W8A32                                  63.44%  delta   +0.00 pp  flips    48 (worse 14, better 16, McNemar p=0.856)  1.414 MB
+  HEAD=W6A32                                  63.47%  delta   +0.03 pp  flips   342 (worse 127, better 141, McNemar p=0.427)  1.414 MB
+  HEAD=W4A32                                  63.47%  delta   +0.03 pp  flips   795 (worse 259, better 273, McNemar p=0.573)  1.414 MB
+  HEAD=W3A32                                  63.41%  delta   -0.02 pp  flips  1813 (worse 552, better 541, McNemar p=0.762)  1.414 MB
+  HEAD=W32A8                                  63.43%  delta   -0.00 pp  flips   303 (worse 94, better 92, McNemar p=0.942)  1.416 MB
+  HEAD=W32A6                                  63.40%  delta   -0.04 pp  flips  1010 (worse 283, better 265, McNemar p=0.468)  1.416 MB
+  HEAD=W32A4                                  62.83%  delta   -0.61 pp  flips  4804 (worse 1197, better 928, McNemar p=5.84e-09)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  CONV=W8A8                                   63.90%  delta   -0.00 pp  flips   328 (worse 85, better 83, McNemar p=0.939)  0.658 MB
+  CONV=W6A6                                   63.81%  delta   -0.09 pp  flips  1295 (worse 346, better 306, McNemar p=0.127)  0.593 MB
+  CONV=W4A4                                   39.90%  delta  -24.00 pp  flips 22153 (worse 12173, better 1613, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.88%  delta   -0.03 pp  flips   114 (worse 34, better 22, McNemar p=0.141)  0.658 MB
+  CONV=W6A32                                  63.88%  delta   -0.03 pp  flips   370 (worse 95, better 82, McNemar p=0.367)  0.593 MB
+  CONV=W4A32                                  63.75%  delta   -0.16 pp  flips  1681 (worse 428, better 359, McNemar p=0.0153)  0.529 MB
+  CONV=W3A32                                  61.89%  delta   -2.02 pp  flips  5867 (worse 1981, better 1093, McNemar p=2.09e-58)  0.497 MB
+  CONV=W32A8                                  63.89%  delta   -0.01 pp  flips   296 (worse 78, better 72, McNemar p=0.683)  1.416 MB
+  CONV=W32A6                                  63.78%  delta   -0.13 pp  flips  1330 (worse 357, better 302, McNemar p=0.0353)  1.416 MB
+  CONV=W32A4                                  35.78%  delta  -28.12 pp  flips 26872 (worse 14275, better 1901, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.90%  delta   -0.00 pp  flips    72 (worse 19, better 17, McNemar p=0.868)  1.272 MB
+  ATTN=W6A6                                   63.86%  delta   -0.05 pp  flips   397 (worse 97, better 77, McNemar p=0.15)  1.260 MB
+  ATTN=W4A4                                   63.02%  delta   -0.88 pp  flips  3663 (worse 1086, better 699, McNemar p=4.64e-20)  1.247 MB
+  ATTN=W8A32                                  63.90%  delta   -0.00 pp  flips    28 (worse 8, better 6, McNemar p=0.791)  1.272 MB
+  ATTN=W6A32                                  63.89%  delta   -0.01 pp  flips   141 (worse 36, better 30, McNemar p=0.539)  1.260 MB
+  ATTN=W4A32                                  63.96%  delta   +0.06 pp  flips   614 (worse 129, better 154, McNemar p=0.154)  1.247 MB
+  ATTN=W3A32                                  63.56%  delta   -0.35 pp  flips  2011 (worse 532, better 380, McNemar p=5.41e-07)  1.241 MB
+  ATTN=W32A8                                  63.91%  delta   +0.00 pp  flips    74 (worse 16, better 17, McNemar p=1)  1.416 MB
+  ATTN=W32A6                                  63.83%  delta   -0.07 pp  flips   343 (worse 97, better 65, McNemar p=0.0146)  1.416 MB
+  ATTN=W32A4                                  63.01%  delta   -0.90 pp  flips  3479 (worse 1074, better 679, McNemar p=3.38e-21)  1.416 MB
+  LSTM=W8A8                                   63.91%  delta   +0.01 pp  flips   113 (worse 26, better 30, McNemar p=0.689)  1.298 MB
+  LSTM=W6A6                                   63.87%  delta   -0.03 pp  flips   414 (worse 112, better 97, McNemar p=0.333)  1.287 MB
+  LSTM=W4A4                                   63.23%  delta   -0.67 pp  flips  2571 (worse 825, better 530, McNemar p=1.07e-15)  1.277 MB
+  LSTM=W8A32                                  63.90%  delta   -0.00 pp  flips    57 (worse 11, better 9, McNemar p=0.824)  1.298 MB
+  LSTM=W6A32                                  63.89%  delta   -0.02 pp  flips   203 (worse 55, better 48, McNemar p=0.555)  1.287 MB
+  LSTM=W4A32                                  63.72%  delta   -0.19 pp  flips  1428 (worse 394, better 312, McNemar p=0.00228)  1.277 MB
+  LSTM=W3A32                                  63.74%  delta   -0.17 pp  flips  1747 (worse 443, better 369, McNemar p=0.0104)  1.272 MB
+  LSTM=W32A8                                  63.89%  delta   -0.01 pp  flips    84 (worse 25, better 19, McNemar p=0.451)  1.416 MB
+  LSTM=W32A6                                  63.87%  delta   -0.04 pp  flips   338 (worse 94, better 77, McNemar p=0.221)  1.416 MB
+  LSTM=W32A4                                  63.52%  delta   -0.39 pp  flips  2216 (worse 671, better 500, McNemar p=6.48e-07)  1.416 MB
+  HEAD=W8A8                                   63.85%  delta   -0.06 pp  flips   184 (worse 53, better 28, McNemar p=0.00728)  1.414 MB
+  HEAD=W6A6                                   63.89%  delta   -0.01 pp  flips   737 (worse 164, better 159, McNemar p=0.824)  1.414 MB
+  HEAD=W4A4                                   63.45%  delta   -0.45 pp  flips  3353 (worse 799, better 601, McNemar p=1.34e-07)  1.414 MB
+  HEAD=W8A32                                  63.88%  delta   -0.02 pp  flips    28 (worse 11, better 2, McNemar p=0.0225)  1.414 MB
+  HEAD=W6A32                                  63.90%  delta   +0.00 pp  flips   170 (worse 45, better 45, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.84%  delta   -0.07 pp  flips   408 (worse 118, better 89, McNemar p=0.0514)  1.414 MB
+  HEAD=W3A32                                  63.88%  delta   -0.02 pp  flips  1946 (worse 526, better 517, McNemar p=0.804)  1.414 MB
+  HEAD=W32A8                                  63.85%  delta   -0.05 pp  flips   186 (worse 51, better 29, McNemar p=0.0183)  1.416 MB
+  HEAD=W32A6                                  63.87%  delta   -0.04 pp  flips   712 (worse 165, better 148, McNemar p=0.366)  1.416 MB
+  HEAD=W32A4                                  63.52%  delta   -0.39 pp  flips  3366 (worse 787, better 616, McNemar p=5.52e-06)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  CONV=W8A8                                   64.02%  delta   +0.00 pp  flips   250 (worse 64, better 64, McNemar p=1)  0.658 MB
+  CONV=W6A6                                   63.83%  delta   -0.18 pp  flips  1828 (worse 445, better 365, McNemar p=0.00547)  0.593 MB
+  CONV=W4A4                                   36.41%  delta  -27.61 pp  flips 27263 (worse 13576, better 1428, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  64.02%  delta   +0.00 pp  flips    71 (worse 13, better 15, McNemar p=0.851)  0.658 MB
+  CONV=W6A32                                  64.04%  delta   +0.02 pp  flips   364 (worse 75, better 84, McNemar p=0.526)  0.593 MB
+  CONV=W4A32                                  63.65%  delta   -0.37 pp  flips  2262 (worse 575, better 414, McNemar p=3.42e-07)  0.529 MB
+  CONV=W3A32                                  63.21%  delta   -0.81 pp  flips  2841 (worse 940, better 584, McNemar p=6.54e-20)  0.497 MB
+  CONV=W32A8                                  64.01%  delta   -0.01 pp  flips   263 (worse 63, better 59, McNemar p=0.786)  1.416 MB
+  CONV=W32A6                                  63.82%  delta   -0.20 pp  flips  1963 (worse 475, better 388, McNemar p=0.00339)  1.416 MB
+  CONV=W32A4                                  39.00%  delta  -25.02 pp  flips 25818 (worse 12435, better 1427, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   64.03%  delta   +0.01 pp  flips    80 (worse 19, better 25, McNemar p=0.451)  1.272 MB
+  ATTN=W6A6                                   64.00%  delta   -0.01 pp  flips   449 (worse 122, better 116, McNemar p=0.746)  1.260 MB
+  ATTN=W4A4                                   61.61%  delta   -2.40 pp  flips  7491 (worse 2835, better 1777, McNemar p=4.31e-55)  1.247 MB
+  ATTN=W8A32                                  64.02%  delta   +0.00 pp  flips    23 (worse 6, better 6, McNemar p=1)  1.272 MB
+  ATTN=W6A32                                  64.00%  delta   -0.01 pp  flips   138 (worse 39, better 34, McNemar p=0.64)  1.260 MB
+  ATTN=W4A32                                  63.91%  delta   -0.10 pp  flips   782 (worse 219, better 173, McNemar p=0.0229)  1.247 MB
+  ATTN=W3A32                                  63.88%  delta   -0.13 pp  flips  1216 (worse 358, better 300, McNemar p=0.0262)  1.241 MB
+  ATTN=W32A8                                  64.02%  delta   +0.00 pp  flips    71 (worse 17, better 17, McNemar p=1)  1.416 MB
+  ATTN=W32A6                                  63.98%  delta   -0.04 pp  flips   427 (worse 127, better 111, McNemar p=0.331)  1.416 MB
+  ATTN=W32A4                                  62.03%  delta   -1.98 pp  flips  6767 (worse 2566, better 1694, McNemar p=6.75e-41)  1.416 MB
+  LSTM=W8A8                                   64.04%  delta   +0.02 pp  flips   132 (worse 23, better 34, McNemar p=0.185)  1.298 MB
+  LSTM=W6A6                                   63.96%  delta   -0.05 pp  flips   428 (worse 118, better 94, McNemar p=0.114)  1.287 MB
+  LSTM=W4A4                                   63.67%  delta   -0.35 pp  flips  2401 (worse 649, better 496, McNemar p=6.85e-06)  1.277 MB
+  LSTM=W8A32                                  64.03%  delta   +0.02 pp  flips   102 (worse 16, better 24, McNemar p=0.268)  1.298 MB
+  LSTM=W6A32                                  64.03%  delta   +0.02 pp  flips   271 (worse 56, better 64, McNemar p=0.523)  1.287 MB
+  LSTM=W4A32                                  64.00%  delta   -0.02 pp  flips   985 (worse 223, better 215, McNemar p=0.738)  1.277 MB
+  LSTM=W3A32                                  63.51%  delta   -0.51 pp  flips  2386 (worse 680, better 457, McNemar p=3.99e-11)  1.272 MB
+  LSTM=W32A8                                  64.03%  delta   +0.01 pp  flips    77 (worse 18, better 24, McNemar p=0.441)  1.416 MB
+  LSTM=W32A6                                  64.03%  delta   +0.02 pp  flips   335 (worse 81, better 88, McNemar p=0.645)  1.416 MB
+  LSTM=W32A4                                  63.77%  delta   -0.25 pp  flips  1864 (worse 520, better 410, McNemar p=0.000346)  1.416 MB
+  HEAD=W8A8                                   64.00%  delta   -0.02 pp  flips   216 (worse 49, better 42, McNemar p=0.53)  1.414 MB
+  HEAD=W6A6                                   64.01%  delta   -0.00 pp  flips   833 (worse 180, better 178, McNemar p=0.958)  1.414 MB
+  HEAD=W4A4                                   63.30%  delta   -0.71 pp  flips  4815 (worse 1079, better 766, McNemar p=3.32e-13)  1.414 MB
+  HEAD=W8A32                                  64.01%  delta   -0.01 pp  flips    31 (worse 11, better 7, McNemar p=0.481)  1.414 MB
+  HEAD=W6A32                                  64.01%  delta   -0.00 pp  flips   115 (worse 26, better 25, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.98%  delta   -0.03 pp  flips   599 (worse 172, better 158, McNemar p=0.474)  1.414 MB
+  HEAD=W3A32                                  63.85%  delta   -0.16 pp  flips  2526 (worse 913, better 841, McNemar p=0.09)  1.414 MB
+  HEAD=W32A8                                  64.00%  delta   -0.01 pp  flips   202 (worse 46, better 40, McNemar p=0.59)  1.416 MB
+  HEAD=W32A6                                  64.01%  delta   -0.00 pp  flips   843 (worse 187, better 185, McNemar p=0.959)  1.416 MB
+  HEAD=W32A4                                  63.25%  delta   -0.76 pp  flips  4848 (worse 1084, better 749, McNemar p=5.17e-15)  1.416 MB
+
+wrote results/step5_blocks_calib0/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  STEM=W4A4                                   62.02%  delta   -1.42 pp  flips  3982 (worse 1452, better 826, McNemar p=1.16e-39)  1.415 MB
+  STEM=W32A4                                  62.38%  delta   -1.05 pp  flips  3276 (worse 1168, better 704, McNemar p=5.53e-27)  1.416 MB
+  FUSION=W4A4                                 56.15%  delta   -7.29 pp  flips 11278 (worse 4784, better 1576, McNemar p=0)  1.411 MB
+  FUSION=W32A4                                56.23%  delta   -7.21 pp  flips 10704 (worse 4681, better 1507, McNemar p=0)  1.416 MB
+  CONVENC=W4A4                                61.72%  delta   -1.72 pp  flips  7011 (worse 2380, better 1624, McNemar p=5.28e-33)  0.961 MB
+  CONVENC=W32A4                               61.56%  delta   -1.88 pp  flips  7221 (worse 2482, better 1655, McNemar p=5.46e-38)  1.416 MB
+  LOCAL=W4A4                                  63.01%  delta   -0.43 pp  flips  3482 (worse 1086, better 897, McNemar p=2.39e-05)  1.331 MB
+  LOCAL=W32A4                                 63.00%  delta   -0.44 pp  flips  3428 (worse 1031, better 839, McNemar p=9.85e-06)  1.416 MB
+  FFN=W4A4                                    59.85%  delta   -3.59 pp  flips 10295 (worse 3164, better 1585, McNemar p=3.08e-118)  1.076 MB
+  FFN=W32A4                                   59.94%  delta   -3.50 pp  flips 10087 (worse 3046, better 1508, McNemar p=4.54e-117)  1.416 MB
+  ATTN=W4A4                                   61.28%  delta   -2.16 pp  flips  6774 (worse 2159, better 1208, McNemar p=4.83e-61)  1.247 MB
+  ATTN=W32A4                                  61.70%  delta   -1.74 pp  flips  6103 (worse 1935, better 1168, McNemar p=1.87e-43)  1.416 MB
+  LSTM=W4A4                                   62.64%  delta   -0.80 pp  flips  3013 (worse 1054, better 703, McNemar p=5.41e-17)  1.277 MB
+  LSTM=W32A4                                  62.71%  delta   -0.73 pp  flips  3113 (worse 1067, better 746, McNemar p=4.89e-14)  1.416 MB
+  HEAD=W4A4                                   62.72%  delta   -0.72 pp  flips  4811 (worse 1168, better 851, McNemar p=1.83e-12)  1.414 MB
+  HEAD=W32A4                                  62.83%  delta   -0.61 pp  flips  4804 (worse 1197, better 928, McNemar p=5.84e-09)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  STEM=W4A4                                   62.97%  delta   -0.94 pp  flips  2758 (worse 994, better 582, McNemar p=2.17e-25)  1.415 MB
+  STEM=W32A4                                  63.06%  delta   -0.84 pp  flips  2405 (worse 881, better 510, McNemar p=1.86e-23)  1.416 MB
+  FUSION=W4A4                                 60.15%  delta   -3.75 pp  flips  6869 (worse 2690, better 1040, McNemar p=3.63e-166)  1.411 MB
+  FUSION=W32A4                                60.80%  delta   -3.10 pp  flips  6089 (worse 2360, better 994, McNemar p=2.12e-126)  1.416 MB
+  CONVENC=W4A4                                60.85%  delta   -3.05 pp  flips  4419 (worse 2100, better 757, McNemar p=1.2e-144)  0.961 MB
+  CONVENC=W32A4                               60.79%  delta   -3.11 pp  flips  5098 (worse 2129, better 760, McNemar p=1.09e-148)  1.416 MB
+  LOCAL=W4A4                                  63.70%  delta   -0.21 pp  flips  1961 (worse 526, better 435, McNemar p=0.00367)  1.331 MB
+  LOCAL=W32A4                                 63.70%  delta   -0.20 pp  flips  1754 (worse 478, better 389, McNemar p=0.00278)  1.416 MB
+  FFN=W4A4                                    61.61%  delta   -2.29 pp  flips  8831 (worse 2397, better 1389, McNemar p=6.6e-61)  1.076 MB
+  FFN=W32A4                                   61.50%  delta   -2.40 pp  flips  9161 (worse 2490, better 1432, McNemar p=1.11e-64)  1.416 MB
+  ATTN=W4A4                                   63.02%  delta   -0.88 pp  flips  3663 (worse 1086, better 699, McNemar p=4.64e-20)  1.247 MB
+  ATTN=W32A4                                  63.01%  delta   -0.90 pp  flips  3479 (worse 1074, better 679, McNemar p=3.38e-21)  1.416 MB
+  LSTM=W4A4                                   63.23%  delta   -0.67 pp  flips  2571 (worse 825, better 530, McNemar p=1.07e-15)  1.277 MB
+  LSTM=W32A4                                  63.52%  delta   -0.39 pp  flips  2216 (worse 671, better 500, McNemar p=6.48e-07)  1.416 MB
+  HEAD=W4A4                                   63.45%  delta   -0.45 pp  flips  3353 (worse 799, better 601, McNemar p=1.34e-07)  1.414 MB
+  HEAD=W32A4                                  63.52%  delta   -0.39 pp  flips  3366 (worse 787, better 616, McNemar p=5.52e-06)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  STEM=W4A4                                   62.88%  delta   -1.14 pp  flips  2806 (worse 999, better 498, McNemar p=6.58e-39)  1.415 MB
+  STEM=W32A4                                  63.21%  delta   -0.81 pp  flips  2339 (worse 818, better 462, McNemar p=1.73e-23)  1.416 MB
+  FUSION=W4A4                                 55.99%  delta   -8.02 pp  flips 14099 (worse 5103, better 1573, McNemar p=0)  1.411 MB
+  FUSION=W32A4                                56.38%  delta   -7.64 pp  flips 14095 (worse 4915, better 1553, McNemar p=0)  1.416 MB
+  CONVENC=W4A4                                61.25%  delta   -2.77 pp  flips  4852 (worse 2081, better 863, McNemar p=9.13e-115)  0.961 MB
+  CONVENC=W32A4                               61.66%  delta   -2.35 pp  flips  4553 (worse 1871, better 835, McNemar p=2.58e-90)  1.416 MB
+  LOCAL=W4A4                                  63.87%  delta   -0.14 pp  flips  1379 (worse 378, better 315, McNemar p=0.0184)  1.331 MB
+  LOCAL=W32A4                                 63.88%  delta   -0.14 pp  flips  1402 (worse 393, better 333, McNemar p=0.0285)  1.416 MB
+  FFN=W4A4                                    62.88%  delta   -1.14 pp  flips  4417 (worse 1327, better 825, McNemar p=2.01e-27)  1.076 MB
+  FFN=W32A4                                   62.87%  delta   -1.15 pp  flips  4379 (worse 1322, better 817, McNemar p=6.76e-28)  1.416 MB
+  ATTN=W4A4                                   61.61%  delta   -2.40 pp  flips  7491 (worse 2835, better 1777, McNemar p=4.31e-55)  1.247 MB
+  ATTN=W32A4                                  62.03%  delta   -1.98 pp  flips  6767 (worse 2566, better 1694, McNemar p=6.75e-41)  1.416 MB
+  LSTM=W4A4                                   63.67%  delta   -0.35 pp  flips  2401 (worse 649, better 496, McNemar p=6.85e-06)  1.277 MB
+  LSTM=W32A4                                  63.77%  delta   -0.25 pp  flips  1864 (worse 520, better 410, McNemar p=0.000346)  1.416 MB
+  HEAD=W4A4                                   63.30%  delta   -0.71 pp  flips  4815 (worse 1079, better 766, McNemar p=3.32e-13)  1.414 MB
+  HEAD=W32A4                                  63.25%  delta   -0.76 pp  flips  4848 (worse 1084, better 749, McNemar p=5.17e-15)  1.416 MB
+
+wrote results/step5_fine_calib0/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  CONV=W8A8                                   63.42%  delta   -0.02 pp  flips   475 (worse 154, better 144, McNemar p=0.602)  0.658 MB
+  CONV=W6A6                                   63.12%  delta   -0.32 pp  flips  2656 (worse 902, better 760, McNemar p=0.000539)  0.593 MB
+  CONV=W4A4                                   47.06%  delta  -16.38 pp  flips 24105 (worse 10385, better 3178, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.42%  delta   -0.01 pp  flips   132 (worse 39, better 33, McNemar p=0.556)  0.658 MB
+  CONV=W6A32                                  63.43%  delta   -0.01 pp  flips   531 (worse 136, better 133, McNemar p=0.903)  0.593 MB
+  CONV=W4A32                                  63.07%  delta   -0.37 pp  flips  3014 (worse 856, better 694, McNemar p=4.26e-05)  0.529 MB
+  CONV=W3A32                                  58.69%  delta   -4.75 pp  flips  6354 (worse 3043, better 953, McNemar p=1.12e-251)  0.497 MB
+  CONV=W32A8                                  63.43%  delta   -0.01 pp  flips   440 (worse 146, better 142, McNemar p=0.86)  1.416 MB
+  CONV=W32A6                                  63.23%  delta   -0.20 pp  flips  2633 (worse 881, better 791, McNemar p=0.0295)  1.416 MB
+  CONV=W32A4                                  48.56%  delta  -14.88 pp  flips 23328 (worse 9678, better 3131, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.40%  delta   -0.04 pp  flips   160 (worse 54, better 38, McNemar p=0.117)  1.272 MB
+  ATTN=W6A6                                   63.42%  delta   -0.02 pp  flips   670 (worse 182, better 175, McNemar p=0.751)  1.260 MB
+  ATTN=W4A4                                   60.75%  delta   -2.69 pp  flips  7781 (worse 2537, better 1354, McNemar p=2.55e-81)  1.247 MB
+  ATTN=W8A32                                  63.42%  delta   -0.02 pp  flips    52 (worse 19, better 11, McNemar p=0.2)  1.272 MB
+  ATTN=W6A32                                  63.43%  delta   -0.01 pp  flips   176 (worse 54, better 51, McNemar p=0.845)  1.260 MB
+  ATTN=W4A32                                  63.38%  delta   -0.06 pp  flips   920 (worse 240, better 212, McNemar p=0.204)  1.247 MB
+  ATTN=W3A32                                  63.33%  delta   -0.11 pp  flips  1828 (worse 529, better 482, McNemar p=0.148)  1.241 MB
+  ATTN=W32A8                                  63.42%  delta   -0.02 pp  flips   147 (worse 48, better 40, McNemar p=0.456)  1.416 MB
+  ATTN=W32A6                                  63.43%  delta   -0.00 pp  flips   667 (worse 184, better 182, McNemar p=0.958)  1.416 MB
+  ATTN=W32A4                                  61.14%  delta   -2.30 pp  flips  7171 (worse 2323, better 1310, McNemar p=4.41e-64)  1.416 MB
+  LSTM=W8A8                                   63.44%  delta   +0.00 pp  flips   181 (worse 56, better 58, McNemar p=0.925)  1.298 MB
+  LSTM=W6A6                                   63.44%  delta   -0.00 pp  flips   686 (worse 205, better 204, McNemar p=1)  1.287 MB
+  LSTM=W4A4                                   62.35%  delta   -1.09 pp  flips  3708 (worse 1304, better 826, McNemar p=3.09e-25)  1.277 MB
+  LSTM=W8A32                                  63.42%  delta   -0.01 pp  flips    67 (worse 18, better 12, McNemar p=0.362)  1.298 MB
+  LSTM=W6A32                                  63.40%  delta   -0.04 pp  flips   263 (worse 91, better 72, McNemar p=0.158)  1.287 MB
+  LSTM=W4A32                                  63.38%  delta   -0.06 pp  flips  1106 (worse 319, better 292, McNemar p=0.293)  1.277 MB
+  LSTM=W3A32                                  62.72%  delta   -0.71 pp  flips  4421 (worse 1162, better 848, McNemar p=2.65e-12)  1.272 MB
+  LSTM=W32A8                                  63.43%  delta   -0.01 pp  flips   171 (worse 54, better 49, McNemar p=0.694)  1.416 MB
+  LSTM=W32A6                                  63.45%  delta   +0.01 pp  flips   632 (worse 186, better 192, McNemar p=0.797)  1.416 MB
+  LSTM=W32A4                                  62.18%  delta   -1.25 pp  flips  3937 (worse 1407, better 855, McNemar p=2.48e-31)  1.416 MB
+  HEAD=W8A8                                   63.47%  delta   +0.03 pp  flips   295 (worse 76, better 88, McNemar p=0.39)  1.414 MB
+  HEAD=W6A6                                   63.47%  delta   +0.03 pp  flips  1090 (worse 286, better 298, McNemar p=0.649)  1.414 MB
+  HEAD=W4A4                                   62.50%  delta   -0.94 pp  flips  5458 (worse 1343, better 929, McNemar p=3.68e-18)  1.414 MB
+  HEAD=W8A32                                  63.44%  delta   +0.00 pp  flips    48 (worse 14, better 16, McNemar p=0.856)  1.414 MB
+  HEAD=W6A32                                  63.47%  delta   +0.03 pp  flips   342 (worse 127, better 141, McNemar p=0.427)  1.414 MB
+  HEAD=W4A32                                  63.47%  delta   +0.03 pp  flips   795 (worse 259, better 273, McNemar p=0.573)  1.414 MB
+  HEAD=W3A32                                  63.41%  delta   -0.02 pp  flips  1813 (worse 552, better 541, McNemar p=0.762)  1.414 MB
+  HEAD=W32A8                                  63.47%  delta   +0.03 pp  flips   293 (worse 72, better 87, McNemar p=0.267)  1.416 MB
+  HEAD=W32A6                                  63.45%  delta   +0.01 pp  flips  1140 (worse 309, better 313, McNemar p=0.904)  1.416 MB
+  HEAD=W32A4                                  62.49%  delta   -0.95 pp  flips  5411 (worse 1355, better 936, McNemar p=2e-18)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  CONV=W8A8                                   63.92%  delta   +0.02 pp  flips   354 (worse 81, better 89, McNemar p=0.591)  0.658 MB
+  CONV=W6A6                                   63.74%  delta   -0.17 pp  flips  1434 (worse 420, better 346, McNemar p=0.00831)  0.593 MB
+  CONV=W4A4                                   41.12%  delta  -22.78 pp  flips 20970 (worse 11556, better 1531, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.88%  delta   -0.03 pp  flips   114 (worse 34, better 22, McNemar p=0.141)  0.658 MB
+  CONV=W6A32                                  63.88%  delta   -0.03 pp  flips   370 (worse 95, better 82, McNemar p=0.367)  0.593 MB
+  CONV=W4A32                                  63.75%  delta   -0.16 pp  flips  1681 (worse 428, better 359, McNemar p=0.0153)  0.529 MB
+  CONV=W3A32                                  61.89%  delta   -2.02 pp  flips  5867 (worse 1981, better 1093, McNemar p=2.09e-58)  0.497 MB
+  CONV=W32A8                                  63.93%  delta   +0.02 pp  flips   346 (worse 77, better 87, McNemar p=0.482)  1.416 MB
+  CONV=W32A6                                  63.70%  delta   -0.20 pp  flips  1353 (worse 395, better 307, McNemar p=0.00101)  1.416 MB
+  CONV=W32A4                                  35.48%  delta  -28.43 pp  flips 26340 (worse 14330, better 1823, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.88%  delta   -0.02 pp  flips    86 (worse 26, better 16, McNemar p=0.164)  1.272 MB
+  ATTN=W6A6                                   63.89%  delta   -0.02 pp  flips   429 (worse 102, better 94, McNemar p=0.617)  1.260 MB
+  ATTN=W4A4                                   62.83%  delta   -1.08 pp  flips  3836 (worse 1208, better 734, McNemar p=3.96e-27)  1.247 MB
+  ATTN=W8A32                                  63.90%  delta   -0.00 pp  flips    28 (worse 8, better 6, McNemar p=0.791)  1.272 MB
+  ATTN=W6A32                                  63.89%  delta   -0.01 pp  flips   141 (worse 36, better 30, McNemar p=0.539)  1.260 MB
+  ATTN=W4A32                                  63.96%  delta   +0.06 pp  flips   614 (worse 129, better 154, McNemar p=0.154)  1.247 MB
+  ATTN=W3A32                                  63.56%  delta   -0.35 pp  flips  2011 (worse 532, better 380, McNemar p=5.41e-07)  1.241 MB
+  ATTN=W32A8                                  63.90%  delta   -0.00 pp  flips    82 (worse 17, better 15, McNemar p=0.86)  1.416 MB
+  ATTN=W32A6                                  63.85%  delta   -0.05 pp  flips   382 (worse 101, better 79, McNemar p=0.117)  1.416 MB
+  ATTN=W32A4                                  62.81%  delta   -1.09 pp  flips  3701 (worse 1199, better 718, McNemar p=3.02e-28)  1.416 MB
+  LSTM=W8A8                                   63.91%  delta   +0.00 pp  flips   126 (worse 28, better 29, McNemar p=1)  1.298 MB
+  LSTM=W6A6                                   63.86%  delta   -0.04 pp  flips   480 (worse 135, better 117, McNemar p=0.284)  1.287 MB
+  LSTM=W4A4                                   62.20%  delta   -1.70 pp  flips  4379 (worse 1471, better 721, McNemar p=9.69e-59)  1.277 MB
+  LSTM=W8A32                                  63.90%  delta   -0.00 pp  flips    57 (worse 11, better 9, McNemar p=0.824)  1.298 MB
+  LSTM=W6A32                                  63.89%  delta   -0.02 pp  flips   203 (worse 55, better 48, McNemar p=0.555)  1.287 MB
+  LSTM=W4A32                                  63.72%  delta   -0.19 pp  flips  1428 (worse 394, better 312, McNemar p=0.00228)  1.277 MB
+  LSTM=W3A32                                  63.74%  delta   -0.17 pp  flips  1747 (worse 443, better 369, McNemar p=0.0104)  1.272 MB
+  LSTM=W32A8                                  63.88%  delta   -0.03 pp  flips   102 (worse 32, better 21, McNemar p=0.169)  1.416 MB
+  LSTM=W32A6                                  63.84%  delta   -0.07 pp  flips   429 (worse 133, better 104, McNemar p=0.0687)  1.416 MB
+  LSTM=W32A4                                  62.45%  delta   -1.45 pp  flips  4390 (worse 1400, better 760, McNemar p=1.24e-43)  1.416 MB
+  HEAD=W8A8                                   63.86%  delta   -0.05 pp  flips   176 (worse 53, better 33, McNemar p=0.0399)  1.414 MB
+  HEAD=W6A6                                   63.90%  delta   -0.00 pp  flips   743 (worse 166, better 165, McNemar p=1)  1.414 MB
+  HEAD=W4A4                                   63.53%  delta   -0.37 pp  flips  3130 (worse 743, better 579, McNemar p=7.17e-06)  1.414 MB
+  HEAD=W8A32                                  63.88%  delta   -0.02 pp  flips    28 (worse 11, better 2, McNemar p=0.0225)  1.414 MB
+  HEAD=W6A32                                  63.90%  delta   +0.00 pp  flips   170 (worse 45, better 45, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.84%  delta   -0.07 pp  flips   408 (worse 118, better 89, McNemar p=0.0514)  1.414 MB
+  HEAD=W3A32                                  63.88%  delta   -0.02 pp  flips  1946 (worse 526, better 517, McNemar p=0.804)  1.414 MB
+  HEAD=W32A8                                  63.87%  delta   -0.03 pp  flips   170 (worse 48, better 33, McNemar p=0.119)  1.416 MB
+  HEAD=W32A6                                  63.92%  delta   +0.02 pp  flips   707 (worse 152, better 161, McNemar p=0.651)  1.416 MB
+  HEAD=W32A4                                  63.59%  delta   -0.31 pp  flips  3119 (worse 724, better 587, McNemar p=0.00017)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  CONV=W8A8                                   64.02%  delta   +0.00 pp  flips   268 (worse 68, better 70, McNemar p=0.932)  0.658 MB
+  CONV=W6A6                                   63.94%  delta   -0.07 pp  flips  1397 (worse 350, better 318, McNemar p=0.23)  0.593 MB
+  CONV=W4A4                                   35.70%  delta  -28.32 pp  flips 27389 (worse 13785, better 1326, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  64.02%  delta   +0.00 pp  flips    71 (worse 13, better 15, McNemar p=0.851)  0.658 MB
+  CONV=W6A32                                  64.04%  delta   +0.02 pp  flips   364 (worse 75, better 84, McNemar p=0.526)  0.593 MB
+  CONV=W4A32                                  63.65%  delta   -0.37 pp  flips  2262 (worse 575, better 414, McNemar p=3.42e-07)  0.529 MB
+  CONV=W3A32                                  63.21%  delta   -0.81 pp  flips  2841 (worse 940, better 584, McNemar p=6.54e-20)  0.497 MB
+  CONV=W32A8                                  64.05%  delta   +0.03 pp  flips   277 (worse 66, better 81, McNemar p=0.248)  1.416 MB
+  CONV=W32A6                                  63.91%  delta   -0.11 pp  flips  1350 (worse 346, better 299, McNemar p=0.07)  1.416 MB
+  CONV=W32A4                                  37.77%  delta  -26.24 pp  flips 26617 (worse 12957, better 1411, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.99%  delta   -0.02 pp  flips    67 (worse 22, better 12, McNemar p=0.121)  1.272 MB
+  ATTN=W6A6                                   63.99%  delta   -0.03 pp  flips   451 (worse 125, better 112, McNemar p=0.436)  1.260 MB
+  ATTN=W4A4                                   62.01%  delta   -2.01 pp  flips  6647 (worse 2410, better 1526, McNemar p=2.33e-45)  1.247 MB
+  ATTN=W8A32                                  64.02%  delta   +0.00 pp  flips    23 (worse 6, better 6, McNemar p=1)  1.272 MB
+  ATTN=W6A32                                  64.00%  delta   -0.01 pp  flips   138 (worse 39, better 34, McNemar p=0.64)  1.260 MB
+  ATTN=W4A32                                  63.91%  delta   -0.10 pp  flips   782 (worse 219, better 173, McNemar p=0.0229)  1.247 MB
+  ATTN=W3A32                                  63.88%  delta   -0.13 pp  flips  1216 (worse 358, better 300, McNemar p=0.0262)  1.241 MB
+  ATTN=W32A8                                  64.01%  delta   -0.01 pp  flips    68 (worse 16, better 12, McNemar p=0.572)  1.416 MB
+  ATTN=W32A6                                  64.00%  delta   -0.01 pp  flips   431 (worse 121, better 115, McNemar p=0.745)  1.416 MB
+  ATTN=W32A4                                  62.40%  delta   -1.62 pp  flips  5936 (worse 2144, better 1432, McNemar p=8.34e-33)  1.416 MB
+  LSTM=W8A8                                   64.07%  delta   +0.05 pp  flips   134 (worse 18, better 40, McNemar p=0.00535)  1.298 MB
+  LSTM=W6A6                                   64.01%  delta   -0.01 pp  flips   523 (worse 131, better 128, McNemar p=0.901)  1.287 MB
+  LSTM=W4A4                                   62.97%  delta   -1.05 pp  flips  4122 (worse 1183, better 722, McNemar p=3.28e-26)  1.277 MB
+  LSTM=W8A32                                  64.03%  delta   +0.02 pp  flips   102 (worse 16, better 24, McNemar p=0.268)  1.298 MB
+  LSTM=W6A32                                  64.03%  delta   +0.02 pp  flips   271 (worse 56, better 64, McNemar p=0.523)  1.287 MB
+  LSTM=W4A32                                  64.00%  delta   -0.02 pp  flips   985 (worse 223, better 215, McNemar p=0.738)  1.277 MB
+  LSTM=W3A32                                  63.51%  delta   -0.51 pp  flips  2386 (worse 680, better 457, McNemar p=3.99e-11)  1.272 MB
+  LSTM=W32A8                                  64.02%  delta   +0.00 pp  flips    76 (worse 19, better 21, McNemar p=0.875)  1.416 MB
+  LSTM=W32A6                                  64.03%  delta   +0.02 pp  flips   396 (worse 100, better 107, McNemar p=0.677)  1.416 MB
+  LSTM=W32A4                                  63.09%  delta   -0.92 pp  flips  3415 (worse 1036, better 630, McNemar p=2.02e-23)  1.416 MB
+  HEAD=W8A8                                   64.02%  delta   +0.01 pp  flips   202 (worse 40, better 43, McNemar p=0.826)  1.414 MB
+  HEAD=W6A6                                   64.10%  delta   +0.09 pp  flips   800 (worse 161, better 200, McNemar p=0.0454)  1.414 MB
+  HEAD=W4A4                                   63.29%  delta   -0.73 pp  flips  4573 (worse 1043, better 724, McNemar p=3.32e-14)  1.414 MB
+  HEAD=W8A32                                  64.01%  delta   -0.01 pp  flips    31 (worse 11, better 7, McNemar p=0.481)  1.414 MB
+  HEAD=W6A32                                  64.01%  delta   -0.00 pp  flips   115 (worse 26, better 25, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.98%  delta   -0.03 pp  flips   599 (worse 172, better 158, McNemar p=0.474)  1.414 MB
+  HEAD=W3A32                                  63.85%  delta   -0.16 pp  flips  2526 (worse 913, better 841, McNemar p=0.09)  1.414 MB
+  HEAD=W32A8                                  64.02%  delta   +0.00 pp  flips   199 (worse 42, better 44, McNemar p=0.914)  1.416 MB
+  HEAD=W32A6                                  64.09%  delta   +0.07 pp  flips   777 (worse 152, better 185, McNemar p=0.0812)  1.416 MB
+  HEAD=W32A4                                  63.32%  delta   -0.70 pp  flips  4604 (worse 1034, better 727, McNemar p=2.67e-13)  1.416 MB
+
+wrote results/step5_blocks_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  STEM=W4A4                                   61.59%  delta   -1.85 pp  flips  4535 (worse 1790, better 978, McNemar p=2.24e-54)  1.415 MB
+  STEM=W32A4                                  62.05%  delta   -1.39 pp  flips  3648 (worse 1421, better 808, McNemar p=6.7e-39)  1.416 MB
+  FUSION=W4A4                                 57.06%  delta   -6.38 pp  flips 10077 (worse 4446, better 1638, McNemar p=1.53e-294)  1.411 MB
+  FUSION=W32A4                                56.63%  delta   -6.81 pp  flips 10286 (worse 4509, better 1513, McNemar p=0)  1.416 MB
+  CONVENC=W4A4                                61.95%  delta   -1.48 pp  flips  6716 (worse 2253, better 1600, McNemar p=6.35e-26)  0.961 MB
+  CONVENC=W32A4                               61.84%  delta   -1.60 pp  flips  6583 (worse 2291, better 1589, McNemar p=1.56e-29)  1.416 MB
+  LOCAL=W4A4                                  63.00%  delta   -0.44 pp  flips  3335 (worse 1032, better 837, McNemar p=7.08e-06)  1.331 MB
+  LOCAL=W32A4                                 63.09%  delta   -0.35 pp  flips  3174 (worse 962, better 807, McNemar p=0.000249)  1.416 MB
+  FFN=W4A4                                    59.84%  delta   -3.60 pp  flips 10355 (worse 3195, better 1610, McNemar p=1.01e-117)  1.076 MB
+  FFN=W32A4                                   59.93%  delta   -3.51 pp  flips 10004 (worse 3034, better 1490, McNemar p=8.64e-119)  1.416 MB
+  ATTN=W4A4                                   60.75%  delta   -2.69 pp  flips  7781 (worse 2537, better 1354, McNemar p=2.55e-81)  1.247 MB
+  ATTN=W32A4                                  61.14%  delta   -2.30 pp  flips  7171 (worse 2323, better 1310, McNemar p=4.41e-64)  1.416 MB
+  LSTM=W4A4                                   62.35%  delta   -1.09 pp  flips  3708 (worse 1304, better 826, McNemar p=3.09e-25)  1.277 MB
+  LSTM=W32A4                                  62.18%  delta   -1.25 pp  flips  3937 (worse 1407, better 855, McNemar p=2.48e-31)  1.416 MB
+  HEAD=W4A4                                   62.50%  delta   -0.94 pp  flips  5458 (worse 1343, better 929, McNemar p=3.68e-18)  1.414 MB
+  HEAD=W32A4                                  62.49%  delta   -0.95 pp  flips  5411 (worse 1355, better 936, McNemar p=2e-18)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  STEM=W4A4                                   62.86%  delta   -1.05 pp  flips  2784 (worse 1038, better 578, McNemar p=1.37e-30)  1.415 MB
+  STEM=W32A4                                  62.96%  delta   -0.95 pp  flips  2484 (worse 946, better 529, McNemar p=1.09e-27)  1.416 MB
+  FUSION=W4A4                                 59.94%  delta   -3.96 pp  flips  7043 (worse 2782, better 1038, McNemar p=1.58e-181)  1.411 MB
+  FUSION=W32A4                                60.68%  delta   -3.22 pp  flips  6091 (worse 2413, better 996, McNemar p=7.01e-134)  1.416 MB
+  CONVENC=W4A4                                60.10%  delta   -3.80 pp  flips  4901 (worse 2435, better 762, McNemar p=5.99e-202)  0.961 MB
+  CONVENC=W32A4                               59.78%  delta   -4.12 pp  flips  5309 (worse 2569, better 756, McNemar p=7.18e-229)  1.416 MB
+  LOCAL=W4A4                                  63.73%  delta   -0.17 pp  flips  1870 (worse 514, better 438, McNemar p=0.015)  1.331 MB
+  LOCAL=W32A4                                 63.70%  delta   -0.21 pp  flips  1798 (worse 513, better 421, McNemar p=0.00289)  1.416 MB
+  FFN=W4A4                                    61.66%  delta   -2.25 pp  flips  8795 (worse 2379, better 1390, McNemar p=6.19e-59)  1.076 MB
+  FFN=W32A4                                   61.59%  delta   -2.31 pp  flips  9126 (worse 2455, better 1438, McNemar p=2.74e-60)  1.416 MB
+  ATTN=W4A4                                   62.83%  delta   -1.08 pp  flips  3836 (worse 1208, better 734, McNemar p=3.96e-27)  1.247 MB
+  ATTN=W32A4                                  62.81%  delta   -1.09 pp  flips  3701 (worse 1199, better 718, McNemar p=3.02e-28)  1.416 MB
+  LSTM=W4A4                                   62.20%  delta   -1.70 pp  flips  4379 (worse 1471, better 721, McNemar p=9.69e-59)  1.277 MB
+  LSTM=W32A4                                  62.45%  delta   -1.45 pp  flips  4390 (worse 1400, better 760, McNemar p=1.24e-43)  1.416 MB
+  HEAD=W4A4                                   63.53%  delta   -0.37 pp  flips  3130 (worse 743, better 579, McNemar p=7.17e-06)  1.414 MB
+  HEAD=W32A4                                  63.59%  delta   -0.31 pp  flips  3119 (worse 724, better 587, McNemar p=0.00017)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  STEM=W4A4                                   62.52%  delta   -1.49 pp  flips  3151 (worse 1220, better 563, McNemar p=1.12e-55)  1.415 MB
+  STEM=W32A4                                  63.01%  delta   -1.00 pp  flips  2622 (worse 968, better 526, McNemar p=1.41e-30)  1.416 MB
+  FUSION=W4A4                                 55.49%  delta   -8.53 pp  flips 14600 (worse 5369, better 1617, McNemar p=0)  1.411 MB
+  FUSION=W32A4                                55.72%  delta   -8.30 pp  flips 14662 (worse 5243, better 1593, McNemar p=0)  1.416 MB
+  CONVENC=W4A4                                61.09%  delta   -2.93 pp  flips  5076 (worse 2165, better 877, McNemar p=3.09e-124)  0.961 MB
+  CONVENC=W32A4                               61.58%  delta   -2.44 pp  flips  4604 (worse 1917, better 845, McNemar p=1.01e-94)  1.416 MB
+  LOCAL=W4A4                                  63.80%  delta   -0.21 pp  flips  1415 (worse 407, better 313, McNemar p=0.00052)  1.331 MB
+  LOCAL=W32A4                                 63.90%  delta   -0.12 pp  flips  1352 (worse 369, better 317, McNemar p=0.0514)  1.416 MB
+  FFN=W4A4                                    62.87%  delta   -1.14 pp  flips  4407 (worse 1328, better 825, McNemar p=1.63e-27)  1.076 MB
+  FFN=W32A4                                   62.90%  delta   -1.11 pp  flips  4369 (worse 1314, better 824, McNemar p=2.35e-26)  1.416 MB
+  ATTN=W4A4                                   62.01%  delta   -2.01 pp  flips  6647 (worse 2410, better 1526, McNemar p=2.33e-45)  1.247 MB
+  ATTN=W32A4                                  62.40%  delta   -1.62 pp  flips  5936 (worse 2144, better 1432, McNemar p=8.34e-33)  1.416 MB
+  LSTM=W4A4                                   62.97%  delta   -1.05 pp  flips  4122 (worse 1183, better 722, McNemar p=3.28e-26)  1.277 MB
+  LSTM=W32A4                                  63.09%  delta   -0.92 pp  flips  3415 (worse 1036, better 630, McNemar p=2.02e-23)  1.416 MB
+  HEAD=W4A4                                   63.29%  delta   -0.73 pp  flips  4573 (worse 1043, better 724, McNemar p=3.32e-14)  1.414 MB
+  HEAD=W32A4                                  63.32%  delta   -0.70 pp  flips  4604 (worse 1034, better 727, McNemar p=2.67e-13)  1.416 MB
+
+wrote results/step5_fine_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  CONV=W8A8                                   63.45%  delta   +0.01 pp  flips   535 (worse 166, better 172, McNemar p=0.786)  0.658 MB
+  CONV=W6A6                                   62.96%  delta   -0.48 pp  flips  2932 (worse 1016, better 805, McNemar p=8.38e-07)  0.593 MB
+  CONV=W4A4                                   44.03%  delta  -19.41 pp  flips 25341 (worse 11592, better 3052, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.42%  delta   -0.01 pp  flips   132 (worse 39, better 33, McNemar p=0.556)  0.658 MB
+  CONV=W6A32                                  63.43%  delta   -0.01 pp  flips   531 (worse 136, better 133, McNemar p=0.903)  0.593 MB
+  CONV=W4A32                                  63.07%  delta   -0.37 pp  flips  3014 (worse 856, better 694, McNemar p=4.26e-05)  0.529 MB
+  CONV=W3A32                                  58.69%  delta   -4.75 pp  flips  6354 (worse 3043, better 953, McNemar p=1.12e-251)  0.497 MB
+  CONV=W32A8                                  63.48%  delta   +0.04 pp  flips   506 (worse 157, better 176, McNemar p=0.324)  1.416 MB
+  CONV=W32A6                                  63.03%  delta   -0.41 pp  flips  2812 (worse 951, better 771, McNemar p=1.58e-05)  1.416 MB
+  CONV=W32A4                                  48.79%  delta  -14.65 pp  flips 22917 (worse 9424, better 2977, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.43%  delta   -0.01 pp  flips   141 (worse 44, better 40, McNemar p=0.744)  1.272 MB
+  ATTN=W6A6                                   63.41%  delta   -0.03 pp  flips   698 (worse 205, better 192, McNemar p=0.547)  1.260 MB
+  ATTN=W4A4                                   61.05%  delta   -2.39 pp  flips  7286 (worse 2394, better 1342, McNemar p=3.87e-67)  1.247 MB
+  ATTN=W8A32                                  63.42%  delta   -0.02 pp  flips    52 (worse 19, better 11, McNemar p=0.2)  1.272 MB
+  ATTN=W6A32                                  63.43%  delta   -0.01 pp  flips   176 (worse 54, better 51, McNemar p=0.845)  1.260 MB
+  ATTN=W4A32                                  63.38%  delta   -0.06 pp  flips   920 (worse 240, better 212, McNemar p=0.204)  1.247 MB
+  ATTN=W3A32                                  63.33%  delta   -0.11 pp  flips  1828 (worse 529, better 482, McNemar p=0.148)  1.241 MB
+  ATTN=W32A8                                  63.43%  delta   -0.00 pp  flips   135 (worse 37, better 35, McNemar p=0.906)  1.416 MB
+  ATTN=W32A6                                  63.44%  delta   +0.00 pp  flips   659 (worse 179, better 181, McNemar p=0.958)  1.416 MB
+  ATTN=W32A4                                  61.42%  delta   -2.02 pp  flips  6664 (worse 2164, better 1275, McNemar p=2.29e-52)  1.416 MB
+  LSTM=W8A8                                   63.43%  delta   -0.00 pp  flips   184 (worse 62, better 60, McNemar p=0.928)  1.298 MB
+  LSTM=W6A6                                   63.39%  delta   -0.05 pp  flips   632 (worse 208, better 188, McNemar p=0.34)  1.287 MB
+  LSTM=W4A4                                   62.51%  delta   -0.93 pp  flips  3312 (worse 1165, better 757, McNemar p=1.18e-20)  1.277 MB
+  LSTM=W8A32                                  63.42%  delta   -0.01 pp  flips    67 (worse 18, better 12, McNemar p=0.362)  1.298 MB
+  LSTM=W6A32                                  63.40%  delta   -0.04 pp  flips   263 (worse 91, better 72, McNemar p=0.158)  1.287 MB
+  LSTM=W4A32                                  63.38%  delta   -0.06 pp  flips  1106 (worse 319, better 292, McNemar p=0.293)  1.277 MB
+  LSTM=W3A32                                  62.72%  delta   -0.71 pp  flips  4421 (worse 1162, better 848, McNemar p=2.65e-12)  1.272 MB
+  LSTM=W32A8                                  63.43%  delta   -0.00 pp  flips   163 (worse 56, better 54, McNemar p=0.924)  1.416 MB
+  LSTM=W32A6                                  63.44%  delta   +0.00 pp  flips   570 (worse 176, better 178, McNemar p=0.958)  1.416 MB
+  LSTM=W32A4                                  62.41%  delta   -1.03 pp  flips  3487 (worse 1225, better 773, McNemar p=3.95e-24)  1.416 MB
+  HEAD=W8A8                                   63.44%  delta   +0.00 pp  flips   281 (worse 82, better 82, McNemar p=1)  1.414 MB
+  HEAD=W6A6                                   63.41%  delta   -0.03 pp  flips   970 (worse 265, better 252, McNemar p=0.598)  1.414 MB
+  HEAD=W4A4                                   62.83%  delta   -0.61 pp  flips  4670 (worse 1115, better 846, McNemar p=1.35e-09)  1.414 MB
+  HEAD=W8A32                                  63.44%  delta   +0.00 pp  flips    48 (worse 14, better 16, McNemar p=0.856)  1.414 MB
+  HEAD=W6A32                                  63.47%  delta   +0.03 pp  flips   342 (worse 127, better 141, McNemar p=0.427)  1.414 MB
+  HEAD=W4A32                                  63.47%  delta   +0.03 pp  flips   795 (worse 259, better 273, McNemar p=0.573)  1.414 MB
+  HEAD=W3A32                                  63.41%  delta   -0.02 pp  flips  1813 (worse 552, better 541, McNemar p=0.762)  1.414 MB
+  HEAD=W32A8                                  63.42%  delta   -0.02 pp  flips   279 (worse 83, better 73, McNemar p=0.471)  1.416 MB
+  HEAD=W32A6                                  63.41%  delta   -0.03 pp  flips  1025 (worse 288, better 274, McNemar p=0.583)  1.416 MB
+  HEAD=W32A4                                  62.82%  delta   -0.62 pp  flips  4733 (worse 1197, better 926, McNemar p=4.42e-09)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  CONV=W8A8                                   63.87%  delta   -0.03 pp  flips   335 (worse 85, better 70, McNemar p=0.261)  0.658 MB
+  CONV=W6A6                                   63.81%  delta   -0.10 pp  flips  1363 (worse 360, better 317, McNemar p=0.106)  0.593 MB
+  CONV=W4A4                                   38.05%  delta  -25.86 pp  flips 25431 (worse 13023, better 1646, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  63.88%  delta   -0.03 pp  flips   114 (worse 34, better 22, McNemar p=0.141)  0.658 MB
+  CONV=W6A32                                  63.88%  delta   -0.03 pp  flips   370 (worse 95, better 82, McNemar p=0.367)  0.593 MB
+  CONV=W4A32                                  63.75%  delta   -0.16 pp  flips  1681 (worse 428, better 359, McNemar p=0.0153)  0.529 MB
+  CONV=W3A32                                  61.89%  delta   -2.02 pp  flips  5867 (worse 1981, better 1093, McNemar p=2.09e-58)  0.497 MB
+  CONV=W32A8                                  63.93%  delta   +0.03 pp  flips   309 (worse 70, better 83, McNemar p=0.332)  1.416 MB
+  CONV=W32A6                                  63.80%  delta   -0.10 pp  flips  1401 (worse 372, better 327, McNemar p=0.096)  1.416 MB
+  CONV=W32A4                                  38.61%  delta  -25.30 pp  flips 24662 (worse 12888, better 1758, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   63.89%  delta   -0.01 pp  flips    72 (worse 22, better 16, McNemar p=0.418)  1.272 MB
+  ATTN=W6A6                                   63.84%  delta   -0.06 pp  flips   401 (worse 101, better 73, McNemar p=0.0404)  1.260 MB
+  ATTN=W4A4                                   62.70%  delta   -1.20 pp  flips  4020 (worse 1296, better 766, McNemar p=1.07e-31)  1.247 MB
+  ATTN=W8A32                                  63.90%  delta   -0.00 pp  flips    28 (worse 8, better 6, McNemar p=0.791)  1.272 MB
+  ATTN=W6A32                                  63.89%  delta   -0.01 pp  flips   141 (worse 36, better 30, McNemar p=0.539)  1.260 MB
+  ATTN=W4A32                                  63.96%  delta   +0.06 pp  flips   614 (worse 129, better 154, McNemar p=0.154)  1.247 MB
+  ATTN=W3A32                                  63.56%  delta   -0.35 pp  flips  2011 (worse 532, better 380, McNemar p=5.41e-07)  1.241 MB
+  ATTN=W32A8                                  63.90%  delta   -0.01 pp  flips    68 (worse 16, better 13, McNemar p=0.711)  1.416 MB
+  ATTN=W32A6                                  63.86%  delta   -0.05 pp  flips   345 (worse 83, better 63, McNemar p=0.116)  1.416 MB
+  ATTN=W32A4                                  62.78%  delta   -1.12 pp  flips  3764 (worse 1226, better 731, McNemar p=3e-29)  1.416 MB
+  LSTM=W8A8                                   63.90%  delta   -0.01 pp  flips   118 (worse 30, better 26, McNemar p=0.689)  1.298 MB
+  LSTM=W6A6                                   63.88%  delta   -0.03 pp  flips   455 (worse 124, better 111, McNemar p=0.434)  1.287 MB
+  LSTM=W4A4                                   63.00%  delta   -0.90 pp  flips  3053 (worse 999, better 603, McNemar p=3.43e-23)  1.277 MB
+  LSTM=W8A32                                  63.90%  delta   -0.00 pp  flips    57 (worse 11, better 9, McNemar p=0.824)  1.298 MB
+  LSTM=W6A32                                  63.89%  delta   -0.02 pp  flips   203 (worse 55, better 48, McNemar p=0.555)  1.287 MB
+  LSTM=W4A32                                  63.72%  delta   -0.19 pp  flips  1428 (worse 394, better 312, McNemar p=0.00228)  1.277 MB
+  LSTM=W3A32                                  63.74%  delta   -0.17 pp  flips  1747 (worse 443, better 369, McNemar p=0.0104)  1.272 MB
+  LSTM=W32A8                                  63.88%  delta   -0.02 pp  flips    98 (worse 28, better 19, McNemar p=0.243)  1.416 MB
+  LSTM=W32A6                                  63.86%  delta   -0.05 pp  flips   385 (worse 107, better 87, McNemar p=0.172)  1.416 MB
+  LSTM=W32A4                                  63.18%  delta   -0.72 pp  flips  2864 (worse 924, better 607, McNemar p=5.29e-16)  1.416 MB
+  HEAD=W8A8                                   63.88%  delta   -0.02 pp  flips   216 (worse 54, better 45, McNemar p=0.422)  1.414 MB
+  HEAD=W6A6                                   63.90%  delta   +0.00 pp  flips   828 (worse 179, better 179, McNemar p=1)  1.414 MB
+  HEAD=W4A4                                   63.45%  delta   -0.45 pp  flips  4112 (worse 946, better 748, McNemar p=1.65e-06)  1.414 MB
+  HEAD=W8A32                                  63.88%  delta   -0.02 pp  flips    28 (worse 11, better 2, McNemar p=0.0225)  1.414 MB
+  HEAD=W6A32                                  63.90%  delta   +0.00 pp  flips   170 (worse 45, better 45, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.84%  delta   -0.07 pp  flips   408 (worse 118, better 89, McNemar p=0.0514)  1.414 MB
+  HEAD=W3A32                                  63.88%  delta   -0.02 pp  flips  1946 (worse 526, better 517, McNemar p=0.804)  1.414 MB
+  HEAD=W32A8                                  63.88%  delta   -0.03 pp  flips   216 (worse 56, better 43, McNemar p=0.228)  1.416 MB
+  HEAD=W32A6                                  63.88%  delta   -0.02 pp  flips   825 (worse 180, better 170, McNemar p=0.631)  1.416 MB
+  HEAD=W32A4                                  63.40%  delta   -0.51 pp  flips  4162 (worse 966, better 743, McNemar p=7.56e-08)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  CONV=W8A8                                   64.00%  delta   -0.02 pp  flips   257 (worse 68, better 60, McNemar p=0.536)  0.658 MB
+  CONV=W6A6                                   63.76%  delta   -0.26 pp  flips  2016 (worse 503, better 390, McNemar p=0.000175)  0.593 MB
+  CONV=W4A4                                   35.24%  delta  -28.78 pp  flips 27647 (worse 14075, better 1413, McNemar p=0)  0.529 MB
+  CONV=W8A32                                  64.02%  delta   +0.00 pp  flips    71 (worse 13, better 15, McNemar p=0.851)  0.658 MB
+  CONV=W6A32                                  64.04%  delta   +0.02 pp  flips   364 (worse 75, better 84, McNemar p=0.526)  0.593 MB
+  CONV=W4A32                                  63.65%  delta   -0.37 pp  flips  2262 (worse 575, better 414, McNemar p=3.42e-07)  0.529 MB
+  CONV=W3A32                                  63.21%  delta   -0.81 pp  flips  2841 (worse 940, better 584, McNemar p=6.54e-20)  0.497 MB
+  CONV=W32A8                                  64.00%  delta   -0.02 pp  flips   244 (worse 62, better 55, McNemar p=0.579)  1.416 MB
+  CONV=W32A6                                  63.85%  delta   -0.17 pp  flips  2121 (worse 504, better 430, McNemar p=0.0169)  1.416 MB
+  CONV=W32A4                                  38.31%  delta  -25.71 pp  flips 26179 (worse 12749, better 1438, McNemar p=0)  1.416 MB
+  ATTN=W8A8                                   64.02%  delta   +0.00 pp  flips    68 (worse 17, better 18, McNemar p=1)  1.272 MB
+  ATTN=W6A6                                   64.00%  delta   -0.01 pp  flips   423 (worse 111, better 106, McNemar p=0.786)  1.260 MB
+  ATTN=W4A4                                   62.33%  delta   -1.69 pp  flips  6028 (worse 2164, better 1421, McNemar p=1.64e-35)  1.247 MB
+  ATTN=W8A32                                  64.02%  delta   +0.00 pp  flips    23 (worse 6, better 6, McNemar p=1)  1.272 MB
+  ATTN=W6A32                                  64.00%  delta   -0.01 pp  flips   138 (worse 39, better 34, McNemar p=0.64)  1.260 MB
+  ATTN=W4A32                                  63.91%  delta   -0.10 pp  flips   782 (worse 219, better 173, McNemar p=0.0229)  1.247 MB
+  ATTN=W3A32                                  63.88%  delta   -0.13 pp  flips  1216 (worse 358, better 300, McNemar p=0.0262)  1.241 MB
+  ATTN=W32A8                                  64.00%  delta   -0.02 pp  flips    68 (worse 19, better 12, McNemar p=0.281)  1.416 MB
+  ATTN=W32A6                                  63.98%  delta   -0.04 pp  flips   369 (worse 99, better 83, McNemar p=0.266)  1.416 MB
+  ATTN=W32A4                                  62.60%  delta   -1.42 pp  flips  5635 (worse 2025, better 1400, McNemar p=1.11e-26)  1.416 MB
+  LSTM=W8A8                                   64.03%  delta   +0.01 pp  flips   146 (worse 31, better 37, McNemar p=0.545)  1.298 MB
+  LSTM=W6A6                                   64.00%  delta   -0.01 pp  flips   454 (worse 114, better 108, McNemar p=0.737)  1.287 MB
+  LSTM=W4A4                                   63.64%  delta   -0.38 pp  flips  2428 (worse 661, better 496, McNemar p=1.37e-06)  1.277 MB
+  LSTM=W8A32                                  64.03%  delta   +0.02 pp  flips   102 (worse 16, better 24, McNemar p=0.268)  1.298 MB
+  LSTM=W6A32                                  64.03%  delta   +0.02 pp  flips   271 (worse 56, better 64, McNemar p=0.523)  1.287 MB
+  LSTM=W4A32                                  64.00%  delta   -0.02 pp  flips   985 (worse 223, better 215, McNemar p=0.738)  1.277 MB
+  LSTM=W3A32                                  63.51%  delta   -0.51 pp  flips  2386 (worse 680, better 457, McNemar p=3.99e-11)  1.272 MB
+  LSTM=W32A8                                  64.03%  delta   +0.01 pp  flips    77 (worse 18, better 24, McNemar p=0.441)  1.416 MB
+  LSTM=W32A6                                  64.01%  delta   -0.00 pp  flips   330 (worse 89, better 88, McNemar p=1)  1.416 MB
+  LSTM=W32A4                                  63.78%  delta   -0.24 pp  flips  1869 (worse 516, better 412, McNemar p=0.000714)  1.416 MB
+  HEAD=W8A8                                   64.02%  delta   +0.00 pp  flips   224 (worse 52, better 53, McNemar p=1)  1.414 MB
+  HEAD=W6A6                                   64.04%  delta   +0.03 pp  flips   800 (worse 171, better 183, McNemar p=0.559)  1.414 MB
+  HEAD=W4A4                                   63.25%  delta   -0.76 pp  flips  4624 (worse 1057, better 721, McNemar p=1.61e-15)  1.414 MB
+  HEAD=W8A32                                  64.01%  delta   -0.01 pp  flips    31 (worse 11, better 7, McNemar p=0.481)  1.414 MB
+  HEAD=W6A32                                  64.01%  delta   -0.00 pp  flips   115 (worse 26, better 25, McNemar p=1)  1.414 MB
+  HEAD=W4A32                                  63.98%  delta   -0.03 pp  flips   599 (worse 172, better 158, McNemar p=0.474)  1.414 MB
+  HEAD=W3A32                                  63.85%  delta   -0.16 pp  flips  2526 (worse 913, better 841, McNemar p=0.09)  1.414 MB
+  HEAD=W32A8                                  64.01%  delta   -0.01 pp  flips   216 (worse 52, better 49, McNemar p=0.842)  1.416 MB
+  HEAD=W32A6                                  64.05%  delta   +0.04 pp  flips   804 (worse 171, better 187, McNemar p=0.428)  1.416 MB
+  HEAD=W32A4                                  63.26%  delta   -0.76 pp  flips  4678 (worse 1055, better 722, McNemar p=2.82e-15)  1.416 MB
+
+wrote results/step5_blocks_calib2/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  STEM=W4A4                                   62.02%  delta   -1.41 pp  flips  4387 (worse 1616, better 994, McNemar p=2.63e-34)  1.415 MB
+  STEM=W32A4                                  62.28%  delta   -1.15 pp  flips  3488 (worse 1283, better 775, McNemar p=2.8e-29)  1.416 MB
+  FUSION=W4A4                                 56.23%  delta   -7.20 pp  flips 11132 (worse 4771, better 1601, McNemar p=0)  1.411 MB
+  FUSION=W32A4                                56.98%  delta   -6.46 pp  flips 10267 (worse 4445, better 1603, McNemar p=6.62e-304)  1.416 MB
+  CONVENC=W4A4                                61.35%  delta   -2.09 pp  flips  7952 (worse 2719, better 1798, McNemar p=6.14e-43)  0.961 MB
+  CONVENC=W32A4                               60.73%  delta   -2.71 pp  flips  7909 (worse 2892, better 1700, McNemar p=6.39e-70)  1.416 MB
+  LOCAL=W4A4                                  62.91%  delta   -0.53 pp  flips  3557 (worse 1090, better 858, McNemar p=1.61e-07)  1.331 MB
+  LOCAL=W32A4                                 63.07%  delta   -0.37 pp  flips  3449 (worse 1015, better 852, McNemar p=0.000176)  1.416 MB
+  FFN=W4A4                                    59.90%  delta   -3.53 pp  flips 10288 (worse 3173, better 1618, McNemar p=1.23e-113)  1.076 MB
+  FFN=W32A4                                   59.92%  delta   -3.52 pp  flips  9900 (worse 3023, better 1473, McNemar p=1.75e-120)  1.416 MB
+  ATTN=W4A4                                   61.05%  delta   -2.39 pp  flips  7286 (worse 2394, better 1342, McNemar p=3.87e-67)  1.247 MB
+  ATTN=W32A4                                  61.42%  delta   -2.02 pp  flips  6664 (worse 2164, better 1275, McNemar p=2.29e-52)  1.416 MB
+  LSTM=W4A4                                   62.51%  delta   -0.93 pp  flips  3312 (worse 1165, better 757, McNemar p=1.18e-20)  1.277 MB
+  LSTM=W32A4                                  62.41%  delta   -1.03 pp  flips  3487 (worse 1225, better 773, McNemar p=3.95e-24)  1.416 MB
+  HEAD=W4A4                                   62.83%  delta   -0.61 pp  flips  4670 (worse 1115, better 846, McNemar p=1.35e-09)  1.414 MB
+  HEAD=W32A4                                  62.82%  delta   -0.62 pp  flips  4733 (worse 1197, better 926, McNemar p=4.42e-09)  1.416 MB
+
+runs/iqformer_s2: FP32 63.90%
+  STEM=W4A4                                   62.38%  delta   -1.52 pp  flips  2994 (worse 1243, better 572, McNemar p=5.08e-57)  1.415 MB
+  STEM=W32A4                                  62.44%  delta   -1.46 pp  flips  2670 (worse 1173, better 529, McNemar p=4.22e-56)  1.416 MB
+  FUSION=W4A4                                 60.42%  delta   -3.48 pp  flips  6691 (worse 2521, better 988, McNemar p=1.74e-152)  1.411 MB
+  FUSION=W32A4                                60.72%  delta   -3.19 pp  flips  6174 (worse 2413, better 1011, McNemar p=2.06e-130)  1.416 MB
+  CONVENC=W4A4                                61.03%  delta   -2.88 pp  flips  4639 (worse 2016, better 751, McNemar p=2.32e-132)  0.961 MB
+  CONVENC=W32A4                               60.39%  delta   -3.52 pp  flips  4856 (worse 2276, better 729, McNemar p=1.49e-183)  1.416 MB
+  LOCAL=W4A4                                  63.75%  delta   -0.15 pp  flips  1841 (worse 502, better 434, McNemar p=0.0285)  1.331 MB
+  LOCAL=W32A4                                 63.70%  delta   -0.20 pp  flips  1780 (worse 498, better 409, McNemar p=0.00346)  1.416 MB
+  FFN=W4A4                                    61.59%  delta   -2.31 pp  flips  8906 (worse 2409, better 1391, McNemar p=7.13e-62)  1.076 MB
+  FFN=W32A4                                   61.49%  delta   -2.42 pp  flips  9265 (worse 2505, better 1441, McNemar p=5.19e-65)  1.416 MB
+  ATTN=W4A4                                   62.70%  delta   -1.20 pp  flips  4020 (worse 1296, better 766, McNemar p=1.07e-31)  1.247 MB
+  ATTN=W32A4                                  62.78%  delta   -1.12 pp  flips  3764 (worse 1226, better 731, McNemar p=3e-29)  1.416 MB
+  LSTM=W4A4                                   63.00%  delta   -0.90 pp  flips  3053 (worse 999, better 603, McNemar p=3.43e-23)  1.277 MB
+  LSTM=W32A4                                  63.18%  delta   -0.72 pp  flips  2864 (worse 924, better 607, McNemar p=5.29e-16)  1.416 MB
+  HEAD=W4A4                                   63.45%  delta   -0.45 pp  flips  4112 (worse 946, better 748, McNemar p=1.65e-06)  1.414 MB
+  HEAD=W32A4                                  63.40%  delta   -0.51 pp  flips  4162 (worse 966, better 743, McNemar p=7.56e-08)  1.416 MB
+
+runs/iqformer_s3: FP32 64.02%
+  STEM=W4A4                                   62.69%  delta   -1.33 pp  flips  3117 (worse 1164, better 580, McNemar p=4.07e-45)  1.415 MB
+  STEM=W32A4                                  63.02%  delta   -0.99 pp  flips  2650 (worse 966, better 530, McNemar p=9.56e-30)  1.416 MB
+  FUSION=W4A4                                 55.90%  delta   -8.12 pp  flips 14216 (worse 5158, better 1587, McNemar p=0)  1.411 MB
+  FUSION=W32A4                                56.29%  delta   -7.72 pp  flips 14079 (worse 4931, better 1533, McNemar p=0)  1.416 MB
+  CONVENC=W4A4                                61.27%  delta   -2.75 pp  flips  4777 (worse 2058, better 849, McNemar p=1.48e-114)  0.961 MB
+  CONVENC=W32A4                               61.68%  delta   -2.34 pp  flips  4469 (worse 1853, better 824, McNemar p=4.35e-90)  1.416 MB
+  LOCAL=W4A4                                  63.85%  delta   -0.16 pp  flips  1438 (worse 406, better 335, McNemar p=0.0101)  1.331 MB
+  LOCAL=W32A4                                 63.87%  delta   -0.14 pp  flips  1365 (worse 385, better 322, McNemar p=0.0196)  1.416 MB
+  FFN=W4A4                                    62.94%  delta   -1.08 pp  flips  4347 (worse 1297, better 822, McNemar p=4.63e-25)  1.076 MB
+  FFN=W32A4                                   62.89%  delta   -1.12 pp  flips  4275 (worse 1291, better 797, McNemar p=2.23e-27)  1.416 MB
+  ATTN=W4A4                                   62.33%  delta   -1.69 pp  flips  6028 (worse 2164, better 1421, McNemar p=1.64e-35)  1.247 MB
+  ATTN=W32A4                                  62.60%  delta   -1.42 pp  flips  5635 (worse 2025, better 1400, McNemar p=1.11e-26)  1.416 MB
+  LSTM=W4A4                                   63.64%  delta   -0.38 pp  flips  2428 (worse 661, better 496, McNemar p=1.37e-06)  1.277 MB
+  LSTM=W32A4                                  63.78%  delta   -0.24 pp  flips  1869 (worse 516, better 412, McNemar p=0.000714)  1.416 MB
+  HEAD=W4A4                                   63.25%  delta   -0.76 pp  flips  4624 (worse 1057, better 721, McNemar p=1.61e-15)  1.414 MB
+  HEAD=W32A4                                  63.26%  delta   -0.76 pp  flips  4678 (worse 1055, better 722, McNemar p=2.82e-15)  1.416 MB
+
+wrote results/step5_fine_calib2/ptq_runs.csv and ptq_summary.csv
+calib                            0      1      2   mean  range_pp   fp32  change_pp
+spec       run                                                                     
+CONV=W8A8  runs/iqformer_s1  63.42  63.42  63.45  63.43      0.04  63.44      -0.01
+           runs/iqformer_s2  63.90  63.92  63.87  63.90      0.05  63.90      -0.01
+           runs/iqformer_s3  64.02  64.02  64.00  64.01      0.02  64.02      -0.00
+CONV=W6A6  runs/iqformer_s1  62.97  63.12  62.96  63.02      0.16  63.44      -0.42
+           runs/iqformer_s2  63.81  63.74  63.81  63.79      0.08  63.90      -0.12
+           runs/iqformer_s3  63.83  63.94  63.76  63.85      0.18  64.02      -0.17
+CONV=W4A4  runs/iqformer_s1  46.82  47.06  44.03  45.97      3.03  63.44     -17.47
+           runs/iqformer_s2  39.90  41.12  38.05  39.69      3.07  63.90     -24.21
+           runs/iqformer_s3  36.41  35.70  35.24  35.78      1.17  64.02     -28.23
+CONV=W8A32 runs/iqformer_s1  63.42  63.42  63.42  63.42      0.00  63.44      -0.01
+           runs/iqformer_s2  63.88  63.88  63.88  63.88      0.00  63.90      -0.03
+           runs/iqformer_s3  64.02  64.02  64.02  64.02      0.00  64.02       0.00
+CONV=W6A32 runs/iqformer_s1  63.43  63.43  63.43  63.43      0.00  63.44      -0.01
+           runs/iqformer_s2  63.88  63.88  63.88  63.88      0.00  63.90      -0.03
+           runs/iqformer_s3  64.04  64.04  64.04  64.04      0.00  64.02       0.02
+CONV=W4A32 runs/iqformer_s1  63.07  63.07  63.07  63.07      0.00  63.44      -0.37
+           runs/iqformer_s2  63.75  63.75  63.75  63.75      0.00  63.90      -0.16
+           runs/iqformer_s3  63.65  63.65  63.65  63.65      0.00  64.02      -0.37
+CONV=W3A32 runs/iqformer_s1  58.69  58.69  58.69  58.69      0.00  63.44      -4.75
+           runs/iqformer_s2  61.89  61.89  61.89  61.89      0.00  63.90      -2.02
+           runs/iqformer_s3  63.21  63.21  63.21  63.21      0.00  64.02      -0.81
+CONV=W32A8 runs/iqformer_s1  63.41  63.43  63.48  63.44      0.07  63.44       0.00
+           runs/iqformer_s2  63.89  63.93  63.93  63.92      0.04  63.90       0.01
+           runs/iqformer_s3  64.01  64.05  64.00  64.02      0.05  64.02       0.00
+CONV=W32A6 runs/iqformer_s1  63.13  63.23  63.03  63.13      0.20  63.44      -0.31
+           runs/iqformer_s2  63.78  63.70  63.80  63.76      0.10  63.90      -0.14
+           runs/iqformer_s3  63.82  63.91  63.85  63.86      0.09  64.02      -0.16
+CONV=W32A4 runs/iqformer_s1  47.99  48.56  48.79  48.45      0.80  63.44     -14.99
+           runs/iqformer_s2  35.78  35.48  38.61  36.62      3.13  63.90     -27.28
+           runs/iqformer_s3  39.00  37.78  38.31  38.36      1.22  64.02     -25.66
+ATTN=W8A8  runs/iqformer_s1  63.43  63.40  63.43  63.42      0.03  63.44      -0.02
+           runs/iqformer_s2  63.90  63.88  63.89  63.89      0.02  63.90      -0.01
+           runs/iqformer_s3  64.03  63.99  64.02  64.01      0.04  64.02      -0.00
+ATTN=W6A6  runs/iqformer_s1  63.43  63.42  63.41  63.42      0.03  63.44      -0.02
+           runs/iqformer_s2  63.86  63.89  63.84  63.86      0.05  63.90      -0.04
+           runs/iqformer_s3  64.00  63.99  64.00  64.00      0.02  64.02      -0.02
+ATTN=W4A4  runs/iqformer_s1  61.28  60.75  61.05  61.02      0.53  63.44      -2.41
+           runs/iqformer_s2  63.02  62.83  62.70  62.85      0.32  63.90      -1.05
+           runs/iqformer_s3  61.61  62.01  62.33  61.98      0.72  64.02      -2.03
+ATTN=W8A32 runs/iqformer_s1  63.42  63.42  63.42  63.42      0.00  63.44      -0.02
+           runs/iqformer_s2  63.90  63.90  63.90  63.90      0.00  63.90      -0.00
+           runs/iqformer_s3  64.02  64.02  64.02  64.02      0.00  64.02       0.00
+ATTN=W6A32 runs/iqformer_s1  63.43  63.43  63.43  63.43      0.00  63.44      -0.01
+           runs/iqformer_s2  63.89  63.89  63.89  63.89      0.00  63.90      -0.01
+           runs/iqformer_s3  64.00  64.00  64.00  64.00      0.00  64.02      -0.01
+ATTN=W4A32 runs/iqformer_s1  63.38  63.38  63.38  63.38      0.00  63.44      -0.06
+           runs/iqformer_s2  63.96  63.96  63.96  63.96      0.00  63.90       0.06
+           runs/iqformer_s3  63.91  63.91  63.91  63.91      0.00  64.02      -0.10
+ATTN=W3A32 runs/iqformer_s1  63.33  63.33  63.33  63.33      0.00  63.44      -0.11
+           runs/iqformer_s2  63.56  63.56  63.56  63.56      0.00  63.90      -0.35
+           runs/iqformer_s3  63.88  63.88  63.88  63.88      0.00  64.02      -0.13
+ATTN=W32A8 runs/iqformer_s1  63.44  63.42  63.43  63.43      0.02  63.44      -0.01
+           runs/iqformer_s2  63.91  63.90  63.90  63.90      0.01  63.90      -0.00
+           runs/iqformer_s3  64.02  64.01  64.00  64.01      0.02  64.02      -0.01
+ATTN=W32A6 runs/iqformer_s1  63.49  63.43  63.44  63.45      0.05  63.44       0.02
+           runs/iqformer_s2  63.83  63.85  63.86  63.85      0.03  63.90      -0.06
+           runs/iqformer_s3  63.98  64.00  63.98  63.99      0.02  64.02      -0.03
+ATTN=W32A4 runs/iqformer_s1  61.70  61.14  61.42  61.42      0.56  63.44      -2.02
+           runs/iqformer_s2  63.01  62.81  62.78  62.87      0.23  63.90      -1.04
+           runs/iqformer_s3  62.03  62.40  62.60  62.34      0.56  64.02      -1.67
+LSTM=W8A8  runs/iqformer_s1  63.40  63.44  63.43  63.43      0.04  63.44      -0.01
+           runs/iqformer_s2  63.91  63.91  63.90  63.91      0.02  63.90       0.00
+           runs/iqformer_s3  64.04  64.07  64.03  64.05      0.04  64.02       0.03
+LSTM=W6A6  runs/iqformer_s1  63.46  63.44  63.39  63.43      0.06  63.44      -0.01
+           runs/iqformer_s2  63.87  63.86  63.88  63.87      0.01  63.90      -0.03
+           runs/iqformer_s3  63.96  64.01  64.00  63.99      0.05  64.02      -0.02
+LSTM=W4A4  runs/iqformer_s1  62.64  62.35  62.51  62.50      0.29  63.44      -0.94
+           runs/iqformer_s2  63.23  62.20  63.00  62.81      1.03  63.90      -1.09
+           runs/iqformer_s3  63.67  62.97  63.64  63.43      0.70  64.02      -0.59
+LSTM=W8A32 runs/iqformer_s1  63.42  63.42  63.42  63.42      0.00  63.44      -0.01
+           runs/iqformer_s2  63.90  63.90  63.90  63.90      0.00  63.90      -0.00
+           runs/iqformer_s3  64.03  64.03  64.03  64.03      0.00  64.02       0.02
+LSTM=W6A32 runs/iqformer_s1  63.40  63.40  63.40  63.40      0.00  63.44      -0.04
+           runs/iqformer_s2  63.89  63.89  63.89  63.89      0.00  63.90      -0.02
+           runs/iqformer_s3  64.03  64.03  64.03  64.03      0.00  64.02       0.02
+LSTM=W4A32 runs/iqformer_s1  63.38  63.38  63.38  63.38      0.00  63.44      -0.06
+           runs/iqformer_s2  63.72  63.72  63.72  63.72      0.00  63.90      -0.19
+           runs/iqformer_s3  64.00  64.00  64.00  64.00      0.00  64.02      -0.02
+LSTM=W3A32 runs/iqformer_s1  62.72  62.72  62.72  62.72      0.00  63.44      -0.71
+           runs/iqformer_s2  63.74  63.74  63.74  63.74      0.00  63.90      -0.17
+           runs/iqformer_s3  63.51  63.51  63.51  63.51      0.00  64.02      -0.51
+LSTM=W32A8 runs/iqformer_s1  63.45  63.43  63.43  63.44      0.02  63.44      -0.00
+           runs/iqformer_s2  63.89  63.88  63.88  63.88      0.01  63.90      -0.02
+           runs/iqformer_s3  64.03  64.02  64.03  64.03      0.01  64.02       0.01
+LSTM=W32A6 runs/iqformer_s1  63.50  63.45  63.44  63.46      0.05  63.44       0.03
+           runs/iqformer_s2  63.87  63.84  63.86  63.85      0.03  63.90      -0.05
+           runs/iqformer_s3  64.03  64.03  64.01  64.03      0.02  64.02       0.01
+LSTM=W32A4 runs/iqformer_s1  62.71  62.18  62.41  62.43      0.53  63.44      -1.00
+           runs/iqformer_s2  63.52  62.45  63.18  63.05      1.07  63.90      -0.85
+           runs/iqformer_s3  63.77  63.09  63.78  63.55      0.69  64.02      -0.47
+HEAD=W8A8  runs/iqformer_s1  63.45  63.47  63.44  63.45      0.03  63.44       0.01
+           runs/iqformer_s2  63.85  63.86  63.88  63.86      0.04  63.90      -0.04
+           runs/iqformer_s3  64.00  64.02  64.02  64.01      0.02  64.02      -0.00
+HEAD=W6A6  runs/iqformer_s1  63.43  63.47  63.41  63.43      0.06  63.44      -0.00
+           runs/iqformer_s2  63.89  63.90  63.90  63.90      0.01  63.90      -0.00
+           runs/iqformer_s3  64.01  64.10  64.04  64.05      0.09  64.02       0.04
+HEAD=W4A4  runs/iqformer_s1  62.72  62.50  62.83  62.68      0.33  63.44      -0.76
+           runs/iqformer_s2  63.45  63.53  63.45  63.48      0.08  63.90      -0.42
+           runs/iqformer_s3  63.30  63.29  63.25  63.28      0.05  64.02      -0.73
+HEAD=W8A32 runs/iqformer_s1  63.44  63.44  63.44  63.44      0.00  63.44       0.00
+           runs/iqformer_s2  63.88  63.88  63.88  63.88      0.00  63.90      -0.02
+           runs/iqformer_s3  64.01  64.01  64.01  64.01      0.00  64.02      -0.01
+HEAD=W6A32 runs/iqformer_s1  63.47  63.47  63.47  63.47      0.00  63.44       0.03
+           runs/iqformer_s2  63.90  63.90  63.90  63.90      0.00  63.90       0.00
+           runs/iqformer_s3  64.01  64.01  64.01  64.01      0.00  64.02      -0.00
+HEAD=W4A32 runs/iqformer_s1  63.47  63.47  63.47  63.47      0.00  63.44       0.03
+           runs/iqformer_s2  63.84  63.84  63.84  63.84      0.00  63.90      -0.07
+           runs/iqformer_s3  63.98  63.98  63.98  63.98      0.00  64.02      -0.03
+HEAD=W3A32 runs/iqformer_s1  63.41  63.41  63.41  63.41      0.00  63.44      -0.02
+           runs/iqformer_s2  63.88  63.88  63.88  63.88      0.00  63.90      -0.02
+           runs/iqformer_s3  63.85  63.85  63.85  63.85      0.00  64.02      -0.16
+HEAD=W32A8 runs/iqformer_s1  63.43  63.47  63.42  63.44      0.06  63.44       0.00
+           runs/iqformer_s2  63.85  63.87  63.88  63.87      0.02  63.90      -0.04
+           runs/iqformer_s3  64.00  64.02  64.01  64.01      0.02  64.02      -0.01
+HEAD=W32A6 runs/iqformer_s1  63.40  63.45  63.41  63.42      0.05  63.44      -0.02
+           runs/iqformer_s2  63.87  63.92  63.88  63.89      0.06  63.90      -0.01
+           runs/iqformer_s3  64.01  64.09  64.05  64.05      0.08  64.02       0.04
+HEAD=W32A4 runs/iqformer_s1  62.83  62.49  62.82  62.71      0.34  63.44      -0.73
+           runs/iqformer_s2  63.52  63.59  63.40  63.50      0.20  63.90      -0.40
+           runs/iqformer_s3  63.25  63.32  63.26  63.28      0.06  64.02      -0.74
+
+Per precision (mean over models of the mean over calibration sets):
+            models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                  
+CONV=W8A8        3     63.78           0.31      -0.01            0.05
+CONV=W6A6        3     63.55           0.46      -0.24            0.18
+CONV=W4A4        3     40.48           5.14     -23.31            3.07
+CONV=W8A32       3     63.77           0.31      -0.01            0.00
+CONV=W6A32       3     63.78           0.31      -0.01            0.00
+CONV=W4A32       3     63.49           0.37      -0.30            0.00
+CONV=W3A32       3     61.26           2.32      -2.53            0.00
+CONV=W32A8       3     63.79           0.31       0.01            0.07
+CONV=W32A6       3     63.58           0.39      -0.20            0.20
+CONV=W32A4       3     41.14           6.38     -22.64            3.13
+ATTN=W8A8        3     63.78           0.31      -0.01            0.04
+ATTN=W6A6        3     63.76           0.30      -0.03            0.05
+ATTN=W4A4        3     61.95           0.91      -1.83            0.72
+ATTN=W8A32       3     63.78           0.32      -0.01            0.00
+ATTN=W6A32       3     63.78           0.30      -0.01            0.00
+ATTN=W4A32       3     63.75           0.33      -0.04            0.00
+ATTN=W3A32       3     63.59           0.28      -0.19            0.00
+ATTN=W32A8       3     63.78           0.31      -0.01            0.02
+ATTN=W32A6       3     63.76           0.28      -0.02            0.05
+ATTN=W32A4       3     62.21           0.73      -1.58            0.56
+LSTM=W8A8        3     63.79           0.32       0.01            0.04
+LSTM=W6A6        3     63.76           0.30      -0.02            0.06
+LSTM=W4A4        3     62.91           0.47      -0.87            1.03
+LSTM=W8A32       3     63.79           0.32      -0.00            0.00
+LSTM=W6A32       3     63.77           0.33      -0.01            0.00
+LSTM=W4A32       3     63.70           0.31      -0.09            0.00
+LSTM=W3A32       3     63.32           0.53      -0.46            0.00
+LSTM=W32A8       3     63.78           0.31      -0.00            0.02
+LSTM=W32A6       3     63.78           0.29      -0.01            0.05
+LSTM=W32A4       3     63.01           0.56      -0.78            1.07
+HEAD=W8A8        3     63.78           0.29      -0.01            0.04
+HEAD=W6A6        3     63.80           0.32       0.01            0.09
+HEAD=W4A4        3     63.15           0.42      -0.64            0.33
+HEAD=W8A32       3     63.78           0.30      -0.01            0.00
+HEAD=W6A32       3     63.80           0.29       0.01            0.00
+HEAD=W4A32       3     63.76           0.26      -0.02            0.00
+HEAD=W3A32       3     63.72           0.26      -0.07            0.00
+HEAD=W32A8       3     63.77           0.30      -0.01            0.06
+HEAD=W32A6       3     63.79           0.33       0.00            0.08
+HEAD=W32A4       3     63.16           0.41      -0.62            0.34
+
+wrote results/step5_blocks_calib_detail.csv and results/step5_blocks_calib_summary.csv
+calib                               0      1      2   mean  range_pp   fp32  change_pp
+spec          run                                                                     
+STEM=W4A4     runs/iqformer_s1  62.02  61.59  62.02  61.88      0.43  63.44      -1.56
+              runs/iqformer_s2  62.97  62.86  62.38  62.74      0.59  63.90      -1.17
+              runs/iqformer_s3  62.88  62.52  62.69  62.70      0.35  64.02      -1.32
+STEM=W32A4    runs/iqformer_s1  62.38  62.05  62.28  62.24      0.34  63.44      -1.20
+              runs/iqformer_s2  63.06  62.96  62.44  62.82      0.62  63.90      -1.08
+              runs/iqformer_s3  63.21  63.01  63.02  63.08      0.20  64.02      -0.93
+FUSION=W4A4   runs/iqformer_s1  56.15  57.06  56.23  56.48      0.91  63.44      -6.96
+              runs/iqformer_s2  60.15  59.94  60.42  60.17      0.48  63.90      -3.73
+              runs/iqformer_s3  55.99  55.49  55.90  55.79      0.50  64.02      -8.22
+FUSION=W32A4  runs/iqformer_s1  56.22  56.63  56.98  56.61      0.75  63.44      -6.83
+              runs/iqformer_s2  60.80  60.68  60.72  60.73      0.12  63.90      -3.17
+              runs/iqformer_s3  56.38  55.72  56.29  56.13      0.65  64.02      -7.89
+CONVENC=W4A4  runs/iqformer_s1  61.72  61.95  61.35  61.67      0.61  63.44      -1.77
+              runs/iqformer_s2  60.85  60.10  61.03  60.66      0.93  63.90      -3.24
+              runs/iqformer_s3  61.25  61.09  61.27  61.20      0.18  64.02      -2.81
+CONVENC=W32A4 runs/iqformer_s1  61.56  61.84  60.73  61.38      1.11  63.44      -2.06
+              runs/iqformer_s2  60.79  59.78  60.39  60.32      1.01  63.90      -3.58
+              runs/iqformer_s3  61.66  61.58  61.68  61.64      0.10  64.02      -2.38
+LOCAL=W4A4    runs/iqformer_s1  63.01  63.00  62.91  62.97      0.10  63.44      -0.47
+              runs/iqformer_s2  63.70  63.73  63.75  63.73      0.05  63.90      -0.18
+              runs/iqformer_s3  63.87  63.80  63.85  63.84      0.07  64.02      -0.17
+LOCAL=W32A4   runs/iqformer_s1  63.00  63.09  63.07  63.05      0.08  63.44      -0.39
+              runs/iqformer_s2  63.70  63.70  63.70  63.70      0.01  63.90      -0.20
+              runs/iqformer_s3  63.88  63.90  63.87  63.88      0.03  64.02      -0.13
+FFN=W4A4      runs/iqformer_s1  59.85  59.84  59.90  59.86      0.07  63.44      -3.57
+              runs/iqformer_s2  61.61  61.66  61.59  61.62      0.07  63.90      -2.28
+              runs/iqformer_s3  62.88  62.87  62.94  62.89      0.06  64.02      -1.12
+FFN=W32A4     runs/iqformer_s1  59.94  59.93  59.92  59.93      0.03  63.44      -3.51
+              runs/iqformer_s2  61.50  61.59  61.49  61.53      0.11  63.90      -2.38
+              runs/iqformer_s3  62.87  62.90  62.89  62.89      0.03  64.02      -1.13
+ATTN=W4A4     runs/iqformer_s1  61.28  60.75  61.05  61.02      0.53  63.44      -2.41
+              runs/iqformer_s2  63.02  62.83  62.70  62.85      0.32  63.90      -1.05
+              runs/iqformer_s3  61.61  62.01  62.33  61.98      0.72  64.02      -2.03
+ATTN=W32A4    runs/iqformer_s1  61.70  61.14  61.42  61.42      0.56  63.44      -2.02
+              runs/iqformer_s2  63.01  62.81  62.78  62.87      0.23  63.90      -1.04
+              runs/iqformer_s3  62.03  62.40  62.60  62.34      0.56  64.02      -1.67
+LSTM=W4A4     runs/iqformer_s1  62.64  62.35  62.51  62.50      0.29  63.44      -0.94
+              runs/iqformer_s2  63.23  62.20  63.00  62.81      1.03  63.90      -1.09
+              runs/iqformer_s3  63.67  62.97  63.64  63.43      0.70  64.02      -0.59
+LSTM=W32A4    runs/iqformer_s1  62.71  62.18  62.41  62.43      0.53  63.44      -1.00
+              runs/iqformer_s2  63.52  62.45  63.18  63.05      1.07  63.90      -0.85
+              runs/iqformer_s3  63.77  63.09  63.78  63.55      0.69  64.02      -0.47
+HEAD=W4A4     runs/iqformer_s1  62.72  62.50  62.83  62.68      0.33  63.44      -0.76
+              runs/iqformer_s2  63.45  63.53  63.45  63.48      0.08  63.90      -0.42
+              runs/iqformer_s3  63.30  63.29  63.25  63.28      0.05  64.02      -0.73
+HEAD=W32A4    runs/iqformer_s1  62.83  62.49  62.82  62.71      0.34  63.44      -0.73
+              runs/iqformer_s2  63.52  63.59  63.40  63.50      0.20  63.90      -0.40
+              runs/iqformer_s3  63.25  63.32  63.26  63.28      0.06  64.02      -0.74
+
+Per precision (mean over models of the mean over calibration sets):
+               models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                     
+STEM=W4A4           3     62.44           0.48      -1.35            0.59
+STEM=W32A4          3     62.71           0.43      -1.07            0.62
+FUSION=W4A4         3     57.48           2.35      -6.30            0.91
+FUSION=W32A4        3     57.82           2.53      -5.96            0.75
+CONVENC=W4A4        3     61.18           0.51      -2.61            0.93
+CONVENC=W32A4       3     61.11           0.70      -2.67            1.11
+LOCAL=W4A4          3     63.51           0.47      -0.27            0.10
+LOCAL=W32A4         3     63.55           0.44      -0.24            0.08
+FFN=W4A4            3     61.46           1.52      -2.33            0.07
+FFN=W32A4           3     61.45           1.48      -2.34            0.11
+ATTN=W4A4           3     61.95           0.91      -1.83            0.72
+ATTN=W32A4          3     62.21           0.73      -1.58            0.56
+LSTM=W4A4           3     62.91           0.47      -0.87            1.03
+LSTM=W32A4          3     63.01           0.56      -0.78            1.07
+HEAD=W4A4           3     63.15           0.42      -0.64            0.33
+HEAD=W32A4          3     63.16           0.41      -0.62            0.34
+
+wrote results/step5_fine_calib_detail.csv and results/step5_fine_calib_summary.csv
+>>> paste results/step5_blocks_calib_summary.csv and results/step5_fine_calib_summary.csv

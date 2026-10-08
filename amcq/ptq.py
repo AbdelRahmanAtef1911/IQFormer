@@ -80,7 +80,7 @@ def load_run(run, dev, args):
     if os.path.isdir(run):
         meta = json.load(open(os.path.join(run, 'metrics.json')))['args']
         model = build_model(meta['model'], stft=meta.get('stft', 'real'), iq=meta.get('iq', 'iq'),
-                            act=meta.get('act', 'gelu')).to(dev)
+                            act=meta.get('act', 'gelu'), input_norm=meta.get('input_norm', False)).to(dev)
         model.load_state_dict(torch.load(os.path.join(run, 'best.pt'), map_location=dev))
     else:                                                          # a released weight.pt
         model = build_model('iqformer').to(dev)
@@ -97,7 +97,8 @@ def main(argv=None):
     p.add_argument('--specs', nargs='*', default=[])
     p.add_argument('--calib', type=int, default=1024, help='calibration frames, from the TRAINING set')
     p.add_argument('--calib-seed', type=int, default=0, help='which 1,024 training frames calibrate (0 = the frames used so far)')
-    p.add_argument('--calib-method', default='minmax', choices=['minmax', 'percentile'])
+    p.add_argument('--calib-method', default='minmax', choices=['minmax', 'percentile', 'auto'],
+                   help="auto = percentile (--pct) for activations of 4 bits or fewer, min-max for wider ones")
     p.add_argument('--pct', type=float, default=99.99)
     p.add_argument('--no-fold', action='store_true')
     p.add_argument('--no-bare', action='store_true', help='leave layer_scale and w_g in floating point (as Brevitas did)')

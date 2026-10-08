@@ -1,0 +1,428 @@
+nohup: ignoring input
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/feat_s1: FP32 60.43%
+  all=W8A8                                    60.44%  delta   +0.01 pp  flips   703 (worse 197, better 201, McNemar p=0.88)  0.201 MB
+  all=W6A6                                    60.08%  delta   -0.36 pp  flips  2640 (worse 843, better 685, McNemar p=5.83e-05)  0.159 MB
+  all=W4A8                                    59.98%  delta   -0.45 pp  flips  3408 (worse 1052, better 854, McNemar p=6.3e-06)  0.118 MB
+  all=W4A4                                    55.87%  delta   -4.57 pp  flips  9110 (worse 3906, better 1896, McNemar p=1.78e-156)  0.118 MB
+
+runs/feat_s2: FP32 60.10%
+  all=W8A8                                    60.06%  delta   -0.04 pp  flips   933 (worse 261, better 243, McNemar p=0.449)  0.201 MB
+  all=W6A6                                    59.53%  delta   -0.57 pp  flips  3925 (worse 1297, better 1047, McNemar p=2.64e-07)  0.159 MB
+  all=W4A8                                    59.89%  delta   -0.21 pp  flips  3262 (worse 977, better 883, McNemar p=0.031)  0.118 MB
+  all=W4A4                                    50.62%  delta   -9.48 pp  flips 11038 (worse 5559, better 1387, McNemar p=0)  0.118 MB
+
+runs/feat_s3: FP32 60.15%
+  all=W8A8                                    60.19%  delta   +0.04 pp  flips   680 (worse 183, better 199, McNemar p=0.443)  0.201 MB
+  all=W6A6                                    59.75%  delta   -0.40 pp  flips  2865 (worse 857, better 680, McNemar p=6.99e-06)  0.159 MB
+  all=W4A8                                    59.74%  delta   -0.41 pp  flips  2663 (worse 880, better 700, McNemar p=6.55e-06)  0.118 MB
+  all=W4A4                                    56.73%  delta   -3.42 pp  flips  7131 (worse 3056, better 1552, McNemar p=1.35e-110)  0.118 MB
+
+wrote results/step7c_feat_calib0/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/feat_s1: FP32 60.43%
+  all=W8A8                                    60.48%  delta   +0.04 pp  flips   707 (worse 197, better 215, McNemar p=0.402)  0.201 MB
+  all=W6A6                                    59.90%  delta   -0.54 pp  flips  2762 (worse 929, better 693, McNemar p=5.07e-09)  0.159 MB
+  all=W4A8                                    59.90%  delta   -0.54 pp  flips  3437 (worse 1080, better 844, McNemar p=8.14e-08)  0.118 MB
+  all=W4A4                                    55.78%  delta   -4.65 pp  flips  9285 (worse 4034, better 1988, McNemar p=4.36e-156)  0.118 MB
+
+runs/feat_s2: FP32 60.10%
+  all=W8A8                                    60.02%  delta   -0.08 pp  flips   923 (worse 276, better 243, McNemar p=0.16)  0.201 MB
+  all=W6A6                                    59.54%  delta   -0.56 pp  flips  3717 (worse 1205, better 958, McNemar p=1.19e-07)  0.159 MB
+  all=W4A8                                    59.93%  delta   -0.17 pp  flips  3298 (worse 979, better 905, McNemar p=0.0926)  0.118 MB
+  all=W4A4                                    50.30%  delta   -9.80 pp  flips 11222 (worse 5700, better 1388, McNemar p=0)  0.118 MB
+
+runs/feat_s3: FP32 60.15%
+  all=W8A8                                    60.14%  delta   -0.01 pp  flips   696 (worse 197, better 193, McNemar p=0.879)  0.201 MB
+  all=W6A6                                    59.83%  delta   -0.32 pp  flips  3013 (worse 915, better 772, McNemar p=0.000542)  0.159 MB
+  all=W4A8                                    59.75%  delta   -0.40 pp  flips  2664 (worse 880, better 702, McNemar p=8.41e-06)  0.118 MB
+  all=W4A4                                    56.73%  delta   -3.42 pp  flips  7320 (worse 3124, better 1619, McNemar p=1.55e-107)  0.118 MB
+
+wrote results/step7c_feat_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/feat_s1: FP32 60.43%
+  all=W8A8                                    60.40%  delta   -0.04 pp  flips   665 (worse 198, better 181, McNemar p=0.411)  0.201 MB
+  all=W6A6                                    59.92%  delta   -0.52 pp  flips  2837 (worse 943, better 716, McNemar p=2.74e-08)  0.159 MB
+  all=W4A8                                    59.91%  delta   -0.52 pp  flips  3447 (worse 1091, better 860, McNemar p=1.86e-07)  0.118 MB
+  all=W4A4                                    56.14%  delta   -4.29 pp  flips  9216 (worse 3880, better 1992, McNemar p=2.93e-136)  0.118 MB
+
+runs/feat_s2: FP32 60.10%
+  all=W8A8                                    60.17%  delta   +0.07 pp  flips   909 (worse 233, better 265, McNemar p=0.165)  0.201 MB
+  all=W6A6                                    59.48%  delta   -0.62 pp  flips  3811 (worse 1236, better 964, McNemar p=7.26e-09)  0.159 MB
+  all=W4A8                                    59.95%  delta   -0.15 pp  flips  3241 (worse 971, better 903, McNemar p=0.122)  0.118 MB
+  all=W4A4                                    50.66%  delta   -9.44 pp  flips 11117 (worse 5567, better 1414, McNemar p=0)  0.118 MB
+
+runs/feat_s3: FP32 60.15%
+  all=W8A8                                    60.19%  delta   +0.04 pp  flips   679 (worse 171, better 188, McNemar p=0.398)  0.201 MB
+  all=W6A6                                    59.86%  delta   -0.30 pp  flips  2832 (worse 836, better 706, McNemar p=0.00101)  0.159 MB
+  all=W4A8                                    59.75%  delta   -0.40 pp  flips  2654 (worse 872, better 694, McNemar p=7.56e-06)  0.118 MB
+  all=W4A4                                    57.07%  delta   -3.09 pp  flips  6733 (worse 2809, better 1451, McNemar p=1.15e-97)  0.118 MB
+
+wrote results/step7c_feat_calib2/ptq_runs.csv and ptq_summary.csv
+calib                      0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                 
+all=W8A8 runs/feat_s1  60.44  60.48  60.40  60.44      0.08  60.43       0.00
+         runs/feat_s2  60.06  60.02  60.17  60.09      0.15  60.10      -0.01
+         runs/feat_s3  60.19  60.14  60.19  60.17      0.05  60.15       0.02
+all=W6A6 runs/feat_s1  60.08  59.90  59.92  59.96      0.18  60.43      -0.47
+         runs/feat_s2  59.53  59.54  59.48  59.52      0.06  60.10      -0.58
+         runs/feat_s3  59.75  59.83  59.86  59.81      0.11  60.15      -0.34
+all=W4A8 runs/feat_s1  59.98  59.90  59.91  59.93      0.09  60.43      -0.50
+         runs/feat_s2  59.89  59.93  59.95  59.92      0.06  60.10      -0.18
+         runs/feat_s3  59.74  59.75  59.75  59.75      0.00  60.15      -0.41
+all=W4A4 runs/feat_s1  55.87  55.78  56.14  55.93      0.36  60.43      -4.50
+         runs/feat_s2  50.62  50.30  50.66  50.53      0.36  60.10      -9.57
+         runs/feat_s3  56.73  56.73  57.07  56.84      0.33  60.15      -3.31
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       3     60.23           0.18       0.00            0.15
+all=W6A6       3     59.76           0.23      -0.46            0.18
+all=W4A8       3     59.87           0.10      -0.36            0.09
+all=W4A4       3     54.43           3.41      -5.79            0.36
+
+wrote results/step7c_feat_calib_detail.csv and results/step7c_feat_calib_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/mcldnn_norm_s1: FP32 55.30%
+  all=W8A8                                    55.31%  delta   +0.01 pp  flips   580 (worse 138, better 143, McNemar p=0.811)  0.425 MB
+  all=W6A6                                    54.89%  delta   -0.40 pp  flips  2486 (worse 703, better 525, McNemar p=4.21e-07)  0.324 MB
+  all=W4A8                                    54.82%  delta   -0.48 pp  flips  3319 (worse 936, better 727, McNemar p=3.27e-07)  0.223 MB
+  all=W4A4                                    51.32%  delta   -3.97 pp  flips  8629 (worse 3068, better 1320, McNemar p=1.51e-157)  0.223 MB
+
+runs/mcldnn_norm_s2: FP32 56.33%
+  all=W8A8                                    56.33%  delta   +0.00 pp  flips   605 (worse 136, better 136, McNemar p=1)  0.425 MB
+  all=W6A6                                    56.06%  delta   -0.27 pp  flips  2460 (worse 605, better 486, McNemar p=0.000349)  0.324 MB
+  all=W4A8                                    55.35%  delta   -0.98 pp  flips  3493 (worse 1177, better 747, McNemar p=9.13e-23)  0.223 MB
+  all=W4A4                                    54.01%  delta   -2.32 pp  flips  7354 (worse 2696, better 1675, McNemar p=3.52e-54)  0.223 MB
+
+runs/mcldnn_norm_s3: FP32 57.04%
+  all=W8A8                                    56.97%  delta   -0.06 pp  flips   476 (worse 133, better 106, McNemar p=0.0924)  0.425 MB
+  all=W6A6                                    56.72%  delta   -0.32 pp  flips  2126 (worse 588, better 447, McNemar p=1.31e-05)  0.324 MB
+  all=W4A8                                    56.52%  delta   -0.52 pp  flips  2474 (worse 806, better 578, McNemar p=9.64e-10)  0.223 MB
+  all=W4A4                                    55.40%  delta   -1.63 pp  flips  5570 (worse 1924, better 1206, McNemar p=6.42e-38)  0.223 MB
+
+wrote results/step7c_mcldnn_norm_calib0/ptq_runs.csv and ptq_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/mcldnn_norm_s1: FP32 55.30%
+  all=W8A8                                    55.27%  delta   -0.03 pp  flips   595 (worse 152, better 140, McNemar p=0.52)  0.425 MB
+  all=W6A6                                    54.83%  delta   -0.46 pp  flips  2893 (worse 819, better 616, McNemar p=9.24e-08)  0.324 MB
+  all=W4A8                                    54.76%  delta   -0.53 pp  flips  3400 (worse 962, better 728, McNemar p=1.37e-08)  0.223 MB
+  all=W4A4                                    51.39%  delta   -3.90 pp  flips  8607 (worse 3057, better 1340, McNemar p=1.35e-151)  0.223 MB
+
+runs/mcldnn_norm_s2: FP32 56.33%
+  all=W8A8                                    56.34%  delta   +0.01 pp  flips   661 (worse 141, better 146, McNemar p=0.813)  0.425 MB
+  all=W6A6                                    55.95%  delta   -0.38 pp  flips  2654 (worse 691, better 526, McNemar p=2.5e-06)  0.324 MB
+  all=W4A8                                    55.36%  delta   -0.97 pp  flips  3518 (worse 1184, better 758, McNemar p=3.56e-22)  0.223 MB
+  all=W4A4                                    54.11%  delta   -2.22 pp  flips  7344 (worse 2697, better 1720, McNemar p=3.27e-49)  0.223 MB
+
+runs/mcldnn_norm_s3: FP32 57.04%
+  all=W8A8                                    56.98%  delta   -0.05 pp  flips   515 (worse 139, better 115, McNemar p=0.149)  0.425 MB
+  all=W6A6                                    56.76%  delta   -0.28 pp  flips  2163 (worse 599, better 478, McNemar p=0.000252)  0.324 MB
+  all=W4A8                                    56.57%  delta   -0.47 pp  flips  2482 (worse 801, better 595, McNemar p=3.88e-08)  0.223 MB
+  all=W4A4                                    55.42%  delta   -1.61 pp  flips  5534 (worse 1911, better 1201, McNemar p=2.57e-37)  0.223 MB
+
+wrote results/step7c_mcldnn_norm_calib1/ptq_runs.csv and ptq_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/mcldnn_norm_s1: FP32 55.30%
+  all=W8A8                                    55.28%  delta   -0.02 pp  flips   565 (worse 149, better 141, McNemar p=0.681)  0.425 MB
+  all=W6A6                                    54.83%  delta   -0.46 pp  flips  2501 (worse 704, better 501, McNemar p=5.46e-09)  0.324 MB
+  all=W4A8                                    54.77%  delta   -0.53 pp  flips  3308 (worse 938, better 706, McNemar p=1.15e-08)  0.223 MB
+  all=W4A4                                    51.24%  delta   -4.06 pp  flips  8652 (worse 3101, better 1316, McNemar p=2.81e-163)  0.223 MB
+
+runs/mcldnn_norm_s2: FP32 56.33%
+  all=W8A8                                    56.30%  delta   -0.03 pp  flips   575 (worse 139, better 128, McNemar p=0.541)  0.425 MB
+  all=W6A6                                    56.03%  delta   -0.30 pp  flips  2445 (worse 632, better 500, McNemar p=9.71e-05)  0.324 MB
+  all=W4A8                                    55.31%  delta   -1.02 pp  flips  3526 (worse 1193, better 746, McNemar p=2.6e-24)  0.223 MB
+  all=W4A4                                    54.13%  delta   -2.20 pp  flips  7271 (worse 2644, better 1676, McNemar p=2.13e-49)  0.223 MB
+
+runs/mcldnn_norm_s3: FP32 57.04%
+  all=W8A8                                    57.03%  delta   -0.00 pp  flips   507 (worse 128, better 126, McNemar p=0.95)  0.425 MB
+  all=W6A6                                    56.79%  delta   -0.25 pp  flips  2182 (worse 570, better 462, McNemar p=0.000858)  0.324 MB
+  all=W4A8                                    56.54%  delta   -0.50 pp  flips  2438 (worse 807, better 588, McNemar p=4.96e-09)  0.223 MB
+  all=W4A4                                    55.45%  delta   -1.59 pp  flips  5540 (worse 1909, better 1210, McNemar p=3.93e-36)  0.223 MB
+
+wrote results/step7c_mcldnn_norm_calib2/ptq_runs.csv and ptq_summary.csv
+calib                             0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                        
+all=W8A8 runs/mcldnn_norm_s1  55.31  55.27  55.28  55.28      0.04  55.30      -0.01
+         runs/mcldnn_norm_s2  56.33  56.34  56.30  56.32      0.04  56.33      -0.00
+         runs/mcldnn_norm_s3  56.97  56.98  57.03  57.00      0.06  57.04      -0.04
+all=W6A6 runs/mcldnn_norm_s1  54.89  54.83  54.83  54.85      0.06  55.30      -0.44
+         runs/mcldnn_norm_s2  56.06  55.95  56.03  56.01      0.10  56.33      -0.32
+         runs/mcldnn_norm_s3  56.72  56.76  56.79  56.76      0.08  57.04      -0.28
+all=W4A8 runs/mcldnn_norm_s1  54.82  54.76  54.77  54.78      0.06  55.30      -0.51
+         runs/mcldnn_norm_s2  55.35  55.36  55.31  55.34      0.05  56.33      -0.99
+         runs/mcldnn_norm_s3  56.52  56.57  56.54  56.54      0.05  57.04      -0.49
+all=W4A4 runs/mcldnn_norm_s1  51.32  51.39  51.24  51.32      0.15  55.30      -3.98
+         runs/mcldnn_norm_s2  54.01  54.11  54.13  54.08      0.12  56.33      -2.25
+         runs/mcldnn_norm_s3  55.40  55.42  55.45  55.42      0.04  57.04      -1.61
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       3     56.20           0.86      -0.02            0.06
+all=W6A6       3     55.87           0.96      -0.35            0.10
+all=W4A8       3     55.56           0.90      -0.66            0.06
+all=W4A4       3     53.61           2.09      -2.61            0.15
+
+wrote results/step7c_mcldnn_norm_calib_detail.csv and results/step7c_mcldnn_norm_calib_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/petcgdnn_s1: FP32 57.99%
+  all=W8A8                                    57.98%  delta   -0.01 pp  flips   409 (worse 114, better 111, McNemar p=0.894)  0.251 MB
+  all=W6A6                                    57.81%  delta   -0.17 pp  flips  1876 (worse 548, better 472, McNemar p=0.0188)  0.248 MB
+  all=W4A8                                    55.94%  delta   -2.05 pp  flips  7386 (worse 2288, better 1386, McNemar p=1.8e-50)  0.245 MB
+  all=W4A4                                    55.19%  delta   -2.80 pp  flips  8432 (worse 2825, better 1595, McNemar p=2.76e-77)  0.245 MB
+
+runs/petcgdnn_s2: FP32 51.25%
+  all=W8A8                                    51.19%  delta   -0.06 pp  flips   503 (worse 166, better 140, McNemar p=0.153)  0.251 MB
+  all=W6A6                                    50.99%  delta   -0.26 pp  flips  1878 (worse 648, better 534, McNemar p=0.00101)  0.248 MB
+  all=W4A8                                    50.22%  delta   -1.03 pp  flips  5693 (worse 2135, better 1681, McNemar p=2.11e-13)  0.245 MB
+  all=W4A4                                    49.38%  delta   -1.87 pp  flips  7293 (worse 2713, better 1891, McNemar p=7.15e-34)  0.245 MB
+
+runs/petcgdnn_s3: FP32 58.18%
+  all=W8A8                                    58.15%  delta   -0.03 pp  flips   371 (worse 117, better 105, McNemar p=0.46)  0.251 MB
+  all=W6A6                                    58.10%  delta   -0.07 pp  flips  1386 (worse 421, better 389, McNemar p=0.276)  0.248 MB
+  all=W4A8                                    53.99%  delta   -4.19 pp  flips 12381 (worse 3871, better 2028, McNemar p=3.24e-129)  0.245 MB
+  all=W4A4                                    52.86%  delta   -5.32 pp  flips 13266 (worse 4452, better 2113, McNemar p=4.04e-187)  0.245 MB
+
+wrote results/step7c_petcgdnn_calib0/ptq_runs.csv and ptq_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/petcgdnn_s1: FP32 57.99%
+  all=W8A8                                    57.97%  delta   -0.02 pp  flips   424 (worse 120, better 113, McNemar p=0.694)  0.251 MB
+  all=W6A6                                    57.85%  delta   -0.13 pp  flips  1880 (worse 531, better 473, McNemar p=0.072)  0.248 MB
+  all=W4A8                                    55.91%  delta   -2.08 pp  flips  7380 (worse 2298, better 1384, McNemar p=1.11e-51)  0.245 MB
+  all=W4A4                                    55.11%  delta   -2.88 pp  flips  8553 (worse 2860, better 1593, McNemar p=2.38e-81)  0.245 MB
+
+runs/petcgdnn_s2: FP32 51.25%
+  all=W8A8                                    51.18%  delta   -0.07 pp  flips   518 (worse 176, better 146, McNemar p=0.106)  0.251 MB
+  all=W6A6                                    51.07%  delta   -0.18 pp  flips  1868 (worse 624, better 543, McNemar p=0.0192)  0.248 MB
+  all=W4A8                                    50.16%  delta   -1.09 pp  flips  5730 (worse 2153, better 1674, McNemar p=1.02e-14)  0.245 MB
+  all=W4A4                                    49.63%  delta   -1.63 pp  flips  7129 (worse 2598, better 1883, McNemar p=1.15e-26)  0.245 MB
+
+runs/petcgdnn_s3: FP32 58.18%
+  all=W8A8                                    58.14%  delta   -0.04 pp  flips   353 (worse 111, better 93, McNemar p=0.234)  0.251 MB
+  all=W6A6                                    58.14%  delta   -0.04 pp  flips  1448 (worse 420, better 402, McNemar p=0.553)  0.248 MB
+  all=W4A8                                    53.92%  delta   -4.26 pp  flips 12387 (worse 3896, better 2021, McNemar p=2.44e-133)  0.245 MB
+  all=W4A4                                    52.83%  delta   -5.35 pp  flips 13278 (worse 4479, better 2126, McNemar p=3.3e-188)  0.245 MB
+
+wrote results/step7c_petcgdnn_calib1/ptq_runs.csv and ptq_summary.csv
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1440: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.gru(
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/petcgdnn_s1: FP32 57.99%
+  all=W8A8                                    57.98%  delta   -0.01 pp  flips   393 (worse 107, better 104, McNemar p=0.891)  0.251 MB
+  all=W6A6                                    57.88%  delta   -0.11 pp  flips  1892 (worse 543, better 495, McNemar p=0.145)  0.248 MB
+  all=W4A8                                    55.95%  delta   -2.04 pp  flips  7397 (worse 2291, better 1395, McNemar p=1.17e-49)  0.245 MB
+  all=W4A4                                    55.19%  delta   -2.80 pp  flips  8490 (worse 2828, better 1597, McNemar p=2.54e-77)  0.245 MB
+
+runs/petcgdnn_s2: FP32 51.25%
+  all=W8A8                                    51.16%  delta   -0.10 pp  flips   479 (worse 164, better 122, McNemar p=0.0152)  0.251 MB
+  all=W6A6                                    51.03%  delta   -0.22 pp  flips  1817 (worse 619, better 521, McNemar p=0.00405)  0.248 MB
+  all=W4A8                                    50.26%  delta   -1.00 pp  flips  5717 (worse 2127, better 1689, McNemar p=1.42e-12)  0.245 MB
+  all=W4A4                                    49.33%  delta   -1.93 pp  flips  7312 (worse 2738, better 1891, McNemar p=1.1e-35)  0.245 MB
+
+runs/petcgdnn_s3: FP32 58.18%
+  all=W8A8                                    58.15%  delta   -0.02 pp  flips   360 (worse 111, better 101, McNemar p=0.537)  0.251 MB
+  all=W6A6                                    58.14%  delta   -0.04 pp  flips  1439 (worse 421, better 403, McNemar p=0.554)  0.248 MB
+  all=W4A8                                    53.93%  delta   -4.25 pp  flips 12380 (worse 3887, better 2019, McNemar p=1.35e-132)  0.245 MB
+  all=W4A4                                    52.95%  delta   -5.23 pp  flips 13196 (worse 4418, better 2116, McNemar p=4.56e-182)  0.245 MB
+
+wrote results/step7c_petcgdnn_calib2/ptq_runs.csv and ptq_summary.csv
+calib                          0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                     
+all=W8A8 runs/petcgdnn_s1  57.98  57.97  57.98  57.98      0.01  57.99      -0.01
+         runs/petcgdnn_s2  51.19  51.18  51.16  51.18      0.04  51.25      -0.07
+         runs/petcgdnn_s3  58.15  58.14  58.15  58.15      0.02  58.18      -0.03
+all=W6A6 runs/petcgdnn_s1  57.81  57.85  57.88  57.85      0.06  57.99      -0.14
+         runs/petcgdnn_s2  50.99  51.07  51.03  51.03      0.08  51.25      -0.22
+         runs/petcgdnn_s3  58.10  58.14  58.14  58.13      0.03  58.18      -0.05
+all=W4A8 runs/petcgdnn_s1  55.94  55.91  55.95  55.93      0.04  57.99      -2.05
+         runs/petcgdnn_s2  50.22  50.16  50.26  50.21      0.09  51.25      -1.04
+         runs/petcgdnn_s3  53.99  53.92  53.93  53.95      0.07  58.18      -4.23
+all=W4A4 runs/petcgdnn_s1  55.19  55.11  55.19  55.16      0.08  57.99      -2.82
+         runs/petcgdnn_s2  49.38  49.63  49.33  49.45      0.30  51.25      -1.81
+         runs/petcgdnn_s3  52.86  52.83  52.95  52.88      0.12  58.18      -5.30
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       3     55.77           3.98      -0.04            0.04
+all=W6A6       3     55.67           4.02      -0.14            0.08
+all=W4A8       3     53.36           2.90      -2.44            0.09
+all=W4A4       3     52.50           2.88      -3.31            0.30
+
+wrote results/step7c_petcgdnn_calib_detail.csv and results/step7c_petcgdnn_calib_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/amcnet_s1: FP32 61.88%
+  all=W8A8                                    61.67%  delta   -0.21 pp  flips  1592 (worse 438, better 345, McNemar p=0.000997)  0.481 MB
+  all=W6A6                                    60.47%  delta   -1.41 pp  flips  5012 (worse 1662, better 1040, McNemar p=3.55e-33)  0.365 MB
+  all=W4A8                                    61.42%  delta   -0.47 pp  flips  2818 (worse 885, better 679, McNemar p=2.09e-07)  0.249 MB
+  all=W4A4                                    58.04%  delta   -3.85 pp  flips  8221 (worse 3148, better 1456, McNemar p=2.68e-140)  0.249 MB
+
+runs/amcnet_s2: FP32 61.68%
+  all=W8A8                                    61.55%  delta   -0.14 pp  flips  1470 (worse 417, better 357, McNemar p=0.0339)  0.481 MB
+  all=W6A6                                    43.50%  delta  -18.18 pp  flips 20168 (worse 9660, better 1661, McNemar p=0)  0.365 MB
+  all=W4A8                                    60.84%  delta   -0.84 pp  flips  3414 (worse 1111, better 741, McNemar p=7.78e-18)  0.249 MB
+  all=W4A4                                    40.71%  delta  -20.97 pp  flips 22321 (worse 11379, better 2150, McNemar p=0)  0.249 MB
+
+runs/amcnet_s3: FP32 59.49%
+  all=W8A8                                    58.14%  delta   -1.35 pp  flips  5063 (worse 1538, better 945, McNemar p=7.54e-33)  0.481 MB
+  all=W6A6                                    45.00%  delta  -14.48 pp  flips 21072 (worse 8548, better 2176, McNemar p=0)  0.365 MB
+  all=W4A8                                    58.05%  delta   -1.43 pp  flips  4896 (worse 1766, better 1136, McNemar p=9.79e-32)  0.249 MB
+  all=W4A4                                    38.73%  delta  -20.76 pp  flips 26117 (worse 11496, better 2362, McNemar p=0)  0.249 MB
+
+wrote results/step7c_amcnet_calib0/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/amcnet_s1: FP32 61.88%
+  all=W8A8                                    61.45%  delta   -0.43 pp  flips  2524 (worse 658, better 467, McNemar p=1.36e-08)  0.481 MB
+  all=W6A6                                    57.65%  delta   -4.23 pp  flips  7509 (worse 3182, better 1320, McNemar p=1.97e-174)  0.365 MB
+  all=W4A8                                    61.25%  delta   -0.63 pp  flips  3651 (worse 1074, better 797, McNemar p=1.64e-10)  0.249 MB
+  all=W4A4                                    57.34%  delta   -4.55 pp  flips  8876 (worse 3577, better 1576, McNemar p=2.44e-175)  0.249 MB
+
+runs/amcnet_s2: FP32 61.68%
+  all=W8A8                                    61.47%  delta   -0.22 pp  flips  1919 (worse 576, better 481, McNemar p=0.00382)  0.481 MB
+  all=W6A6                                    45.02%  delta  -16.66 pp  flips 18127 (worse 9018, better 1686, McNemar p=0)  0.365 MB
+  all=W4A8                                    60.79%  delta   -0.89 pp  flips  4366 (worse 1322, better 930, McNemar p=1.46e-16)  0.249 MB
+  all=W4A4                                    41.32%  delta  -20.36 pp  flips 20799 (worse 10856, better 1896, McNemar p=0)  0.249 MB
+
+runs/amcnet_s3: FP32 59.49%
+  all=W8A8                                    58.97%  delta   -0.52 pp  flips  3325 (worse 860, better 631, McNemar p=3.3e-09)  0.481 MB
+  all=W6A6                                    44.60%  delta  -14.89 pp  flips 21710 (worse 8687, better 2137, McNemar p=0)  0.365 MB
+  all=W4A8                                    58.92%  delta   -0.57 pp  flips  4354 (worse 1293, better 1044, McNemar p=2.83e-07)  0.249 MB
+  all=W4A4                                    38.19%  delta  -21.30 pp  flips 26488 (worse 11693, better 2321, McNemar p=0)  0.249 MB
+
+wrote results/step7c_amcnet_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/amcnet_s1: FP32 61.88%
+  all=W8A8                                    61.73%  delta   -0.15 pp  flips  1663 (worse 466, better 399, McNemar p=0.0248)  0.481 MB
+  all=W6A6                                    53.93%  delta   -7.95 pp  flips 12293 (worse 5147, better 1647, McNemar p=0)  0.365 MB
+  all=W4A8                                    61.53%  delta   -0.35 pp  flips  2774 (worse 836, better 682, McNemar p=8.49e-05)  0.249 MB
+  all=W4A4                                    57.51%  delta   -4.37 pp  flips  8788 (worse 3410, better 1485, McNemar p=5.42e-171)  0.249 MB
+
+runs/amcnet_s2: FP32 61.68%
+  all=W8A8                                    61.33%  delta   -0.35 pp  flips  2317 (worse 643, better 489, McNemar p=5.26e-06)  0.481 MB
+  all=W6A6                                    44.45%  delta  -17.23 pp  flips 18711 (worse 9280, better 1700, McNemar p=0)  0.365 MB
+  all=W4A8                                    61.00%  delta   -0.68 pp  flips  3278 (worse 1045, better 747, McNemar p=2.04e-12)  0.249 MB
+  all=W4A4                                    41.49%  delta  -20.19 pp  flips 21048 (worse 10752, better 1867, McNemar p=0)  0.249 MB
+
+runs/amcnet_s3: FP32 59.49%
+  all=W8A8                                    58.50%  delta   -0.99 pp  flips  4054 (worse 1301, better 865, McNemar p=6.71e-21)  0.481 MB
+  all=W6A6                                    46.70%  delta  -12.79 pp  flips 19633 (worse 7785, better 2159, McNemar p=0)  0.365 MB
+  all=W4A8                                    57.65%  delta   -1.84 pp  flips  5662 (worse 2095, better 1286, McNemar p=2.62e-44)  0.249 MB
+  all=W4A4                                    38.29%  delta  -21.19 pp  flips 26448 (worse 11666, better 2341, McNemar p=0)  0.249 MB
+
+wrote results/step7c_amcnet_calib2/ptq_runs.csv and ptq_summary.csv
+calib                        0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                   
+all=W8A8 runs/amcnet_s1  61.67  61.45  61.73  61.62      0.28  61.88      -0.27
+         runs/amcnet_s2  61.55  61.47  61.33  61.45      0.21  61.68      -0.23
+         runs/amcnet_s3  58.14  58.97  58.50  58.53      0.83  59.49      -0.95
+all=W6A6 runs/amcnet_s1  60.47  57.65  53.93  57.35      6.54  61.88      -4.53
+         runs/amcnet_s2  43.50  45.02  44.45  44.32      1.52  61.68     -17.36
+         runs/amcnet_s3  45.00  44.60  46.70  45.43      2.10  59.49     -14.05
+all=W4A8 runs/amcnet_s1  61.42  61.25  61.53  61.40      0.28  61.88      -0.48
+         runs/amcnet_s2  60.84  60.79  61.00  60.88      0.21  61.68      -0.80
+         runs/amcnet_s3  58.05  58.92  57.65  58.21      1.27  59.49      -1.28
+all=W4A4 runs/amcnet_s1  58.04  57.34  57.51  57.63      0.70  61.88      -4.26
+         runs/amcnet_s2  40.71  41.32  41.49  41.17      0.78  61.68     -20.51
+         runs/amcnet_s3  38.73  38.19  38.29  38.40      0.54  59.49     -21.08
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       3     60.53           1.73      -0.48            0.83
+all=W6A6       3     49.04           7.22     -11.98            6.54
+all=W4A8       3     60.16           1.71      -0.85            1.27
+all=W4A4       3     45.73          10.39     -15.28            0.78
+
+wrote results/step7c_amcnet_calib_detail.csv and results/step7c_amcnet_calib_summary.csv
+>>> paste: for f in results/step7c_*_calib_summary.csv; do echo $f; cat $f; done

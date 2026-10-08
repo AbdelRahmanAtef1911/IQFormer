@@ -11,7 +11,7 @@ import sys
 
 import pandas as pd
 
-dirs = sorted(set(sum([glob.glob(a) for a in sys.argv[1:]], [])))
+dirs = sorted(d for d in set(sum([glob.glob(a) for a in sys.argv[1:]], [])) if os.path.isdir(d))   # skip earlier summary CSVs
 if not dirs:
     raise SystemExit('no result folders given')
 frames = []

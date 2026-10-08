@@ -57,7 +57,13 @@ def main(argv=None):
         for bs in (1, 64, 400):
             x = torch.randn(bs, 2, 128, device=dev)
             n_warm, n = (20, 200) if dev.type == 'cuda' or bs == 1 else (3, 10)
-            timeit(model, x, n_warm, dev)
+            try:        # some repository models fail here: FEA-T hard-codes .cuda() (no CPU run), and models that
+                        # call torch.squeeze() without a dim (released IQFormer, PET-CGDNN) crash at batch size 1
+                timeit(model, x, n_warm, dev)
+            except Exception as e:
+                res[f'{dev.type}_bs{bs}'] = {'error': f'{type(e).__name__}: {str(e).splitlines()[0]}'}
+                print(f'{dev.type:4s} batch {bs:4d}: FAILED ({res[f"{dev.type}_bs{bs}"]["error"]})')
+                continue
             r = timeit(model, x, n, dev)
             r['per_frame_ms'] = r['median_ms'] / bs
             r['frames_per_s'] = 1e3 * bs / r['median_ms']

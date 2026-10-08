@@ -132,6 +132,17 @@ bash amcq/run.sh step5c
 Same path as 5b, but activation scales are set at the 99.9th percentile instead of min-max (the fix
 step 6 found). Output: `results/step5c_a8path_p999_calib_summary.csv`.
 
+### 5d. Clip only the 4-bit activations (about as long as step 4)
+
+```bash
+bash amcq/run.sh step5d
+```
+
+Same path again with `--calib-method auto`: 4-bit activations clipped at the 99.9th percentile, 8-bit
+ones min-max (step 5c showed clipping helps at 4 bits but costs ~0.35 pp at 8 bits). Self-check: its
+`all=W4A4` row must equal step 5c and its `all=W4A8` row step 5b. Output:
+`results/step5d_a8path_auto_calib_summary.csv`.
+
 ### 6. Why 4 bits collapse (error analysis) (about 1 h)
 
 ```bash
@@ -154,15 +165,40 @@ If clipping recovers the loss, outliers are the cause. If separate scales recove
 unequal channels is the cause. The script checks itself: its fusion min-max row must equal Step 5's
 `FUSION=W32A4` exactly (it prints PASS).
 
-### 7. Different models (rubric) (~6–8 h, run overnight)
+### 7. Different models (rubric) (~5–7 h, run overnight)
 
 ```bash
 nohup bash amcq/run.sh step7 > step7.log 2>&1 &
 ```
 
-Trains MLP, CNN (VGG-style), FEA-T (transformer), MCLDNN, PET-CGDNN, AMC-Net — 3 seeds each, same split
-and recipe — then quantizes each at W8A8 / W6A6 / W4A8 / W4A4. This gives the required model comparison
-**and** shows whether IQFormer is more or less robust to quantization than plain CNN / transformer models.
+Trains the IQFormer paper's baselines from the repository: FEA-T (transformer), MCLDNN (CNN + LSTM),
+PET-CGDNN (CNN + GRU) and AMC-Net (CNN + attention). Each is trained 3 times with the same split and
+recipe, then quantized at W8A8 / W6A6 / W4A8 / W4A4. This gives the model comparison **and** shows
+whether IQFormer is more or less robust to quantization than the other models. PET-CGDNN's GRU is not
+quantized (only LSTMs are unrolled), so it stays in floating point. To add an MLP and a VGG-style CNN:
+`MODELS7="mlp cnn feat mcldnn petcgdnn amcnet" bash amcq/run.sh step7`.
+
+### 7b. Retrain MCLDNN (about 1 h)
+
+```bash
+nohup bash amcq/run.sh step7b > step7b.log 2>&1 &
+```
+
+In step 7 MCLDNN stayed at chance (9.09 %). The likely cause: with the raw, very small input values and no
+normalization layer it never left the starting plateau, and early stopping ended it after 10 epochs
+(check with `head -12 runs/mcldnn_s1/log.csv`). Step 7b retrains it
+with `--input-norm` (every frame scaled to unit RMS, like a receiver's automatic gain control) and
+`--patience 20`, then quantizes it as in step 7. `MODELS7B="mcldnn petcgdnn"` also redoes PET-CGDNN.
+
+### 7c. Fair 4-bit comparison (about 1 h)
+
+```bash
+nohup bash amcq/run.sh step7c > step7c.log 2>&1 &
+```
+
+Quantizes every comparison model again with the rule that worked best for IQFormer (`--calib-method auto`,
+step 5d) and 3 calibration sets, so their 4-bit numbers can be compared with IQFormer's 58.94 % fairly.
+Output: `results/step7c_<model>_calib_summary.csv`.
 
 ### 8. Two more IQFormer seeds (~1 h)
 

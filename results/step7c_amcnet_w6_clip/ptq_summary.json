@@ -1,0 +1,36 @@
+{
+ "args": {
+  "repo": null,
+  "data": null,
+  "runs": [
+   "runs/amcnet_s1",
+   "runs/amcnet_s2",
+   "runs/amcnet_s3"
+  ],
+  "preset": "custom",
+  "specs": [
+   "all=W6A6"
+  ],
+  "calib": 1024,
+  "calib_seed": 0,
+  "calib_method": "percentile",
+  "pct": 99.9,
+  "no_fold": false,
+  "no_bare": false,
+  "act_scheme": "affine",
+  "out": "results/step7c_amcnet_w6_clip",
+  "device": "cuda"
+ },
+ "summary": [
+  {
+   "spec": "all=W6A6",
+   "n": 3,
+   "acc_mean": 60.09015151515151,
+   "acc_std": 1.8265380891688492,
+   "delta_mean_pp": -0.9272727272727247,
+   "delta_std_pp": 0.5049138704065599,
+   "p_tost": 0.8598180032022233,
+   "equivalent": false
+  }
+ ]
+}

@@ -17,6 +17,9 @@ BASE=${BASE:-"runs/iqformer_s1 runs/iqformer_s2 runs/iqformer_s3"}
 T="python amcq/train.py --epochs $EPOCHS --subset $SUBSET"
 # mixed precision for QAT: stems, fusion layer and classifier at 8 bits (0.5 % of MACs; Step 5). Revisit after 5b/6.
 MIXED=${MIXED:-"all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8"}
+# comparison models for steps 7 and 11: the IQFormer paper's baselines from the repository
+# (FEA-T = transformer; MCLDNN, PET-CGDNN, AMC-Net = convolutional hybrids). Add "mlp cnn" to include those.
+MODELS7=${MODELS7:-"feat mcldnn petcgdnn amcnet"}
 
 step1() {   # environment, GPU, dataset, STFT equivalence
   python amcq/check_env.py
@@ -103,6 +106,17 @@ step5c() {  # Step 5b again with the fix Step 6 found: activation scales clipped
   echo ">>> paste results/step5c_a8path_p999_calib_summary.csv"
 }
 
+step5d() {  # Step 5b again with the calibration rule Steps 5c/6 point to: clip (99.9th percentile) only the 4-bit
+            # activations, min-max for the 8-bit ones. Self-check: all=W4A4 must equal step 5c, all=W4A8 step 5b.
+  local CALIBS=${CALIBS:-"0 1 2"}
+  for c in $CALIBS; do
+    python amcq/ptq.py --runs $BASE --preset a8path --calib-method auto --pct 99.9 --calib-seed $c \
+           --out results/step5d_a8path_auto_calib$c
+  done
+  python amcq/calib_summary.py 'results/step5d_a8path_auto_calib*'
+  echo ">>> paste results/step5d_a8path_auto_calib_summary.csv"
+}
+
 step6() {   # error analysis of the 4-bit collapse: ranges per layer / channel / fusion branch, clipping,
             # one scale per fusion branch, one scale per channel. Every model x 3 calibration sets.
   python amcq/act_stats.py --runs $BASE --calib-seeds ${CALIBS:-0 1 2} --out results/step6
@@ -110,13 +124,39 @@ step6() {   # error analysis of the 4-bit collapse: ranges per layer / channel /
 }
 
 step7() {   # rubric: 'different models such as MLP, CNN, and transformer' (+ the IQFormer paper's baselines)
-  for m in mlp cnn feat mcldnn petcgdnn amcnet; do
+  for m in $MODELS7; do
     for s in 1 2 3; do $T --model $m --seed $s --out runs/${m}_s$s; done
   done
-  for m in mlp cnn feat mcldnn petcgdnn amcnet; do
+  for m in $MODELS7; do
     python amcq/ptq.py --runs runs/${m}_s1 runs/${m}_s2 runs/${m}_s3 --preset custom \
            --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 --out results/step7_ptq_$m
   done
+}
+
+step7b() {  # MCLDNN did not train in step 7 (stuck at chance, 9.09 %). Retrain it with per-frame power
+            # normalization (--input-norm) and longer early-stopping patience, then quantize as in step 7.
+            # MODELS7B="mcldnn petcgdnn" also redoes PET-CGDNN (one of its runs was weak, 51.25 %).
+  local M=${MODELS7B:-mcldnn}
+  for m in $M; do
+    for s in 1 2 3; do $T --model $m --seed $s --input-norm --patience 20 --out runs/${m}_norm_s$s; done
+    python amcq/ptq.py --runs runs/${m}_norm_s1 runs/${m}_norm_s2 runs/${m}_norm_s3 --preset custom \
+           --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 --out results/step7b_ptq_${m}_norm
+  done
+  echo ">>> paste: grep \"\\[test\\]\" of the log, and cat results/step7b_ptq_*/ptq_summary.csv"
+}
+
+step7c() {  # fair 4-bit comparison: every comparison model with the calibration rule that worked best for
+            # IQFormer (auto: clip 4-bit activations at the 99.9th percentile, min-max for wider ones), 3 calibration sets
+  local CALIBS=${CALIBS:-"0 1 2"}
+  for m in ${MODELS7C:-feat mcldnn_norm petcgdnn amcnet}; do
+    for c in $CALIBS; do
+      python amcq/ptq.py --runs runs/${m}_s1 runs/${m}_s2 runs/${m}_s3 --preset custom \
+             --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 --calib-method auto --pct 99.9 --calib-seed $c \
+             --out results/step7c_${m}_calib$c
+    done
+    python amcq/calib_summary.py "results/step7c_${m}_calib*"
+  done
+  echo '>>> paste: for f in results/step7c_*_calib_summary.csv; do echo $f; cat $f; done'
 }
 
 step8() {   # two more IQFormer seeds with this pipeline: checks train.py reproduces the baseline,
@@ -145,7 +185,7 @@ step10() {  # proposed model, quantization part: LSQ QAT, with and without disti
 
 step11() {  # real-time argument: latency at batch size 1 (crashes in the released code)
   python amcq/latency.py --run runs/iqformer_s1 --out results/step11_latency_iqformer.json
-  for m in mlp cnn feat; do python amcq/latency.py --model $m --out results/step11_latency_$m.json; done
+  for m in $MODELS7; do python amcq/latency.py --model $m --out results/step11_latency_$m.json; done
 }
 
 step12() {  # tables and figures for the report

@@ -49,6 +49,7 @@ def get_args(argv=None):
     p.add_argument('--focal-gamma', type=float, default=2.0)
     p.add_argument('--aug', default='', help="comma list of rot,flip,rev (empty = none, as released)")
     p.add_argument('--patience', type=int, default=10, help='early stopping (0 = off)')
+    p.add_argument('--input-norm', action='store_true', help='scale every frame to unit RMS before the model (AGC)')
     p.add_argument('--init', default=None, help='start from a checkpoint (released weight.pt or best.pt)')
     p.add_argument('--subset', type=float, default=1.0, help='fraction of training frames (smoke tests)')
     p.add_argument('--tta', action='store_true', help='also report 4-rotation test-time augmentation')
@@ -114,7 +115,7 @@ def main(argv=None):
             d[k] = d[k][keep]
     t = to_device(d, dev)
 
-    model = build_model(args.model, stft=args.stft, iq=args.iq, act=args.act).to(dev)
+    model = build_model(args.model, stft=args.stft, iq=args.iq, act=args.act, input_norm=args.input_norm).to(dev)
     if args.init:
         if hasattr(model, 'load_legacy'):
             model.load_legacy(args.init, dev)

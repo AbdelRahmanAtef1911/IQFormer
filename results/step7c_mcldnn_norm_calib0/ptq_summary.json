@@ -1,0 +1,69 @@
+{
+ "args": {
+  "repo": null,
+  "data": null,
+  "runs": [
+   "runs/mcldnn_norm_s1",
+   "runs/mcldnn_norm_s2",
+   "runs/mcldnn_norm_s3"
+  ],
+  "preset": "custom",
+  "specs": [
+   "all=W8A8",
+   "all=W6A6",
+   "all=W4A8",
+   "all=W4A4"
+  ],
+  "calib": 1024,
+  "calib_seed": 0,
+  "calib_method": "auto",
+  "pct": 99.9,
+  "no_fold": false,
+  "no_bare": false,
+  "act_scheme": "affine",
+  "out": "results/step7c_mcldnn_norm_calib0",
+  "device": "cuda"
+ },
+ "summary": [
+  {
+   "spec": "all=W8A8",
+   "n": 3,
+   "acc_mean": 56.20378787878788,
+   "acc_std": 0.8411711303435303,
+   "delta_mean_pp": -0.016666666666668533,
+   "delta_std_pp": 0.03912348888992923,
+   "p_tost": 0.0010884549887990704,
+   "equivalent": true
+  },
+  {
+   "spec": "all=W6A6",
+   "n": 3,
+   "acc_mean": 55.888636363636365,
+   "acc_std": 0.924363193798621,
+   "delta_mean_pp": -0.33181818181818495,
+   "delta_std_pp": 0.06776387052670797,
+   "p_tost": 0.025042136619199042,
+   "equivalent": true
+  },
+  {
+   "spec": "all=W4A8",
+   "n": 3,
+   "acc_mean": 55.56363636363636,
+   "acc_std": 0.8683751569587577,
+   "delta_mean_pp": -0.6568181818181862,
+   "delta_std_pp": 0.27836038535006064,
+   "p_tost": 0.7839562276336334,
+   "equivalent": false
+  },
+  {
+   "spec": "all=W4A4",
+   "n": 3,
+   "acc_mean": 53.57878787878788,
+   "acc_std": 2.0746518842377712,
+   "delta_mean_pp": -2.6416666666666715,
+   "delta_std_pp": 1.2030572567776598,
+   "p_tost": 0.9544765400949605,
+   "equivalent": false
+  }
+ ]
+}

@@ -37,7 +37,8 @@ def main(argv=None):
     p.add_argument('--lr', type=float, default=1e-4, help='weights')
     p.add_argument('--lr-scale', type=float, default=1e-3, help='step sizes')
     p.add_argument('--aug', default='')
-    p.add_argument('--calib-method', default='percentile', choices=['minmax', 'percentile'])
+    p.add_argument('--calib-method', default='percentile', choices=['minmax', 'percentile', 'auto'],
+                   help="auto = percentile (--pct) for activations of 4 bits or fewer, min-max for wider ones")
     p.add_argument('--pct', type=float, default=99.99)
     p.add_argument('--seed', type=int, default=1)
     p.add_argument('--teacher', nargs='*', default=[], help='FP32 runs whose averaged logits teach the student (KD)')

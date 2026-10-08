@@ -1,0 +1,260 @@
+nohup: ignoring input
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  all=W4A4                                    58.94%  delta   -4.50 pp  flips 10068 (worse 3424, better 1445, McNemar p=6.5e-182)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.67%  delta   -3.76 pp  flips  8550 (worse 2969, better 1313, McNemar p=8.22e-145)  0.218 MB
+  all=W4A4,FUSION=W4A8                        59.34%  delta   -4.10 pp  flips 10361 (worse 3209, better 1406, McNemar p=3.53e-159)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    60.46%  delta   -2.98 pp  flips  8768 (worse 2594, better 1284, McNemar p=5.27e-100)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.90%  delta   -2.54 pp  flips  7845 (worse 2319, better 1203, McNemar p=4.38e-80)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.26%  delta   -1.18 pp  flips  4409 (worse 1376, better 857, McNemar p=3.36e-28)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.63%  delta   -0.81 pp  flips  3732 (worse 1154, better 799, McNemar p=9.57e-16)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.67%  delta   -0.77 pp  flips  3596 (worse 1082, better 744, McNemar p=2.6e-15)  0.218 MB
+  all=W4A8                                    62.70%  delta   -0.74 pp  flips  3424 (worse 1049, better 724, McNemar p=1.2e-14)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W4A4                                    58.04%  delta   -5.87 pp  flips 12960 (worse 4329, better 1748, McNemar p=6.53e-248)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.52%  delta   -4.38 pp  flips 10777 (worse 3536, better 1607, McNemar p=4.22e-163)  0.218 MB
+  all=W4A4,FUSION=W4A8                        58.85%  delta   -5.06 pp  flips 12286 (worse 3875, better 1650, McNemar p=2.54e-202)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    60.10%  delta   -3.80 pp  flips 10404 (worse 3170, better 1498, McNemar p=4.96e-135)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.75%  delta   -3.16 pp  flips  9439 (worse 2800, better 1411, McNemar p=2.21e-103)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.53%  delta   -1.37 pp  flips  3876 (worse 1314, better 710, McNemar p=1.46e-41)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.91%  delta   -0.99 pp  flips  3081 (worse 1014, better 578, McNemar p=5.24e-28)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  63.13%  delta   -0.77 pp  flips  2918 (worse 916, better 576, McNemar p=1.2e-18)  0.218 MB
+  all=W4A8                                    63.21%  delta   -0.69 pp  flips  2679 (worse 836, better 532, McNemar p=1.94e-16)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W4A4                                    60.02%  delta   -3.99 pp  flips  9560 (worse 3007, better 1251, McNemar p=4.15e-164)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                61.52%  delta   -2.50 pp  flips  7144 (worse 2154, better 1055, McNemar p=2.3e-85)  0.218 MB
+  all=W4A4,FUSION=W4A8                        59.35%  delta   -4.66 pp  flips 11682 (worse 3574, better 1522, McNemar p=1.03e-186)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    61.19%  delta   -2.82 pp  flips  8899 (worse 2481, better 1238, McNemar p=5.89e-94)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  61.70%  delta   -2.32 pp  flips  8167 (worse 2203, better 1182, McNemar p=7.36e-70)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.65%  delta   -1.37 pp  flips  4658 (worse 1385, better 783, McNemar p=1.36e-38)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.74%  delta   -1.27 pp  flips  4245 (worse 1298, better 738, McNemar p=1.11e-35)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.84%  delta   -1.17 pp  flips  4083 (worse 1232, better 716, McNemar p=8.17e-32)  0.218 MB
+  all=W4A8                                    62.83%  delta   -1.19 pp  flips  3990 (worse 1224, better 701, McNemar p=4.99e-33)  0.218 MB
+
+wrote results/step5c_a8path_p999_calib0/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  all=W4A4                                    58.69%  delta   -4.75 pp  flips 10747 (worse 3615, better 1524, McNemar p=2.55e-192)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.29%  delta   -4.15 pp  flips  9142 (worse 3132, better 1306, McNemar p=3.67e-170)  0.218 MB
+  all=W4A4,FUSION=W4A8                        59.24%  delta   -4.20 pp  flips 10830 (worse 3348, better 1499, McNemar p=3.46e-159)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    60.07%  delta   -3.37 pp  flips  9344 (worse 2807, better 1326, McNemar p=7.25e-120)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.64%  delta   -2.80 pp  flips  8452 (worse 2470, better 1238, McNemar p=1.4e-92)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.26%  delta   -1.18 pp  flips  4448 (worse 1385, better 866, McNemar p=5.53e-28)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.55%  delta   -0.89 pp  flips  3747 (worse 1176, better 783, McNemar p=6.32e-19)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.62%  delta   -0.81 pp  flips  3594 (worse 1100, better 742, McNemar p=7.18e-17)  0.218 MB
+  all=W4A8                                    62.67%  delta   -0.77 pp  flips  3408 (worse 1054, better 715, McNemar p=7.59e-16)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W4A4                                    57.94%  delta   -5.97 pp  flips 13240 (worse 4478, better 1853, McNemar p=8.86e-246)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.31%  delta   -4.59 pp  flips 11045 (worse 3618, better 1597, McNemar p=1.06e-176)  0.218 MB
+  all=W4A4,FUSION=W4A8                        58.60%  delta   -5.30 pp  flips 12546 (worse 4026, better 1692, McNemar p=3.61e-215)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    59.81%  delta   -4.09 pp  flips 10788 (worse 3352, better 1552, McNemar p=6.08e-149)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.42%  delta   -3.48 pp  flips  9749 (worse 2954, better 1422, McNemar p=5.33e-121)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.40%  delta   -1.51 pp  flips  3941 (worse 1346, better 682, McNemar p=6.15e-50)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.95%  delta   -0.95 pp  flips  3085 (worse 1016, better 596, McNemar p=9.05e-26)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  63.04%  delta   -0.86 pp  flips  2930 (worse 943, better 563, McNemar p=9.38e-23)  0.218 MB
+  all=W4A8                                    63.17%  delta   -0.73 pp  flips  2723 (worse 871, better 548, McNemar p=9.09e-18)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W4A4                                    60.03%  delta   -3.98 pp  flips  9540 (worse 3042, better 1290, McNemar p=2.01e-160)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                61.56%  delta   -2.45 pp  flips  7251 (worse 2199, better 1119, McNemar p=1.07e-79)  0.218 MB
+  all=W4A4,FUSION=W4A8                        59.12%  delta   -4.90 pp  flips 11922 (worse 3740, better 1586, McNemar p=8.4e-197)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    61.11%  delta   -2.91 pp  flips  8956 (worse 2513, better 1234, McNemar p=1.01e-98)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  61.47%  delta   -2.55 pp  flips  8252 (worse 2273, better 1152, McNemar p=4.05e-83)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.67%  delta   -1.35 pp  flips  4658 (worse 1398, better 806, McNemar p=9.16e-37)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.72%  delta   -1.30 pp  flips  4259 (worse 1327, better 756, McNemar p=3.14e-36)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.79%  delta   -1.23 pp  flips  4082 (worse 1257, better 718, McNemar p=3.86e-34)  0.218 MB
+  all=W4A8                                    62.78%  delta   -1.23 pp  flips  4012 (worse 1247, better 704, McNemar p=4.79e-35)  0.218 MB
+
+wrote results/step5c_a8path_p999_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+
+runs/iqformer_s1: FP32 63.44%
+  all=W4A4                                    58.40%  delta   -5.04 pp  flips 11146 (worse 3787, better 1568, McNemar p=6.25e-208)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.11%  delta   -4.32 pp  flips  9583 (worse 3262, better 1359, McNemar p=2e-177)  0.218 MB
+  all=W4A4,FUSION=W4A8                        58.85%  delta   -4.59 pp  flips 11417 (worse 3532, better 1514, McNemar p=2.44e-182)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    59.92%  delta   -3.52 pp  flips  9800 (worse 2938, better 1390, McNemar p=5.74e-125)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.56%  delta   -2.88 pp  flips  8710 (worse 2541, better 1275, McNemar p=6.08e-95)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.31%  delta   -1.13 pp  flips  4395 (worse 1370, better 872, McNemar p=5.67e-26)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.58%  delta   -0.86 pp  flips  3736 (worse 1151, better 773, McNemar p=6.56e-18)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.57%  delta   -0.87 pp  flips  3618 (worse 1113, better 730, McNemar p=4.26e-19)  0.218 MB
+  all=W4A8                                    62.65%  delta   -0.79 pp  flips  3437 (worse 1053, better 707, McNemar p=1.58e-16)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W4A4                                    58.39%  delta   -5.52 pp  flips 12828 (worse 4178, better 1750, McNemar p=1.46e-224)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                59.55%  delta   -4.36 pp  flips 10826 (worse 3509, better 1592, McNemar p=1.99e-162)  0.218 MB
+  all=W4A4,FUSION=W4A8                        58.85%  delta   -5.05 pp  flips 12403 (worse 3881, better 1657, McNemar p=1.22e-201)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    60.07%  delta   -3.84 pp  flips 10480 (worse 3198, better 1509, McNemar p=1.23e-136)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  60.65%  delta   -3.26 pp  flips  9525 (worse 2862, better 1428, McNemar p=3.93e-108)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.55%  delta   -1.35 pp  flips  3863 (worse 1298, better 704, McNemar p=1.14e-40)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.89%  delta   -1.02 pp  flips  3119 (worse 1027, better 579, McNemar p=2.98e-29)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  63.05%  delta   -0.86 pp  flips  2947 (worse 947, better 570, McNemar p=2.91e-22)  0.218 MB
+  all=W4A8                                    63.14%  delta   -0.76 pp  flips  2718 (worse 872, better 537, McNemar p=3.89e-19)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W4A4                                    60.00%  delta   -4.02 pp  flips  9667 (worse 3046, better 1277, McNemar p=5.76e-164)  0.218 MB
+  all=W4A4,STEM=W4A8,HEAD=W4A8                61.70%  delta   -2.31 pp  flips  7128 (worse 2158, better 1140, McNemar p=2.69e-71)  0.218 MB
+  all=W4A4,FUSION=W4A8                        59.09%  delta   -4.93 pp  flips 11823 (worse 3701, better 1532, McNemar p=2.42e-203)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8    61.09%  delta   -2.93 pp  flips  8953 (worse 2544, better 1256, McNemar p=1.08e-98)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8  61.58%  delta   -2.43 pp  flips  8182 (worse 2221, better 1150, McNemar p=3.92e-77)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8  62.69%  delta   -1.33 pp  flips  4622 (worse 1371, better 787, McNemar p=1.48e-36)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8  62.75%  delta   -1.27 pp  flips  4217 (worse 1280, better 722, McNemar p=5.07e-36)  0.218 MB
+  all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8  62.84%  delta   -1.18 pp  flips  4100 (worse 1239, better 720, McNemar p=5.39e-32)  0.218 MB
+  all=W4A8                                    62.81%  delta   -1.21 pp  flips  4020 (worse 1235, better 703, McNemar p=6.56e-34)  0.218 MB
+
+wrote results/step5c_a8path_p999_calib2/ptq_runs.csv and ptq_summary.csv
+calib                                                                                                    0      1      2   mean  range_pp   fp32  change_pp
+spec                                                                               run                                                                     
+all=W4A4                                                                           runs/iqformer_s1  58.94  58.69  58.40  58.67      0.55  63.44      -4.76
+                                                                                   runs/iqformer_s2  58.04  57.94  58.39  58.12      0.45  63.90      -5.78
+                                                                                   runs/iqformer_s3  60.02  60.03  60.00  60.02      0.04  64.02      -4.00
+all=W4A4,STEM=W4A8,HEAD=W4A8                                                       runs/iqformer_s1  59.68  59.29  59.11  59.36      0.56  63.44      -4.08
+                                                                                   runs/iqformer_s2  59.52  59.31  59.55  59.46      0.24  63.90      -4.44
+                                                                                   runs/iqformer_s3  61.52  61.56  61.70  61.59      0.18  64.02      -2.42
+all=W4A4,FUSION=W4A8                                                               runs/iqformer_s1  59.34  59.24  58.85  59.14      0.49  63.44      -4.30
+                                                                                   runs/iqformer_s2  58.85  58.60  58.85  58.77      0.25  63.90      -5.14
+                                                                                   runs/iqformer_s3  59.35  59.12  59.09  59.19      0.27  64.02      -4.83
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8                                           runs/iqformer_s1  60.46  60.07  59.92  60.15      0.54  63.44      -3.29
+                                                                                   runs/iqformer_s2  60.10  59.81  60.07  59.99      0.29  63.90      -3.91
+                                                                                   runs/iqformer_s3  61.19  61.11  61.09  61.13      0.10  64.02      -2.89
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8                                 runs/iqformer_s1  60.90  60.64  60.56  60.70      0.34  63.44      -2.74
+                                                                                   runs/iqformer_s2  60.75  60.42  60.65  60.61      0.32  63.90      -3.30
+                                                                                   runs/iqformer_s3  61.70  61.47  61.58  61.58      0.23  64.02      -2.43
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8                        runs/iqformer_s1  62.26  62.26  62.31  62.28      0.05  63.44      -1.16
+                                                                                   runs/iqformer_s2  62.53  62.40  62.55  62.49      0.16  63.90      -1.41
+                                                                                   runs/iqformer_s3  62.65  62.67  62.69  62.67      0.04  64.02      -1.35
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8           runs/iqformer_s1  62.63  62.55  62.58  62.59      0.09  63.44      -0.85
+                                                                                   runs/iqformer_s2  62.91  62.95  62.89  62.92      0.06  63.90      -0.99
+                                                                                   runs/iqformer_s3  62.74  62.72  62.75  62.74      0.03  64.02      -1.28
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8 runs/iqformer_s1  62.67  62.62  62.57  62.62      0.10  63.44      -0.82
+                                                                                   runs/iqformer_s2  63.13  63.04  63.05  63.07      0.09  63.90      -0.83
+                                                                                   runs/iqformer_s3  62.84  62.79  62.84  62.82      0.05  64.02      -1.19
+all=W4A8                                                                           runs/iqformer_s1  62.70  62.67  62.65  62.67      0.05  63.44      -0.77
+                                                                                   runs/iqformer_s2  63.21  63.17  63.14  63.18      0.07  63.90      -0.73
+                                                                                   runs/iqformer_s3  62.83  62.78  62.81  62.81      0.05  64.02      -1.21
+
+Per precision (mean over models of the mean over calibration sets):
+                                                                                    models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                                                                                          
+all=W4A4                                                                                 3     58.94           0.98      -4.85            0.55
+all=W4A4,STEM=W4A8,HEAD=W4A8                                                             3     60.14           1.26      -3.65            0.56
+all=W4A4,FUSION=W4A8                                                                     3     59.03           0.23      -4.75            0.49
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8                                                 3     60.43           0.61      -3.36            0.54
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8                                       3     60.96           0.54      -2.82            0.34
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8                              3     62.48           0.20      -1.31            0.16
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8                 3     62.75           0.17      -1.04            0.09
+all=W4A4,FUSION=W4A8,STEM=W4A8,HEAD=W4A8,ATTN=W4A8,FFN=W4A8,CONVENC=W4A8,LSTM=W4A8       3     62.84           0.23      -0.95            0.10
+all=W4A8                                                                                 3     62.88           0.26      -0.90            0.07
+
+wrote results/step5c_a8path_p999_calib_detail.csv and results/step5c_a8path_p999_calib_summary.csv
+>>> paste results/step5c_a8path_p999_calib_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4468/0.4434  val 1.6503/0.3902  lr 1.00e-03  29.3s  *
+ep   1  train 1.2435/0.5195  val 1.2388/0.5266  lr 1.00e-03  27.2s  *
+ep   2  train 1.1904/0.5464  val 1.1810/0.5472  lr 1.00e-03  27.4s  *
+ep   3  train 1.1657/0.5577  val 1.1730/0.5573  lr 1.00e-03  27.2s  *
+ep   4  train 1.1449/0.5717  val 1.1305/0.5802  lr 1.00e-03  28.3s  *
+ep   5  train 1.1281/0.5851  val 1.1319/0.5827  lr 1.00e-03  28.1s  *
+ep   6  train 1.1126/0.5929  val 1.1152/0.5930  lr 1.00e-03  27.4s  *
+ep   7  train 1.1005/0.5986  val 1.0901/0.6030  lr 1.00e-03  27.4s  *
+ep   8  train 1.0933/0.6006  val 1.0808/0.6029  lr 1.00e-03  27.6s
+ep   9  train 1.0809/0.6060  val 1.0897/0.6055  lr 1.00e-03  130.9s  *
+ep  10  train 1.0718/0.6099  val 1.0679/0.6126  lr 1.00e-03  -73.3s  *
+ep  11  train 1.0652/0.6133  val 1.0658/0.6145  lr 1.00e-03  28.0s  *
+ep  12  train 1.0608/0.6152  val 1.0604/0.6178  lr 1.00e-03  27.4s  *
+ep  13  train 1.0525/0.6179  val 1.0662/0.6131  lr 1.00e-03  27.3s
+ep  14  train 1.0462/0.6212  val 1.0434/0.6209  lr 1.00e-03  27.4s  *
+ep  15  train 1.0420/0.6223  val 1.0506/0.6227  lr 1.00e-03  27.5s  *
+ep  16  train 1.0404/0.6238  val 1.0544/0.6184  lr 1.00e-03  27.9s
+ep  17  train 1.0348/0.6266  val 1.0545/0.6213  lr 1.00e-03  27.7s
+ep  18  train 1.0332/0.6262  val 1.0369/0.6265  lr 1.00e-03  28.4s  *
+ep  19  train 1.0299/0.6276  val 1.0338/0.6282  lr 1.00e-03  27.9s  *
+ep  20  train 1.0266/0.6286  val 1.0296/0.6284  lr 1.00e-03  27.5s  *
+ep  21  train 1.0237/0.6299  val 1.0305/0.6261  lr 1.00e-03  27.7s
+ep  22  train 1.0212/0.6307  val 1.0416/0.6253  lr 1.00e-03  27.5s
+ep  23  train 1.0211/0.6306  val 1.0373/0.6281  lr 1.00e-03  27.4s
+ep  24  train 1.0188/0.6319  val 1.0352/0.6292  lr 5.00e-04  27.4s  *
+ep  25  train 1.0030/0.6379  val 1.0230/0.6292  lr 5.00e-04  27.9s
+ep  26  train 1.0022/0.6382  val 1.0166/0.6318  lr 5.00e-04  27.7s  *
+ep  27  train 1.0002/0.6384  val 1.0154/0.6352  lr 5.00e-04  27.7s  *
+ep  28  train 0.9979/0.6395  val 1.0174/0.6336  lr 5.00e-04  27.6s
+ep  29  train 0.9975/0.6388  val 1.0182/0.6339  lr 5.00e-04  27.4s
+ep  30  train 0.9975/0.6401  val 1.0192/0.6319  lr 5.00e-04  27.3s
+ep  31  train 0.9953/0.6405  val 1.0229/0.6312  lr 2.50e-04  27.2s
+ep  32  train 0.9846/0.6448  val 1.0153/0.6353  lr 2.50e-04  27.8s  *
+ep  33  train 0.9839/0.6466  val 1.0132/0.6331  lr 2.50e-04  27.2s
+ep  34  train 0.9819/0.6461  val 1.0144/0.6321  lr 2.50e-04  27.3s
+ep  35  train 0.9811/0.6459  val 1.0186/0.6332  lr 2.50e-04  27.3s
+ep  36  train 0.9807/0.6462  val 1.0172/0.6353  lr 2.50e-04  27.3s
+ep  37  train 0.9790/0.6472  val 1.0120/0.6362  lr 2.50e-04  27.3s  *
+ep  38  train 0.9773/0.6478  val 1.0179/0.6352  lr 2.50e-04  27.3s
+ep  39  train 0.9771/0.6477  val 1.0163/0.6354  lr 2.50e-04  27.4s
+ep  40  train 0.9754/0.6486  val 1.0180/0.6322  lr 2.50e-04  27.3s
+ep  41  train 0.9747/0.6484  val 1.0215/0.6350  lr 1.25e-04  27.3s
+ep  42  train 0.9680/0.6521  val 1.0158/0.6362  lr 1.25e-04  27.3s
+ep  43  train 0.9670/0.6513  val 1.0206/0.6351  lr 1.25e-04  27.4s
+ep  44  train 0.9658/0.6526  val 1.0182/0.6357  lr 1.25e-04  27.3s
+ep  45  train 0.9645/0.6531  val 1.0195/0.6345  lr 6.25e-05  27.3s
+ep  46  train 0.9601/0.6547  val 1.0197/0.6344  lr 6.25e-05  28.4s
+ep  47  train 0.9597/0.6558  val 1.0216/0.6347  lr 6.25e-05  28.8s
+early stop at epoch 47
+[test] overall 63.71%  peak 93.91%  macro-F1 0.6607  (-20..0 dB 39.44%, 0..18 dB 93.09%)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4365/0.4501  val 1.4708/0.4303  lr 1.00e-03  29.7s  *
+ep   1  train 1.2298/0.5293  val 1.2245/0.5347  lr 1.00e-03  27.5s  *
+ep   2  train 1.1837/0.5495  val 1.1995/0.5422  lr 1.00e-03  27.3s  *
+ep   3  train 1.1577/0.5617  val 1.1946/0.5543  lr 1.00e-03  27.2s  *
+ep   4  train 1.1428/0.5702  val 1.1556/0.5663  lr 1.00e-03  27.5s  *
+ep   5  train 1.1282/0.5839  val 1.1282/0.5823  lr 1.00e-03  27.4s  *
+ep   6  train 1.1122/0.5927  val 1.1195/0.5922  lr 1.00e-03  28.2s  *
+ep   7  train 1.0985/0.5991  val 1.0857/0.6036  lr 1.00e-03  28.1s  *
+ep   8  train 1.0867/0.6052  val 1.0909/0.6075  lr 1.00e-03  27.4s  *
+ep   9  train 1.0705/0.6121  val 1.0640/0.6160  lr 1.00e-03  27.4s  *
+ep  10  train 1.0592/0.6166  val 1.0535/0.6211  lr 1.00e-03  28.0s  *
+ep  11  train 1.0582/0.6168  val 1.0431/0.6232  lr 1.00e-03  27.6s  *
+ep  12  train 1.0485/0.6212  val 1.0607/0.6147  lr 1.00e-03  129.4s
+ep  13  train 1.0424/0.6232  val 1.0538/0.6204  lr 1.00e-03  -74.6s
+ep  14  train 1.0396/0.6250  val 1.0336/0.6265  lr 1.00e-03  27.2s  *
+ep  15  train 1.0361/0.6262  val 1.0426/0.6243  lr 1.00e-03  27.8s
+ep  16  train 1.0317/0.6281  val 1.0443/0.6240  lr 1.00e-03  28.6s
+ep  17  train 1.0290/0.6280  val 1.0328/0.6276  lr 1.00e-03  28.6s  *
+ep  18  train 1.0272/0.6281  val 1.0392/0.6255  lr 1.00e-03  28.0s
+ep  19  train 1.0232/0.6299  val 1.0311/0.6250  lr 1.00e-03  27.4s
+ep  20  train 1.0222/0.6310  val 1.0243/0.6288  lr 1.00e-03  27.3s  *
+ep  21  train 1.0196/0.6319  val 1.0356/0.6290  lr 1.00e-03  27.8s  *
+ep  22  train 1.0168/0.6330  val 1.0270/0.6318  lr 1.00e-03  28.8s  *
+ep  23  train 1.0152/0.6330  val 1.0170/0.6343  lr 1.00e-03  28.2s  *
+ep  24  train 1.0132/0.6358  val 1.0305/0.6299  lr 1.00e-03  27.4s
+ep  25  train 1.0101/0.6357  val 1.0345/0.6287  lr 1.00e-03  27.3s
+ep  26  train 1.0091/0.6361  val 1.0248/0.6316  lr 1.00e-03  27.6s
+ep  27  train 1.0082/0.6376  val 1.0187/0.6348  lr 5.00e-04  28.6s  *
+ep  28  train 0.9926/0.6420  val 1.0078/0.6380  lr 5.00e-04  27.5s  *
+ep  29  train 0.9915/0.6429  val 1.0096/0.6375  lr 5.00e-04  28.0s
+ep  30  train 0.9895/0.6434  val 1.0109/0.6372  lr 5.00e-04  28.0s
+ep  31  train 0.9884/0.6438  val 1.0104/0.6363  lr 5.00e-04  27.2s
+ep  32  train 0.9875/0.6448  val 1.0095/0.6357  lr 2.50e-04  129.5s
+ep  33  train 0.9771/0.6487  val 1.0057/0.6370  lr 2.50e-04  -74.8s
+ep  34  train 0.9750/0.6498  val 1.0073/0.6391  lr 2.50e-04  27.9s  *
+ep  35  train 0.9733/0.6511  val 1.0087/0.6368  lr 2.50e-04  28.4s
+ep  36  train 0.9727/0.6499  val 1.0071/0.6390  lr 2.50e-04  27.2s
+ep  37  train 0.9715/0.6503  val 1.0088/0.6385  lr 1.25e-04  28.1s
+ep  38  train 0.9660/0.6534  val 1.0066/0.6409  lr 1.25e-04  28.1s  *
+ep  39  train 0.9645/0.6534  val 1.0070/0.6393  lr 1.25e-04  27.3s
+ep  40  train 0.9632/0.6544  val 1.0090/0.6392  lr 1.25e-04  27.4s
+ep  41  train 0.9617/0.6544  val 1.0116/0.6398  lr 6.25e-05  27.3s
+ep  42  train 0.9588/0.6557  val 1.0096/0.6398  lr 6.25e-05  27.4s
+ep  43  train 0.9583/0.6563  val 1.0104/0.6397  lr 6.25e-05  27.6s
+ep  44  train 0.9569/0.6560  val 1.0118/0.6396  lr 6.25e-05  27.1s
+ep  45  train 0.9569/0.6571  val 1.0119/0.6386  lr 5.00e-05  27.2s
+ep  46  train 0.9555/0.6570  val 1.0152/0.6394  lr 5.00e-05  27.2s
+ep  47  train 0.9549/0.6574  val 1.0136/0.6406  lr 5.00e-05  27.1s
+ep  48  train 0.9544/0.6576  val 1.0131/0.6398  lr 5.00e-05  27.2s
+early stop at epoch 48
+[test] overall 64.33%  peak 94.09%  macro-F1 0.6691  (-20..0 dB 40.39%, 0..18 dB 93.35%)
+>>> CHECK: both should fall inside 63.79 +- ~0.6 %.
