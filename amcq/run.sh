@@ -5,6 +5,7 @@
 # Long steps: run them in the background and watch the log, e.g.
 #   nohup bash amcq/run.sh step7 > logs_step7.txt 2>&1 &     tail -f logs_step7.txt
 set -euo pipefail
+export PYTHONUNBUFFERED=1                     # print lines immediately, also into nohup logs
 cd "$(dirname "$0")/.."                       # repository root (~/amc/IQFormer)
 
 EPOCHS=${EPOCHS:-60}                          # QUICK smoke test: EPOCHS=1 SUBSET=0.05
@@ -15,7 +16,7 @@ CK2=${CK2:-save_models/model_2016.10a_60_256_0.001_IQFormer_r2/weight.pt}
 CK3=${CK3:-save_models/model_2016.10a_60_256_0.001_IQFormer_r3/weight.pt}
 BASE=${BASE:-"runs/iqformer_s1 runs/iqformer_s2 runs/iqformer_s3"}
 T="python amcq/train.py --epochs $EPOCHS --subset $SUBSET"
-# mixed precision for QAT: stems, fusion layer and classifier at 8 bits (0.5 % of MACs; Step 5). Revisit after 5b/6.
+# mixed precision for QAT: stems, fusion layer and classifier at 8 bits (0.5 % of MACs; Steps 5, 5d: the cheapest groups with the largest loss per MAC)
 MIXED=${MIXED:-"all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8"}
 # comparison models for steps 7 and 11: the IQFormer paper's baselines from the repository
 # (FEA-T = transformer; MCLDNN, PET-CGDNN, AMC-Net = convolutional hybrids). Add "mlp cnn" to include those.
@@ -165,22 +166,69 @@ step8() {   # two more IQFormer seeds with this pipeline: checks train.py reprod
   echo ">>> CHECK: both should fall inside 63.79 +- ~0.6 %."
 }
 
-step9() {   # proposed model, accuracy part (one change per arm, 5 seeds each)
-  for s in 1 2 3 4 5; do
-    $T --model iqformer --aug rot      --seed $s --out runs/iqf_rot_s$s
-    $T --model iqformer --aug rot,flip --seed $s --out runs/iqf_rotflip_s$s
-    $T --model iqformer --act relu     --seed $s --out runs/iqf_relu_s$s
-    $T --model iqformer --act hswish   --seed $s --out runs/iqf_hswish_s$s
+step9() {   # proposed model, accuracy part: one change per variant, 5 seeds each (about 20 trainings, ~10 h).
+            # ARMS9="name:train options|..." picks the variants; SEEDS9 the seeds. Runs go to runs/iqf_<name>_s<seed>.
+            # Already finished runs are skipped, so the step can be stopped and restarted.
+  local ARMS=${ARMS9:-"rot:--aug rot|rotflip:--aug rot,flip|relu:--act relu|hswish:--act hswish"}
+  local SEEDS=${SEEDS9:-"1 2 3 4 5"}
+  local IFS_OLD=$IFS
+  for s in $SEEDS; do
+    IFS='|'; for arm in $ARMS; do IFS=$IFS_OLD
+      local name=${arm%%:*} opts=${arm#*:}
+      if [ -f runs/iqf_${name}_s$s/metrics.json ]; then echo "skip runs/iqf_${name}_s$s (done)"; continue; fi
+      $T --model iqformer $opts --seed $s --out runs/iqf_${name}_s$s
+    done; IFS=$IFS_OLD
   done
+  step9s
 }
 
-step10() {  # proposed model, quantization part: LSQ QAT, with and without distillation
-  for s in 1 2 3; do
-    python amcq/qat.py --run runs/iqformer_s$s --spec all=W4A4 --epochs $QAT_EPOCHS --out runs/qat_w4a4_s$s
-    python amcq/qat.py --run runs/iqformer_s$s --spec all=W4A4 --epochs $QAT_EPOCHS --teacher $BASE --out runs/qatkd_w4a4_s$s
-    python amcq/qat.py --run runs/iqformer_s$s --spec "$MIXED" --epochs $QAT_EPOCHS \
-           --teacher $BASE --out runs/qatkd_mixed_s$s
+step9s() {  # summary of step 9: each variant vs the five baseline seeds (Welch t-test), overall and in -6..0 dB
+  python amcq/seeds_summary.py --base 'runs/iqformer_s[1-5]' --variants 'runs/iqf_*_s[0-9]' --out results/step9_summary.csv
+  echo ">>> paste the table above (results/step9_summary.csv)"
+}
+
+step9b() {  # does a training change also make the model easier to quantize? PTQ of every step-9 variant and of
+            # the 5 baseline seeds with the bit-width-aware rule (calibration set 0; ~1 h)
+  python amcq/ptq.py --runs runs/iqformer_s1 runs/iqformer_s2 runs/iqformer_s3 runs/iqformer_s4 runs/iqformer_s5 \
+         --preset custom --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 --calib-method auto --pct 99.9 --save-pred \
+         --out results/step9b_ptq_iqformer                     # --save-pred: per-class analysis for the final report
+  for d in runs/iqf_*_s1; do
+    local name=$(basename ${d%_s1})
+    python amcq/ptq.py --runs runs/${name}_s[0-9] --preset custom --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 \
+           --calib-method auto --pct 99.9 --out results/step9b_ptq_${name}
   done
+  echo '>>> paste: for f in results/step9b_ptq_*/ptq_summary.csv; do echo $f; cat $f; done'
+}
+
+step10() {  # proposed model, quantization part: LSQ quantization-aware training (QAT), ranges initialized with the
+            # bit-width-aware rule (clip 4-bit activations at the 99.9th percentile). Configurations (QAT_CONFIGS):
+            #   w4a4       W4A4, plain QAT
+            #   kd_w4a4    W4A4 + distillation from the FP32 models in TEACH
+            #   kd_mixed   W4A4 with 8-bit stems, fusion and classifier ($MIXED, 0.5 % of MACs) + distillation
+            #   kd_w4a8    W4A8 + distillation (optional: can W4A8 reach full precision?)
+            # QAT_RUNS: the FP32 models to start from (default: the 3 original IQFormer models).
+            # Output: runs/qat_<config>_<run name>, e.g. runs/qat_kd_w4a4_iqformer_s1. Finished runs are skipped.
+  local RUNS=${QAT_RUNS:-$BASE}
+  local TEACH=${TEACH:-"runs/iqformer_s1 runs/iqformer_s2 runs/iqformer_s3 runs/iqformer_s4 runs/iqformer_s5"}
+  for cfg in ${QAT_CONFIGS:-w4a4 kd_w4a4 kd_mixed}; do
+    for r in $RUNS; do
+      local out=runs/qat_${cfg}_$(basename $r)
+      if [ -f $out/metrics.json ]; then echo "skip $out (done)"; continue; fi
+      case $cfg in
+        w4a4)     python amcq/qat.py --run $r --spec all=W4A4 --epochs $QAT_EPOCHS --out $out ;;
+        kd_w4a4)  python amcq/qat.py --run $r --spec all=W4A4 --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
+        kd_mixed) python amcq/qat.py --run $r --spec "$MIXED" --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
+        kd_w4a8)  python amcq/qat.py --run $r --spec all=W4A8 --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
+        *) echo "unknown QAT config $cfg"; exit 1 ;;
+      esac
+    done
+  done
+  step10s
+}
+
+step10s() { # summary of step 10
+  python amcq/qat_summary.py 'runs/qat_*' --out results/step10_summary.csv
+  echo ">>> paste the table above (results/step10_summary.csv)"
 }
 
 step11() {  # real-time argument: latency at batch size 1 (crashes in the released code)

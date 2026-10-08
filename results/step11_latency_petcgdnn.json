@@ -1,0 +1,33 @@
+{
+ "cpu_bs1": {
+  "error": "IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2)"
+ },
+ "cpu_bs64": {
+  "median_ms": 12.560158502310514,
+  "p99_ms": 14.162242994643748,
+  "per_frame_ms": 0.1962524765986018,
+  "frames_per_s": 5095.477098336524
+ },
+ "cpu_bs400": {
+  "median_ms": 102.61263750726357,
+  "p99_ms": 104.0427669940982,
+  "per_frame_ms": 0.2565315937681589,
+  "frames_per_s": 3898.1553317122903
+ },
+ "cuda_bs1": {
+  "error": "IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2)"
+ },
+ "cuda_bs64": {
+  "median_ms": 0.7478199986508116,
+  "p99_ms": 1.2831800268031657,
+  "per_frame_ms": 0.011684687478918931,
+  "frames_per_s": 85582.09210166399
+ },
+ "cuda_bs400": {
+  "median_ms": 3.003139005159028,
+  "p99_ms": 3.3292270090896636,
+  "per_frame_ms": 0.00750784751289757,
+  "frames_per_s": 133193.9678159581
+ },
+ "note": "CPU measured with 1 thread. GPU timings include the STFT and host synchronisation."
+}

@@ -208,30 +208,52 @@ bash amcq/run.sh step8
 
 Checks that `train.py` reproduces the baseline (both inside 63.79 ± ~0.6 %) and gives 5 baseline seeds.
 
-### 9. Proposed model — accuracy arms (~10 h, overnight)
+### 9. Proposed model — accuracy variants (~8 h, overnight)
 
 ```bash
 nohup bash amcq/run.sh step9 > step9.log 2>&1 &
+tail -f step9.log            # Ctrl+C stops watching, not the run
 ```
 
-5 seeds each: rotation augmentation, rotation+flip augmentation, ReLU instead of GELU, hard-swish
-instead of GELU. One change per arm, so each effect is measured alone (ablation).
+20 trainings of about 23 min: 5 seeds each of rotation augmentation (`iqf_rot`), rotation + flip
+(`iqf_rotflip`), ReLU instead of GELU (`iqf_relu`) and hard-swish instead of GELU (`iqf_hswish`). One change
+per variant, so each effect is measured alone (ablation). Finished runs are skipped, so the step can be
+stopped and started again. At the end it prints the comparison with the 5 baseline seeds
+(`results/step9_summary.csv`: mean, SD, difference, Welch t-test, overall and in the −6..0 dB band).
+A combination of the best changes is run the same way, e.g.
+`ARMS9="rotrelu:--aug rot --act relu" nohup bash amcq/run.sh step9 > step9c.log 2>&1 &`.
 
-### 10. Proposed model — quantization arms (~6–9 h)
+### 9b. Are the new variants easier to quantize? (~1 h)
+
+```bash
+bash amcq/run.sh step9b 2>&1 | tee step9b.log
+```
+
+PTQ (W8A8, W6A6, W4A8, W4A4; bit-width-aware rule) of the 5 baseline seeds and of every step-9 variant.
+The baseline run also saves every test prediction (`--save-pred`) for the per-class analysis.
+
+### 10. Proposed model — quantization-aware training (overnight)
 
 ```bash
 nohup bash amcq/run.sh step10 > step10.log 2>&1 &
+tail -f step10.log           # after the first epoch it prints s/epoch and minutes left
 ```
 
-LSQ quantization-aware training at W4A4, with and without distillation from the three FP32 models, and a
-mixed version (stems and classifier at 8 bits). Re-run on the best FP32 arm of step 9 by replacing
-`runs/iqformer_s$s` in `run.sh` with that arm's run folders.
+LSQ QAT, 15 epochs, ranges started with the bit-width-aware rule (clip 4-bit activations at the 99.9th
+percentile). Configurations (`QAT_CONFIGS`, default `w4a4 kd_w4a4 kd_mixed`): W4A4; W4A4 + distillation
+from the five FP32 models; W4A4 with 8-bit stems, fusion and classifier (0.5 % of MACs) + distillation.
+Optional: `kd_w4a8`. Results: `runs/qat_<config>_<model>`; summary `results/step10_summary.csv`
+(FP32, PTQ start, QAT, paired change, TOST). On the chosen step-9 variant:
+`QAT_RUNS="runs/iqf_rot_s1 runs/iqf_rot_s2 runs/iqf_rot_s3" TEACH="runs/iqf_rot_s1 runs/iqf_rot_s2 runs/iqf_rot_s3 runs/iqf_rot_s4 runs/iqf_rot_s5" QAT_CONFIGS="kd_w4a4 kd_mixed" nohup bash amcq/run.sh step10 > step10b.log 2>&1 &`
 
 ### 11. Latency (5 min)
 
 ```bash
-bash amcq/run.sh step11
+bash amcq/run.sh step11 2>&1 | tee step11.log
 ```
+
+Milliseconds per window at batch sizes 1, 64 and 400 on the CPU (1 thread) and GPU, for IQFormer and the
+comparison models (some repository models fail at batch size 1 or on the CPU; the error is recorded).
 
 ### 12. Tables and figures
 
@@ -273,6 +295,8 @@ rm -rf runs/iqformer_s4 runs/iqformer_s5
 | `train.py`, `ptq.py`, `qat.py`, `act_stats.py`, `latency.py`, `analyze.py` | the experiments |
 | `cost.py` | weights, MACs and activation values per block group; cost of a precision spec |
 | `calib_summary.py` | combines results from several calibration sets (mean, range) |
+| `seeds_summary.py` | step 9: training variants over seeds vs the baseline seeds (Welch t-test) |
+| `qat_summary.py` | step 10: QAT results (PTQ start, QAT, paired change, TOST) |
 | `run.sh` | steps 1–12 above (with 2b verify, 3b, 3c, 5b) |
 | `check_env.py` | step 1 |
 | `tests/make_synthetic.py` | fake dataset for testing the code without the real data |

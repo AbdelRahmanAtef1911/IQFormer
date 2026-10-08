@@ -1,0 +1,30 @@
+{
+ "cpu_bs1": {
+  "error": "RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm)"
+ },
+ "cpu_bs64": {
+  "error": "RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm)"
+ },
+ "cpu_bs400": {
+  "error": "RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm)"
+ },
+ "cuda_bs1": {
+  "median_ms": 4.091837516170926,
+  "p99_ms": 5.641341995215043,
+  "per_frame_ms": 4.091837516170926,
+  "frames_per_s": 244.3889807569347
+ },
+ "cuda_bs64": {
+  "median_ms": 4.217581998091191,
+  "p99_ms": 6.055693986127153,
+  "per_frame_ms": 0.06589971872017486,
+  "frames_per_s": 15174.571597888402
+ },
+ "cuda_bs400": {
+  "median_ms": 7.738703498034738,
+  "p99_ms": 9.306632011430338,
+  "per_frame_ms": 0.019346758745086845,
+  "frames_per_s": 51688.24469132083
+ },
+ "note": "CPU measured with 1 thread. GPU timings include the STFT and host synchronisation."
+}

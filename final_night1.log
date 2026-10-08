@@ -1,0 +1,1285 @@
+nohup: ignoring input
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+cpu  batch    1:    2.897 ms/batch (p99 3.819)  2.8974 ms/frame  345 frames/s
+cpu  batch   64:  120.497 ms/batch (p99 124.696)  1.8828 ms/frame  531 frames/s
+cpu  batch  400: 1009.709 ms/batch (p99 1051.867)  2.5243 ms/frame  396 frames/s
+cuda batch    1:    3.609 ms/batch (p99 5.486)  3.6088 ms/frame  277 frames/s
+cuda batch   64:    3.711 ms/batch (p99 5.058)  0.0580 ms/frame  17247 frames/s
+cuda batch  400:   20.415 ms/batch (p99 21.634)  0.0510 ms/frame  19594 frames/s
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+cpu  batch    1: FAILED (RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm))
+cpu  batch   64: FAILED (RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm))
+cpu  batch  400: FAILED (RuntimeError: Expected all tensors to be on the same device, but got mat1 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_addmm))
+cuda batch    1:    4.092 ms/batch (p99 5.641)  4.0918 ms/frame  244 frames/s
+cuda batch   64:    4.218 ms/batch (p99 6.056)  0.0659 ms/frame  15175 frames/s
+cuda batch  400:    7.739 ms/batch (p99 9.307)  0.0193 ms/frame  51688 frames/s
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/Convolution.cpp:1104.)
+  return F.conv2d(
+cpu  batch    1:    1.408 ms/batch (p99 1.871)  1.4075 ms/frame  710 frames/s
+cpu  batch   64:   53.358 ms/batch (p99 54.429)  0.8337 ms/frame  1199 frames/s
+cpu  batch  400:  386.504 ms/batch (p99 390.374)  0.9663 ms/frame  1035 frames/s
+cuda batch    1:    1.227 ms/batch (p99 1.880)  1.2270 ms/frame  815 frames/s
+cuda batch   64:    2.903 ms/batch (p99 3.174)  0.0454 ms/frame  22046 frames/s
+cuda batch  400:   13.637 ms/batch (p99 13.994)  0.0341 ms/frame  29332 frames/s
+cpu  batch    1: FAILED (IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2))
+cpu  batch   64:   12.560 ms/batch (p99 14.162)  0.1963 ms/frame  5095 frames/s
+cpu  batch  400:  102.613 ms/batch (p99 104.043)  0.2565 ms/frame  3898 frames/s
+cuda batch    1: FAILED (IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2))
+cuda batch   64:    0.748 ms/batch (p99 1.283)  0.0117 ms/frame  85582 frames/s
+cuda batch  400:    3.003 ms/batch (p99 3.329)  0.0075 ms/frame  133194 frames/s
+cpu  batch    1:    1.219 ms/batch (p99 1.553)  1.2194 ms/frame  820 frames/s
+cpu  batch   64:   95.566 ms/batch (p99 96.788)  1.4932 ms/frame  670 frames/s
+cpu  batch  400:  618.083 ms/batch (p99 745.805)  1.5452 ms/frame  647 frames/s
+cuda batch    1:    1.360 ms/batch (p99 2.132)  1.3595 ms/frame  736 frames/s
+cuda batch   64:    2.371 ms/batch (p99 2.953)  0.0371 ms/frame  26988 frames/s
+cuda batch  400:   12.267 ms/batch (p99 13.314)  0.0307 ms/frame  32608 frames/s
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.5149/0.4151  val 1.4117/0.4808  lr 1.00e-03  131.0s  *
+ep   1  train 1.2748/0.5155  val 1.2628/0.5249  lr 1.00e-03  -75.2s  *
+ep   2  train 1.2238/0.5393  val 1.2135/0.5514  lr 1.00e-03  27.2s  *
+ep   3  train 1.1998/0.5538  val 1.2161/0.5469  lr 1.00e-03  27.6s
+ep   4  train 1.1812/0.5665  val 1.1658/0.5773  lr 1.00e-03  27.4s  *
+ep   5  train 1.1621/0.5771  val 1.1548/0.5796  lr 1.00e-03  27.5s  *
+ep   6  train 1.1470/0.5842  val 1.1417/0.5892  lr 1.00e-03  27.2s  *
+ep   7  train 1.1344/0.5912  val 1.1211/0.5917  lr 1.00e-03  27.1s  *
+ep   8  train 1.1217/0.5963  val 1.1483/0.5873  lr 1.00e-03  27.1s
+ep   9  train 1.1112/0.6007  val 1.0935/0.6078  lr 1.00e-03  27.2s  *
+ep  10  train 1.1012/0.6048  val 1.0818/0.6132  lr 1.00e-03  27.1s  *
+ep  11  train 1.0902/0.6092  val 1.0890/0.6079  lr 1.00e-03  27.0s
+ep  12  train 1.0858/0.6112  val 1.0842/0.6128  lr 1.00e-03  27.1s
+ep  13  train 1.0816/0.6120  val 1.0742/0.6161  lr 1.00e-03  27.3s  *
+ep  14  train 1.0764/0.6126  val 1.0770/0.6128  lr 1.00e-03  27.1s
+ep  15  train 1.0717/0.6154  val 1.0633/0.6179  lr 1.00e-03  27.2s  *
+ep  16  train 1.0681/0.6166  val 1.0680/0.6171  lr 1.00e-03  27.3s
+ep  17  train 1.0634/0.6179  val 1.0664/0.6198  lr 1.00e-03  27.3s  *
+ep  18  train 1.0635/0.6188  val 1.0685/0.6185  lr 1.00e-03  27.2s
+ep  19  train 1.0623/0.6191  val 1.0702/0.6175  lr 5.00e-04  27.3s
+ep  20  train 1.0458/0.6258  val 1.0498/0.6243  lr 5.00e-04  27.3s  *
+ep  21  train 1.0418/0.6274  val 1.0458/0.6247  lr 5.00e-04  27.3s  *
+ep  22  train 1.0415/0.6263  val 1.0482/0.6238  lr 5.00e-04  27.1s
+ep  23  train 1.0404/0.6272  val 1.0435/0.6259  lr 5.00e-04  27.1s  *
+ep  24  train 1.0386/0.6282  val 1.0443/0.6258  lr 5.00e-04  27.1s
+ep  25  train 1.0368/0.6280  val 1.0406/0.6290  lr 5.00e-04  129.7s  *
+ep  26  train 1.0368/0.6285  val 1.0391/0.6291  lr 5.00e-04  -75.1s  *
+ep  27  train 1.0351/0.6291  val 1.0398/0.6287  lr 5.00e-04  27.1s
+ep  28  train 1.0339/0.6295  val 1.0411/0.6266  lr 5.00e-04  27.1s
+ep  29  train 1.0341/0.6298  val 1.0332/0.6288  lr 5.00e-04  27.9s
+ep  30  train 1.0327/0.6301  val 1.0397/0.6264  lr 5.00e-04  27.9s
+ep  31  train 1.0318/0.6303  val 1.0349/0.6296  lr 5.00e-04  130.9s  *
+ep  32  train 1.0309/0.6307  val 1.0361/0.6295  lr 5.00e-04  -75.2s
+ep  33  train 1.0303/0.6312  val 1.0371/0.6298  lr 2.50e-04  27.2s  *
+ep  34  train 1.0215/0.6344  val 1.0290/0.6306  lr 2.50e-04  27.2s  *
+ep  35  train 1.0206/0.6350  val 1.0292/0.6322  lr 2.50e-04  27.2s  *
+ep  36  train 1.0217/0.6338  val 1.0302/0.6317  lr 2.50e-04  27.1s
+ep  37  train 1.0193/0.6344  val 1.0304/0.6305  lr 2.50e-04  27.4s
+ep  38  train 1.0185/0.6353  val 1.0295/0.6315  lr 1.25e-04  27.1s
+ep  39  train 1.0130/0.6380  val 1.0292/0.6315  lr 1.25e-04  27.1s
+ep  40  train 1.0135/0.6372  val 1.0263/0.6344  lr 1.25e-04  129.5s  *
+ep  41  train 1.0126/0.6377  val 1.0259/0.6338  lr 1.25e-04  -75.4s
+ep  42  train 1.0126/0.6377  val 1.0258/0.6331  lr 1.25e-04  27.1s
+ep  43  train 1.0120/0.6388  val 1.0273/0.6332  lr 1.25e-04  27.2s
+ep  44  train 1.0121/0.6379  val 1.0261/0.6333  lr 1.25e-04  27.1s
+ep  45  train 1.0112/0.6384  val 1.0276/0.6337  lr 6.25e-05  27.2s
+ep  46  train 1.0084/0.6393  val 1.0258/0.6340  lr 6.25e-05  27.1s
+ep  47  train 1.0079/0.6392  val 1.0254/0.6344  lr 6.25e-05  27.1s
+ep  48  train 1.0086/0.6389  val 1.0244/0.6342  lr 6.25e-05  27.3s
+ep  49  train 1.0068/0.6399  val 1.0261/0.6345  lr 6.25e-05  27.1s  *
+ep  50  train 1.0077/0.6390  val 1.0251/0.6341  lr 6.25e-05  27.2s
+ep  51  train 1.0066/0.6397  val 1.0260/0.6334  lr 6.25e-05  27.2s
+ep  52  train 1.0067/0.6400  val 1.0275/0.6325  lr 5.00e-05  129.5s
+ep  53  train 1.0054/0.6401  val 1.0238/0.6341  lr 5.00e-05  -75.3s
+ep  54  train 1.0053/0.6402  val 1.0251/0.6343  lr 5.00e-05  27.1s
+ep  55  train 1.0054/0.6408  val 1.0245/0.6348  lr 5.00e-05  27.1s  *
+ep  56  train 1.0043/0.6409  val 1.0254/0.6344  lr 5.00e-05  27.2s
+ep  57  train 1.0045/0.6405  val 1.0269/0.6340  lr 5.00e-05  27.2s
+ep  58  train 1.0040/0.6412  val 1.0251/0.6343  lr 5.00e-05  27.3s
+ep  59  train 1.0038/0.6413  val 1.0239/0.6345  lr 5.00e-05  27.1s
+[test] overall 63.64%  peak 94.18%  macro-F1 0.6611  (-20..0 dB 39.08%, 0..18 dB 93.45%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4970/0.4282  val 1.5670/0.4223  lr 1.00e-03  28.5s  *
+ep   1  train 1.2619/0.5226  val 1.4684/0.4487  lr 1.00e-03  27.1s  *
+ep   2  train 1.2196/0.5403  val 1.2662/0.5227  lr 1.00e-03  27.3s  *
+ep   3  train 1.1988/0.5503  val 1.2204/0.5462  lr 1.00e-03  28.1s  *
+ep   4  train 1.1827/0.5624  val 1.2114/0.5598  lr 1.00e-03  28.8s  *
+ep   5  train 1.1620/0.5760  val 1.1538/0.5793  lr 1.00e-03  27.4s  *
+ep   6  train 1.1496/0.5819  val 1.1738/0.5699  lr 1.00e-03  27.3s
+ep   7  train 1.1353/0.5884  val 1.1435/0.5898  lr 1.00e-03  27.3s  *
+ep   8  train 1.1239/0.5944  val 1.1238/0.5954  lr 1.00e-03  28.0s  *
+ep   9  train 1.1145/0.5980  val 1.0954/0.6068  lr 1.00e-03  27.4s  *
+ep  10  train 1.1015/0.6036  val 1.1095/0.5990  lr 1.00e-03  27.3s
+ep  11  train 1.0970/0.6054  val 1.0981/0.6075  lr 1.00e-03  27.4s  *
+ep  12  train 1.0893/0.6088  val 1.0931/0.6079  lr 1.00e-03  27.8s  *
+ep  13  train 1.0867/0.6090  val 1.0922/0.6057  lr 1.00e-03  27.2s
+ep  14  train 1.0819/0.6116  val 1.0702/0.6144  lr 1.00e-03  27.2s  *
+ep  15  train 1.0764/0.6127  val 1.0745/0.6139  lr 1.00e-03  27.1s
+ep  16  train 1.0738/0.6146  val 1.0767/0.6136  lr 1.00e-03  27.1s
+ep  17  train 1.0708/0.6154  val 1.0782/0.6142  lr 1.00e-03  27.3s
+ep  18  train 1.0693/0.6156  val 1.0671/0.6179  lr 1.00e-03  27.4s  *
+ep  19  train 1.0658/0.6182  val 1.0724/0.6161  lr 1.00e-03  27.2s
+ep  20  train 1.0631/0.6183  val 1.0686/0.6160  lr 1.00e-03  27.3s
+ep  21  train 1.0625/0.6186  val 1.0558/0.6217  lr 1.00e-03  27.1s  *
+ep  22  train 1.0600/0.6195  val 1.0634/0.6196  lr 1.00e-03  27.3s
+ep  23  train 1.0594/0.6200  val 1.0700/0.6171  lr 1.00e-03  129.7s
+ep  24  train 1.0552/0.6218  val 1.0610/0.6161  lr 1.00e-03  -75.2s
+ep  25  train 1.0530/0.6224  val 1.0572/0.6211  lr 5.00e-04  27.1s
+ep  26  train 1.0402/0.6273  val 1.0457/0.6252  lr 5.00e-04  27.3s  *
+ep  27  train 1.0384/0.6280  val 1.0419/0.6273  lr 5.00e-04  27.8s  *
+ep  28  train 1.0380/0.6279  val 1.0436/0.6265  lr 5.00e-04  27.5s
+ep  29  train 1.0350/0.6280  val 1.0384/0.6286  lr 5.00e-04  27.5s  *
+ep  30  train 1.0351/0.6294  val 1.0415/0.6272  lr 5.00e-04  27.4s
+ep  31  train 1.0337/0.6296  val 1.0401/0.6270  lr 5.00e-04  27.8s
+ep  32  train 1.0329/0.6300  val 1.0415/0.6264  lr 5.00e-04  28.6s
+ep  33  train 1.0310/0.6302  val 1.0407/0.6271  lr 2.50e-04  28.7s
+ep  34  train 1.0232/0.6337  val 1.0340/0.6316  lr 2.50e-04  28.6s  *
+ep  35  train 1.0228/0.6344  val 1.0306/0.6306  lr 2.50e-04  28.5s
+ep  36  train 1.0216/0.6345  val 1.0324/0.6299  lr 2.50e-04  27.3s
+ep  37  train 1.0217/0.6350  val 1.0329/0.6311  lr 2.50e-04  27.3s
+ep  38  train 1.0208/0.6349  val 1.0306/0.6308  lr 2.50e-04  27.2s
+ep  39  train 1.0192/0.6353  val 1.0322/0.6309  lr 1.25e-04  27.2s
+ep  40  train 1.0162/0.6359  val 1.0301/0.6321  lr 1.25e-04  27.3s  *
+ep  41  train 1.0143/0.6371  val 1.0279/0.6331  lr 1.25e-04  27.2s  *
+ep  42  train 1.0145/0.6373  val 1.0290/0.6326  lr 1.25e-04  27.3s
+ep  43  train 1.0135/0.6371  val 1.0287/0.6325  lr 1.25e-04  27.1s
+ep  44  train 1.0127/0.6377  val 1.0297/0.6325  lr 1.25e-04  27.2s
+ep  45  train 1.0126/0.6379  val 1.0300/0.6324  lr 6.25e-05  27.2s
+ep  46  train 1.0112/0.6381  val 1.0281/0.6342  lr 6.25e-05  27.2s  *
+ep  47  train 1.0095/0.6389  val 1.0282/0.6340  lr 6.25e-05  27.0s
+ep  48  train 1.0093/0.6390  val 1.0278/0.6330  lr 6.25e-05  27.3s
+ep  49  train 1.0088/0.6396  val 1.0275/0.6332  lr 6.25e-05  27.1s
+ep  50  train 1.0089/0.6398  val 1.0280/0.6335  lr 6.25e-05  27.1s
+ep  51  train 1.0085/0.6396  val 1.0290/0.6332  lr 6.25e-05  27.1s
+ep  52  train 1.0086/0.6393  val 1.0276/0.6334  lr 6.25e-05  129.5s
+ep  53  train 1.0076/0.6396  val 1.0277/0.6335  lr 5.00e-05  -75.3s
+ep  54  train 1.0077/0.6399  val 1.0270/0.6333  lr 5.00e-05  27.2s
+ep  55  train 1.0072/0.6402  val 1.0279/0.6327  lr 5.00e-05  27.2s
+ep  56  train 1.0076/0.6400  val 1.0276/0.6331  lr 5.00e-05  27.2s
+early stop at epoch 56
+[test] overall 63.42%  peak 94.27%  macro-F1 0.6620  (-20..0 dB 38.57%, 0..18 dB 93.55%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.3344/0.4926  val 1.5687/0.4412  lr 1.00e-03  28.3s  *
+ep   1  train 1.1724/0.5541  val 1.1954/0.5445  lr 1.00e-03  26.9s  *
+ep   2  train 1.1508/0.5626  val 1.1600/0.5613  lr 1.00e-03  26.9s  *
+ep   3  train 1.1351/0.5731  val 1.1389/0.5847  lr 1.00e-03  26.9s  *
+ep   4  train 1.1178/0.5869  val 1.1270/0.5769  lr 1.00e-03  27.0s
+ep   5  train 1.1008/0.5969  val 1.1020/0.5986  lr 1.00e-03  26.9s  *
+ep   6  train 1.0857/0.6041  val 1.1128/0.5943  lr 1.00e-03  27.0s
+ep   7  train 1.0768/0.6068  val 1.0881/0.6019  lr 1.00e-03  26.9s  *
+ep   8  train 1.0716/0.6086  val 1.1248/0.5894  lr 1.00e-03  27.0s
+ep   9  train 1.0656/0.6124  val 1.1010/0.5978  lr 1.00e-03  26.9s
+ep  10  train 1.0605/0.6147  val 1.1777/0.5715  lr 1.00e-03  129.4s
+ep  11  train 1.0550/0.6170  val 1.0692/0.6117  lr 1.00e-03  -74.9s  *
+ep  12  train 1.0499/0.6195  val 1.0447/0.6235  lr 1.00e-03  26.8s  *
+ep  13  train 1.0474/0.6199  val 1.0540/0.6200  lr 1.00e-03  129.4s
+ep  14  train 1.0421/0.6230  val 1.0402/0.6235  lr 1.00e-03  -75.6s
+ep  15  train 1.0400/0.6231  val 1.0553/0.6163  lr 1.00e-03  27.1s
+ep  16  train 1.0351/0.6253  val 1.0416/0.6205  lr 1.00e-03  26.7s
+ep  17  train 1.0334/0.6259  val 1.0492/0.6203  lr 1.00e-03  26.9s
+ep  18  train 1.0313/0.6266  val 1.0360/0.6252  lr 1.00e-03  26.9s  *
+ep  19  train 1.0288/0.6282  val 1.0582/0.6214  lr 1.00e-03  26.8s
+ep  20  train 1.0273/0.6284  val 1.0325/0.6281  lr 1.00e-03  26.8s  *
+ep  21  train 1.0248/0.6288  val 1.0413/0.6250  lr 1.00e-03  27.1s
+ep  22  train 1.0230/0.6293  val 1.0383/0.6246  lr 1.00e-03  27.3s
+ep  23  train 1.0196/0.6303  val 1.0313/0.6275  lr 1.00e-03  27.0s
+ep  24  train 1.0169/0.6314  val 1.0338/0.6277  lr 1.00e-03  26.9s
+ep  25  train 1.0156/0.6329  val 1.0288/0.6289  lr 1.00e-03  26.9s  *
+ep  26  train 1.0138/0.6332  val 1.0240/0.6316  lr 1.00e-03  26.9s  *
+ep  27  train 1.0116/0.6346  val 1.0230/0.6272  lr 1.00e-03  26.9s
+ep  28  train 1.0089/0.6358  val 1.0299/0.6305  lr 1.00e-03  27.0s
+ep  29  train 1.0063/0.6364  val 1.0312/0.6284  lr 1.00e-03  26.9s
+ep  30  train 1.0048/0.6374  val 1.0281/0.6300  lr 1.00e-03  27.0s
+ep  31  train 1.0037/0.6375  val 1.0341/0.6227  lr 5.00e-04  26.9s
+ep  32  train 0.9865/0.6443  val 1.0201/0.6342  lr 5.00e-04  26.9s  *
+ep  33  train 0.9836/0.6452  val 1.0231/0.6296  lr 5.00e-04  26.8s
+ep  34  train 0.9800/0.6462  val 1.0196/0.6340  lr 5.00e-04  26.8s
+ep  35  train 0.9779/0.6472  val 1.0221/0.6336  lr 5.00e-04  26.9s
+ep  36  train 0.9759/0.6484  val 1.0298/0.6323  lr 5.00e-04  26.9s
+ep  37  train 0.9746/0.6491  val 1.0202/0.6334  lr 5.00e-04  27.2s
+ep  38  train 0.9709/0.6503  val 1.0271/0.6295  lr 2.50e-04  26.8s
+ep  39  train 0.9575/0.6553  val 1.0252/0.6333  lr 2.50e-04  28.1s
+ep  40  train 0.9526/0.6572  val 1.0334/0.6333  lr 2.50e-04  28.3s
+ep  41  train 0.9490/0.6586  val 1.0367/0.6328  lr 2.50e-04  28.1s
+ep  42  train 0.9463/0.6602  val 1.0392/0.6321  lr 1.25e-04  26.9s
+early stop at epoch 42
+[test] overall 63.62%  peak 93.41%  macro-F1 0.6558  (-20..0 dB 39.55%, 0..18 dB 92.82%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4729/0.4372  val 1.3170/0.5110  lr 1.00e-03  28.7s  *
+ep   1  train 1.2310/0.5305  val 1.2665/0.5201  lr 1.00e-03  27.1s  *
+ep   2  train 1.1833/0.5490  val 1.2023/0.5409  lr 1.00e-03  27.1s  *
+ep   3  train 1.1628/0.5578  val 1.1646/0.5582  lr 1.00e-03  27.0s  *
+ep   4  train 1.1487/0.5639  val 1.1526/0.5577  lr 1.00e-03  129.2s
+ep   5  train 1.1338/0.5726  val 1.1342/0.5771  lr 1.00e-03  -75.3s  *
+ep   6  train 1.1217/0.5827  val 1.1186/0.5839  lr 1.00e-03  27.0s  *
+ep   7  train 1.1081/0.5922  val 1.1092/0.5959  lr 1.00e-03  27.1s  *
+ep   8  train 1.0992/0.5983  val 1.0938/0.5995  lr 1.00e-03  26.9s  *
+ep   9  train 1.1028/0.5962  val 1.1179/0.5910  lr 1.00e-03  129.4s
+ep  10  train 1.0876/0.6035  val 1.0900/0.6012  lr 1.00e-03  -74.9s  *
+ep  11  train 1.0807/0.6074  val 1.0750/0.6095  lr 1.00e-03  27.1s  *
+ep  12  train 1.0759/0.6090  val 1.0844/0.6076  lr 1.00e-03  27.0s
+ep  13  train 1.0725/0.6098  val 1.0896/0.6073  lr 1.00e-03  27.0s
+ep  14  train 1.0681/0.6121  val 1.0929/0.5991  lr 1.00e-03  27.2s
+ep  15  train 1.0653/0.6134  val 1.1113/0.5976  lr 5.00e-04  27.0s
+ep  16  train 1.0447/0.6211  val 1.0590/0.6164  lr 5.00e-04  27.1s  *
+ep  17  train 1.0434/0.6218  val 1.0496/0.6203  lr 5.00e-04  27.0s  *
+ep  18  train 1.0419/0.6227  val 1.0557/0.6172  lr 5.00e-04  27.0s
+ep  19  train 1.0400/0.6239  val 1.0469/0.6217  lr 5.00e-04  27.0s  *
+ep  20  train 1.0381/0.6233  val 1.0495/0.6208  lr 5.00e-04  27.0s
+ep  21  train 1.0359/0.6250  val 1.0506/0.6200  lr 5.00e-04  27.0s
+ep  22  train 1.0343/0.6250  val 1.0402/0.6234  lr 5.00e-04  26.9s  *
+ep  23  train 1.0312/0.6256  val 1.0519/0.6200  lr 5.00e-04  27.2s
+ep  24  train 1.0307/0.6264  val 1.0492/0.6211  lr 5.00e-04  27.0s
+ep  25  train 1.0290/0.6277  val 1.0459/0.6227  lr 5.00e-04  27.2s
+ep  26  train 1.0276/0.6286  val 1.0469/0.6181  lr 2.50e-04  26.8s
+ep  27  train 1.0168/0.6321  val 1.0335/0.6245  lr 2.50e-04  27.1s  *
+ep  28  train 1.0147/0.6332  val 1.0351/0.6259  lr 2.50e-04  27.0s  *
+ep  29  train 1.0141/0.6330  val 1.0358/0.6266  lr 2.50e-04  27.1s  *
+ep  30  train 1.0130/0.6342  val 1.0329/0.6265  lr 2.50e-04  26.9s
+ep  31  train 1.0117/0.6340  val 1.0383/0.6212  lr 2.50e-04  26.9s
+ep  32  train 1.0100/0.6350  val 1.0356/0.6262  lr 2.50e-04  27.1s
+ep  33  train 1.0103/0.6352  val 1.0344/0.6265  lr 2.50e-04  28.1s
+ep  34  train 1.0090/0.6348  val 1.0319/0.6281  lr 2.50e-04  28.1s  *
+ep  35  train 1.0088/0.6354  val 1.0372/0.6258  lr 2.50e-04  27.0s
+ep  36  train 1.0080/0.6361  val 1.0338/0.6275  lr 2.50e-04  27.3s
+ep  37  train 1.0072/0.6363  val 1.0344/0.6262  lr 2.50e-04  27.1s
+ep  38  train 1.0068/0.6363  val 1.0317/0.6260  lr 2.50e-04  28.1s
+ep  39  train 1.0051/0.6369  val 1.0358/0.6265  lr 2.50e-04  27.0s
+ep  40  train 1.0043/0.6368  val 1.0332/0.6291  lr 2.50e-04  27.1s  *
+ep  41  train 1.0034/0.6377  val 1.0345/0.6276  lr 2.50e-04  27.0s
+ep  42  train 1.0016/0.6388  val 1.0345/0.6264  lr 1.25e-04  27.0s
+ep  43  train 0.9966/0.6407  val 1.0303/0.6292  lr 1.25e-04  27.0s  *
+ep  44  train 0.9954/0.6408  val 1.0327/0.6284  lr 1.25e-04  26.9s
+ep  45  train 0.9943/0.6413  val 1.0330/0.6288  lr 1.25e-04  27.1s
+ep  46  train 0.9938/0.6418  val 1.0328/0.6285  lr 1.25e-04  27.0s
+ep  47  train 0.9934/0.6415  val 1.0355/0.6271  lr 6.25e-05  26.9s
+ep  48  train 0.9895/0.6432  val 1.0304/0.6291  lr 6.25e-05  26.9s
+ep  49  train 0.9892/0.6436  val 1.0333/0.6291  lr 6.25e-05  27.0s
+ep  50  train 0.9884/0.6441  val 1.0315/0.6290  lr 6.25e-05  27.0s
+ep  51  train 0.9882/0.6439  val 1.0320/0.6282  lr 5.00e-05  27.2s
+ep  52  train 0.9868/0.6445  val 1.0326/0.6290  lr 5.00e-05  26.7s
+ep  53  train 0.9864/0.6453  val 1.0316/0.6300  lr 5.00e-05  27.0s  *
+ep  54  train 0.9863/0.6453  val 1.0333/0.6298  lr 5.00e-05  27.0s
+ep  55  train 0.9853/0.6450  val 1.0329/0.6298  lr 5.00e-05  129.5s
+ep  56  train 0.9858/0.6445  val 1.0342/0.6283  lr 5.00e-05  -75.5s
+ep  57  train 0.9852/0.6453  val 1.0339/0.6285  lr 5.00e-05  26.8s
+ep  58  train 0.9856/0.6451  val 1.0336/0.6286  lr 5.00e-05  27.0s
+ep  59  train 0.9845/0.6453  val 1.0334/0.6292  lr 5.00e-05  26.9s
+[test] overall 63.17%  peak 93.32%  macro-F1 0.6562  (-20..0 dB 38.82%, 0..18 dB 92.68%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4576/0.4495  val 1.2876/0.5204  lr 1.00e-03  28.4s  *
+ep   1  train 1.2498/0.5288  val 1.2409/0.5315  lr 1.00e-03  27.0s  *
+ep   2  train 1.2113/0.5466  val 1.2777/0.5317  lr 1.00e-03  27.2s  *
+ep   3  train 1.1886/0.5627  val 1.1858/0.5684  lr 1.00e-03  27.1s  *
+ep   4  train 1.1691/0.5743  val 1.1770/0.5722  lr 1.00e-03  27.2s  *
+ep   5  train 1.1583/0.5795  val 1.1629/0.5812  lr 1.00e-03  27.1s  *
+ep   6  train 1.1438/0.5861  val 1.1369/0.5850  lr 1.00e-03  27.1s  *
+ep   7  train 1.1301/0.5909  val 1.1324/0.5892  lr 1.00e-03  27.2s  *
+ep   8  train 1.1223/0.5934  val 1.1113/0.6005  lr 1.00e-03  27.1s  *
+ep   9  train 1.1153/0.5975  val 1.1103/0.5987  lr 1.00e-03  27.2s
+ep  10  train 1.1085/0.6003  val 1.1064/0.6014  lr 1.00e-03  27.0s  *
+ep  11  train 1.1003/0.6033  val 1.1045/0.6019  lr 1.00e-03  129.6s  *
+ep  12  train 1.0953/0.6063  val 1.0984/0.6028  lr 1.00e-03  -75.4s  *
+ep  13  train 1.0895/0.6084  val 1.1051/0.6048  lr 1.00e-03  27.2s  *
+ep  14  train 1.0865/0.6095  val 1.0831/0.6122  lr 1.00e-03  27.1s  *
+ep  15  train 1.0807/0.6110  val 1.0759/0.6137  lr 1.00e-03  27.4s  *
+ep  16  train 1.0744/0.6140  val 1.0738/0.6127  lr 1.00e-03  27.2s
+ep  17  train 1.0698/0.6153  val 1.0803/0.6088  lr 1.00e-03  27.0s
+ep  18  train 1.0638/0.6185  val 1.0665/0.6180  lr 1.00e-03  129.6s  *
+ep  19  train 1.0610/0.6195  val 1.0576/0.6197  lr 1.00e-03  -75.5s  *
+ep  20  train 1.0569/0.6208  val 1.0771/0.6133  lr 1.00e-03  27.2s
+ep  21  train 1.0551/0.6223  val 1.0473/0.6210  lr 1.00e-03  27.0s  *
+ep  22  train 1.0518/0.6218  val 1.0481/0.6261  lr 1.00e-03  27.1s  *
+ep  23  train 1.0512/0.6233  val 1.0523/0.6219  lr 1.00e-03  27.1s
+ep  24  train 1.0476/0.6241  val 1.0515/0.6242  lr 1.00e-03  27.0s
+ep  25  train 1.0450/0.6249  val 1.0450/0.6272  lr 1.00e-03  27.1s  *
+ep  26  train 1.0433/0.6267  val 1.0553/0.6198  lr 1.00e-03  27.1s
+ep  27  train 1.0415/0.6265  val 1.0549/0.6221  lr 1.00e-03  27.1s
+ep  28  train 1.0397/0.6272  val 1.0341/0.6298  lr 1.00e-03  27.2s  *
+ep  29  train 1.0381/0.6276  val 1.0422/0.6261  lr 1.00e-03  27.1s
+ep  30  train 1.0364/0.6286  val 1.0385/0.6280  lr 1.00e-03  27.0s
+ep  31  train 1.0353/0.6299  val 1.0447/0.6260  lr 1.00e-03  129.6s
+ep  32  train 1.0325/0.6300  val 1.0391/0.6281  lr 5.00e-04  -75.5s
+ep  33  train 1.0213/0.6346  val 1.0260/0.6325  lr 5.00e-04  27.2s  *
+ep  34  train 1.0187/0.6354  val 1.0238/0.6346  lr 5.00e-04  27.1s  *
+ep  35  train 1.0183/0.6355  val 1.0304/0.6328  lr 5.00e-04  27.3s
+ep  36  train 1.0172/0.6364  val 1.0288/0.6319  lr 5.00e-04  27.1s
+ep  37  train 1.0165/0.6362  val 1.0263/0.6335  lr 5.00e-04  27.2s
+ep  38  train 1.0158/0.6360  val 1.0245/0.6352  lr 2.50e-04  27.1s  *
+ep  39  train 1.0087/0.6388  val 1.0205/0.6360  lr 2.50e-04  27.1s  *
+ep  40  train 1.0066/0.6395  val 1.0222/0.6354  lr 2.50e-04  27.1s
+ep  41  train 1.0057/0.6405  val 1.0189/0.6368  lr 2.50e-04  27.1s  *
+ep  42  train 1.0054/0.6399  val 1.0210/0.6369  lr 2.50e-04  27.1s  *
+ep  43  train 1.0040/0.6411  val 1.0214/0.6344  lr 2.50e-04  27.1s
+ep  44  train 1.0045/0.6402  val 1.0198/0.6363  lr 2.50e-04  27.0s
+ep  45  train 1.0036/0.6413  val 1.0210/0.6354  lr 1.25e-04  27.0s
+ep  46  train 0.9999/0.6418  val 1.0211/0.6364  lr 1.25e-04  27.2s
+ep  47  train 0.9971/0.6435  val 1.0220/0.6360  lr 1.25e-04  129.6s
+ep  48  train 0.9974/0.6425  val 1.0204/0.6355  lr 1.25e-04  -75.4s
+ep  49  train 0.9978/0.6426  val 1.0202/0.6367  lr 6.25e-05  27.1s
+ep  50  train 0.9948/0.6444  val 1.0187/0.6376  lr 6.25e-05  27.1s  *
+ep  51  train 0.9942/0.6444  val 1.0205/0.6362  lr 6.25e-05  27.0s
+ep  52  train 0.9949/0.6443  val 1.0198/0.6362  lr 6.25e-05  27.1s
+ep  53  train 0.9935/0.6453  val 1.0207/0.6372  lr 6.25e-05  27.1s
+ep  54  train 0.9928/0.6449  val 1.0207/0.6373  lr 5.00e-05  129.5s
+ep  55  train 0.9928/0.6453  val 1.0195/0.6376  lr 5.00e-05  -75.3s
+ep  56  train 0.9922/0.6455  val 1.0202/0.6369  lr 5.00e-05  27.2s
+ep  57  train 0.9916/0.6453  val 1.0202/0.6370  lr 5.00e-05  27.2s
+ep  58  train 0.9913/0.6459  val 1.0225/0.6357  lr 5.00e-05  28.1s
+ep  59  train 0.9904/0.6452  val 1.0203/0.6369  lr 5.00e-05  129.6s
+[test] overall 63.70%  peak 94.23%  macro-F1 0.6629  (-20..0 dB 39.06%, 0..18 dB 93.56%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4745/0.4406  val 1.3810/0.4605  lr 1.00e-03  28.6s  *
+ep   1  train 1.2822/0.5149  val 1.3970/0.4801  lr 1.00e-03  27.1s  *
+ep   2  train 1.2361/0.5347  val 1.2434/0.5294  lr 1.00e-03  27.2s  *
+ep   3  train 1.2062/0.5523  val 1.2846/0.5255  lr 1.00e-03  27.2s
+ep   4  train 1.1798/0.5655  val 1.4108/0.4946  lr 1.00e-03  27.2s
+ep   5  train 1.1612/0.5770  val 1.1546/0.5800  lr 1.00e-03  27.3s  *
+ep   6  train 1.1469/0.5825  val 1.1426/0.5851  lr 1.00e-03  27.7s  *
+ep   7  train 1.1365/0.5879  val 1.1526/0.5810  lr 1.00e-03  27.1s
+ep   8  train 1.1285/0.5920  val 1.1240/0.5947  lr 1.00e-03  27.2s  *
+ep   9  train 1.1188/0.5959  val 1.1195/0.5958  lr 1.00e-03  27.2s  *
+ep  10  train 1.1128/0.5975  val 1.1064/0.6008  lr 1.00e-03  27.1s  *
+ep  11  train 1.1050/0.6022  val 1.0866/0.6083  lr 1.00e-03  27.1s  *
+ep  12  train 1.0979/0.6049  val 1.1156/0.5937  lr 1.00e-03  27.2s
+ep  13  train 1.0915/0.6076  val 1.1185/0.6000  lr 1.00e-03  27.2s
+ep  14  train 1.0854/0.6103  val 1.0850/0.6103  lr 1.00e-03  27.2s  *
+ep  15  train 1.0827/0.6111  val 1.0944/0.6057  lr 1.00e-03  27.2s
+ep  16  train 1.0792/0.6125  val 1.0769/0.6140  lr 1.00e-03  27.1s  *
+ep  17  train 1.0738/0.6140  val 1.0763/0.6150  lr 1.00e-03  27.2s  *
+ep  18  train 1.0710/0.6155  val 1.0821/0.6113  lr 1.00e-03  27.1s
+ep  19  train 1.0672/0.6169  val 1.0756/0.6133  lr 1.00e-03  27.3s
+ep  20  train 1.0661/0.6170  val 1.0648/0.6189  lr 1.00e-03  27.7s  *
+ep  21  train 1.0610/0.6192  val 1.0671/0.6175  lr 1.00e-03  26.8s
+ep  22  train 1.0589/0.6194  val 1.0658/0.6177  lr 1.00e-03  27.2s
+ep  23  train 1.0588/0.6205  val 1.0613/0.6212  lr 1.00e-03  27.1s  *
+ep  24  train 1.0544/0.6212  val 1.0551/0.6205  lr 1.00e-03  27.1s
+ep  25  train 1.0531/0.6224  val 1.0613/0.6184  lr 1.00e-03  27.1s
+ep  26  train 1.0527/0.6230  val 1.0635/0.6193  lr 1.00e-03  27.3s
+ep  27  train 1.0493/0.6237  val 1.0712/0.6163  lr 1.00e-03  27.1s
+ep  28  train 1.0482/0.6245  val 1.0576/0.6211  lr 5.00e-04  27.2s
+ep  29  train 1.0343/0.6294  val 1.0414/0.6262  lr 5.00e-04  27.2s  *
+ep  30  train 1.0329/0.6298  val 1.0425/0.6270  lr 5.00e-04  27.1s  *
+ep  31  train 1.0321/0.6301  val 1.0366/0.6287  lr 5.00e-04  27.2s  *
+ep  32  train 1.0302/0.6307  val 1.0371/0.6265  lr 5.00e-04  27.1s
+ep  33  train 1.0295/0.6307  val 1.0396/0.6274  lr 5.00e-04  27.2s
+ep  34  train 1.0291/0.6313  val 1.0340/0.6302  lr 5.00e-04  27.3s  *
+ep  35  train 1.0278/0.6317  val 1.0377/0.6294  lr 5.00e-04  27.2s
+ep  36  train 1.0256/0.6330  val 1.0385/0.6278  lr 5.00e-04  27.2s
+ep  37  train 1.0266/0.6320  val 1.0390/0.6289  lr 5.00e-04  27.0s
+ep  38  train 1.0244/0.6327  val 1.0340/0.6301  lr 2.50e-04  27.3s
+ep  39  train 1.0165/0.6359  val 1.0314/0.6308  lr 2.50e-04  129.7s  *
+ep  40  train 1.0165/0.6365  val 1.0300/0.6314  lr 2.50e-04  -75.3s  *
+ep  41  train 1.0150/0.6366  val 1.0282/0.6334  lr 2.50e-04  27.5s  *
+ep  42  train 1.0149/0.6369  val 1.0330/0.6307  lr 2.50e-04  27.8s
+ep  43  train 1.0134/0.6367  val 1.0324/0.6305  lr 2.50e-04  28.2s
+ep  44  train 1.0139/0.6372  val 1.0285/0.6327  lr 2.50e-04  28.6s
+ep  45  train 1.0117/0.6375  val 1.0289/0.6329  lr 1.25e-04  28.4s
+ep  46  train 1.0078/0.6394  val 1.0272/0.6329  lr 1.25e-04  27.9s
+ep  47  train 1.0072/0.6397  val 1.0278/0.6328  lr 1.25e-04  27.2s
+ep  48  train 1.0065/0.6399  val 1.0306/0.6323  lr 1.25e-04  27.2s
+ep  49  train 1.0051/0.6404  val 1.0282/0.6318  lr 1.25e-04  27.3s
+ep  50  train 1.0057/0.6405  val 1.0289/0.6319  lr 6.25e-05  129.6s
+ep  51  train 1.0027/0.6409  val 1.0273/0.6340  lr 6.25e-05  27.1s  *
+ep  52  train 1.0027/0.6411  val 1.0252/0.6341  lr 6.25e-05  -75.2s  *
+ep  53  train 1.0018/0.6415  val 1.0261/0.6348  lr 6.25e-05  27.1s  *
+ep  54  train 1.0012/0.6420  val 1.0263/0.6334  lr 6.25e-05  27.1s
+ep  55  train 1.0015/0.6415  val 1.0268/0.6325  lr 6.25e-05  27.2s
+ep  56  train 1.0017/0.6418  val 1.0277/0.6330  lr 5.00e-05  27.1s
+ep  57  train 0.9998/0.6422  val 1.0265/0.6338  lr 5.00e-05  27.2s
+ep  58  train 0.9992/0.6432  val 1.0258/0.6347  lr 5.00e-05  27.2s
+ep  59  train 1.0000/0.6419  val 1.0264/0.6334  lr 5.00e-05  27.0s
+[test] overall 63.60%  peak 94.09%  macro-F1 0.6625  (-20..0 dB 38.95%, 0..18 dB 93.54%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.3308/0.4938  val 1.4591/0.4579  lr 1.00e-03  28.3s  *
+ep   1  train 1.1776/0.5532  val 1.2627/0.5277  lr 1.00e-03  26.9s  *
+ep   2  train 1.1530/0.5677  val 1.2565/0.5249  lr 1.00e-03  26.8s
+ep   3  train 1.1313/0.5825  val 1.2072/0.5520  lr 1.00e-03  27.1s  *
+ep   4  train 1.1137/0.5906  val 1.1100/0.5935  lr 1.00e-03  26.8s  *
+ep   5  train 1.1006/0.5980  val 1.1446/0.5846  lr 1.00e-03  27.0s
+ep   6  train 1.0909/0.6013  val 1.1584/0.5783  lr 1.00e-03  27.0s
+ep   7  train 1.0810/0.6059  val 1.0790/0.6057  lr 1.00e-03  26.9s  *
+ep   8  train 1.0756/0.6088  val 1.0802/0.6070  lr 1.00e-03  26.9s  *
+ep   9  train 1.0696/0.6108  val 1.0771/0.6102  lr 1.00e-03  26.9s  *
+ep  10  train 1.0638/0.6132  val 1.0627/0.6119  lr 1.00e-03  26.9s  *
+ep  11  train 1.0600/0.6144  val 1.1071/0.5980  lr 1.00e-03  26.9s
+ep  12  train 1.0555/0.6155  val 1.0504/0.6173  lr 1.00e-03  129.3s  *
+ep  13  train 1.0499/0.6195  val 1.0479/0.6223  lr 1.00e-03  -75.7s  *
+ep  14  train 1.0457/0.6214  val 1.0692/0.6120  lr 1.00e-03  27.6s
+ep  15  train 1.0430/0.6217  val 1.0534/0.6180  lr 1.00e-03  28.1s
+ep  16  train 1.0381/0.6239  val 1.0493/0.6214  lr 1.00e-03  130.1s
+ep  17  train 1.0346/0.6258  val 1.0493/0.6203  lr 5.00e-04  -75.7s
+ep  18  train 1.0144/0.6330  val 1.0272/0.6287  lr 5.00e-04  26.9s  *
+ep  19  train 1.0114/0.6340  val 1.0250/0.6312  lr 5.00e-04  26.9s  *
+ep  20  train 1.0086/0.6351  val 1.0201/0.6284  lr 5.00e-04  26.8s
+ep  21  train 1.0061/0.6359  val 1.0260/0.6298  lr 5.00e-04  26.9s
+ep  22  train 1.0041/0.6375  val 1.0245/0.6295  lr 5.00e-04  26.8s
+ep  23  train 1.0021/0.6386  val 1.0228/0.6306  lr 5.00e-04  26.9s
+ep  24  train 1.0019/0.6375  val 1.0230/0.6330  lr 2.50e-04  26.8s  *
+ep  25  train 0.9883/0.6434  val 1.0134/0.6353  lr 2.50e-04  26.9s  *
+ep  26  train 0.9845/0.6448  val 1.0139/0.6355  lr 2.50e-04  26.8s  *
+ep  27  train 0.9830/0.6455  val 1.0240/0.6314  lr 2.50e-04  26.7s
+ep  28  train 0.9814/0.6457  val 1.0205/0.6314  lr 2.50e-04  26.8s
+ep  29  train 0.9786/0.6477  val 1.0208/0.6342  lr 1.25e-04  26.8s
+ep  30  train 0.9701/0.6509  val 1.0170/0.6355  lr 1.25e-04  26.9s
+ep  31  train 0.9678/0.6514  val 1.0208/0.6350  lr 1.25e-04  26.8s
+ep  32  train 0.9669/0.6516  val 1.0169/0.6350  lr 1.25e-04  26.9s
+ep  33  train 0.9645/0.6534  val 1.0224/0.6349  lr 6.25e-05  26.7s
+ep  34  train 0.9582/0.6557  val 1.0206/0.6342  lr 6.25e-05  26.9s
+ep  35  train 0.9577/0.6556  val 1.0246/0.6339  lr 6.25e-05  26.8s
+ep  36  train 0.9559/0.6570  val 1.0253/0.6320  lr 6.25e-05  26.8s
+early stop at epoch 36
+[test] overall 63.87%  peak 93.95%  macro-F1 0.6634  (-20..0 dB 39.76%, 0..18 dB 93.11%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4468/0.4545  val 1.4032/0.4696  lr 1.00e-03  130.7s  *
+ep   1  train 1.2589/0.5172  val 1.4255/0.4728  lr 1.00e-03  -75.5s  *
+ep   2  train 1.2085/0.5386  val 1.2114/0.5441  lr 1.00e-03  27.0s  *
+ep   3  train 1.1711/0.5548  val 1.1613/0.5623  lr 1.00e-03  27.0s  *
+ep   4  train 1.1543/0.5646  val 1.1604/0.5641  lr 1.00e-03  27.1s  *
+ep   5  train 1.1427/0.5731  val 1.1397/0.5796  lr 1.00e-03  26.9s  *
+ep   6  train 1.1260/0.5843  val 1.1339/0.5820  lr 1.00e-03  27.1s  *
+ep   7  train 1.1105/0.5924  val 1.0968/0.5981  lr 1.00e-03  27.0s  *
+ep   8  train 1.1016/0.5976  val 1.0924/0.6011  lr 1.00e-03  27.4s  *
+ep   9  train 1.0910/0.6009  val 1.0850/0.6053  lr 1.00e-03  27.7s  *
+ep  10  train 1.0820/0.6057  val 1.0772/0.6063  lr 1.00e-03  28.1s  *
+ep  11  train 1.0764/0.6092  val 1.0827/0.6073  lr 1.00e-03  27.1s  *
+ep  12  train 1.0707/0.6115  val 1.0686/0.6079  lr 1.00e-03  26.7s  *
+ep  13  train 1.0653/0.6122  val 1.0636/0.6169  lr 1.00e-03  27.1s  *
+ep  14  train 1.0617/0.6158  val 1.0773/0.6085  lr 1.00e-03  27.0s
+ep  15  train 1.0559/0.6173  val 1.0523/0.6200  lr 1.00e-03  26.9s  *
+ep  16  train 1.0509/0.6197  val 1.0588/0.6179  lr 1.00e-03  26.9s
+ep  17  train 1.0492/0.6214  val 1.0494/0.6208  lr 1.00e-03  27.1s  *
+ep  18  train 1.0445/0.6220  val 1.0516/0.6204  lr 1.00e-03  27.0s
+ep  19  train 1.0408/0.6235  val 1.0465/0.6223  lr 1.00e-03  26.9s  *
+ep  20  train 1.0372/0.6257  val 1.0325/0.6275  lr 1.00e-03  26.9s  *
+ep  21  train 1.0345/0.6268  val 1.0410/0.6238  lr 1.00e-03  27.3s
+ep  22  train 1.0312/0.6278  val 1.0409/0.6194  lr 1.00e-03  26.6s
+ep  23  train 1.0282/0.6293  val 1.0400/0.6238  lr 1.00e-03  27.2s
+ep  24  train 1.0285/0.6289  val 1.0298/0.6286  lr 1.00e-03  130.2s  *
+ep  25  train 1.0242/0.6302  val 1.0488/0.6194  lr 1.00e-03  -74.3s
+ep  26  train 1.0222/0.6311  val 1.0283/0.6308  lr 1.00e-03  27.2s  *
+ep  27  train 1.0194/0.6319  val 1.0407/0.6202  lr 1.00e-03  27.1s
+ep  28  train 1.0178/0.6327  val 1.0321/0.6264  lr 1.00e-03  27.1s
+ep  29  train 1.0152/0.6348  val 1.0344/0.6278  lr 1.00e-03  27.0s
+ep  30  train 1.0144/0.6342  val 1.0286/0.6308  lr 5.00e-04  27.2s
+ep  31  train 1.0000/0.6398  val 1.0168/0.6328  lr 5.00e-04  27.0s  *
+ep  32  train 0.9979/0.6409  val 1.0189/0.6305  lr 5.00e-04  27.0s
+ep  33  train 0.9968/0.6408  val 1.0190/0.6331  lr 5.00e-04  27.2s  *
+ep  34  train 0.9948/0.6420  val 1.0166/0.6334  lr 5.00e-04  26.8s  *
+ep  35  train 0.9946/0.6423  val 1.0255/0.6318  lr 5.00e-04  27.1s
+ep  36  train 0.9924/0.6426  val 1.0220/0.6322  lr 5.00e-04  27.0s
+ep  37  train 0.9923/0.6434  val 1.0258/0.6319  lr 5.00e-04  27.4s
+ep  38  train 0.9900/0.6435  val 1.0193/0.6334  lr 2.50e-04  129.2s  *
+ep  39  train 0.9821/0.6468  val 1.0158/0.6357  lr 2.50e-04  -75.4s  *
+ep  40  train 0.9800/0.6475  val 1.0144/0.6357  lr 2.50e-04  27.0s
+ep  41  train 0.9790/0.6482  val 1.0180/0.6338  lr 2.50e-04  26.9s
+ep  42  train 0.9782/0.6498  val 1.0194/0.6336  lr 2.50e-04  27.0s
+ep  43  train 0.9773/0.6490  val 1.0208/0.6346  lr 2.50e-04  26.9s
+ep  44  train 0.9757/0.6492  val 1.0184/0.6350  lr 1.25e-04  27.0s
+ep  45  train 0.9707/0.6517  val 1.0189/0.6360  lr 1.25e-04  27.0s  *
+ep  46  train 0.9687/0.6523  val 1.0177/0.6349  lr 1.25e-04  129.4s
+ep  47  train 0.9690/0.6526  val 1.0208/0.6355  lr 1.25e-04  -75.6s
+ep  48  train 0.9673/0.6526  val 1.0212/0.6350  lr 6.25e-05  27.0s
+ep  49  train 0.9648/0.6530  val 1.0191/0.6359  lr 6.25e-05  27.1s
+ep  50  train 0.9645/0.6539  val 1.0206/0.6362  lr 6.25e-05  27.0s  *
+ep  51  train 0.9637/0.6542  val 1.0234/0.6336  lr 6.25e-05  27.0s
+ep  52  train 0.9631/0.6545  val 1.0230/0.6349  lr 5.00e-05  26.9s
+ep  53  train 0.9622/0.6546  val 1.0226/0.6346  lr 5.00e-05  27.0s
+ep  54  train 0.9620/0.6545  val 1.0233/0.6348  lr 5.00e-05  27.0s
+ep  55  train 0.9613/0.6554  val 1.0244/0.6349  lr 5.00e-05  26.9s
+ep  56  train 0.9617/0.6550  val 1.0228/0.6345  lr 5.00e-05  27.9s
+ep  57  train 0.9609/0.6554  val 1.0240/0.6347  lr 5.00e-05  28.5s
+ep  58  train 0.9621/0.6545  val 1.0243/0.6345  lr 5.00e-05  28.4s
+ep  59  train 0.9601/0.6557  val 1.0262/0.6340  lr 5.00e-05  27.1s
+[test] overall 63.80%  peak 93.95%  macro-F1 0.6616  (-20..0 dB 39.72%, 0..18 dB 92.92%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4941/0.4273  val 1.7193/0.4125  lr 1.00e-03  28.4s  *
+ep   1  train 1.2861/0.5073  val 1.3006/0.5162  lr 1.00e-03  27.3s  *
+ep   2  train 1.2270/0.5391  val 1.2194/0.5480  lr 1.00e-03  27.2s  *
+ep   3  train 1.1984/0.5573  val 1.2152/0.5546  lr 1.00e-03  27.2s  *
+ep   4  train 1.1782/0.5704  val 1.1989/0.5562  lr 1.00e-03  27.2s  *
+ep   5  train 1.1604/0.5785  val 1.1657/0.5720  lr 1.00e-03  27.7s  *
+ep   6  train 1.1440/0.5850  val 1.1463/0.5830  lr 1.00e-03  26.8s  *
+ep   7  train 1.1360/0.5878  val 1.1451/0.5819  lr 1.00e-03  27.3s
+ep   8  train 1.1215/0.5957  val 1.1110/0.6007  lr 1.00e-03  27.2s  *
+ep   9  train 1.1123/0.5979  val 1.0968/0.6016  lr 1.00e-03  27.3s  *
+ep  10  train 1.1035/0.6023  val 1.1027/0.6018  lr 1.00e-03  27.3s  *
+ep  11  train 1.0957/0.6047  val 1.0848/0.6088  lr 1.00e-03  27.2s  *
+ep  12  train 1.0883/0.6092  val 1.0821/0.6109  lr 1.00e-03  27.2s  *
+ep  13  train 1.0860/0.6087  val 1.0853/0.6101  lr 1.00e-03  27.1s
+ep  14  train 1.0794/0.6113  val 1.0741/0.6134  lr 1.00e-03  27.3s  *
+ep  15  train 1.0754/0.6134  val 1.0742/0.6149  lr 1.00e-03  27.2s  *
+ep  16  train 1.0694/0.6150  val 1.0795/0.6149  lr 1.00e-03  28.5s  *
+ep  17  train 1.0682/0.6158  val 1.0744/0.6112  lr 1.00e-03  27.9s
+ep  18  train 1.0669/0.6170  val 1.0837/0.6062  lr 5.00e-04  27.2s
+ep  19  train 1.0500/0.6227  val 1.0484/0.6235  lr 5.00e-04  27.1s  *
+ep  20  train 1.0488/0.6235  val 1.0478/0.6236  lr 5.00e-04  27.2s  *
+ep  21  train 1.0469/0.6250  val 1.0469/0.6251  lr 5.00e-04  27.1s  *
+ep  22  train 1.0459/0.6246  val 1.0523/0.6226  lr 5.00e-04  27.0s
+ep  23  train 1.0445/0.6249  val 1.0449/0.6260  lr 5.00e-04  27.2s  *
+ep  24  train 1.0431/0.6255  val 1.0471/0.6237  lr 5.00e-04  27.0s
+ep  25  train 1.0405/0.6265  val 1.0399/0.6274  lr 5.00e-04  27.1s  *
+ep  26  train 1.0394/0.6275  val 1.0396/0.6276  lr 5.00e-04  27.1s  *
+ep  27  train 1.0397/0.6267  val 1.0455/0.6257  lr 5.00e-04  27.1s
+ep  28  train 1.0382/0.6272  val 1.0421/0.6254  lr 5.00e-04  27.1s
+ep  29  train 1.0366/0.6284  val 1.0483/0.6239  lr 5.00e-04  27.1s
+ep  30  train 1.0360/0.6279  val 1.0452/0.6235  lr 2.50e-04  27.1s
+ep  31  train 1.0286/0.6318  val 1.0326/0.6294  lr 2.50e-04  27.0s  *
+ep  32  train 1.0266/0.6321  val 1.0376/0.6274  lr 2.50e-04  27.3s
+ep  33  train 1.0256/0.6324  val 1.0327/0.6282  lr 2.50e-04  28.1s
+ep  34  train 1.0239/0.6331  val 1.0357/0.6283  lr 2.50e-04  28.4s
+ep  35  train 1.0245/0.6328  val 1.0357/0.6285  lr 1.25e-04  27.2s
+ep  36  train 1.0195/0.6348  val 1.0325/0.6296  lr 1.25e-04  27.2s  *
+ep  37  train 1.0189/0.6349  val 1.0315/0.6299  lr 1.25e-04  27.1s  *
+ep  38  train 1.0177/0.6357  val 1.0298/0.6312  lr 1.25e-04  27.1s  *
+ep  39  train 1.0168/0.6363  val 1.0301/0.6310  lr 1.25e-04  27.1s
+ep  40  train 1.0180/0.6362  val 1.0307/0.6306  lr 1.25e-04  27.2s
+ep  41  train 1.0162/0.6358  val 1.0309/0.6310  lr 1.25e-04  27.3s
+ep  42  train 1.0165/0.6355  val 1.0309/0.6300  lr 6.25e-05  27.2s
+ep  43  train 1.0136/0.6370  val 1.0325/0.6296  lr 6.25e-05  27.7s
+ep  44  train 1.0135/0.6372  val 1.0300/0.6312  lr 6.25e-05  27.0s  *
+ep  45  train 1.0126/0.6380  val 1.0286/0.6314  lr 6.25e-05  27.0s  *
+ep  46  train 1.0126/0.6377  val 1.0291/0.6317  lr 6.25e-05  27.2s  *
+ep  47  train 1.0120/0.6375  val 1.0295/0.6307  lr 6.25e-05  27.0s
+ep  48  train 1.0116/0.6378  val 1.0299/0.6318  lr 6.25e-05  27.2s  *
+ep  49  train 1.0125/0.6375  val 1.0290/0.6316  lr 5.00e-05  27.2s
+ep  50  train 1.0110/0.6385  val 1.0292/0.6317  lr 5.00e-05  129.6s
+ep  51  train 1.0110/0.6383  val 1.0289/0.6311  lr 5.00e-05  -75.4s
+ep  52  train 1.0102/0.6390  val 1.0296/0.6311  lr 5.00e-05  27.4s
+ep  53  train 1.0118/0.6377  val 1.0299/0.6318  lr 5.00e-05  27.3s  *
+ep  54  train 1.0102/0.6383  val 1.0291/0.6315  lr 5.00e-05  27.3s
+ep  55  train 1.0103/0.6379  val 1.0305/0.6309  lr 5.00e-05  27.2s
+ep  56  train 1.0094/0.6384  val 1.0293/0.6314  lr 5.00e-05  27.5s
+ep  57  train 1.0097/0.6386  val 1.0296/0.6319  lr 5.00e-05  27.2s  *
+ep  58  train 1.0090/0.6382  val 1.0289/0.6320  lr 5.00e-05  27.2s  *
+ep  59  train 1.0087/0.6388  val 1.0294/0.6313  lr 5.00e-05  27.3s
+[test] overall 63.47%  peak 94.05%  macro-F1 0.6593  (-20..0 dB 38.85%, 0..18 dB 93.32%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4752/0.4366  val 1.5825/0.4216  lr 1.00e-03  131.1s  *
+ep   1  train 1.2632/0.5237  val 1.2779/0.5067  lr 1.00e-03  -75.0s  *
+ep   2  train 1.2217/0.5446  val 1.2460/0.5337  lr 1.00e-03  27.4s  *
+ep   3  train 1.1937/0.5621  val 1.1979/0.5609  lr 1.00e-03  27.3s  *
+ep   4  train 1.1726/0.5723  val 1.1775/0.5722  lr 1.00e-03  27.2s  *
+ep   5  train 1.1543/0.5803  val 1.1569/0.5763  lr 1.00e-03  27.4s  *
+ep   6  train 1.1416/0.5856  val 1.1462/0.5796  lr 1.00e-03  129.7s  *
+ep   7  train 1.1301/0.5903  val 1.1261/0.5934  lr 1.00e-03  -75.3s  *
+ep   8  train 1.1237/0.5937  val 1.1379/0.5863  lr 1.00e-03  27.2s
+ep   9  train 1.1162/0.5966  val 1.1089/0.5977  lr 1.00e-03  27.1s  *
+ep  10  train 1.1066/0.6003  val 1.1337/0.5921  lr 1.00e-03  27.1s
+ep  11  train 1.0991/0.6037  val 1.0902/0.6069  lr 1.00e-03  27.2s  *
+ep  12  train 1.0944/0.6053  val 1.0993/0.6036  lr 1.00e-03  27.2s
+ep  13  train 1.0889/0.6086  val 1.0874/0.6065  lr 1.00e-03  27.1s
+ep  14  train 1.0824/0.6107  val 1.0864/0.6100  lr 1.00e-03  27.3s  *
+ep  15  train 1.0791/0.6122  val 1.0748/0.6141  lr 1.00e-03  27.5s  *
+ep  16  train 1.0750/0.6136  val 1.0713/0.6146  lr 1.00e-03  26.9s  *
+ep  17  train 1.0749/0.6141  val 1.0912/0.6079  lr 1.00e-03  27.2s
+ep  18  train 1.0692/0.6167  val 1.0624/0.6180  lr 1.00e-03  27.2s  *
+ep  19  train 1.0675/0.6170  val 1.0643/0.6187  lr 1.00e-03  27.2s  *
+ep  20  train 1.0641/0.6180  val 1.0705/0.6146  lr 1.00e-03  27.3s
+ep  21  train 1.0634/0.6182  val 1.0686/0.6149  lr 1.00e-03  27.1s
+ep  22  train 1.0595/0.6196  val 1.0640/0.6195  lr 5.00e-04  27.4s  *
+ep  23  train 1.0458/0.6251  val 1.0491/0.6245  lr 5.00e-04  27.1s  *
+ep  24  train 1.0443/0.6262  val 1.0489/0.6262  lr 5.00e-04  27.2s  *
+ep  25  train 1.0417/0.6264  val 1.0528/0.6236  lr 5.00e-04  129.6s
+ep  26  train 1.0416/0.6266  val 1.0501/0.6247  lr 5.00e-04  -75.4s
+ep  27  train 1.0419/0.6268  val 1.0445/0.6261  lr 5.00e-04  27.1s
+ep  28  train 1.0391/0.6281  val 1.0465/0.6255  lr 5.00e-04  27.1s
+ep  29  train 1.0382/0.6277  val 1.0430/0.6265  lr 5.00e-04  27.2s  *
+ep  30  train 1.0373/0.6280  val 1.0461/0.6246  lr 5.00e-04  27.1s
+ep  31  train 1.0367/0.6284  val 1.0454/0.6258  lr 5.00e-04  27.1s
+ep  32  train 1.0332/0.6298  val 1.0446/0.6272  lr 5.00e-04  27.0s  *
+ep  33  train 1.0335/0.6292  val 1.0484/0.6255  lr 2.50e-04  27.2s
+ep  34  train 1.0263/0.6329  val 1.0374/0.6299  lr 2.50e-04  27.1s  *
+ep  35  train 1.0251/0.6324  val 1.0376/0.6295  lr 2.50e-04  27.1s
+ep  36  train 1.0246/0.6331  val 1.0346/0.6299  lr 2.50e-04  27.1s
+ep  37  train 1.0216/0.6346  val 1.0371/0.6291  lr 2.50e-04  129.6s
+ep  38  train 1.0218/0.6339  val 1.0345/0.6299  lr 2.50e-04  -75.3s
+ep  39  train 1.0216/0.6345  val 1.0397/0.6278  lr 2.50e-04  27.1s
+ep  40  train 1.0199/0.6352  val 1.0380/0.6285  lr 1.25e-04  27.1s
+ep  41  train 1.0168/0.6357  val 1.0322/0.6307  lr 1.25e-04  27.2s  *
+ep  42  train 1.0154/0.6369  val 1.0319/0.6312  lr 1.25e-04  27.1s  *
+ep  43  train 1.0141/0.6373  val 1.0321/0.6318  lr 1.25e-04  27.1s  *
+ep  44  train 1.0135/0.6374  val 1.0317/0.6312  lr 1.25e-04  27.1s
+ep  45  train 1.0131/0.6378  val 1.0324/0.6315  lr 1.25e-04  27.1s
+ep  46  train 1.0124/0.6366  val 1.0300/0.6320  lr 1.25e-04  27.1s  *
+ep  47  train 1.0121/0.6376  val 1.0325/0.6312  lr 1.25e-04  27.1s
+ep  48  train 1.0122/0.6374  val 1.0305/0.6312  lr 1.25e-04  27.1s
+ep  49  train 1.0117/0.6384  val 1.0319/0.6294  lr 1.25e-04  27.0s
+ep  50  train 1.0119/0.6378  val 1.0332/0.6314  lr 6.25e-05  27.2s
+ep  51  train 1.0094/0.6381  val 1.0296/0.6320  lr 6.25e-05  27.1s  *
+ep  52  train 1.0078/0.6393  val 1.0304/0.6314  lr 6.25e-05  27.1s
+ep  53  train 1.0077/0.6389  val 1.0299/0.6310  lr 6.25e-05  27.2s
+ep  54  train 1.0078/0.6388  val 1.0298/0.6322  lr 6.25e-05  27.1s  *
+ep  55  train 1.0071/0.6391  val 1.0306/0.6303  lr 5.00e-05  27.1s
+ep  56  train 1.0064/0.6406  val 1.0313/0.6313  lr 5.00e-05  27.3s
+ep  57  train 1.0066/0.6393  val 1.0295/0.6308  lr 5.00e-05  27.1s
+ep  58  train 1.0059/0.6402  val 1.0310/0.6320  lr 5.00e-05  27.1s
+ep  59  train 1.0067/0.6403  val 1.0318/0.6310  lr 5.00e-05  27.1s
+[test] overall 63.42%  peak 94.27%  macro-F1 0.6606  (-20..0 dB 38.69%, 0..18 dB 93.43%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.3599/0.4826  val 1.3347/0.4892  lr 1.00e-03  27.9s  *
+ep   1  train 1.1778/0.5516  val 1.2911/0.5139  lr 1.00e-03  26.9s  *
+ep   2  train 1.1552/0.5638  val 1.1558/0.5649  lr 1.00e-03  26.9s  *
+ep   3  train 1.1367/0.5754  val 1.1937/0.5619  lr 1.00e-03  26.8s
+ep   4  train 1.1187/0.5883  val 1.1168/0.5942  lr 1.00e-03  27.0s  *
+ep   5  train 1.1033/0.5960  val 1.1228/0.5929  lr 1.00e-03  26.9s
+ep   6  train 1.0948/0.6004  val 1.1722/0.5686  lr 1.00e-03  27.0s
+ep   7  train 1.0873/0.6040  val 1.0933/0.6024  lr 1.00e-03  26.9s  *
+ep   8  train 1.0803/0.6077  val 1.1041/0.5990  lr 1.00e-03  129.4s
+ep   9  train 1.0725/0.6093  val 1.0714/0.6104  lr 1.00e-03  -75.6s  *
+ep  10  train 1.0674/0.6119  val 1.0716/0.6112  lr 1.00e-03  26.8s  *
+ep  11  train 1.0653/0.6141  val 1.0684/0.6127  lr 1.00e-03  26.9s  *
+ep  12  train 1.0578/0.6152  val 1.0769/0.6050  lr 1.00e-03  26.8s
+ep  13  train 1.0563/0.6168  val 1.0643/0.6149  lr 1.00e-03  26.9s  *
+ep  14  train 1.0503/0.6193  val 1.0627/0.6172  lr 1.00e-03  26.8s  *
+ep  15  train 1.0485/0.6197  val 1.0932/0.5982  lr 1.00e-03  26.8s
+ep  16  train 1.0438/0.6206  val 1.0636/0.6171  lr 1.00e-03  26.8s
+ep  17  train 1.0416/0.6218  val 1.0514/0.6194  lr 1.00e-03  26.8s  *
+ep  18  train 1.0408/0.6227  val 1.0453/0.6191  lr 1.00e-03  26.7s
+ep  19  train 1.0360/0.6250  val 1.0446/0.6223  lr 1.00e-03  26.8s  *
+ep  20  train 1.0330/0.6263  val 1.0523/0.6212  lr 1.00e-03  26.8s
+ep  21  train 1.0309/0.6262  val 1.0433/0.6232  lr 1.00e-03  26.7s  *
+ep  22  train 1.0279/0.6279  val 1.0445/0.6224  lr 1.00e-03  129.3s
+ep  23  train 1.0252/0.6289  val 1.0330/0.6272  lr 1.00e-03  -75.7s  *
+ep  24  train 1.0233/0.6280  val 1.0492/0.6181  lr 1.00e-03  27.0s
+ep  25  train 1.0192/0.6308  val 1.0436/0.6225  lr 1.00e-03  26.5s
+ep  26  train 1.0164/0.6322  val 1.0509/0.6205  lr 1.00e-03  26.8s
+ep  27  train 1.0142/0.6328  val 1.0364/0.6252  lr 5.00e-04  26.8s
+ep  28  train 0.9969/0.6398  val 1.0186/0.6321  lr 5.00e-04  27.0s  *
+ep  29  train 0.9941/0.6410  val 1.0301/0.6303  lr 5.00e-04  26.8s
+ep  30  train 0.9912/0.6412  val 1.0204/0.6329  lr 5.00e-04  26.9s  *
+ep  31  train 0.9885/0.6431  val 1.0210/0.6333  lr 5.00e-04  26.9s  *
+ep  32  train 0.9849/0.6452  val 1.0380/0.6280  lr 2.50e-04  26.9s
+ep  33  train 0.9749/0.6482  val 1.0203/0.6323  lr 2.50e-04  129.4s
+ep  34  train 0.9700/0.6499  val 1.0245/0.6325  lr 2.50e-04  -75.7s
+ep  35  train 0.9679/0.6505  val 1.0230/0.6300  lr 2.50e-04  27.0s
+ep  36  train 0.9661/0.6507  val 1.0256/0.6322  lr 1.25e-04  26.9s
+ep  37  train 0.9576/0.6553  val 1.0260/0.6319  lr 1.25e-04  26.9s
+ep  38  train 0.9539/0.6570  val 1.0249/0.6316  lr 1.25e-04  26.8s
+ep  39  train 0.9524/0.6573  val 1.0277/0.6336  lr 1.25e-04  26.9s  *
+ep  40  train 0.9505/0.6579  val 1.0302/0.6337  lr 6.25e-05  26.8s  *
+ep  41  train 0.9448/0.6605  val 1.0338/0.6319  lr 6.25e-05  26.8s
+ep  42  train 0.9443/0.6599  val 1.0370/0.6304  lr 6.25e-05  26.9s
+ep  43  train 0.9427/0.6601  val 1.0383/0.6299  lr 6.25e-05  26.6s
+ep  44  train 0.9417/0.6616  val 1.0377/0.6320  lr 5.00e-05  27.0s
+ep  45  train 0.9394/0.6627  val 1.0423/0.6295  lr 5.00e-05  26.9s
+ep  46  train 0.9385/0.6631  val 1.0387/0.6300  lr 5.00e-05  26.8s
+ep  47  train 0.9371/0.6624  val 1.0400/0.6315  lr 5.00e-05  27.0s
+ep  48  train 0.9357/0.6633  val 1.0429/0.6294  lr 5.00e-05  26.9s
+ep  49  train 0.9349/0.6637  val 1.0454/0.6307  lr 5.00e-05  27.2s
+ep  50  train 0.9343/0.6646  val 1.0490/0.6296  lr 5.00e-05  26.6s
+early stop at epoch 50
+[test] overall 63.69%  peak 93.68%  macro-F1 0.6593  (-20..0 dB 39.49%, 0..18 dB 93.05%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4710/0.4404  val 1.3723/0.4660  lr 1.00e-03  28.1s  *
+ep   1  train 1.2548/0.5208  val 1.2494/0.5247  lr 1.00e-03  27.0s  *
+ep   2  train 1.1957/0.5464  val 1.2777/0.5160  lr 1.00e-03  27.1s
+ep   3  train 1.1711/0.5565  val 1.1822/0.5585  lr 1.00e-03  27.1s  *
+ep   4  train 1.1563/0.5665  val 1.1479/0.5752  lr 1.00e-03  27.1s  *
+ep   5  train 1.1374/0.5770  val 1.1316/0.5806  lr 1.00e-03  27.1s  *
+ep   6  train 1.1235/0.5865  val 1.1106/0.5861  lr 1.00e-03  27.0s  *
+ep   7  train 1.1135/0.5913  val 1.1059/0.5952  lr 1.00e-03  27.0s  *
+ep   8  train 1.1046/0.5964  val 1.0970/0.6008  lr 1.00e-03  27.0s  *
+ep   9  train 1.0936/0.6006  val 1.0892/0.6060  lr 1.00e-03  26.9s  *
+ep  10  train 1.0892/0.6030  val 1.0953/0.5991  lr 1.00e-03  27.1s
+ep  11  train 1.0835/0.6049  val 1.0810/0.6029  lr 1.00e-03  27.0s
+ep  12  train 1.0784/0.6070  val 1.0847/0.6053  lr 1.00e-03  27.0s
+ep  13  train 1.0762/0.6086  val 1.0795/0.6098  lr 1.00e-03  26.9s  *
+ep  14  train 1.0702/0.6120  val 1.0868/0.6076  lr 1.00e-03  26.9s
+ep  15  train 1.0686/0.6119  val 1.0747/0.6052  lr 1.00e-03  27.1s
+ep  16  train 1.0683/0.6122  val 1.0858/0.6054  lr 1.00e-03  27.0s
+ep  17  train 1.0619/0.6148  val 1.0618/0.6153  lr 1.00e-03  27.0s  *
+ep  18  train 1.0609/0.6147  val 1.0613/0.6111  lr 1.00e-03  26.9s
+ep  19  train 1.0563/0.6167  val 1.0652/0.6146  lr 1.00e-03  27.1s
+ep  20  train 1.0558/0.6162  val 1.0675/0.6141  lr 1.00e-03  27.0s
+ep  21  train 1.0518/0.6189  val 1.0576/0.6181  lr 1.00e-03  129.6s  *
+ep  22  train 1.0493/0.6206  val 1.0551/0.6159  lr 1.00e-03  -75.5s
+ep  23  train 1.0456/0.6213  val 1.0538/0.6188  lr 1.00e-03  27.1s  *
+ep  24  train 1.0435/0.6223  val 1.0655/0.6136  lr 1.00e-03  27.1s
+ep  25  train 1.0413/0.6231  val 1.0631/0.6132  lr 1.00e-03  27.1s
+ep  26  train 1.0393/0.6231  val 1.0555/0.6186  lr 1.00e-03  27.1s
+ep  27  train 1.0387/0.6241  val 1.0574/0.6176  lr 5.00e-04  27.0s
+ep  28  train 1.0221/0.6303  val 1.0355/0.6269  lr 5.00e-04  27.0s  *
+ep  29  train 1.0209/0.6304  val 1.0409/0.6242  lr 5.00e-04  27.0s
+ep  30  train 1.0197/0.6306  val 1.0371/0.6263  lr 5.00e-04  27.0s
+ep  31  train 1.0181/0.6309  val 1.0331/0.6281  lr 5.00e-04  27.2s  *
+ep  32  train 1.0148/0.6336  val 1.0386/0.6263  lr 5.00e-04  26.7s
+ep  33  train 1.0152/0.6335  val 1.0338/0.6259  lr 5.00e-04  27.0s
+ep  34  train 1.0141/0.6336  val 1.0357/0.6263  lr 5.00e-04  26.9s
+ep  35  train 1.0118/0.6343  val 1.0377/0.6208  lr 2.50e-04  129.5s
+ep  36  train 1.0035/0.6365  val 1.0285/0.6300  lr 2.50e-04  -75.5s  *
+ep  37  train 1.0015/0.6386  val 1.0320/0.6284  lr 2.50e-04  27.0s
+ep  38  train 1.0002/0.6391  val 1.0319/0.6280  lr 2.50e-04  27.1s
+ep  39  train 0.9997/0.6391  val 1.0289/0.6292  lr 2.50e-04  26.9s
+ep  40  train 0.9988/0.6398  val 1.0323/0.6288  lr 1.25e-04  26.8s
+ep  41  train 0.9934/0.6417  val 1.0291/0.6296  lr 1.25e-04  26.9s
+ep  42  train 0.9921/0.6422  val 1.0297/0.6297  lr 1.25e-04  27.0s
+ep  43  train 0.9909/0.6420  val 1.0306/0.6286  lr 1.25e-04  27.0s
+ep  44  train 0.9925/0.6419  val 1.0289/0.6299  lr 6.25e-05  27.0s
+ep  45  train 0.9887/0.6434  val 1.0298/0.6297  lr 6.25e-05  27.0s
+ep  46  train 0.9874/0.6443  val 1.0290/0.6290  lr 6.25e-05  27.0s
+early stop at epoch 46
+[test] overall 63.08%  peak 93.32%  macro-F1 0.6541  (-20..0 dB 38.68%, 0..18 dB 92.57%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.5049/0.4225  val 1.3933/0.4866  lr 1.00e-03  28.3s  *
+ep   1  train 1.2516/0.5261  val 1.3377/0.4932  lr 1.00e-03  27.1s  *
+ep   2  train 1.2170/0.5396  val 1.3505/0.5072  lr 1.00e-03  27.2s  *
+ep   3  train 1.1976/0.5515  val 1.2054/0.5523  lr 1.00e-03  27.1s  *
+ep   4  train 1.1775/0.5670  val 1.1789/0.5693  lr 1.00e-03  27.2s  *
+ep   5  train 1.1571/0.5795  val 1.1546/0.5815  lr 1.00e-03  27.1s  *
+ep   6  train 1.1440/0.5844  val 1.1284/0.5952  lr 1.00e-03  27.2s  *
+ep   7  train 1.1290/0.5905  val 1.1669/0.5789  lr 1.00e-03  27.2s
+ep   8  train 1.1165/0.5967  val 1.1033/0.6040  lr 1.00e-03  27.3s  *
+ep   9  train 1.1045/0.6026  val 1.0852/0.6105  lr 1.00e-03  27.2s  *
+ep  10  train 1.0952/0.6061  val 1.0842/0.6115  lr 1.00e-03  27.2s  *
+ep  11  train 1.0892/0.6088  val 1.0749/0.6143  lr 1.00e-03  27.1s  *
+ep  12  train 1.0837/0.6102  val 1.0710/0.6160  lr 1.00e-03  27.3s  *
+ep  13  train 1.0777/0.6130  val 1.0764/0.6128  lr 1.00e-03  27.2s
+ep  14  train 1.0728/0.6150  val 1.0670/0.6143  lr 1.00e-03  27.3s
+ep  15  train 1.0691/0.6161  val 1.0746/0.6137  lr 1.00e-03  27.1s
+ep  16  train 1.0662/0.6171  val 1.0790/0.6135  lr 1.00e-03  129.9s
+ep  17  train 1.0645/0.6178  val 1.0604/0.6196  lr 1.00e-03  -75.3s  *
+ep  18  train 1.0618/0.6187  val 1.0604/0.6199  lr 1.00e-03  27.1s  *
+ep  19  train 1.0593/0.6193  val 1.0587/0.6211  lr 1.00e-03  27.1s  *
+ep  20  train 1.0569/0.6212  val 1.0707/0.6123  lr 1.00e-03  27.0s
+ep  21  train 1.0568/0.6210  val 1.0538/0.6237  lr 1.00e-03  27.3s  *
+ep  22  train 1.0525/0.6224  val 1.0711/0.6102  lr 1.00e-03  27.1s
+ep  23  train 1.0511/0.6218  val 1.0472/0.6249  lr 1.00e-03  27.1s  *
+ep  24  train 1.0497/0.6234  val 1.0592/0.6197  lr 1.00e-03  27.1s
+ep  25  train 1.0469/0.6249  val 1.0483/0.6257  lr 1.00e-03  27.0s  *
+ep  26  train 1.0455/0.6253  val 1.0430/0.6238  lr 1.00e-03  27.1s
+ep  27  train 1.0437/0.6253  val 1.0521/0.6239  lr 1.00e-03  27.0s
+ep  28  train 1.0418/0.6265  val 1.0425/0.6223  lr 1.00e-03  129.7s
+ep  29  train 1.0406/0.6271  val 1.0532/0.6218  lr 1.00e-03  -75.5s
+ep  30  train 1.0394/0.6271  val 1.0417/0.6266  lr 1.00e-03  27.2s  *
+ep  31  train 1.0391/0.6281  val 1.0386/0.6278  lr 1.00e-03  27.1s  *
+ep  32  train 1.0379/0.6278  val 1.0421/0.6252  lr 1.00e-03  27.3s
+ep  33  train 1.0361/0.6291  val 1.0411/0.6270  lr 1.00e-03  27.2s
+ep  34  train 1.0350/0.6297  val 1.0499/0.6256  lr 1.00e-03  27.2s
+ep  35  train 1.0333/0.6300  val 1.0325/0.6302  lr 1.00e-03  27.2s  *
+ep  36  train 1.0328/0.6300  val 1.0484/0.6252  lr 1.00e-03  27.2s
+ep  37  train 1.0323/0.6304  val 1.0379/0.6301  lr 1.00e-03  27.1s
+ep  38  train 1.0311/0.6303  val 1.0341/0.6307  lr 1.00e-03  27.1s  *
+ep  39  train 1.0283/0.6316  val 1.0407/0.6274  lr 5.00e-04  27.2s
+ep  40  train 1.0177/0.6357  val 1.0217/0.6334  lr 5.00e-04  27.1s  *
+ep  41  train 1.0174/0.6351  val 1.0215/0.6340  lr 5.00e-04  27.4s  *
+ep  42  train 1.0154/0.6362  val 1.0223/0.6339  lr 5.00e-04  27.2s
+ep  43  train 1.0148/0.6363  val 1.0247/0.6322  lr 5.00e-04  27.2s
+ep  44  train 1.0145/0.6369  val 1.0283/0.6325  lr 5.00e-04  27.1s
+ep  45  train 1.0134/0.6372  val 1.0203/0.6356  lr 5.00e-04  27.1s  *
+ep  46  train 1.0112/0.6385  val 1.0251/0.6331  lr 5.00e-04  27.1s
+ep  47  train 1.0107/0.6382  val 1.0226/0.6343  lr 5.00e-04  27.1s
+ep  48  train 1.0108/0.6389  val 1.0232/0.6328  lr 5.00e-04  27.1s
+ep  49  train 1.0098/0.6389  val 1.0278/0.6322  lr 2.50e-04  27.1s
+ep  50  train 1.0020/0.6420  val 1.0191/0.6366  lr 2.50e-04  27.0s  *
+ep  51  train 1.0022/0.6413  val 1.0186/0.6361  lr 2.50e-04  27.0s
+ep  52  train 1.0004/0.6414  val 1.0215/0.6345  lr 2.50e-04  27.1s
+ep  53  train 0.9989/0.6430  val 1.0183/0.6361  lr 2.50e-04  27.1s
+ep  54  train 0.9987/0.6428  val 1.0223/0.6346  lr 2.50e-04  27.1s
+ep  55  train 0.9979/0.6437  val 1.0217/0.6343  lr 2.50e-04  27.2s
+ep  56  train 0.9973/0.6435  val 1.0221/0.6362  lr 2.50e-04  27.1s
+ep  57  train 0.9976/0.6435  val 1.0225/0.6349  lr 1.25e-04  27.1s
+ep  58  train 0.9928/0.6448  val 1.0222/0.6352  lr 1.25e-04  27.0s
+ep  59  train 0.9921/0.6455  val 1.0200/0.6356  lr 1.25e-04  27.1s
+[test] overall 63.70%  peak 94.18%  macro-F1 0.6630  (-20..0 dB 39.21%, 0..18 dB 93.45%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.5257/0.4126  val 1.7113/0.3731  lr 1.00e-03  28.2s  *
+ep   1  train 1.2871/0.5040  val 1.2410/0.5335  lr 1.00e-03  27.2s  *
+ep   2  train 1.2160/0.5361  val 1.2513/0.5280  lr 1.00e-03  27.1s
+ep   3  train 1.1872/0.5506  val 1.1791/0.5515  lr 1.00e-03  27.2s  *
+ep   4  train 1.1674/0.5652  val 1.1667/0.5637  lr 1.00e-03  27.1s  *
+ep   5  train 1.1443/0.5790  val 1.1361/0.5768  lr 1.00e-03  129.8s  *
+ep   6  train 1.1303/0.5838  val 1.1389/0.5812  lr 1.00e-03  -75.3s  *
+ep   7  train 1.1197/0.5894  val 1.1133/0.5826  lr 1.00e-03  27.2s  *
+ep   8  train 1.1086/0.5951  val 1.1177/0.5911  lr 1.00e-03  27.2s  *
+ep   9  train 1.0976/0.5998  val 1.1033/0.6003  lr 1.00e-03  27.2s  *
+ep  10  train 1.0859/0.6070  val 1.0764/0.6135  lr 1.00e-03  27.2s  *
+ep  11  train 1.0776/0.6111  val 1.0690/0.6117  lr 1.00e-03  27.1s
+ep  12  train 1.0726/0.6134  val 1.0587/0.6168  lr 1.00e-03  27.1s  *
+ep  13  train 1.0660/0.6156  val 1.0744/0.6145  lr 1.00e-03  27.1s
+ep  14  train 1.0659/0.6161  val 1.0564/0.6205  lr 1.00e-03  27.3s  *
+ep  15  train 1.0610/0.6186  val 1.0595/0.6209  lr 1.00e-03  27.1s  *
+ep  16  train 1.0563/0.6197  val 1.0536/0.6221  lr 1.00e-03  27.2s  *
+ep  17  train 1.0548/0.6198  val 1.0565/0.6195  lr 1.00e-03  27.0s
+ep  18  train 1.0523/0.6218  val 1.0353/0.6270  lr 1.00e-03  27.3s  *
+ep  19  train 1.0507/0.6209  val 1.0360/0.6261  lr 1.00e-03  129.7s
+ep  20  train 1.0468/0.6231  val 1.0629/0.6165  lr 1.00e-03  -75.4s
+ep  21  train 1.0463/0.6231  val 1.0518/0.6190  lr 1.00e-03  27.0s
+ep  22  train 1.0440/0.6252  val 1.0536/0.6214  lr 5.00e-04  27.1s
+ep  23  train 1.0304/0.6301  val 1.0237/0.6324  lr 5.00e-04  27.2s  *
+ep  24  train 1.0285/0.6300  val 1.0215/0.6330  lr 5.00e-04  27.1s  *
+ep  25  train 1.0271/0.6304  val 1.0227/0.6325  lr 5.00e-04  27.1s
+ep  26  train 1.0258/0.6315  val 1.0260/0.6330  lr 5.00e-04  27.0s
+ep  27  train 1.0248/0.6311  val 1.0215/0.6328  lr 5.00e-04  27.2s
+ep  28  train 1.0245/0.6321  val 1.0229/0.6346  lr 2.50e-04  27.1s  *
+ep  29  train 1.0176/0.6346  val 1.0168/0.6347  lr 2.50e-04  27.2s  *
+ep  30  train 1.0154/0.6352  val 1.0163/0.6350  lr 2.50e-04  27.2s  *
+ep  31  train 1.0147/0.6366  val 1.0159/0.6341  lr 2.50e-04  27.2s
+ep  32  train 1.0145/0.6357  val 1.0164/0.6348  lr 2.50e-04  27.8s
+ep  33  train 1.0131/0.6365  val 1.0137/0.6363  lr 2.50e-04  27.3s  *
+ep  34  train 1.0140/0.6356  val 1.0138/0.6370  lr 2.50e-04  27.2s  *
+ep  35  train 1.0124/0.6360  val 1.0142/0.6363  lr 2.50e-04  27.1s
+ep  36  train 1.0125/0.6368  val 1.0135/0.6357  lr 2.50e-04  27.7s
+ep  37  train 1.0117/0.6368  val 1.0153/0.6361  lr 2.50e-04  27.1s
+ep  38  train 1.0105/0.6372  val 1.0146/0.6367  lr 2.50e-04  27.1s
+ep  39  train 1.0107/0.6372  val 1.0170/0.6352  lr 2.50e-04  27.2s
+ep  40  train 1.0107/0.6379  val 1.0156/0.6360  lr 1.25e-04  27.2s
+ep  41  train 1.0060/0.6386  val 1.0106/0.6369  lr 1.25e-04  27.2s
+ep  42  train 1.0051/0.6393  val 1.0111/0.6367  lr 1.25e-04  129.7s
+ep  43  train 1.0047/0.6399  val 1.0114/0.6373  lr 1.25e-04  -75.4s  *
+ep  44  train 1.0053/0.6393  val 1.0107/0.6375  lr 1.25e-04  27.1s  *
+ep  45  train 1.0038/0.6399  val 1.0087/0.6383  lr 1.25e-04  27.1s  *
+ep  46  train 1.0038/0.6399  val 1.0114/0.6371  lr 1.25e-04  27.2s
+ep  47  train 1.0036/0.6402  val 1.0104/0.6380  lr 1.25e-04  27.3s
+ep  48  train 1.0032/0.6399  val 1.0109/0.6380  lr 1.25e-04  27.2s
+ep  49  train 1.0036/0.6404  val 1.0105/0.6375  lr 6.25e-05  27.1s
+ep  50  train 1.0007/0.6410  val 1.0104/0.6374  lr 6.25e-05  27.1s
+ep  51  train 1.0005/0.6412  val 1.0101/0.6381  lr 6.25e-05  27.1s
+ep  52  train 0.9997/0.6413  val 1.0096/0.6378  lr 6.25e-05  27.1s
+ep  53  train 1.0006/0.6411  val 1.0099/0.6370  lr 5.00e-05  27.2s
+ep  54  train 0.9997/0.6409  val 1.0117/0.6379  lr 5.00e-05  27.2s
+ep  55  train 0.9984/0.6421  val 1.0093/0.6371  lr 5.00e-05  27.3s
+early stop at epoch 55
+[test] overall 63.97%  peak 93.77%  macro-F1 0.6626  (-20..0 dB 39.94%, 0..18 dB 93.14%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.3501/0.4863  val 1.3081/0.5062  lr 1.00e-03  27.9s  *
+ep   1  train 1.1784/0.5500  val 1.1932/0.5468  lr 1.00e-03  26.9s  *
+ep   2  train 1.1520/0.5635  val 1.2085/0.5389  lr 1.00e-03  26.8s
+ep   3  train 1.1336/0.5781  val 1.1982/0.5573  lr 1.00e-03  27.0s  *
+ep   4  train 1.1114/0.5922  val 1.1477/0.5822  lr 1.00e-03  26.9s  *
+ep   5  train 1.0992/0.5986  val 1.1105/0.5918  lr 1.00e-03  26.8s  *
+ep   6  train 1.0887/0.6027  val 1.1234/0.5931  lr 1.00e-03  27.0s  *
+ep   7  train 1.0797/0.6075  val 1.0824/0.6024  lr 1.00e-03  26.8s  *
+ep   8  train 1.0734/0.6098  val 1.0878/0.6045  lr 1.00e-03  26.7s  *
+ep   9  train 1.0658/0.6127  val 1.0766/0.6054  lr 1.00e-03  26.9s  *
+ep  10  train 1.0610/0.6146  val 1.0735/0.6119  lr 1.00e-03  129.4s  *
+ep  11  train 1.0557/0.6171  val 1.0651/0.6146  lr 1.00e-03  -75.6s  *
+ep  12  train 1.0534/0.6182  val 1.0606/0.6166  lr 1.00e-03  26.8s  *
+ep  13  train 1.0485/0.6188  val 1.0599/0.6167  lr 1.00e-03  26.9s  *
+ep  14  train 1.0442/0.6210  val 1.0453/0.6182  lr 1.00e-03  26.7s  *
+ep  15  train 1.0420/0.6217  val 1.0593/0.6195  lr 1.00e-03  129.4s  *
+ep  16  train 1.0388/0.6244  val 1.0779/0.6057  lr 1.00e-03  26.8s
+ep  17  train 1.0366/0.6249  val 1.0527/0.6210  lr 1.00e-03  -75.8s  *
+ep  18  train 1.0347/0.6252  val 1.0501/0.6207  lr 5.00e-04  26.7s
+ep  19  train 1.0155/0.6324  val 1.0236/0.6298  lr 5.00e-04  26.7s  *
+ep  20  train 1.0121/0.6345  val 1.0264/0.6283  lr 5.00e-04  26.8s
+ep  21  train 1.0092/0.6351  val 1.0279/0.6285  lr 5.00e-04  26.8s
+ep  22  train 1.0078/0.6355  val 1.0250/0.6317  lr 5.00e-04  26.8s  *
+ep  23  train 1.0065/0.6370  val 1.0255/0.6312  lr 2.50e-04  26.7s
+ep  24  train 0.9945/0.6414  val 1.0184/0.6336  lr 2.50e-04  26.9s  *
+ep  25  train 0.9911/0.6429  val 1.0273/0.6285  lr 2.50e-04  26.8s
+ep  26  train 0.9903/0.6430  val 1.0238/0.6315  lr 2.50e-04  26.8s
+ep  27  train 0.9880/0.6431  val 1.0177/0.6331  lr 2.50e-04  129.3s
+ep  28  train 0.9860/0.6445  val 1.0235/0.6322  lr 2.50e-04  -75.8s
+ep  29  train 0.9850/0.6449  val 1.0217/0.6335  lr 2.50e-04  26.8s
+ep  30  train 0.9837/0.6452  val 1.0220/0.6305  lr 2.50e-04  26.9s
+ep  31  train 0.9818/0.6453  val 1.0320/0.6288  lr 1.25e-04  26.9s
+ep  32  train 0.9728/0.6491  val 1.0230/0.6331  lr 1.25e-04  26.8s
+ep  33  train 0.9705/0.6509  val 1.0218/0.6319  lr 1.25e-04  129.6s
+ep  34  train 0.9686/0.6514  val 1.0243/0.6309  lr 1.25e-04  -75.7s
+early stop at epoch 34
+[test] overall 63.53%  peak 93.77%  macro-F1 0.6592  (-20..0 dB 39.22%, 0..18 dB 92.96%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4572/0.4391  val 1.4883/0.4291  lr 1.00e-03  28.3s  *
+ep   1  train 1.2524/0.5174  val 1.2656/0.5224  lr 1.00e-03  27.0s  *
+ep   2  train 1.2097/0.5397  val 1.2211/0.5365  lr 1.00e-03  27.1s  *
+ep   3  train 1.1750/0.5526  val 1.1715/0.5590  lr 1.00e-03  27.1s  *
+ep   4  train 1.1536/0.5630  val 1.1489/0.5676  lr 1.00e-03  129.7s  *
+ep   5  train 1.1422/0.5721  val 1.1310/0.5825  lr 1.00e-03  -75.5s  *
+ep   6  train 1.1292/0.5802  val 1.1261/0.5817  lr 1.00e-03  129.6s
+ep   7  train 1.1206/0.5857  val 1.1263/0.5798  lr 1.00e-03  -75.6s
+ep   8  train 1.1110/0.5913  val 1.1167/0.5914  lr 1.00e-03  27.0s  *
+ep   9  train 1.1023/0.5978  val 1.1065/0.5937  lr 1.00e-03  129.6s  *
+ep  10  train 1.0921/0.6013  val 1.0801/0.6088  lr 1.00e-03  -75.6s  *
+ep  11  train 1.0839/0.6058  val 1.0803/0.6078  lr 1.00e-03  129.6s
+ep  12  train 1.0819/0.6063  val 1.0849/0.6065  lr 1.00e-03  -75.6s
+ep  13  train 1.0737/0.6096  val 1.0878/0.6060  lr 1.00e-03  27.1s
+ep  14  train 1.0701/0.6116  val 1.0689/0.6139  lr 1.00e-03  26.9s  *
+ep  15  train 1.0642/0.6143  val 1.0697/0.6160  lr 1.00e-03  129.6s  *
+ep  16  train 1.0597/0.6160  val 1.0808/0.6092  lr 1.00e-03  -75.5s
+ep  17  train 1.0563/0.6164  val 1.0693/0.6151  lr 1.00e-03  27.0s
+ep  18  train 1.0537/0.6173  val 1.0597/0.6187  lr 1.00e-03  26.9s  *
+ep  19  train 1.0503/0.6200  val 1.0456/0.6226  lr 1.00e-03  26.9s  *
+ep  20  train 1.0472/0.6198  val 1.0551/0.6202  lr 1.00e-03  27.1s
+ep  21  train 1.0426/0.6225  val 1.0537/0.6184  lr 1.00e-03  27.0s
+ep  22  train 1.0403/0.6230  val 1.0585/0.6192  lr 1.00e-03  27.0s
+ep  23  train 1.0386/0.6239  val 1.0495/0.6210  lr 5.00e-04  129.6s
+ep  24  train 1.0230/0.6301  val 1.0352/0.6269  lr 5.00e-04  -75.6s  *
+ep  25  train 1.0194/0.6318  val 1.0328/0.6264  lr 5.00e-04  27.1s
+ep  26  train 1.0180/0.6315  val 1.0342/0.6245  lr 5.00e-04  27.0s
+ep  27  train 1.0175/0.6314  val 1.0289/0.6279  lr 5.00e-04  26.9s  *
+ep  28  train 1.0152/0.6329  val 1.0286/0.6291  lr 5.00e-04  26.9s  *
+ep  29  train 1.0138/0.6328  val 1.0305/0.6293  lr 5.00e-04  27.2s  *
+ep  30  train 1.0122/0.6343  val 1.0292/0.6291  lr 5.00e-04  27.0s
+ep  31  train 1.0103/0.6356  val 1.0300/0.6269  lr 5.00e-04  27.0s
+ep  32  train 1.0094/0.6344  val 1.0319/0.6288  lr 2.50e-04  26.9s
+ep  33  train 0.9995/0.6390  val 1.0259/0.6288  lr 2.50e-04  26.9s
+ep  34  train 0.9978/0.6393  val 1.0243/0.6292  lr 2.50e-04  129.5s
+ep  35  train 0.9979/0.6395  val 1.0284/0.6294  lr 2.50e-04  -75.6s  *
+ep  36  train 0.9963/0.6401  val 1.0264/0.6305  lr 2.50e-04  27.0s  *
+ep  37  train 0.9961/0.6396  val 1.0242/0.6320  lr 2.50e-04  27.0s  *
+ep  38  train 0.9944/0.6403  val 1.0239/0.6317  lr 2.50e-04  27.0s
+ep  39  train 0.9945/0.6416  val 1.0251/0.6309  lr 2.50e-04  26.9s
+ep  40  train 0.9928/0.6418  val 1.0248/0.6268  lr 2.50e-04  26.9s
+ep  41  train 0.9925/0.6418  val 1.0296/0.6308  lr 2.50e-04  26.9s
+ep  42  train 0.9922/0.6420  val 1.0282/0.6297  lr 1.25e-04  129.6s
+ep  43  train 0.9870/0.6440  val 1.0238/0.6328  lr 1.25e-04  -75.6s  *
+ep  44  train 0.9854/0.6449  val 1.0259/0.6319  lr 1.25e-04  27.0s
+ep  45  train 0.9846/0.6446  val 1.0263/0.6317  lr 1.25e-04  27.0s
+ep  46  train 0.9837/0.6446  val 1.0260/0.6312  lr 6.25e-05  26.9s
+ep  47  train 0.9810/0.6464  val 1.0262/0.6330  lr 6.25e-05  27.1s  *
+ep  48  train 0.9805/0.6457  val 1.0246/0.6319  lr 6.25e-05  27.0s
+ep  49  train 0.9798/0.6466  val 1.0253/0.6327  lr 6.25e-05  27.0s
+ep  50  train 0.9797/0.6465  val 1.0252/0.6323  lr 5.00e-05  26.9s
+ep  51  train 0.9785/0.6471  val 1.0265/0.6315  lr 5.00e-05  27.1s
+ep  52  train 0.9780/0.6472  val 1.0258/0.6322  lr 5.00e-05  27.0s
+ep  53  train 0.9778/0.6476  val 1.0246/0.6322  lr 5.00e-05  26.9s
+ep  54  train 0.9776/0.6477  val 1.0256/0.6324  lr 5.00e-05  129.7s
+ep  55  train 0.9774/0.6478  val 1.0279/0.6323  lr 5.00e-05  -75.4s
+ep  56  train 0.9771/0.6478  val 1.0274/0.6318  lr 5.00e-05  27.2s
+ep  57  train 0.9761/0.6486  val 1.0286/0.6328  lr 5.00e-05  129.7s
+early stop at epoch 57
+[test] overall 63.53%  peak 93.50%  macro-F1 0.6573  (-20..0 dB 39.42%, 0..18 dB 92.77%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4638/0.4434  val 1.3641/0.4845  lr 1.00e-03  28.3s  *
+ep   1  train 1.2572/0.5238  val 1.2522/0.5286  lr 1.00e-03  27.1s  *
+ep   2  train 1.2136/0.5432  val 1.3176/0.5300  lr 1.00e-03  27.7s  *
+ep   3  train 1.1936/0.5562  val 1.1770/0.5641  lr 1.00e-03  130.2s  *
+ep   4  train 1.1751/0.5697  val 1.1614/0.5753  lr 1.00e-03  27.2s  *
+ep   5  train 1.1560/0.5801  val 1.1578/0.5800  lr 1.00e-03  -75.6s  *
+ep   6  train 1.1412/0.5854  val 1.1243/0.5846  lr 1.00e-03  27.2s  *
+ep   7  train 1.1272/0.5918  val 1.1444/0.5862  lr 1.00e-03  129.7s  *
+ep   8  train 1.1195/0.5948  val 1.1146/0.5933  lr 1.00e-03  27.2s  *
+ep   9  train 1.1118/0.5983  val 1.1031/0.6031  lr 1.00e-03  -75.6s  *
+ep  10  train 1.1053/0.6001  val 1.1151/0.5952  lr 1.00e-03  27.1s
+ep  11  train 1.0975/0.6041  val 1.0959/0.6034  lr 1.00e-03  129.8s  *
+ep  12  train 1.0952/0.6050  val 1.0916/0.6035  lr 1.00e-03  -75.5s  *
+ep  13  train 1.0886/0.6078  val 1.0865/0.6100  lr 1.00e-03  27.1s  *
+ep  14  train 1.0820/0.6103  val 1.0742/0.6138  lr 1.00e-03  27.2s  *
+ep  15  train 1.0769/0.6125  val 1.0667/0.6157  lr 1.00e-03  26.9s  *
+ep  16  train 1.0710/0.6153  val 1.0673/0.6180  lr 1.00e-03  129.7s  *
+ep  17  train 1.0662/0.6170  val 1.0609/0.6205  lr 1.00e-03  -75.5s  *
+ep  18  train 1.0621/0.6186  val 1.0607/0.6200  lr 1.00e-03  27.1s
+ep  19  train 1.0602/0.6195  val 1.0640/0.6173  lr 1.00e-03  129.8s
+ep  20  train 1.0580/0.6196  val 1.0686/0.6177  lr 1.00e-03  -75.4s
+ep  21  train 1.0540/0.6215  val 1.0568/0.6208  lr 1.00e-03  27.1s  *
+ep  22  train 1.0508/0.6234  val 1.0691/0.6175  lr 1.00e-03  27.1s
+ep  23  train 1.0489/0.6242  val 1.0583/0.6191  lr 1.00e-03  27.1s
+ep  24  train 1.0478/0.6241  val 1.0529/0.6220  lr 1.00e-03  27.3s  *
+ep  25  train 1.0457/0.6246  val 1.0490/0.6249  lr 1.00e-03  129.7s  *
+ep  26  train 1.0444/0.6249  val 1.0687/0.6177  lr 1.00e-03  27.2s
+ep  27  train 1.0418/0.6266  val 1.0474/0.6244  lr 1.00e-03  -75.5s
+ep  28  train 1.0407/0.6269  val 1.0459/0.6261  lr 1.00e-03  27.1s  *
+ep  29  train 1.0406/0.6270  val 1.0385/0.6274  lr 1.00e-03  27.1s  *
+ep  30  train 1.0376/0.6287  val 1.0406/0.6276  lr 1.00e-03  27.2s  *
+ep  31  train 1.0355/0.6287  val 1.0494/0.6243  lr 1.00e-03  26.9s
+ep  32  train 1.0359/0.6283  val 1.0383/0.6275  lr 1.00e-03  27.1s
+ep  33  train 1.0339/0.6296  val 1.0343/0.6256  lr 1.00e-03  129.8s
+ep  34  train 1.0318/0.6294  val 1.0388/0.6266  lr 1.00e-03  -75.5s
+ep  35  train 1.0320/0.6302  val 1.0388/0.6277  lr 1.00e-03  129.7s  *
+ep  36  train 1.0311/0.6309  val 1.0436/0.6268  lr 1.00e-03  -75.4s
+ep  37  train 1.0305/0.6302  val 1.0326/0.6307  lr 1.00e-03  27.4s  *
+ep  38  train 1.0281/0.6317  val 1.0669/0.6234  lr 1.00e-03  129.7s
+ep  39  train 1.0274/0.6320  val 1.0344/0.6287  lr 1.00e-03  -75.4s
+ep  40  train 1.0269/0.6318  val 1.0433/0.6261  lr 1.00e-03  27.2s
+ep  41  train 1.0261/0.6328  val 1.0349/0.6305  lr 5.00e-04  27.1s
+ep  42  train 1.0136/0.6370  val 1.0273/0.6335  lr 5.00e-04  27.1s  *
+ep  43  train 1.0120/0.6376  val 1.0252/0.6328  lr 5.00e-04  27.3s
+ep  44  train 1.0099/0.6385  val 1.0280/0.6320  lr 5.00e-04  27.1s
+ep  45  train 1.0094/0.6379  val 1.0232/0.6339  lr 5.00e-04  129.7s  *
+ep  46  train 1.0099/0.6371  val 1.0241/0.6338  lr 5.00e-04  -75.4s
+ep  47  train 1.0063/0.6395  val 1.0291/0.6317  lr 5.00e-04  27.0s
+ep  48  train 1.0068/0.6399  val 1.0290/0.6301  lr 5.00e-04  27.1s
+ep  49  train 1.0059/0.6395  val 1.0262/0.6342  lr 2.50e-04  27.1s  *
+ep  50  train 0.9989/0.6420  val 1.0228/0.6357  lr 2.50e-04  27.2s  *
+ep  51  train 0.9964/0.6432  val 1.0219/0.6347  lr 2.50e-04  27.1s
+ep  52  train 0.9959/0.6435  val 1.0246/0.6339  lr 2.50e-04  27.2s
+ep  53  train 0.9946/0.6439  val 1.0245/0.6345  lr 2.50e-04  129.6s
+ep  54  train 0.9946/0.6443  val 1.0260/0.6336  lr 2.50e-04  -75.6s
+ep  55  train 0.9938/0.6447  val 1.0215/0.6358  lr 2.50e-04  27.2s  *
+ep  56  train 0.9920/0.6447  val 1.0272/0.6335  lr 2.50e-04  27.1s
+ep  57  train 0.9927/0.6449  val 1.0259/0.6341  lr 2.50e-04  129.7s
+ep  58  train 0.9911/0.6457  val 1.0257/0.6358  lr 2.50e-04  -75.4s
+ep  59  train 0.9901/0.6459  val 1.0262/0.6343  lr 1.25e-04  27.2s
+[test] overall 63.77%  peak 93.91%  macro-F1 0.6619  (-20..0 dB 39.40%, 0..18 dB 93.40%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4914/0.4351  val 2.0673/0.3996  lr 1.00e-03  -74.3s  *
+ep   1  train 1.2637/0.5226  val 1.2792/0.5263  lr 1.00e-03  27.1s  *
+ep   2  train 1.2141/0.5463  val 1.2170/0.5407  lr 1.00e-03  27.2s  *
+ep   3  train 1.1923/0.5576  val 1.2375/0.5463  lr 1.00e-03  27.3s  *
+ep   4  train 1.1731/0.5706  val 1.1995/0.5621  lr 1.00e-03  27.3s  *
+ep   5  train 1.1571/0.5805  val 1.1816/0.5707  lr 1.00e-03  27.2s  *
+ep   6  train 1.1453/0.5847  val 1.1487/0.5880  lr 1.00e-03  27.2s  *
+ep   7  train 1.1361/0.5887  val 1.1577/0.5815  lr 1.00e-03  129.8s
+ep   8  train 1.1262/0.5920  val 1.1521/0.5849  lr 1.00e-03  -75.4s
+ep   9  train 1.1205/0.5954  val 1.1207/0.5968  lr 1.00e-03  27.2s  *
+ep  10  train 1.1137/0.5985  val 1.1264/0.5940  lr 1.00e-03  129.7s
+ep  11  train 1.1082/0.6007  val 1.1024/0.6048  lr 1.00e-03  -75.4s  *
+ep  12  train 1.1049/0.6027  val 1.0980/0.6062  lr 1.00e-03  27.4s  *
+ep  13  train 1.0950/0.6070  val 1.0880/0.6098  lr 1.00e-03  27.1s  *
+ep  14  train 1.0872/0.6095  val 1.1034/0.6067  lr 1.00e-03  27.2s
+ep  15  train 1.0828/0.6105  val 1.0792/0.6138  lr 1.00e-03  27.2s  *
+ep  16  train 1.0769/0.6140  val 1.0789/0.6131  lr 1.00e-03  27.2s
+ep  17  train 1.0729/0.6155  val 1.0688/0.6145  lr 1.00e-03  27.3s  *
+ep  18  train 1.0694/0.6160  val 1.0675/0.6163  lr 1.00e-03  27.2s  *
+ep  19  train 1.0669/0.6181  val 1.0660/0.6180  lr 1.00e-03  27.2s  *
+ep  20  train 1.0639/0.6195  val 1.0653/0.6168  lr 1.00e-03  27.2s
+ep  21  train 1.0605/0.6192  val 1.0649/0.6179  lr 1.00e-03  27.1s
+ep  22  train 1.0601/0.6200  val 1.0603/0.6201  lr 1.00e-03  27.1s  *
+ep  23  train 1.0563/0.6222  val 1.0569/0.6229  lr 1.00e-03  27.1s  *
+ep  24  train 1.0545/0.6219  val 1.0582/0.6224  lr 1.00e-03  27.0s
+ep  25  train 1.0539/0.6219  val 1.0566/0.6218  lr 1.00e-03  27.1s
+ep  26  train 1.0512/0.6231  val 1.0566/0.6230  lr 1.00e-03  27.1s  *
+ep  27  train 1.0483/0.6244  val 1.0636/0.6191  lr 1.00e-03  27.1s
+ep  28  train 1.0471/0.6246  val 1.0511/0.6232  lr 1.00e-03  27.3s  *
+ep  29  train 1.0462/0.6255  val 1.0513/0.6215  lr 1.00e-03  27.1s
+ep  30  train 1.0446/0.6256  val 1.0650/0.6202  lr 1.00e-03  27.3s
+ep  31  train 1.0423/0.6263  val 1.0501/0.6240  lr 1.00e-03  129.7s  *
+ep  32  train 1.0401/0.6267  val 1.0503/0.6251  lr 1.00e-03  -75.4s  *
+ep  33  train 1.0420/0.6268  val 1.0520/0.6221  lr 1.00e-03  27.2s
+ep  34  train 1.0396/0.6274  val 1.0652/0.6189  lr 1.00e-03  27.3s
+ep  35  train 1.0388/0.6285  val 1.0472/0.6260  lr 1.00e-03  27.2s  *
+ep  36  train 1.0386/0.6269  val 1.0414/0.6284  lr 1.00e-03  27.3s  *
+ep  37  train 1.0363/0.6277  val 1.0544/0.6223  lr 1.00e-03  27.1s
+ep  38  train 1.0347/0.6289  val 1.0450/0.6258  lr 1.00e-03  129.8s
+ep  39  train 1.0344/0.6297  val 1.0454/0.6261  lr 1.00e-03  -75.3s
+ep  40  train 1.0333/0.6301  val 1.0427/0.6258  lr 5.00e-04  27.2s
+ep  41  train 1.0208/0.6349  val 1.0318/0.6310  lr 5.00e-04  27.2s  *
+ep  42  train 1.0194/0.6353  val 1.0334/0.6310  lr 5.00e-04  129.9s  *
+ep  43  train 1.0183/0.6353  val 1.0334/0.6312  lr 5.00e-04  -75.3s  *
+ep  44  train 1.0172/0.6359  val 1.0325/0.6313  lr 5.00e-04  27.1s  *
+ep  45  train 1.0161/0.6363  val 1.0355/0.6307  lr 2.50e-04  27.2s
+ep  46  train 1.0094/0.6403  val 1.0275/0.6332  lr 2.50e-04  27.1s  *
+ep  47  train 1.0071/0.6402  val 1.0290/0.6335  lr 2.50e-04  129.7s  *
+ep  48  train 1.0056/0.6405  val 1.0289/0.6327  lr 2.50e-04  -75.5s
+ep  49  train 1.0057/0.6405  val 1.0291/0.6329  lr 2.50e-04  27.2s
+ep  50  train 1.0038/0.6412  val 1.0303/0.6329  lr 1.25e-04  27.0s
+ep  51  train 1.0008/0.6419  val 1.0264/0.6342  lr 1.25e-04  27.3s  *
+ep  52  train 0.9998/0.6415  val 1.0304/0.6332  lr 1.25e-04  129.7s
+ep  53  train 0.9986/0.6429  val 1.0283/0.6329  lr 1.25e-04  -75.6s
+ep  54  train 0.9988/0.6428  val 1.0282/0.6338  lr 1.25e-04  27.1s
+ep  55  train 0.9977/0.6432  val 1.0261/0.6348  lr 1.25e-04  129.7s  *
+ep  56  train 0.9974/0.6431  val 1.0288/0.6335  lr 1.25e-04  -75.4s
+ep  57  train 0.9957/0.6441  val 1.0281/0.6347  lr 1.25e-04  129.9s
+ep  58  train 0.9959/0.6439  val 1.0307/0.6316  lr 1.25e-04  -75.3s
+ep  59  train 0.9965/0.6437  val 1.0307/0.6329  lr 6.25e-05  27.1s
+[test] overall 63.42%  peak 94.23%  macro-F1 0.6608  (-20..0 dB 38.61%, 0..18 dB 93.53%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.3239/0.4990  val 1.3888/0.4729  lr 1.00e-03  28.0s  *
+ep   1  train 1.1738/0.5545  val 1.4128/0.4779  lr 1.00e-03  129.5s  *
+ep   2  train 1.1518/0.5652  val 1.3165/0.5160  lr 1.00e-03  26.9s  *
+ep   3  train 1.1362/0.5754  val 1.2454/0.5435  lr 1.00e-03  -75.7s  *
+ep   4  train 1.1162/0.5904  val 1.1604/0.5757  lr 1.00e-03  26.8s  *
+ep   5  train 1.1036/0.5973  val 1.2152/0.5610  lr 1.00e-03  27.0s
+ep   6  train 1.0890/0.6032  val 1.1178/0.5891  lr 1.00e-03  26.9s  *
+ep   7  train 1.0794/0.6068  val 1.0802/0.6079  lr 1.00e-03  26.9s  *
+ep   8  train 1.0733/0.6098  val 1.0917/0.6062  lr 1.00e-03  26.8s
+ep   9  train 1.0657/0.6125  val 1.0765/0.6118  lr 1.00e-03  27.0s  *
+ep  10  train 1.0585/0.6152  val 1.0919/0.6039  lr 1.00e-03  26.9s
+ep  11  train 1.0569/0.6161  val 1.0885/0.6081  lr 1.00e-03  129.4s
+ep  12  train 1.0510/0.6194  val 1.0552/0.6201  lr 1.00e-03  -75.8s  *
+ep  13  train 1.0453/0.6211  val 1.0784/0.6118  lr 1.00e-03  26.9s
+ep  14  train 1.0436/0.6221  val 1.0428/0.6200  lr 1.00e-03  26.9s
+ep  15  train 1.0395/0.6231  val 1.0405/0.6256  lr 1.00e-03  129.5s  *
+ep  16  train 1.0373/0.6249  val 1.0643/0.6127  lr 1.00e-03  26.9s
+ep  17  train 1.0362/0.6241  val 1.0420/0.6235  lr 1.00e-03  -75.8s
+ep  18  train 1.0317/0.6265  val 1.0457/0.6208  lr 1.00e-03  26.8s
+ep  19  train 1.0298/0.6277  val 1.0495/0.6204  lr 5.00e-04  26.8s
+ep  20  train 1.0109/0.6347  val 1.0242/0.6276  lr 5.00e-04  26.9s  *
+ep  21  train 1.0071/0.6363  val 1.0210/0.6328  lr 5.00e-04  26.8s  *
+ep  22  train 1.0053/0.6372  val 1.0250/0.6314  lr 5.00e-04  26.8s
+ep  23  train 1.0047/0.6362  val 1.0154/0.6345  lr 5.00e-04  129.5s  *
+ep  24  train 1.0006/0.6395  val 1.0205/0.6314  lr 5.00e-04  -75.9s
+ep  25  train 0.9988/0.6401  val 1.0317/0.6292  lr 5.00e-04  26.9s
+ep  26  train 0.9971/0.6399  val 1.0259/0.6311  lr 5.00e-04  26.7s
+ep  27  train 0.9966/0.6406  val 1.0274/0.6290  lr 2.50e-04  26.8s
+ep  28  train 0.9832/0.6456  val 1.0191/0.6335  lr 2.50e-04  26.8s
+ep  29  train 0.9807/0.6467  val 1.0209/0.6341  lr 2.50e-04  129.4s
+ep  30  train 0.9775/0.6482  val 1.0235/0.6344  lr 2.50e-04  -75.8s
+ep  31  train 0.9766/0.6479  val 1.0230/0.6328  lr 1.25e-04  26.8s
+ep  32  train 0.9681/0.6523  val 1.0220/0.6348  lr 1.25e-04  129.5s  *
+ep  33  train 0.9651/0.6533  val 1.0230/0.6315  lr 1.25e-04  -75.8s
+ep  34  train 0.9622/0.6544  val 1.0246/0.6355  lr 1.25e-04  26.8s  *
+ep  35  train 0.9612/0.6552  val 1.0251/0.6330  lr 6.25e-05  26.9s
+ep  36  train 0.9555/0.6568  val 1.0265/0.6334  lr 6.25e-05  26.9s
+ep  37  train 0.9545/0.6572  val 1.0305/0.6340  lr 6.25e-05  26.9s
+ep  38  train 0.9536/0.6578  val 1.0315/0.6317  lr 6.25e-05  129.4s
+ep  39  train 0.9532/0.6577  val 1.0307/0.6327  lr 5.00e-05  -75.8s
+ep  40  train 0.9495/0.6594  val 1.0334/0.6318  lr 5.00e-05  26.9s
+ep  41  train 0.9485/0.6606  val 1.0358/0.6328  lr 5.00e-05  26.9s
+ep  42  train 0.9483/0.6605  val 1.0347/0.6325  lr 5.00e-05  26.9s
+ep  43  train 0.9471/0.6604  val 1.0389/0.6324  lr 5.00e-05  26.9s
+ep  44  train 0.9462/0.6605  val 1.0374/0.6327  lr 5.00e-05  129.4s
+early stop at epoch 44
+[test] overall 63.73%  peak 94.00%  macro-F1 0.6613  (-20..0 dB 39.55%, 0..18 dB 93.03%)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+[model] iqformer  params 355,049  device cuda
+ep   0  train 1.4388/0.4588  val 1.4808/0.4475  lr 1.00e-03  28.2s  *
+ep   1  train 1.2426/0.5248  val 1.2802/0.5170  lr 1.00e-03  27.0s  *
+ep   2  train 1.2038/0.5419  val 1.2101/0.5338  lr 1.00e-03  27.1s  *
+ep   3  train 1.1741/0.5538  val 1.1631/0.5573  lr 1.00e-03  129.6s  *
+ep   4  train 1.1575/0.5590  val 1.1549/0.5626  lr 1.00e-03  -75.5s  *
+ep   5  train 1.1434/0.5639  val 1.1414/0.5645  lr 1.00e-03  27.1s  *
+ep   6  train 1.1338/0.5679  val 1.1227/0.5737  lr 1.00e-03  27.1s  *
+ep   7  train 1.1267/0.5711  val 1.1303/0.5707  lr 1.00e-03  27.0s
+ep   8  train 1.1222/0.5707  val 1.1221/0.5753  lr 1.00e-03  26.7s  *
+ep   9  train 1.1186/0.5733  val 1.1118/0.5792  lr 1.00e-03  27.2s  *
+ep  10  train 1.1150/0.5760  val 1.1169/0.5778  lr 1.00e-03  27.0s
+ep  11  train 1.1133/0.5761  val 1.1076/0.5810  lr 1.00e-03  27.0s  *
+ep  12  train 1.1085/0.5804  val 1.1132/0.5791  lr 1.00e-03  27.1s
+ep  13  train 1.1024/0.5846  val 1.1040/0.5863  lr 1.00e-03  129.8s  *
+ep  14  train 1.0936/0.5948  val 1.0829/0.6001  lr 1.00e-03  -75.5s  *
+ep  15  train 1.0845/0.6017  val 1.0873/0.6018  lr 1.00e-03  27.0s  *
+ep  16  train 1.0783/0.6046  val 1.0783/0.6076  lr 1.00e-03  26.8s  *
+ep  17  train 1.0741/0.6068  val 1.0779/0.6075  lr 1.00e-03  27.1s
+ep  18  train 1.0700/0.6098  val 1.0853/0.6029  lr 1.00e-03  129.7s
+ep  19  train 1.0646/0.6108  val 1.0743/0.6051  lr 1.00e-03  -76.2s
+ep  20  train 1.0626/0.6120  val 1.0725/0.6062  lr 1.00e-03  27.6s
+ep  21  train 1.0591/0.6149  val 1.0755/0.6075  lr 1.00e-03  26.7s
+ep  22  train 1.0575/0.6151  val 1.0695/0.6115  lr 1.00e-03  27.6s  *
+ep  23  train 1.0531/0.6168  val 1.0608/0.6142  lr 1.00e-03  27.1s  *
+ep  24  train 1.0514/0.6181  val 1.0696/0.6128  lr 1.00e-03  27.1s
+ep  25  train 1.0469/0.6198  val 1.0665/0.6133  lr 1.00e-03  130.0s
+ep  26  train 1.0445/0.6203  val 1.0617/0.6154  lr 1.00e-03  27.5s  *
+ep  27  train 1.0414/0.6224  val 1.0626/0.6166  lr 5.00e-04  -74.2s  *
+ep  28  train 1.0265/0.6285  val 1.0495/0.6206  lr 5.00e-04  28.3s  *
+ep  29  train 1.0234/0.6288  val 1.0448/0.6229  lr 5.00e-04  28.4s  *
+ep  30  train 1.0206/0.6301  val 1.0427/0.6231  lr 5.00e-04  28.3s  *
+ep  31  train 1.0187/0.6307  val 1.0456/0.6231  lr 5.00e-04  27.6s  *
+ep  32  train 1.0169/0.6323  val 1.0411/0.6249  lr 5.00e-04  27.1s  *
+ep  33  train 1.0145/0.6323  val 1.0439/0.6232  lr 5.00e-04  27.0s
+ep  34  train 1.0129/0.6330  val 1.0408/0.6250  lr 5.00e-04  26.9s  *
+ep  35  train 1.0109/0.6354  val 1.0425/0.6257  lr 5.00e-04  27.0s  *
+ep  36  train 1.0100/0.6346  val 1.0408/0.6250  lr 5.00e-04  27.0s
+ep  37  train 1.0072/0.6361  val 1.0387/0.6257  lr 5.00e-04  129.6s
+ep  38  train 1.0062/0.6365  val 1.0406/0.6254  lr 5.00e-04  -75.6s
+ep  39  train 1.0054/0.6371  val 1.0414/0.6238  lr 5.00e-04  26.9s
+ep  40  train 1.0027/0.6377  val 1.0465/0.6193  lr 5.00e-04  27.0s
+ep  41  train 1.0005/0.6388  val 1.0418/0.6259  lr 2.50e-04  27.2s  *
+ep  42  train 0.9917/0.6420  val 1.0334/0.6292  lr 2.50e-04  27.1s  *
+ep  43  train 0.9895/0.6438  val 1.0396/0.6264  lr 2.50e-04  26.7s
+ep  44  train 0.9875/0.6449  val 1.0407/0.6268  lr 2.50e-04  27.2s
+ep  45  train 0.9873/0.6444  val 1.0387/0.6270  lr 2.50e-04  27.0s
+ep  46  train 0.9853/0.6457  val 1.0422/0.6265  lr 1.25e-04  27.0s
+ep  47  train 0.9805/0.6462  val 1.0415/0.6278  lr 1.25e-04  26.9s
+ep  48  train 0.9790/0.6472  val 1.0385/0.6295  lr 1.25e-04  27.1s  *
+ep  49  train 0.9791/0.6471  val 1.0416/0.6291  lr 1.25e-04  26.9s
+ep  50  train 0.9771/0.6479  val 1.0421/0.6284  lr 6.25e-05  27.0s
+ep  51  train 0.9746/0.6498  val 1.0423/0.6278  lr 6.25e-05  26.9s
+ep  52  train 0.9732/0.6496  val 1.0445/0.6282  lr 6.25e-05  26.9s
+ep  53  train 0.9729/0.6495  val 1.0430/0.6278  lr 6.25e-05  27.1s
+ep  54  train 0.9724/0.6491  val 1.0414/0.6286  lr 5.00e-05  27.0s
+ep  55  train 0.9712/0.6501  val 1.0442/0.6280  lr 5.00e-05  27.1s
+ep  56  train 0.9718/0.6496  val 1.0441/0.6279  lr 5.00e-05  27.0s
+ep  57  train 0.9712/0.6507  val 1.0454/0.6281  lr 5.00e-05  27.1s
+ep  58  train 0.9705/0.6510  val 1.0441/0.6289  lr 5.00e-05  27.1s
+early stop at epoch 58
+[test] overall 62.92%  peak 93.64%  macro-F1 0.6516  (-20..0 dB 38.49%, 0..18 dB 92.52%)
+variant           n  overall    sd   diff      p  -6..0 dB   diff      p
+BASE              5    63.88  0.33   +nan    nan     77.64   +nan    nan
+iqf_hswish        5    63.30  0.36  -0.58  0.029     75.79  -1.85  0.003
+iqf_relu          5    63.69  0.13  -0.19  0.286     77.32  -0.33  0.415
+iqf_rot           5    63.65  0.12  -0.22  0.214     78.54  +0.90  0.053
+iqf_rotflip       5    63.57  0.24  -0.31  0.131     77.91  +0.27  0.526
+wrote results/step9_summary.csv
+>>> paste the table above (results/step9_summary.csv)

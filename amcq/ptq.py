@@ -104,6 +104,7 @@ def main(argv=None):
     p.add_argument('--no-bare', action='store_true', help='leave layer_scale and w_g in floating point (as Brevitas did)')
     p.add_argument('--act-scheme', default='affine', choices=['affine', 'symmetric'],
                    help="'symmetric' + --no-fold + --calib-method percentile --pct 99.999 ~ the earlier Brevitas setup")
+    p.add_argument('--save-pred', action='store_true', help='also save every test prediction (per-class / confusion analysis)')
     p.add_argument('--out', required=True)
     p.add_argument('--device', default='cuda' if torch.cuda.is_available() else 'cpu')
     args = p.parse_args(argv)
@@ -145,6 +146,10 @@ def main(argv=None):
                        delta_per_snr=json.dumps(pc['delta_pp_per_snr']))
             rows.append(row)
             per_spec.setdefault(spec, []).append(pc['delta_pp'])
+            if args.save_pred:
+                tag = os.path.basename(run.rstrip('/')) + '__' + spec.replace('=', '-').replace(',', '_')
+                np.savez_compressed(os.path.join(args.out, f'pred_{tag}.npz'), pred=pr.astype(np.int8),
+                                    fp32=fp.astype(np.int8), y=np.asarray(d['yte'], np.int8), snr=np.asarray(d['ste'], np.int8))
             print(f'  {spec:42s} {100 * s["overall"]:6.2f}%  delta {pc["delta_pp"]:+7.2f} pp  '
                   f'flips {pc["changed"]:5d} (worse {pc["worse"]}, better {pc["better"]}, McNemar p={pc["mcnemar_p"]:.3g})  '
                   f'{row["weight_MB"]:.3f} MB')
