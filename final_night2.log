@@ -1,0 +1,391 @@
+nohup: ignoring input
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqformer_s1: FP32 63.44%
+  all=W8A8                                    63.43%  delta   -0.01 pp  flips   636 (worse 177, better 173, McNemar p=0.873)  0.392 MB
+  all=W6A6                                    63.00%  delta   -0.43 pp  flips  2813 (worse 890, better 699, McNemar p=1.83e-06)  0.305 MB
+  all=W4A8                                    62.81%  delta   -0.63 pp  flips  3436 (worse 972, better 696, McNemar p=1.49e-11)  0.218 MB
+  all=W4A4                                    58.94%  delta   -4.50 pp  flips 10068 (worse 3424, better 1445, McNemar p=6.5e-182)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W8A8                                    63.89%  delta   -0.01 pp  flips   405 (worse 97, better 91, McNemar p=0.715)  0.392 MB
+  all=W6A6                                    63.72%  delta   -0.18 pp  flips  1645 (worse 442, better 362, McNemar p=0.0053)  0.305 MB
+  all=W4A8                                    63.34%  delta   -0.56 pp  flips  2610 (worse 768, better 520, McNemar p=5.08e-12)  0.218 MB
+  all=W4A4                                    58.04%  delta   -5.87 pp  flips 12960 (worse 4329, better 1748, McNemar p=6.53e-248)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W8A8                                    63.99%  delta   -0.03 pp  flips   407 (worse 108, better 97, McNemar p=0.485)  0.392 MB
+  all=W6A6                                    63.75%  delta   -0.27 pp  flips  2271 (worse 575, better 456, McNemar p=0.000234)  0.305 MB
+  all=W4A8                                    63.45%  delta   -0.57 pp  flips  3461 (worse 858, better 608, McNemar p=7.09e-11)  0.218 MB
+  all=W4A4                                    60.02%  delta   -3.99 pp  flips  9560 (worse 3007, better 1251, McNemar p=4.15e-164)  0.218 MB
+
+runs/iqformer_s4: FP32 63.71%
+  all=W8A8                                    63.71%  delta   +0.00 pp  flips   410 (worse 106, better 107, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.61%  delta   -0.10 pp  flips  2100 (worse 567, better 524, McNemar p=0.204)  0.305 MB
+  all=W4A8                                    63.17%  delta   -0.54 pp  flips  2296 (worse 754, better 518, McNemar p=3.91e-11)  0.218 MB
+  all=W4A4                                    54.61%  delta   -9.10 pp  flips 13980 (worse 5927, better 1923, McNemar p=0)  0.218 MB
+
+runs/iqformer_s5: FP32 64.33%
+  all=W8A8                                    64.24%  delta   -0.08 pp  flips   569 (worse 197, better 161, McNemar p=0.0642)  0.392 MB
+  all=W6A6                                    63.93%  delta   -0.39 pp  flips  2126 (worse 704, better 532, McNemar p=1.11e-06)  0.305 MB
+  all=W4A8                                    63.83%  delta   -0.50 pp  flips  2956 (worse 827, better 609, McNemar p=9.63e-09)  0.218 MB
+  all=W4A4                                    59.53%  delta   -4.79 pp  flips 10537 (worse 3808, better 1700, McNemar p=7.72e-182)  0.218 MB
+
+wrote results/step9b_ptq_iqformer/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_hswish_s1: FP32 63.17%
+  all=W8A8                                    63.13%  delta   -0.04 pp  flips   467 (worse 148, better 130, McNemar p=0.308)  0.392 MB
+  all=W6A6                                    63.00%  delta   -0.17 pp  flips  2074 (worse 576, better 501, McNemar p=0.0241)  0.305 MB
+  all=W4A8                                    61.74%  delta   -1.43 pp  flips  4049 (worse 1423, better 793, McNemar p=2.93e-41)  0.218 MB
+  all=W4A4                                    57.36%  delta   -5.80 pp  flips  8409 (worse 4041, better 1487, McNemar p=2.28e-268)  0.218 MB
+
+runs/iqf_hswish_s2: FP32 63.80%
+  all=W8A8                                    63.72%  delta   -0.08 pp  flips   660 (worse 225, better 192, McNemar p=0.117)  0.392 MB
+  all=W6A6                                    63.41%  delta   -0.38 pp  flips  3108 (worse 779, better 610, McNemar p=6.39e-06)  0.305 MB
+  all=W4A8                                    63.15%  delta   -0.65 pp  flips  3576 (worse 1399, better 1115, McNemar p=1.6e-08)  0.218 MB
+  all=W4A4                                    61.29%  delta   -2.50 pp  flips  6306 (worse 2412, better 1310, McNemar p=7.13e-74)  0.218 MB
+
+runs/iqf_hswish_s3: FP32 63.08%
+  all=W8A8                                    63.13%  delta   +0.05 pp  flips   388 (worse 90, better 113, McNemar p=0.122)  0.392 MB
+  all=W6A6                                    62.89%  delta   -0.18 pp  flips  1529 (worse 477, better 396, McNemar p=0.00674)  0.305 MB
+  all=W4A8                                    62.50%  delta   -0.58 pp  flips  3134 (worse 930, better 675, McNemar p=2.11e-10)  0.218 MB
+  all=W4A4                                    60.39%  delta   -2.69 pp  flips  5604 (worse 2266, better 1083, McNemar p=1.05e-94)  0.218 MB
+
+runs/iqf_hswish_s4: FP32 63.53%
+  all=W8A8                                    63.47%  delta   -0.06 pp  flips   864 (worse 263, better 238, McNemar p=0.284)  0.392 MB
+  all=W6A6                                    63.31%  delta   -0.22 pp  flips  2919 (worse 760, better 663, McNemar p=0.0109)  0.305 MB
+  all=W4A8                                    62.55%  delta   -0.98 pp  flips  4994 (worse 1831, better 1400, McNemar p=3.57e-14)  0.218 MB
+  all=W4A4                                    60.51%  delta   -3.02 pp  flips  6789 (worse 2643, better 1316, McNemar p=1.77e-100)  0.218 MB
+
+runs/iqf_hswish_s5: FP32 62.92%
+  all=W8A8                                    62.93%  delta   +0.00 pp  flips   544 (worse 139, better 141, McNemar p=0.952)  0.392 MB
+  all=W6A6                                    62.64%  delta   -0.29 pp  flips  2034 (worse 569, better 442, McNemar p=7.26e-05)  0.305 MB
+  all=W4A8                                    62.37%  delta   -0.55 pp  flips  4131 (worse 1440, better 1196, McNemar p=2.18e-06)  0.218 MB
+  all=W4A4                                    59.33%  delta   -3.60 pp  flips  7337 (worse 3316, better 1734, McNemar p=1.76e-111)  0.218 MB
+
+wrote results/step9b_ptq_iqf_hswish/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_relu_s1: FP32 63.62%
+  all=W8A8                                    63.60%  delta   -0.02 pp  flips   485 (worse 130, better 120, McNemar p=0.569)  0.392 MB
+  all=W6A6                                    63.05%  delta   -0.58 pp  flips  2252 (worse 678, better 425, McNemar p=2.52e-14)  0.305 MB
+  all=W4A8                                    63.28%  delta   -0.35 pp  flips  2396 (worse 696, better 543, McNemar p=1.54e-05)  0.218 MB
+  all=W4A4                                    60.05%  delta   -3.58 pp  flips  6571 (worse 2642, better 1068, McNemar p=9.58e-152)  0.218 MB
+
+runs/iqf_relu_s2: FP32 63.87%
+  all=W8A8                                    63.93%  delta   +0.06 pp  flips   374 (worse 85, better 112, McNemar p=0.0637)  0.392 MB
+  all=W6A6                                    63.68%  delta   -0.19 pp  flips  1974 (worse 586, better 501, McNemar p=0.0108)  0.305 MB
+  all=W4A8                                    63.44%  delta   -0.43 pp  flips  2900 (worse 861, better 670, McNemar p=1.16e-06)  0.218 MB
+  all=W4A4                                    61.14%  delta   -2.73 pp  flips  6225 (worse 2397, better 1196, McNemar p=7.53e-91)  0.218 MB
+
+runs/iqf_relu_s3: FP32 63.69%
+  all=W8A8                                    63.69%  delta   -0.00 pp  flips   531 (worse 133, better 132, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.44%  delta   -0.25 pp  flips  2489 (worse 643, better 535, McNemar p=0.00181)  0.305 MB
+  all=W4A8                                    63.21%  delta   -0.48 pp  flips  4128 (worse 1564, better 1355, McNemar p=0.000117)  0.218 MB
+  all=W4A4                                    60.75%  delta   -2.94 pp  flips  7850 (worse 3208, better 1916, McNemar p=1.76e-73)  0.218 MB
+
+runs/iqf_relu_s4: FP32 63.53%
+  all=W8A8                                    63.54%  delta   +0.01 pp  flips   373 (worse 97, better 101, McNemar p=0.831)  0.392 MB
+  all=W6A6                                    63.45%  delta   -0.09 pp  flips  1843 (worse 533, better 494, McNemar p=0.236)  0.305 MB
+  all=W4A8                                    63.15%  delta   -0.39 pp  flips  2324 (worse 779, better 609, McNemar p=5.58e-06)  0.218 MB
+  all=W4A4                                    60.54%  delta   -3.00 pp  flips  6239 (worse 2553, better 1235, McNemar p=1.08e-103)  0.218 MB
+
+runs/iqf_relu_s5: FP32 63.73%
+  all=W8A8                                    63.74%  delta   +0.01 pp  flips   493 (worse 122, better 128, McNemar p=0.752)  0.392 MB
+  all=W6A6                                    63.44%  delta   -0.29 pp  flips  2055 (worse 607, better 479, McNemar p=0.000114)  0.305 MB
+  all=W4A8                                    63.25%  delta   -0.48 pp  flips  2674 (worse 792, better 582, McNemar p=1.61e-08)  0.218 MB
+  all=W4A4                                    59.43%  delta   -4.29 pp  flips  7484 (worse 3179, better 1290, McNemar p=4.91e-181)  0.218 MB
+
+wrote results/step9b_ptq_iqf_relu/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_rot_s1: FP32 63.64%
+  all=W8A8                                    63.64%  delta   +0.00 pp  flips   565 (worse 116, better 116, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.25%  delta   -0.39 pp  flips  2477 (worse 696, better 524, McNemar p=9.42e-07)  0.305 MB
+  all=W4A8                                    63.18%  delta   -0.47 pp  flips  2122 (worse 643, better 438, McNemar p=4.88e-10)  0.218 MB
+  all=W4A4                                    59.82%  delta   -3.82 pp  flips  7632 (worse 2905, better 1223, McNemar p=2.7e-155)  0.218 MB
+
+runs/iqf_rot_s2: FP32 63.70%
+  all=W8A8                                    63.67%  delta   -0.02 pp  flips   564 (worse 155, better 145, McNemar p=0.603)  0.392 MB
+  all=W6A6                                    63.38%  delta   -0.32 pp  flips  2360 (worse 650, better 509, McNemar p=3.84e-05)  0.305 MB
+  all=W4A8                                    63.09%  delta   -0.61 pp  flips  2301 (worse 740, better 473, McNemar p=1.75e-14)  0.218 MB
+  all=W4A4                                    58.48%  delta   -5.22 pp  flips  8186 (worse 3906, better 1610, McNemar p=4.23e-216)  0.218 MB
+
+runs/iqf_rot_s3: FP32 63.47%
+  all=W8A8                                    63.45%  delta   -0.02 pp  flips   419 (worse 115, better 106, McNemar p=0.591)  0.392 MB
+  all=W6A6                                    63.27%  delta   -0.20 pp  flips  2245 (worse 582, better 495, McNemar p=0.00875)  0.305 MB
+  all=W4A8                                    62.99%  delta   -0.48 pp  flips  2624 (worse 779, better 569, McNemar p=1.17e-08)  0.218 MB
+  all=W4A4                                    59.14%  delta   -4.33 pp  flips  7597 (worse 3468, better 1564, McNemar p=1.74e-162)  0.218 MB
+
+runs/iqf_rot_s4: FP32 63.70%
+  all=W8A8                                    63.68%  delta   -0.01 pp  flips   537 (worse 121, better 115, McNemar p=0.745)  0.392 MB
+  all=W6A6                                    63.45%  delta   -0.24 pp  flips  2611 (worse 642, better 535, McNemar p=0.00199)  0.305 MB
+  all=W4A8                                    62.92%  delta   -0.78 pp  flips  3664 (worse 973, better 630, McNemar p=9.95e-18)  0.218 MB
+  all=W4A4                                    60.53%  delta   -3.17 pp  flips  7293 (worse 2546, better 1152, McNemar p=5.46e-119)  0.218 MB
+
+runs/iqf_rot_s5: FP32 63.77%
+  all=W8A8                                    63.74%  delta   -0.04 pp  flips   548 (worse 155, better 139, McNemar p=0.382)  0.392 MB
+  all=W6A6                                    63.43%  delta   -0.34 pp  flips  2308 (worse 638, better 489, McNemar p=1.01e-05)  0.305 MB
+  all=W4A8                                    62.91%  delta   -0.87 pp  flips  3756 (worse 1063, better 682, McNemar p=6.67e-20)  0.218 MB
+  all=W4A4                                    58.50%  delta   -5.27 pp  flips  9717 (worse 3816, better 1497, McNemar p=1.72e-229)  0.218 MB
+
+wrote results/step9b_ptq_iqf_rot/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_rotflip_s1: FP32 63.42%
+  all=W8A8                                    63.40%  delta   -0.02 pp  flips   417 (worse 102, better 92, McNemar p=0.518)  0.392 MB
+  all=W6A6                                    62.92%  delta   -0.50 pp  flips  3415 (worse 863, better 641, McNemar p=1.14e-08)  0.305 MB
+  all=W4A8                                    63.10%  delta   -0.32 pp  flips  1950 (worse 580, better 437, McNemar p=8.21e-06)  0.218 MB
+  all=W4A4                                    59.72%  delta   -3.70 pp  flips  7345 (worse 3097, better 1468, McNemar p=4.24e-131)  0.218 MB
+
+runs/iqf_rotflip_s2: FP32 63.60%
+  all=W8A8                                    63.57%  delta   -0.03 pp  flips   470 (worse 124, better 111, McNemar p=0.434)  0.392 MB
+  all=W6A6                                    63.11%  delta   -0.49 pp  flips  4065 (worse 1067, better 852, McNemar p=1.01e-06)  0.305 MB
+  all=W4A8                                    63.24%  delta   -0.36 pp  flips  2775 (worse 712, better 554, McNemar p=9.97e-06)  0.218 MB
+  all=W4A4                                    60.08%  delta   -3.52 pp  flips  7206 (worse 3062, better 1515, McNemar p=7.7e-118)  0.218 MB
+
+runs/iqf_rotflip_s3: FP32 63.42%
+  all=W8A8                                    63.38%  delta   -0.04 pp  flips   532 (worse 147, better 128, McNemar p=0.278)  0.392 MB
+  all=W6A6                                    63.09%  delta   -0.34 pp  flips  2123 (worse 613, better 465, McNemar p=7.33e-06)  0.305 MB
+  all=W4A8                                    62.20%  delta   -1.22 pp  flips  3622 (worse 1488, better 952, McNemar p=1.52e-27)  0.218 MB
+  all=W4A4                                    53.36%  delta  -10.07 pp  flips  8963 (worse 5576, better 1147, McNemar p=0)  0.218 MB
+
+runs/iqf_rotflip_s4: FP32 63.97%
+  all=W8A8                                    63.97%  delta   -0.00 pp  flips   400 (worse 96, better 95, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.72%  delta   -0.25 pp  flips  1907 (worse 514, better 404, McNemar p=0.000316)  0.305 MB
+  all=W4A8                                    62.96%  delta   -1.00 pp  flips  3386 (worse 1178, better 736, McNemar p=4.27e-24)  0.218 MB
+  all=W4A4                                    53.23%  delta  -10.74 pp  flips 18660 (worse 7660, better 2933, McNemar p=0)  0.218 MB
+
+runs/iqf_rotflip_s5: FP32 63.42%
+  all=W8A8                                    63.45%  delta   +0.03 pp  flips   508 (worse 129, better 141, McNemar p=0.503)  0.392 MB
+  all=W6A6                                    63.03%  delta   -0.40 pp  flips  2453 (worse 788, better 614, McNemar p=3.73e-06)  0.305 MB
+  all=W4A8                                    63.02%  delta   -0.40 pp  flips  3205 (worse 1109, better 932, McNemar p=9.7e-05)  0.218 MB
+  all=W4A4                                    60.10%  delta   -3.33 pp  flips  6998 (worse 3049, better 1585, McNemar p=3.43e-104)  0.218 MB
+
+wrote results/step9b_ptq_iqf_rotflip/ptq_runs.csv and ptq_summary.csv
+>>> paste: for f in results/step9b_ptq_*/ptq_summary.csv; do echo $f; cat $f; done
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.44%   PTQ all=W4A4 58.94%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.47%   289 s/epoch (about 67 min left)
+ep  1  val 62.81%   287 s/epoch (about 62 min left)
+ep  2  val 62.09%   286 s/epoch (about 57 min left)
+ep  3  val 62.43%   288 s/epoch (about 53 min left)
+ep  4  val 62.70%   278 s/epoch (about 46 min left)
+ep  5  val 62.83%   285 s/epoch (about 43 min left)
+ep  6  val 62.43%   285 s/epoch (about 38 min left)
+ep  7  val 62.73%   286 s/epoch (about 33 min left)
+ep  8  val 62.91%   304 s/epoch (about 30 min left)
+ep  9  val 62.77%   278 s/epoch (about 23 min left)
+ep 10  val 62.81%   391 s/epoch (about 26 min left)
+ep 11  val 62.86%   188 s/epoch (about 9 min left)
+ep 12  val 62.94%   293 s/epoch (about 10 min left)
+ep 13  val 62.89%   282 s/epoch (about 5 min left)
+ep 14  val 62.78%   378 s/epoch (about 0 min left)
+QAT all=W4A4: 63.11%  (PTQ 58.94%, delta vs FP32 -0.33 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.90%   PTQ all=W4A4 58.04%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.13%   382 s/epoch (about 89 min left)
+ep  1  val 63.33%   186 s/epoch (about 40 min left)
+ep  2  val 63.17%   286 s/epoch (about 57 min left)
+ep  3  val 63.25%   287 s/epoch (about 53 min left)
+ep  4  val 63.20%   276 s/epoch (about 46 min left)
+ep  5  val 63.19%   281 s/epoch (about 42 min left)
+ep  6  val 63.24%   286 s/epoch (about 38 min left)
+ep  7  val 63.56%   286 s/epoch (about 33 min left)
+ep  8  val 63.20%   282 s/epoch (about 28 min left)
+ep  9  val 63.42%   277 s/epoch (about 23 min left)
+ep 10  val 63.47%   285 s/epoch (about 19 min left)
+ep 11  val 63.42%   385 s/epoch (about 19 min left)
+ep 12  val 63.36%   185 s/epoch (about 6 min left)
+ep 13  val 63.46%   280 s/epoch (about 5 min left)
+ep 14  val 63.58%   377 s/epoch (about 0 min left)
+QAT all=W4A4: 63.63%  (PTQ 58.04%, delta vs FP32 -0.27 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 64.02%   PTQ all=W4A4 60.02%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.35%   289 s/epoch (about 67 min left)
+ep  1  val 63.45%   390 s/epoch (about 84 min left)
+ep  2  val 63.47%   192 s/epoch (about 38 min left)
+ep  3  val 63.55%   388 s/epoch (about 71 min left)
+ep  4  val 63.53%   178 s/epoch (about 30 min left)
+ep  5  val 63.42%   289 s/epoch (about 43 min left)
+ep  6  val 63.49%   291 s/epoch (about 39 min left)
+ep  7  val 63.51%   288 s/epoch (about 34 min left)
+ep  8  val 63.45%   286 s/epoch (about 29 min left)
+ep  9  val 63.26%   283 s/epoch (about 24 min left)
+ep 10  val 63.71%   292 s/epoch (about 19 min left)
+ep 11  val 63.54%   388 s/epoch (about 19 min left)
+ep 12  val 63.52%   187 s/epoch (about 6 min left)
+ep 13  val 63.76%   285 s/epoch (about 5 min left)
+ep 14  val 63.61%   283 s/epoch (about 0 min left)
+QAT all=W4A4: 63.87%  (PTQ 60.02%, delta vs FP32 -0.15 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.44%   PTQ all=W4A4 58.94%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.55%   222 s/epoch (about 52 min left)
+ep  1  val 62.75%   422 s/epoch (about 91 min left)
+ep  2  val 62.51%   224 s/epoch (about 45 min left)
+ep  3  val 62.77%   424 s/epoch (about 78 min left)
+ep  4  val 62.88%   225 s/epoch (about 37 min left)
+ep  5  val 63.04%   326 s/epoch (about 49 min left)
+ep  6  val 63.04%   322 s/epoch (about 43 min left)
+ep  7  val 62.82%   321 s/epoch (about 37 min left)
+ep  8  val 63.05%   323 s/epoch (about 32 min left)
+ep  9  val 62.98%   315 s/epoch (about 26 min left)
+ep 10  val 63.05%   319 s/epoch (about 21 min left)
+ep 11  val 63.11%   325 s/epoch (about 16 min left)
+ep 12  val 63.13%   325 s/epoch (about 11 min left)
+ep 13  val 63.05%   321 s/epoch (about 5 min left)
+ep 14  val 63.23%   324 s/epoch (about 0 min left)
+QAT all=W4A4: 63.41%  (PTQ 58.94%, delta vs FP32 -0.03 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.90%   PTQ all=W4A4 58.04%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.95%   428 s/epoch (about 100 min left)
+ep  1  val 63.35%   224 s/epoch (about 49 min left)
+ep  2  val 63.39%   324 s/epoch (about 65 min left)
+ep  3  val 63.25%   323 s/epoch (about 59 min left)
+ep  4  val 63.36%   326 s/epoch (about 54 min left)
+ep  5  val 63.32%   321 s/epoch (about 48 min left)
+ep  6  val 63.46%   322 s/epoch (about 43 min left)
+ep  7  val 63.41%   326 s/epoch (about 38 min left)
+ep  8  val 63.51%   323 s/epoch (about 32 min left)
+ep  9  val 63.51%   321 s/epoch (about 27 min left)
+ep 10  val 63.46%   321 s/epoch (about 21 min left)
+ep 11  val 63.49%   325 s/epoch (about 16 min left)
+ep 12  val 63.46%   323 s/epoch (about 11 min left)
+ep 13  val 63.56%   324 s/epoch (about 5 min left)
+ep 14  val 63.56%   320 s/epoch (about 0 min left)
+QAT all=W4A4: 63.67%  (PTQ 58.04%, delta vs FP32 -0.23 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 64.02%   PTQ all=W4A4 60.02%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.41%   230 s/epoch (about 54 min left)
+ep  1  val 63.31%   423 s/epoch (about 92 min left)
+ep  2  val 63.52%   228 s/epoch (about 46 min left)
+ep  3  val 63.52%   326 s/epoch (about 60 min left)
+ep  4  val 63.49%   431 s/epoch (about 72 min left)
+ep  5  val 63.39%   229 s/epoch (about 34 min left)
+ep  6  val 63.60%   327 s/epoch (about 44 min left)
+ep  7  val 63.58%   329 s/epoch (about 38 min left)
+ep  8  val 63.54%   327 s/epoch (about 33 min left)
+ep  9  val 63.59%   328 s/epoch (about 27 min left)
+ep 10  val 63.67%   324 s/epoch (about 22 min left)
+ep 11  val 63.51%   328 s/epoch (about 16 min left)
+ep 12  val 63.65%   321 s/epoch (about 11 min left)
+ep 13  val 63.67%   326 s/epoch (about 5 min left)
+ep 14  val 63.79%   332 s/epoch (about 0 min left)
+QAT all=W4A4: 64.00%  (PTQ 60.02%, delta vs FP32 -0.02 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.44%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 61.91%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.93%   328 s/epoch (about 76 min left)
+ep  1  val 63.22%   425 s/epoch (about 92 min left)
+ep  2  val 63.13%   222 s/epoch (about 44 min left)
+ep  3  val 63.16%   426 s/epoch (about 78 min left)
+ep  4  val 63.29%   226 s/epoch (about 38 min left)
+ep  5  val 63.36%   323 s/epoch (about 48 min left)
+ep  6  val 63.26%   321 s/epoch (about 43 min left)
+ep  7  val 63.21%   321 s/epoch (about 37 min left)
+ep  8  val 63.36%   316 s/epoch (about 32 min left)
+ep  9  val 63.27%   324 s/epoch (about 27 min left)
+ep 10  val 63.38%   432 s/epoch (about 29 min left)
+ep 11  val 63.39%   226 s/epoch (about 11 min left)
+ep 12  val 63.35%   325 s/epoch (about 11 min left)
+ep 13  val 63.39%   328 s/epoch (about 5 min left)
+ep 14  val 63.34%   327 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 63.62%  (PTQ 61.91%, delta vs FP32 +0.18 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.90%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 60.40%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.55%   427 s/epoch (about 100 min left)
+ep  1  val 63.59%   326 s/epoch (about 71 min left)
+ep  2  val 63.60%   229 s/epoch (about 46 min left)
+ep  3  val 63.70%   322 s/epoch (about 59 min left)
+ep  4  val 63.61%   327 s/epoch (about 54 min left)
+ep  5  val 63.83%   321 s/epoch (about 48 min left)
+ep  6  val 63.84%   329 s/epoch (about 44 min left)
+ep  7  val 63.66%   329 s/epoch (about 38 min left)
+ep  8  val 63.80%   329 s/epoch (about 33 min left)
+ep  9  val 63.69%   427 s/epoch (about 36 min left)
+ep 10  val 63.92%   228 s/epoch (about 15 min left)
+ep 11  val 63.80%   428 s/epoch (about 21 min left)
+ep 12  val 63.81%   326 s/epoch (about 11 min left)
+ep 13  val 63.87%   220 s/epoch (about 4 min left)
+ep 14  val 63.86%   322 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 63.93%  (PTQ 60.40%, delta vs FP32 +0.03 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 64.02%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 62.35%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.72%   320 s/epoch (about 75 min left)
+ep  1  val 63.82%   317 s/epoch (about 69 min left)
+ep  2  val 63.80%   321 s/epoch (about 64 min left)
+ep  3  val 63.86%   421 s/epoch (about 77 min left)
+ep  4  val 63.99%   224 s/epoch (about 37 min left)
+ep  5  val 63.84%   324 s/epoch (about 49 min left)
+ep  6  val 63.84%   323 s/epoch (about 43 min left)
+ep  7  val 64.04%   324 s/epoch (about 38 min left)
+ep  8  val 64.02%   324 s/epoch (about 32 min left)
+ep  9  val 64.03%   421 s/epoch (about 35 min left)
+ep 10  val 63.93%   224 s/epoch (about 15 min left)
+ep 11  val 63.98%   321 s/epoch (about 16 min left)
+ep 12  val 64.10%   322 s/epoch (about 11 min left)
+ep 13  val 64.03%   329 s/epoch (about 5 min left)
+ep 14  val 64.04%   324 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 64.22%  (PTQ 62.35%, delta vs FP32 +0.21 pp)
+config                        n   FP32    PTQ    QAT  change    sd  TOST p  -6..0  2..18   min
+qat_kd_mixed_iqformer         3  63.79  61.56  63.92   +0.14  0.10   0.012  +0.08  +0.21    82
+qat_kd_w4a4_iqformer          3  63.79  59.00  63.69   -0.09  0.12   0.014  -0.33  +0.06    81
+qat_w4a4_iqformer             3  63.79  59.00  63.54   -0.25  0.09   0.021  -0.84  -0.21    72
+wrote results/step10_summary.csv
+>>> paste the table above (results/step10_summary.csv)

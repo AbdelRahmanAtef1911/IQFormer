@@ -1,0 +1,72 @@
+{
+ "args": {
+  "repo": null,
+  "data": null,
+  "runs": [
+   "runs/iqf_rotflip_s1",
+   "runs/iqf_rotflip_s2",
+   "runs/iqf_rotflip_s3",
+   "runs/iqf_rotflip_s4",
+   "runs/iqf_rotflip_s5"
+  ],
+  "preset": "custom",
+  "specs": [
+   "all=W8A8",
+   "all=W6A6",
+   "all=W4A8",
+   "all=W4A4"
+  ],
+  "calib": 1024,
+  "calib_seed": 0,
+  "calib_method": "auto",
+  "pct": 99.9,
+  "no_fold": false,
+  "no_bare": false,
+  "act_scheme": "affine",
+  "save_pred": false,
+  "out": "results/step9b_ptq_iqf_rotflip",
+  "device": "cuda"
+ },
+ "summary": [
+  {
+   "spec": "all=W8A8",
+   "n": 5,
+   "acc_mean": 63.553636363636365,
+   "acc_std": 0.24209399854649738,
+   "delta_mean_pp": -0.014090909090909154,
+   "delta_std_pp": 0.027433239776379317,
+   "p_tost": 1.2140206436210528e-06,
+   "equivalent": true
+  },
+  {
+   "spec": "all=W6A6",
+   "n": 5,
+   "acc_mean": 63.17272727272727,
+   "acc_std": 0.31386273122112895,
+   "delta_mean_pp": -0.3949999999999987,
+   "delta_std_pp": 0.10633838083998648,
+   "p_tost": 0.0459190541081754,
+   "equivalent": true
+  },
+  {
+   "spec": "all=W4A8",
+   "n": 5,
+   "acc_mean": 62.9059090909091,
+   "acc_std": 0.40555797702335084,
+   "delta_mean_pp": -0.661818181818179,
+   "delta_std_pp": 0.4181676133951093,
+   "p_tost": 0.7821551233416083,
+   "equivalent": false
+  },
+  {
+   "spec": "all=W4A4",
+   "n": 5,
+   "acc_mean": 57.296818181818175,
+   "acc_std": 3.660303864457881,
+   "delta_mean_pp": -6.270909090909091,
+   "delta_std_pp": 3.7833900524868174,
+   "p_tost": 0.9864954471078555,
+   "equivalent": false
+  }
+ ]
+}
