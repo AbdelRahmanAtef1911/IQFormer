@@ -1,0 +1,519 @@
+nohup: ignoring input
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqformer_s1: FP32 63.44%
+  all=W8A8                                    63.44%  delta   -0.00 pp  flips   596 (worse 183, better 182, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.08%  delta   -0.35 pp  flips  2755 (worse 865, better 709, McNemar p=9.24e-05)  0.305 MB
+  all=W4A8                                    62.85%  delta   -0.59 pp  flips  3339 (worse 946, better 688, McNemar p=1.88e-10)  0.218 MB
+  all=W4A4                                    58.69%  delta   -4.75 pp  flips 10747 (worse 3615, better 1524, McNemar p=2.55e-192)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W8A8                                    63.88%  delta   -0.03 pp  flips   437 (worse 114, better 101, McNemar p=0.413)  0.392 MB
+  all=W6A6                                    63.71%  delta   -0.19 pp  flips  1667 (worse 488, better 404, McNemar p=0.00542)  0.305 MB
+  all=W4A8                                    63.39%  delta   -0.52 pp  flips  2591 (worse 753, better 526, McNemar p=2.36e-10)  0.218 MB
+  all=W4A4                                    57.94%  delta   -5.97 pp  flips 13240 (worse 4478, better 1853, McNemar p=8.86e-246)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W8A8                                    63.98%  delta   -0.03 pp  flips   408 (worse 107, better 93, McNemar p=0.358)  0.392 MB
+  all=W6A6                                    63.80%  delta   -0.22 pp  flips  1763 (worse 457, better 360, McNemar p=0.000773)  0.305 MB
+  all=W4A8                                    63.47%  delta   -0.54 pp  flips  3474 (worse 853, better 614, McNemar p=4.75e-10)  0.218 MB
+  all=W4A4                                    60.03%  delta   -3.98 pp  flips  9540 (worse 3042, better 1290, McNemar p=2.01e-160)  0.218 MB
+
+runs/iqformer_s4: FP32 63.71%
+  all=W8A8                                    63.67%  delta   -0.04 pp  flips   440 (worse 116, better 100, McNemar p=0.307)  0.392 MB
+  all=W6A6                                    63.51%  delta   -0.19 pp  flips  1875 (worse 531, better 446, McNemar p=0.00717)  0.305 MB
+  all=W4A8                                    63.18%  delta   -0.52 pp  flips  2350 (worse 771, better 540, McNemar p=1.91e-10)  0.218 MB
+  all=W4A4                                    54.10%  delta   -9.61 pp  flips 14267 (worse 6208, better 1980, McNemar p=0)  0.218 MB
+
+runs/iqformer_s5: FP32 64.33%
+  all=W8A8                                    64.33%  delta   +0.01 pp  flips   518 (worse 155, better 159, McNemar p=0.866)  0.392 MB
+  all=W6A6                                    63.91%  delta   -0.41 pp  flips  2272 (worse 775, better 593, McNemar p=9.56e-07)  0.305 MB
+  all=W4A8                                    63.81%  delta   -0.52 pp  flips  2894 (worse 832, better 605, McNemar p=2.32e-09)  0.218 MB
+  all=W4A4                                    58.69%  delta   -5.64 pp  flips 11572 (worse 4346, better 1866, McNemar p=3.05e-223)  0.218 MB
+
+wrote results/step9c_ptq_iqformer_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqformer_s1: FP32 63.44%
+  all=W8A8                                    63.42%  delta   -0.01 pp  flips   633 (worse 202, better 196, McNemar p=0.802)  0.392 MB
+  all=W6A6                                    62.86%  delta   -0.58 pp  flips  3073 (worse 1017, better 762, McNemar p=1.62e-09)  0.305 MB
+  all=W4A8                                    62.79%  delta   -0.65 pp  flips  3562 (worse 995, better 709, McNemar p=4.51e-12)  0.218 MB
+  all=W4A4                                    58.40%  delta   -5.04 pp  flips 11146 (worse 3787, better 1568, McNemar p=6.25e-208)  0.218 MB
+
+runs/iqformer_s2: FP32 63.90%
+  all=W8A8                                    63.94%  delta   +0.03 pp  flips   440 (worse 91, better 106, McNemar p=0.319)  0.392 MB
+  all=W6A6                                    63.74%  delta   -0.16 pp  flips  1687 (worse 461, better 389, McNemar p=0.0148)  0.305 MB
+  all=W4A8                                    63.36%  delta   -0.55 pp  flips  2612 (worse 762, better 521, McNemar p=1.82e-11)  0.218 MB
+  all=W4A4                                    58.39%  delta   -5.52 pp  flips 12828 (worse 4178, better 1750, McNemar p=1.46e-224)  0.218 MB
+
+runs/iqformer_s3: FP32 64.02%
+  all=W8A8                                    63.97%  delta   -0.04 pp  flips   358 (worse 97, better 78, McNemar p=0.173)  0.392 MB
+  all=W6A6                                    63.76%  delta   -0.25 pp  flips  2398 (worse 589, better 478, McNemar p=0.000751)  0.305 MB
+  all=W4A8                                    63.55%  delta   -0.47 pp  flips  3358 (worse 814, better 608, McNemar p=5.17e-08)  0.218 MB
+  all=W4A4                                    60.00%  delta   -4.02 pp  flips  9667 (worse 3046, better 1277, McNemar p=5.76e-164)  0.218 MB
+
+runs/iqformer_s4: FP32 63.71%
+  all=W8A8                                    63.70%  delta   -0.01 pp  flips   400 (worse 93, better 90, McNemar p=0.883)  0.392 MB
+  all=W6A6                                    63.57%  delta   -0.14 pp  flips  2341 (worse 637, better 575, McNemar p=0.0797)  0.305 MB
+  all=W4A8                                    63.21%  delta   -0.50 pp  flips  2309 (worse 754, better 536, McNemar p=1.4e-09)  0.218 MB
+  all=W4A4                                    54.41%  delta   -9.30 pp  flips 13973 (worse 6002, better 1910, McNemar p=0)  0.218 MB
+
+runs/iqformer_s5: FP32 64.33%
+  all=W8A8                                    64.27%  delta   -0.05 pp  flips   518 (worse 170, better 146, McNemar p=0.196)  0.392 MB
+  all=W6A6                                    63.95%  delta   -0.38 pp  flips  2405 (worse 800, better 633, McNemar p=1.13e-05)  0.305 MB
+  all=W4A8                                    63.82%  delta   -0.50 pp  flips  3026 (worse 833, better 613, McNemar p=7.93e-09)  0.218 MB
+  all=W4A4                                    58.32%  delta   -6.01 pp  flips 12209 (worse 4536, better 1893, McNemar p=3.09e-245)  0.218 MB
+
+wrote results/step9c_ptq_iqformer_calib2/ptq_runs.csv and ptq_summary.csv
+calib                          0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                     
+all=W8A8 runs/iqformer_s1  63.43  63.44  63.42  63.43      0.01  63.44      -0.01
+         runs/iqformer_s2  63.89  63.88  63.94  63.90      0.06  63.90      -0.00
+         runs/iqformer_s3  63.99  63.98  63.97  63.98      0.02  64.02      -0.03
+         runs/iqformer_s4  63.71  63.67  63.70  63.69      0.04  63.71      -0.01
+         runs/iqformer_s5  64.24  64.33  64.27  64.28      0.09  64.32      -0.04
+all=W6A6 runs/iqformer_s1  63.00  63.08  62.86  62.98      0.22  63.44      -0.46
+         runs/iqformer_s2  63.72  63.71  63.74  63.73      0.03  63.90      -0.18
+         runs/iqformer_s3  63.75  63.80  63.76  63.77      0.05  64.02      -0.25
+         runs/iqformer_s4  63.61  63.51  63.57  63.56      0.10  63.71      -0.14
+         runs/iqformer_s5  63.93  63.91  63.95  63.93      0.03  64.32      -0.39
+all=W4A8 runs/iqformer_s1  62.81  62.85  62.79  62.82      0.06  63.44      -0.62
+         runs/iqformer_s2  63.34  63.39  63.36  63.36      0.05  63.90      -0.54
+         runs/iqformer_s3  63.45  63.47  63.55  63.49      0.10  64.02      -0.53
+         runs/iqformer_s4  63.17  63.18  63.21  63.19      0.04  63.71      -0.52
+         runs/iqformer_s5  63.83  63.81  63.82  63.82      0.02  64.32      -0.50
+all=W4A4 runs/iqformer_s1  58.94  58.69  58.40  58.67      0.55  63.44      -4.76
+         runs/iqformer_s2  58.04  57.94  58.39  58.12      0.45  63.90      -5.78
+         runs/iqformer_s3  60.02  60.03  60.00  60.02      0.04  64.02      -4.00
+         runs/iqformer_s4  54.61  54.10  54.41  54.37      0.51  63.71      -9.34
+         runs/iqformer_s5  59.53  58.69  58.32  58.85      1.22  64.32      -5.48
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       5     63.86           0.32      -0.02            0.09
+all=W6A6       5     63.59           0.37      -0.28            0.22
+all=W4A8       5     63.34           0.37      -0.54            0.10
+all=W4A4       5     58.01           2.15      -5.87            1.22
+
+wrote results/step9c_ptq_iqformer_calib_detail.csv and results/step9c_ptq_iqformer_calib_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_relu_s1: FP32 63.62%
+  all=W8A8                                    63.63%  delta   +0.01 pp  flips   462 (worse 118, better 121, McNemar p=0.897)  0.392 MB
+  all=W6A6                                    62.99%  delta   -0.63 pp  flips  2554 (worse 765, better 488, McNemar p=4.93e-15)  0.305 MB
+  all=W4A8                                    63.30%  delta   -0.32 pp  flips  2371 (worse 683, better 540, McNemar p=4.81e-05)  0.218 MB
+  all=W4A4                                    59.95%  delta   -3.67 pp  flips  6844 (worse 2709, better 1094, McNemar p=8.3e-156)  0.218 MB
+
+runs/iqf_relu_s2: FP32 63.87%
+  all=W8A8                                    63.84%  delta   -0.03 pp  flips   398 (worse 107, better 93, McNemar p=0.358)  0.392 MB
+  all=W6A6                                    63.68%  delta   -0.19 pp  flips  1894 (worse 554, better 469, McNemar p=0.0086)  0.305 MB
+  all=W4A8                                    63.51%  delta   -0.36 pp  flips  2886 (worse 847, better 688, McNemar p=5.43e-05)  0.218 MB
+  all=W4A4                                    61.29%  delta   -2.59 pp  flips  5958 (worse 2335, better 1197, McNemar p=5.09e-83)  0.218 MB
+
+runs/iqf_relu_s3: FP32 63.69%
+  all=W8A8                                    63.71%  delta   +0.02 pp  flips   603 (worse 144, better 155, McNemar p=0.563)  0.392 MB
+  all=W6A6                                    63.34%  delta   -0.35 pp  flips  2590 (worse 716, better 564, McNemar p=2.39e-05)  0.305 MB
+  all=W4A8                                    63.18%  delta   -0.51 pp  flips  4134 (worse 1584, better 1360, McNemar p=3.93e-05)  0.218 MB
+  all=W4A4                                    60.76%  delta   -2.93 pp  flips  8015 (worse 3280, better 1991, McNemar p=4.09e-71)  0.218 MB
+
+runs/iqf_relu_s4: FP32 63.53%
+  all=W8A8                                    63.52%  delta   -0.01 pp  flips   382 (worse 111, better 105, McNemar p=0.734)  0.392 MB
+  all=W6A6                                    63.35%  delta   -0.18 pp  flips  1917 (worse 578, better 498, McNemar p=0.016)  0.305 MB
+  all=W4A8                                    63.23%  delta   -0.31 pp  flips  2310 (worse 754, better 619, McNemar p=0.000296)  0.218 MB
+  all=W4A4                                    60.62%  delta   -2.91 pp  flips  6151 (worse 2470, better 1188, McNemar p=1.17e-101)  0.218 MB
+
+runs/iqf_relu_s5: FP32 63.73%
+  all=W8A8                                    63.70%  delta   -0.03 pp  flips   488 (worse 132, better 120, McNemar p=0.488)  0.392 MB
+  all=W6A6                                    63.24%  delta   -0.49 pp  flips  2188 (worse 691, better 477, McNemar p=4.12e-10)  0.305 MB
+  all=W4A8                                    63.30%  delta   -0.43 pp  flips  2694 (worse 785, better 598, McNemar p=5.48e-07)  0.218 MB
+  all=W4A4                                    59.04%  delta   -4.69 pp  flips  8225 (worse 3513, better 1450, McNemar p=4.4e-194)  0.218 MB
+
+wrote results/step9c_ptq_iqf_relu_calib1/ptq_runs.csv and ptq_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+runs/iqf_relu_s1: FP32 63.62%
+  all=W8A8                                    63.61%  delta   -0.01 pp  flips   487 (worse 119, better 114, McNemar p=0.793)  0.392 MB
+  all=W6A6                                    63.01%  delta   -0.61 pp  flips  2365 (worse 695, better 427, McNemar p=1.16e-15)  0.305 MB
+  all=W4A8                                    63.29%  delta   -0.33 pp  flips  2403 (worse 701, better 554, McNemar p=3.7e-05)  0.218 MB
+  all=W4A4                                    59.98%  delta   -3.64 pp  flips  6729 (worse 2666, better 1065, McNemar p=3.54e-156)  0.218 MB
+
+runs/iqf_relu_s2: FP32 63.87%
+  all=W8A8                                    63.82%  delta   -0.05 pp  flips   407 (worse 116, better 92, McNemar p=0.111)  0.392 MB
+  all=W6A6                                    63.66%  delta   -0.21 pp  flips  1913 (worse 563, better 469, McNemar p=0.00377)  0.305 MB
+  all=W4A8                                    63.49%  delta   -0.38 pp  flips  2924 (worse 863, better 694, McNemar p=2.03e-05)  0.218 MB
+  all=W4A4                                    61.26%  delta   -2.62 pp  flips  5965 (worse 2305, better 1154, McNemar p=9.66e-87)  0.218 MB
+
+runs/iqf_relu_s3: FP32 63.69%
+  all=W8A8                                    63.74%  delta   +0.05 pp  flips   561 (worse 129, better 152, McNemar p=0.189)  0.392 MB
+  all=W6A6                                    63.50%  delta   -0.19 pp  flips  2525 (worse 660, better 575, McNemar p=0.0168)  0.305 MB
+  all=W4A8                                    63.15%  delta   -0.54 pp  flips  4125 (worse 1573, better 1335, McNemar p=1.1e-05)  0.218 MB
+  all=W4A4                                    60.66%  delta   -3.02 pp  flips  7946 (worse 3281, better 1950, McNemar p=2.48e-76)  0.218 MB
+
+runs/iqf_relu_s4: FP32 63.53%
+  all=W8A8                                    63.54%  delta   +0.00 pp  flips   421 (worse 120, better 121, McNemar p=1)  0.392 MB
+  all=W6A6                                    63.32%  delta   -0.21 pp  flips  1988 (worse 591, better 499, McNemar p=0.00582)  0.305 MB
+  all=W4A8                                    63.18%  delta   -0.35 pp  flips  2334 (worse 775, better 619, McNemar p=3.25e-05)  0.218 MB
+  all=W4A4                                    60.64%  delta   -2.89 pp  flips  6362 (worse 2553, better 1281, McNemar p=2.19e-95)  0.218 MB
+
+runs/iqf_relu_s5: FP32 63.73%
+  all=W8A8                                    63.71%  delta   -0.02 pp  flips   440 (worse 115, better 107, McNemar p=0.639)  0.392 MB
+  all=W6A6                                    63.38%  delta   -0.35 pp  flips  1994 (worse 604, better 452, McNemar p=3.25e-06)  0.305 MB
+  all=W4A8                                    63.31%  delta   -0.41 pp  flips  2683 (worse 783, better 601, McNemar p=1.1e-06)  0.218 MB
+  all=W4A4                                    59.02%  delta   -4.71 pp  flips  8116 (worse 3470, better 1399, McNemar p=1.3e-199)  0.218 MB
+
+wrote results/step9c_ptq_iqf_relu_calib2/ptq_runs.csv and ptq_summary.csv
+calib                          0      1      2   mean  range_pp   fp32  change_pp
+spec     run                                                                     
+all=W8A8 runs/iqf_relu_s1  63.60  63.63  63.61  63.61      0.03  63.62      -0.01
+         runs/iqf_relu_s2  63.93  63.84  63.82  63.86      0.12  63.87      -0.01
+         runs/iqf_relu_s3  63.69  63.71  63.74  63.71      0.05  63.69       0.03
+         runs/iqf_relu_s4  63.54  63.52  63.54  63.53      0.02  63.53      -0.00
+         runs/iqf_relu_s5  63.74  63.70  63.71  63.72      0.04  63.73      -0.01
+all=W6A6 runs/iqf_relu_s1  63.05  62.99  63.01  63.02      0.05  63.62      -0.60
+         runs/iqf_relu_s2  63.68  63.68  63.66  63.67      0.02  63.87      -0.20
+         runs/iqf_relu_s3  63.44  63.34  63.50  63.43      0.15  63.69      -0.26
+         runs/iqf_relu_s4  63.45  63.35  63.32  63.37      0.12  63.53      -0.16
+         runs/iqf_relu_s5  63.44  63.24  63.38  63.35      0.20  63.73      -0.37
+all=W4A8 runs/iqf_relu_s1  63.28  63.30  63.29  63.29      0.02  63.62      -0.34
+         runs/iqf_relu_s2  63.44  63.51  63.49  63.48      0.07  63.87      -0.39
+         runs/iqf_relu_s3  63.21  63.18  63.15  63.18      0.07  63.69      -0.51
+         runs/iqf_relu_s4  63.15  63.23  63.18  63.18      0.08  63.53      -0.35
+         runs/iqf_relu_s5  63.25  63.30  63.31  63.29      0.06  63.73      -0.44
+all=W4A4 runs/iqf_relu_s1  60.05  59.95  59.98  59.99      0.09  63.62      -3.63
+         runs/iqf_relu_s2  61.14  61.29  61.26  61.23      0.14  63.87      -2.64
+         runs/iqf_relu_s3  60.75  60.76  60.66  60.72      0.10  63.69      -2.96
+         runs/iqf_relu_s4  60.54  60.62  60.64  60.60      0.10  63.53      -2.93
+         runs/iqf_relu_s5  59.43  59.04  59.02  59.16      0.41  63.73      -4.56
+
+Per precision (mean over models of the mean over calibration sets):
+          models  acc_mean  acc_sd_models  change_pp  worst_range_pp
+spec                                                                
+all=W8A8       5     63.69           0.12      -0.00            0.12
+all=W6A6       5     63.37           0.23      -0.32            0.20
+all=W4A8       5     63.28           0.12      -0.41            0.08
+all=W4A4       5     60.34           0.79      -3.35            0.41
+
+wrote results/step9c_ptq_iqf_relu_calib_detail.csv and results/step9c_ptq_iqf_relu_calib_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+iqf_relu_s1: median usable 4-bit levels per group: {'STEM': 4.03, 'FUSION': 4.1, 'CONVENC': 2.78, 'LOCAL': 2.31, 'ATTN': 2.33, 'FFN': 2.25, 'LSTM': 3.28, 'HEAD': 4.57}
+  fusion input, IQ stem  : range -5.379 .. +5.192  -> 16.0 of 16 levels with one shared scale
+  fusion input, STFT stem: range +0.000 .. +4.936  -> 7.5 of 16 levels with one shared scale
+  calib 0  all=W4A4      whole: min-max                                33.50%  ( -30.13 pp)
+  calib 0  all=W4A4      whole: clip 99.99                             57.56%  (  -6.06 pp)
+  calib 0  all=W4A4      whole: clip 99.9                              60.05%  (  -3.58 pp)
+  calib 0  all=W4A4      whole: clip 99                                57.04%  (  -6.58 pp)
+  calib 0  all=W32A4     whole: min-max                                35.23%  ( -28.40 pp)
+  calib 0  all=W32A4     whole: clip 99.99                             57.66%  (  -5.96 pp)
+  calib 0  all=W32A4     whole: clip 99.9                              60.14%  (  -3.48 pp)
+  calib 0  all=W32A4     whole: clip 99                                56.40%  (  -7.23 pp)
+  calib 0  FUSION=W32A4  fusion only: min-max (= Step 5)               62.88%  (  -0.74 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99.9                        63.40%  (  -0.22 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99                          63.35%  (  -0.27 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per branch             62.98%  (  -0.65 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per channel            63.18%  (  -0.44 pp)
+  calib 0  all=W32A4     whole: one scale per fusion branch            35.09%  ( -28.53 pp)
+  calib 0  all=W4A4      whole: one scale per fusion branch            32.78%  ( -30.84 pp)
+  calib 0  all=W32A4     whole: one scale per channel (upper bound)    60.17%  (  -3.45 pp)
+
+iqf_relu_s2: median usable 4-bit levels per group: {'STEM': 3.87, 'FUSION': 4.34, 'CONVENC': 2.92, 'LOCAL': 2.66, 'ATTN': 2.59, 'FFN': 2.26, 'LSTM': 2.96, 'HEAD': 4.33}
+  fusion input, IQ stem  : range -5.326 .. +5.402  -> 16.0 of 16 levels with one shared scale
+  fusion input, STFT stem: range +0.000 .. +4.415  -> 6.6 of 16 levels with one shared scale
+  calib 0  all=W4A4      whole: min-max                                32.29%  ( -31.59 pp)
+  calib 0  all=W4A4      whole: clip 99.99                             58.14%  (  -5.73 pp)
+  calib 0  all=W4A4      whole: clip 99.9                              61.14%  (  -2.73 pp)
+  calib 0  all=W4A4      whole: clip 99                                60.05%  (  -3.82 pp)
+  calib 0  all=W32A4     whole: min-max                                35.89%  ( -27.98 pp)
+  calib 0  all=W32A4     whole: clip 99.99                             60.20%  (  -3.67 pp)
+  calib 0  all=W32A4     whole: clip 99.9                              62.06%  (  -1.81 pp)
+  calib 0  all=W32A4     whole: clip 99                                60.79%  (  -3.09 pp)
+  calib 0  FUSION=W32A4  fusion only: min-max (= Step 5)               63.23%  (  -0.65 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99.9                        63.73%  (  -0.15 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99                          63.52%  (  -0.35 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per branch             63.29%  (  -0.58 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per channel            63.68%  (  -0.20 pp)
+  calib 0  all=W32A4     whole: one scale per fusion branch            35.48%  ( -28.40 pp)
+  calib 0  all=W4A4      whole: one scale per fusion branch            31.99%  ( -31.88 pp)
+  calib 0  all=W32A4     whole: one scale per channel (upper bound)    61.25%  (  -2.62 pp)
+
+iqf_relu_s3: median usable 4-bit levels per group: {'STEM': 3.76, 'FUSION': 3.75, 'CONVENC': 2.6, 'LOCAL': 2.37, 'ATTN': 2.24, 'FFN': 2.0, 'LSTM': 3.56, 'HEAD': 3.52}
+  fusion input, IQ stem  : range -6.278 .. +5.553  -> 16.0 of 16 levels with one shared scale
+  fusion input, STFT stem: range +0.000 .. +4.630  -> 6.3 of 16 levels with one shared scale
+  calib 0  all=W4A4      whole: min-max                                27.26%  ( -36.43 pp)
+  calib 0  all=W4A4      whole: clip 99.99                             54.13%  (  -9.55 pp)
+  calib 0  all=W4A4      whole: clip 99.9                              60.75%  (  -2.94 pp)
+  calib 0  all=W4A4      whole: clip 99                                58.55%  (  -5.14 pp)
+  calib 0  all=W32A4     whole: min-max                                29.63%  ( -34.05 pp)
+  calib 0  all=W32A4     whole: clip 99.99                             57.20%  (  -6.49 pp)
+  calib 0  all=W32A4     whole: clip 99.9                              61.51%  (  -2.18 pp)
+  calib 0  all=W32A4     whole: clip 99                                59.32%  (  -4.37 pp)
+  calib 0  FUSION=W32A4  fusion only: min-max (= Step 5)               62.45%  (  -1.24 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99.9                        63.61%  (  -0.08 pp)
+  calib 0  FUSION=W32A4  fusion only: clip 99                          63.15%  (  -0.54 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per branch             62.65%  (  -1.03 pp)
+  calib 0  FUSION=W32A4  fusion only: one scale per channel            63.41%  (  -0.28 pp)
+  calib 0  all=W32A4     whole: one scale per fusion branch            30.36%  ( -33.33 pp)
+  calib 0  all=W4A4      whole: one scale per fusion branch            27.52%  ( -36.17 pp)
+  calib 0  all=W32A4     whole: one scale per channel (upper bound)    60.28%  (  -3.41 pp)
+
+Mean over models and calibration sets (change vs FP32, pp):
+  all=W4A4      whole: min-max                                31.01%   -32.72  (sd models 3.30, runs -36.43 .. -30.13)
+  all=W4A4      whole: clip 99.99                             56.61%    -7.11  (sd models 2.12, runs -9.55 .. -5.73)
+  all=W4A4      whole: clip 99.9                              60.65%    -3.08  (sd models 0.44, runs -3.58 .. -2.73)
+  all=W4A4      whole: clip 99                                58.55%    -5.18  (sd models 1.38, runs -6.58 .. -3.82)
+  all=W32A4     whole: min-max                                33.58%   -30.14  (sd models 3.39, runs -34.05 .. -27.98)
+  all=W32A4     whole: clip 99.99                             58.35%    -5.37  (sd models 1.50, runs -6.49 .. -3.67)
+  all=W32A4     whole: clip 99.9                              61.24%    -2.49  (sd models 0.88, runs -3.48 .. -1.81)
+  all=W32A4     whole: clip 99                                58.83%    -4.89  (sd models 2.12, runs -7.23 .. -3.09)
+  FUSION=W32A4  fusion only: min-max (= Step 5)               62.85%    -0.88  (sd models 0.32, runs -1.24 .. -0.65)
+  FUSION=W32A4  fusion only: clip 99.9                        63.58%    -0.15  (sd models 0.07, runs -0.22 .. -0.08)
+  FUSION=W32A4  fusion only: clip 99                          63.34%    -0.39  (sd models 0.14, runs -0.54 .. -0.27)
+  FUSION=W32A4  fusion only: one scale per branch             62.97%    -0.75  (sd models 0.24, runs -1.03 .. -0.58)
+  FUSION=W32A4  fusion only: one scale per channel            63.42%    -0.31  (sd models 0.13, runs -0.44 .. -0.20)
+  all=W32A4     whole: one scale per fusion branch            33.64%   -30.08  (sd models 2.81, runs -33.33 .. -28.40)
+  all=W4A4      whole: one scale per fusion branch            30.76%   -32.96  (sd models 2.82, runs -36.17 .. -30.84)
+  all=W32A4     whole: one scale per channel (upper bound)    60.57%    -3.16  (sd models 0.47, runs -3.45 .. -2.62)
+
+wrote results/step6_relu/: step6_summary.csv, step6_tests.csv, fusion_branches.csv, activation_ranges_*.csv, channel_ranges_*.csv
+>>> paste: cat results/step9c_ptq_*_calib_summary.csv; cat results/step6_relu/step6_summary.csv
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1164: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.lstm(
+FP32 63.44%   PTQ FP32 63.44%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.43%   59 s/epoch (about 14 min left)
+ep  1  val 63.42%   58 s/epoch (about 13 min left)
+ep  2  val 63.50%   58 s/epoch (about 12 min left)
+ep  3  val 63.56%   58 s/epoch (about 11 min left)
+ep  4  val 63.49%   157 s/epoch (about 26 min left)
+ep  5  val 63.56%   -42 s/epoch (about -6 min left)
+ep  6  val 63.51%   157 s/epoch (about 21 min left)
+ep  7  val 63.49%   -42 s/epoch (about -5 min left)
+ep  8  val 63.53%   157 s/epoch (about 16 min left)
+ep  9  val 63.55%   -42 s/epoch (about -3 min left)
+ep 10  val 63.55%   157 s/epoch (about 10 min left)
+ep 11  val 63.55%   -42 s/epoch (about -2 min left)
+ep 12  val 63.57%   157 s/epoch (about 5 min left)
+ep 13  val 63.58%   57 s/epoch (about 1 min left)
+ep 14  val 63.57%   58 s/epoch (about 0 min left)
+QAT FP32: 63.81%  (PTQ 63.44%, delta vs FP32 +0.38 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1164: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.lstm(
+FP32 63.90%   PTQ FP32 63.90%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.92%   60 s/epoch (about 14 min left)
+ep  1  val 63.95%   57 s/epoch (about 12 min left)
+ep  2  val 63.97%   58 s/epoch (about 12 min left)
+ep  3  val 64.01%   58 s/epoch (about 11 min left)
+ep  4  val 63.98%   58 s/epoch (about 10 min left)
+ep  5  val 63.97%   58 s/epoch (about 9 min left)
+ep  6  val 63.98%   58 s/epoch (about 8 min left)
+ep  7  val 64.02%   58 s/epoch (about 7 min left)
+ep  8  val 64.01%   58 s/epoch (about 6 min left)
+ep  9  val 64.01%   58 s/epoch (about 5 min left)
+ep 10  val 64.05%   58 s/epoch (about 4 min left)
+ep 11  val 64.03%   58 s/epoch (about 3 min left)
+ep 12  val 64.05%   58 s/epoch (about 2 min left)
+ep 13  val 64.06%   58 s/epoch (about 1 min left)
+ep 14  val 64.06%   58 s/epoch (about 0 min left)
+QAT FP32: 64.17%  (PTQ 63.90%, delta vs FP32 +0.26 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1164: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1481.)
+  result = _VF.lstm(
+FP32 64.02%   PTQ FP32 64.02%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 64.00%   59 s/epoch (about 14 min left)
+ep  1  val 64.04%   58 s/epoch (about 13 min left)
+ep  2  val 64.08%   58 s/epoch (about 12 min left)
+ep  3  val 64.14%   59 s/epoch (about 11 min left)
+ep  4  val 64.14%   58 s/epoch (about 10 min left)
+ep  5  val 64.16%   58 s/epoch (about 9 min left)
+ep  6  val 64.16%   58 s/epoch (about 8 min left)
+ep  7  val 64.16%   58 s/epoch (about 7 min left)
+ep  8  val 64.15%   58 s/epoch (about 6 min left)
+ep  9  val 64.15%   58 s/epoch (about 5 min left)
+ep 10  val 64.15%   58 s/epoch (about 4 min left)
+ep 11  val 64.14%   58 s/epoch (about 3 min left)
+ep 12  val 64.17%   58 s/epoch (about 2 min left)
+ep 13  val 64.17%   58 s/epoch (about 1 min left)
+ep 14  val 64.15%   58 s/epoch (about 0 min left)
+QAT FP32: 64.41%  (PTQ 64.02%, delta vs FP32 +0.39 pp)
+config                        n   FP32    PTQ    QAT  change    sd  TOST p  -6..0  2..18   min
+qat_kd_fp32_iqformer          3  63.79  63.79  64.13   +0.34  0.07   0.030  +0.88  +0.29    15
+qat_kd_mixed_iqformer         3  63.79  61.56  63.92   +0.14  0.10   0.012  +0.08  +0.21    82
+qat_kd_w4a4_iqformer          3  63.79  59.00  63.69   -0.09  0.12   0.014  -0.33  +0.06    81
+qat_w4a4_iqformer             3  63.79  59.00  63.54   -0.25  0.09   0.021  -0.84  -0.21    72
+wrote results/step10_summary.csv
+>>> paste the table above (results/step10_summary.csv)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.62%   PTQ all=W4A4 60.05%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.91%   386 s/epoch (about 90 min left)
+ep  1  val 63.27%   378 s/epoch (about 82 min left)
+ep  2  val 63.14%   325 s/epoch (about 65 min left)
+ep  3  val 62.90%   327 s/epoch (about 60 min left)
+ep  4  val 63.25%   327 s/epoch (about 54 min left)
+ep  5  val 63.23%   325 s/epoch (about 49 min left)
+ep  6  val 63.22%   325 s/epoch (about 43 min left)
+ep  7  val 63.24%   329 s/epoch (about 38 min left)
+ep  8  val 63.31%   324 s/epoch (about 32 min left)
+ep  9  val 63.23%   327 s/epoch (about 27 min left)
+ep 10  val 63.26%   328 s/epoch (about 22 min left)
+ep 11  val 63.30%   323 s/epoch (about 16 min left)
+ep 12  val 63.30%   317 s/epoch (about 11 min left)
+ep 13  val 63.28%   324 s/epoch (about 5 min left)
+ep 14  val 63.41%   323 s/epoch (about 0 min left)
+QAT all=W4A4: 63.61%  (PTQ 60.05%, delta vs FP32 -0.01 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.87%   PTQ all=W4A4 61.14%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.79%   328 s/epoch (about 77 min left)
+ep  1  val 62.96%   321 s/epoch (about 70 min left)
+ep  2  val 63.15%   322 s/epoch (about 64 min left)
+ep  3  val 63.11%   320 s/epoch (about 59 min left)
+ep  4  val 63.01%   321 s/epoch (about 53 min left)
+ep  5  val 63.11%   321 s/epoch (about 48 min left)
+ep  6  val 62.97%   324 s/epoch (about 43 min left)
+ep  7  val 63.04%   317 s/epoch (about 37 min left)
+ep  8  val 63.25%   418 s/epoch (about 42 min left)
+ep  9  val 63.16%   223 s/epoch (about 19 min left)
+ep 10  val 63.15%   323 s/epoch (about 22 min left)
+ep 11  val 63.20%   324 s/epoch (about 16 min left)
+ep 12  val 63.28%   324 s/epoch (about 11 min left)
+ep 13  val 63.27%   321 s/epoch (about 5 min left)
+ep 14  val 63.26%   319 s/epoch (about 0 min left)
+QAT all=W4A4: 63.69%  (PTQ 61.14%, delta vs FP32 -0.18 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.69%   PTQ all=W4A4 60.75%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 62.65%   326 s/epoch (about 76 min left)
+ep  1  val 62.94%   322 s/epoch (about 70 min left)
+ep  2  val 62.64%   323 s/epoch (about 65 min left)
+ep  3  val 62.71%   318 s/epoch (about 58 min left)
+ep  4  val 63.02%   326 s/epoch (about 54 min left)
+ep  5  val 62.91%   324 s/epoch (about 49 min left)
+ep  6  val 62.98%   333 s/epoch (about 44 min left)
+ep  7  val 63.06%   325 s/epoch (about 38 min left)
+ep  8  val 63.06%   330 s/epoch (about 33 min left)
+ep  9  val 63.14%   328 s/epoch (about 27 min left)
+ep 10  val 63.09%   326 s/epoch (about 22 min left)
+ep 11  val 63.20%   328 s/epoch (about 16 min left)
+ep 12  val 63.21%   323 s/epoch (about 11 min left)
+ep 13  val 63.19%   330 s/epoch (about 5 min left)
+ep 14  val 63.20%   428 s/epoch (about 0 min left)
+QAT all=W4A4: 63.82%  (PTQ 60.75%, delta vs FP32 +0.13 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.62%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 61.18%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.28%   322 s/epoch (about 75 min left)
+ep  1  val 63.32%   324 s/epoch (about 70 min left)
+ep  2  val 63.48%   327 s/epoch (about 65 min left)
+ep  3  val 63.51%   327 s/epoch (about 60 min left)
+ep  4  val 63.68%   328 s/epoch (about 55 min left)
+ep  5  val 63.47%   331 s/epoch (about 50 min left)
+ep  6  val 63.52%   329 s/epoch (about 44 min left)
+ep  7  val 63.62%   324 s/epoch (about 38 min left)
+ep  8  val 63.50%   324 s/epoch (about 32 min left)
+ep  9  val 63.56%   320 s/epoch (about 27 min left)
+ep 10  val 63.60%   326 s/epoch (about 22 min left)
+ep 11  val 63.70%   319 s/epoch (about 16 min left)
+ep 12  val 63.62%   327 s/epoch (about 11 min left)
+ep 13  val 63.61%   329 s/epoch (about 5 min left)
+ep 14  val 63.63%   325 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 63.80%  (PTQ 61.18%, delta vs FP32 +0.17 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.87%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 62.37%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.32%   326 s/epoch (about 76 min left)
+ep  1  val 63.28%   321 s/epoch (about 70 min left)
+ep  2  val 63.48%   324 s/epoch (about 65 min left)
+ep  3  val 63.42%   322 s/epoch (about 59 min left)
+ep  4  val 63.42%   322 s/epoch (about 54 min left)
+ep  5  val 63.50%   428 s/epoch (about 64 min left)
+ep  6  val 63.38%   228 s/epoch (about 30 min left)
+ep  7  val 63.50%   320 s/epoch (about 37 min left)
+ep  8  val 63.53%   326 s/epoch (about 33 min left)
+ep  9  val 63.57%   323 s/epoch (about 27 min left)
+ep 10  val 63.54%   325 s/epoch (about 22 min left)
+ep 11  val 63.50%   326 s/epoch (about 16 min left)
+ep 12  val 63.54%   326 s/epoch (about 11 min left)
+ep 13  val 63.54%   325 s/epoch (about 5 min left)
+ep 14  val 63.55%   325 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 63.87%  (PTQ 62.37%, delta vs FP32 -0.01 pp)
+[data] loaded cached split /home/abdoa/amc/IQFormer/dataset/RML2016.10a_dict.pkl.split_seed233_snr-20_18.npz
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/abdoa/amc/.venv/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+FP32 63.69%   PTQ all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8 61.84%  (start of QAT; ranges: auto, pct 99.9)
+ep  0  val 63.17%   326 s/epoch (about 76 min left)
+ep  1  val 63.09%   321 s/epoch (about 70 min left)
+ep  2  val 63.30%   321 s/epoch (about 64 min left)
+ep  3  val 63.32%   321 s/epoch (about 59 min left)
+ep  4  val 63.47%   321 s/epoch (about 53 min left)
+ep  5  val 63.42%   323 s/epoch (about 48 min left)
+ep  6  val 63.40%   336 s/epoch (about 45 min left)
+ep  7  val 63.41%   352 s/epoch (about 41 min left)
+ep  8  val 63.28%   325 s/epoch (about 33 min left)
+ep  9  val 63.53%   322 s/epoch (about 27 min left)
+ep 10  val 63.36%   321 s/epoch (about 21 min left)
+ep 11  val 63.43%   323 s/epoch (about 16 min left)
+ep 12  val 63.49%   321 s/epoch (about 11 min left)
+ep 13  val 63.40%   322 s/epoch (about 5 min left)
+ep 14  val 63.48%   414 s/epoch (about 0 min left)
+QAT all=W4A4,STEM=W8A8,FUSION=W8A8,HEAD=W8A8: 63.81%  (PTQ 61.84%, delta vs FP32 +0.12 pp)
+config                        n   FP32    PTQ    QAT  change    sd  TOST p  -6..0  2..18   min
+qat_kd_fp32_iqformer          3  63.79  63.79  64.13   +0.34  0.07   0.030  +0.88  +0.29    15
+qat_kd_mixed_iqf_relu         3  63.73  61.79  63.82   +0.09  0.09   0.008  +0.24  +0.06    81
+qat_kd_mixed_iqformer         3  63.79  61.56  63.92   +0.14  0.10   0.012  +0.08  +0.21    82
+qat_kd_w4a4_iqf_relu          3  63.73  60.65  63.71   -0.02  0.16   0.017  +0.20  -0.13    82
+qat_kd_w4a4_iqformer          3  63.79  59.00  63.69   -0.09  0.12   0.014  -0.33  +0.06    81
+qat_w4a4_iqformer             3  63.79  59.00  63.54   -0.25  0.09   0.021  -0.84  -0.21    72
+wrote results/step10_summary.csv
+>>> paste the table above (results/step10_summary.csv)

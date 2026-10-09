@@ -200,12 +200,28 @@ step9b() {  # does a training change also make the model easier to quantize? PTQ
   echo '>>> paste: for f in results/step9b_ptq_*/ptq_summary.csv; do echo $f; cat $f; done'
 }
 
+step9c() {  # ReLU vs GELU, for the report: PTQ with calibration sets 1 and 2 (set 0 = step 9b), combined over the
+            # 3 sets, and the activation ranges of the ReLU models (are their outliers smaller?) (~1 h)
+  for m in iqformer iqf_relu; do
+    rm -rf results/step9c_ptq_${m}_calib0 && cp -r results/step9b_ptq_${m} results/step9c_ptq_${m}_calib0
+    for c in 1 2; do
+      python amcq/ptq.py --runs runs/${m}_s1 runs/${m}_s2 runs/${m}_s3 runs/${m}_s4 runs/${m}_s5 --preset custom \
+             --specs all=W8A8 all=W6A6 all=W4A8 all=W4A4 --calib-method auto --pct 99.9 --calib-seed $c \
+             --out results/step9c_ptq_${m}_calib$c
+    done
+    python amcq/calib_summary.py "results/step9c_ptq_${m}_calib*"
+  done
+  python amcq/act_stats.py --runs runs/iqf_relu_s1 runs/iqf_relu_s2 runs/iqf_relu_s3 --calib-seeds 0 --out results/step6_relu
+  echo '>>> paste: cat results/step9c_ptq_*_calib_summary.csv; cat results/step6_relu/step6_summary.csv'
+}
+
 step10() {  # proposed model, quantization part: LSQ quantization-aware training (QAT), ranges initialized with the
             # bit-width-aware rule (clip 4-bit activations at the 99.9th percentile). Configurations (QAT_CONFIGS):
             #   w4a4       W4A4, plain QAT
             #   kd_w4a4    W4A4 + distillation from the FP32 models in TEACH
             #   kd_mixed   W4A4 with 8-bit stems, fusion and classifier ($MIXED, 0.5 % of MACs) + distillation
             #   kd_w4a8    W4A8 + distillation (optional: can W4A8 reach full precision?)
+            #   kd_fp32    control: the same fine-tuning + distillation with NO quantization (how much is distillation alone?)
             # QAT_RUNS: the FP32 models to start from (default: the 3 original IQFormer models).
             # Output: runs/qat_<config>_<run name>, e.g. runs/qat_kd_w4a4_iqformer_s1. Finished runs are skipped.
   local RUNS=${QAT_RUNS:-$BASE}
@@ -219,6 +235,7 @@ step10() {  # proposed model, quantization part: LSQ quantization-aware training
         kd_w4a4)  python amcq/qat.py --run $r --spec all=W4A4 --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
         kd_mixed) python amcq/qat.py --run $r --spec "$MIXED" --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
         kd_w4a8)  python amcq/qat.py --run $r --spec all=W4A8 --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
+        kd_fp32)  python amcq/qat.py --run $r --spec FP32 --epochs $QAT_EPOCHS --teacher $TEACH --out $out ;;
         *) echo "unknown QAT config $cfg"; exit 1 ;;
       esac
     done

@@ -11,8 +11,10 @@ Examples
   # with distillation from the three FP32 runs (teacher = their averaged logits):
   python amcq/qat.py --run runs/iqformer_s1 --spec all=W4A4 --teacher runs/iqformer_s1 runs/iqformer_s2 runs/iqformer_s3 \
          --out runs/qatkd_w4a4_s1
+  # control: the same fine-tuning with distillation but no quantization (--spec FP32)
 """
 import argparse
+import copy
 import csv
 import json
 import math
@@ -67,7 +69,10 @@ def main(argv=None):
     fp_pred = predict(fp_model, t['Xte']).argmax(1).numpy()
 
     teachers = [load_run(r, dev, args) for r in args.teacher]
-    q = quantize_model(fp_model, args.spec, act_scheme=args.act_scheme)
+    if args.spec.strip().upper() in ('FP32', 'NONE', ''):
+        q = copy.deepcopy(fp_model)          # control: the same fine-tuning (and distillation) without any quantizer
+    else:
+        q = quantize_model(fp_model, args.spec, act_scheme=args.act_scheme)
     rng = np.random.default_rng(args.calib_seed)
     cal = torch.from_numpy(rng.choice(len(d['ytr']), 1024, replace=False)).to(dev)
     calibrate(q, t['Xtr'][cal], args.calib_method, args.pct)

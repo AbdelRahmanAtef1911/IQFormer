@@ -232,6 +232,16 @@ bash amcq/run.sh step9b 2>&1 | tee step9b.log
 PTQ (W8A8, W6A6, W4A8, W4A4; bit-width-aware rule) of the 5 baseline seeds and of every step-9 variant.
 The baseline run also saves every test prediction (`--save-pred`) for the per-class analysis.
 
+### 9c. ReLU vs GELU in detail (~1 h)
+
+```bash
+bash amcq/run.sh step9c 2>&1 | tee step9c.log
+```
+
+PTQ of the 5 GELU and 5 ReLU models with calibration sets 1 and 2 (set 0 is step 9b), combined over the three
+sets (`results/step9c_ptq_*_calib_summary.csv`), and the activation ranges and clipping tests of the ReLU models
+(`results/step6_relu/`), to see whether ReLU has smaller outliers.
+
 ### 10. Proposed model — quantization-aware training (overnight)
 
 ```bash
@@ -242,7 +252,7 @@ tail -f step10.log           # after the first epoch it prints s/epoch and minut
 LSQ QAT, 15 epochs, ranges started with the bit-width-aware rule (clip 4-bit activations at the 99.9th
 percentile). Configurations (`QAT_CONFIGS`, default `w4a4 kd_w4a4 kd_mixed`): W4A4; W4A4 + distillation
 from the five FP32 models; W4A4 with 8-bit stems, fusion and classifier (0.5 % of MACs) + distillation.
-Optional: `kd_w4a8`. Results: `runs/qat_<config>_<model>`; summary `results/step10_summary.csv`
+Optional: `kd_w4a8`; control `kd_fp32` = the same fine-tuning and distillation without quantization (separates the effect of distillation from the recovery of quantization). Results: `runs/qat_<config>_<model>`; summary `results/step10_summary.csv`
 (FP32, PTQ start, QAT, paired change, TOST). On the chosen step-9 variant:
 `QAT_RUNS="runs/iqf_rot_s1 runs/iqf_rot_s2 runs/iqf_rot_s3" TEACH="runs/iqf_rot_s1 runs/iqf_rot_s2 runs/iqf_rot_s3 runs/iqf_rot_s4 runs/iqf_rot_s5" QAT_CONFIGS="kd_w4a4 kd_mixed" nohup bash amcq/run.sh step10 > step10b.log 2>&1 &`
 
