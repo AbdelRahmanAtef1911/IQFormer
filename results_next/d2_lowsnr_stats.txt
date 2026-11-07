@@ -1,0 +1,38 @@
+Mean log10 window power by class (training split) - equal rows mean the windows are NOT power-normalised per class:
+class         -20dB      -10dB       +0dB      +10dB      +18dB
+8PSK         -4.106     -4.107     -4.148     -4.180     -4.181
+BPSK         -4.107     -4.107     -4.136     -4.154     -4.153
+CPFSK        -4.108     -4.107     -4.162     -4.211     -4.211
+GFSK         -4.107     -4.108     -4.162     -4.213     -4.214
+PAM4         -4.108     -4.107     -4.097     -4.090     -4.089
+QAM16        -4.107     -4.111     -4.147     -4.148     -4.148
+QAM64        -4.106     -4.121     -4.145     -4.143     -4.142
+QPSK         -4.107     -4.107     -4.150     -4.179     -4.179
+AM-DSB       -4.107     -4.109     -4.167     -4.214     -4.214
+AM-SSB       -4.107     -4.107     -4.106     -4.108     -4.107
+WBFM         -4.106     -4.107     -4.169     -4.214     -4.214
+
+VALIDATION accuracy (%) per SNR; AUC = AM-SSB vs. rest from the statistics
+  SNR  IQFormer  stats,SNR known  stats,blind  AM-SSB AUC  AM-SSB AUC power only
+  -20      9.47            10.68         9.05       0.545                  0.513
+  -18      9.64            11.32         9.14       0.529                  0.504
+  -16     10.51            14.82         9.27       0.555                  0.505
+  -14     12.65            19.77        10.50       0.632                  0.484
+  -12     17.00            26.18        13.23       0.664                  0.484
+  -10     27.44            36.86        23.14       0.804                  0.571
+   -8     40.56            48.77        35.55       0.915                  0.581
+   -6     59.30            61.09        44.36       0.988                  0.625
+   -4     72.61            68.18        45.82       0.996                  0.722
+   -2     85.14            74.23        50.36       0.996                  0.875
+   +0     90.52            77.82        58.82       0.998                  0.918
+   +2     92.45            79.91        69.86       0.996                  0.917
+   +4     92.65            78.00        73.05       0.997                  0.918
+   +6     93.06            78.68        73.95       0.995                  0.913
+   +8     92.76            77.91        72.73       0.998                  0.918
+  +10     93.60            79.32        74.14       0.997                  0.916
+  +12     94.08            80.09        75.55       0.999                  0.916
+  +14     93.65            80.00        76.00       0.997                  0.915
+  +16     93.22            80.00        75.05       0.998                  0.916
+  +18     92.70            78.55        74.68       0.997                  0.911
+
+Reading: AUC 0.5 = no information; > 0.7 = a usable cue. If the statistics beat IQFormer at -14..-8 dB, or AM-SSB is separable there, a gain below -10 dB is physically possible (MSTFFNet-style SNR branch worth trying first). If not, gains must come from -8..0 dB.

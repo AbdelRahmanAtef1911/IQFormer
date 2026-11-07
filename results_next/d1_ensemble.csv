@@ -1,0 +1,13 @@
+model,tta,overall,band,low_le_m8,high_ge_2
+iqformer_s1,no,63.232,75.080,18.078,93.086
+iqformer_s1,guard,63.582,76.534,18.169,93.146
+iqformer_s2,no,63.807,77.591,18.416,92.985
+iqformer_s2,guard,64.002,78.659,18.325,93.015
+iqformer_s3,no,63.505,76.909,17.812,93.086
+iqformer_s3,guard,63.636,78.148,17.494,93.076
+iqformer_s4,no,63.618,77.034,18.026,93.116
+iqformer_s4,guard,63.855,78.250,18.052,93.081
+iqformer_s5,no,64.091,77.841,18.571,93.384
+iqformer_s5,guard,64.259,79.011,18.494,93.298
+ensemble of 5,no,64.134,78.534,18.260,93.414
+ensemble of 5,guard,64.241,79.318,18.240,93.318
