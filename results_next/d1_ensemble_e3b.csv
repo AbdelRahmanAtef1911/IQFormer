@@ -1,0 +1,13 @@
+model,tta,overall,band,low_le_m8,high_ge_2
+e3b_phase_cos100_s1,no,64.491,80.875,17.890,93.455
+e3b_phase_cos100_s1,guard,64.561,81.284,17.883,93.434
+e3b_phase_cos100_s2,no,64.070,79.261,18.058,93.106
+e3b_phase_cos100_s2,guard,64.139,79.818,17.981,93.071
+e3b_phase_cos100_s3,no,63.655,79.114,16.435,93.510
+e3b_phase_cos100_s3,guard,63.861,79.807,16.656,93.490
+e3b_phase_cos100_s4,no,64.266,80.148,17.636,93.475
+e3b_phase_cos100_s4,guard,64.323,80.216,17.753,93.480
+e3b_phase_cos100_s5,no,63.782,78.761,17.058,93.465
+e3b_phase_cos100_s5,guard,64.061,79.364,17.558,93.429
+ensemble of 5,no,64.464,80.773,17.714,93.576
+ensemble of 5,guard,64.486,81.080,17.656,93.535
